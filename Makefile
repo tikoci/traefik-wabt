@@ -11,7 +11,7 @@ ROS_PATH ?= raid1-part1/dev-traefik-wasm
 plugins: FORCE
 	$(MAKE) -C $(SRCDIRS)/wasm-go
 	$(MAKE) -C $(SRCDIRS)/wasm-wat
-    $(MAKE) -C $(SRCDIRS)/wasm-grain
+	$(MAKE) -C $(SRCDIRS)/wasm-grain
 
 clean: 
 	$(MAKE) -C $(SRCDIRS)/wasm-go clean 

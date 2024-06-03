@@ -1,0 +1,7 @@
+displayName: TODO
+type: middleware
+runtime: wasm
+summary: TODO
+testData:
+  Headers:
+    Foo: Bar
