@@ -1,16 +1,20 @@
 module Traefik
 
-from "result" include Result
-from "uint32" include Uint32
-from "uint64" include Uint64
 from "runtime/unsafe/wasmi32" include WasmI32
 from "runtime/unsafe/wasmi64" include WasmI64
 from "runtime/unsafe/memory" include Memory
 from "runtime/dataStructures" include DataStructures as DS
 
-// (import "http_handler" "log" (func $log
-//    (param $level i32)
-//    (param $buf i32) (param $buf_limit i32)))
+@unsafe
+let log_level_debug = -1n 
+@unsafe
+let log_level_info = 0n 
+@unsafe
+let log_level_warn = 1n 
+@unsafe
+let log_level_error = 2n 
+@unsafe
+let log_level_none = 3n 
 
 provide foreign wasm log: (
   WasmI32,
@@ -18,9 +22,15 @@ provide foreign wasm log: (
 ) -> Void from "http_handler" 
 
 @unsafe
-let handle_request = (next: WasmI64) => {
-   log(0n, 0n, 0n)
+let handle_request = () => {
+   log(log_level_info, 0n, 0n)
    1N
 }
 
-provide { handle_request }
+@unsafe
+let handle_response = (high: WasmI32, low: WasmI32) => {
+   log(log_level_warn, 0n, 0n)
+   return 
+}
+
+provide { handle_request, handle_response }

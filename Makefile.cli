@@ -1,0 +1,6 @@
+
+vigr:
+	vi ./plugins/src/wasm-grain/plugin.gr
+	make
+
+

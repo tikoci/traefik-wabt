@@ -32,5 +32,6 @@ brew-deps:
 	brew install --no-quarantine --cask grain-lang/tap/grain
 
 include Makefile.routeros
+include Makefile.cli
 
 FORCE:
