@@ -10,4 +10,5 @@ plugin.wasm: plugin.gr
 include ../Makefile.meta
 
 clean:
-	rm -v -f *.wasm *.wat
+	rm -v -f *.wasm
+	rm -v -f *.wat

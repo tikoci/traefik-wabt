@@ -16,7 +16,7 @@ plugins: FORCE
 clean: 
 	$(MAKE) -C $(SRCDIRS)/wasm-go clean 
 	$(MAKE) -C $(SRCDIRS)/wasm-wat clean
-	$(MAKE) -C $(SRCDIRS)/wasm-wat clean
+	$(MAKE) -C $(SRCDIRS)/wasm-grain clean
 
 tars: Dockerfile	
 	rm *.tar
