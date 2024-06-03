@@ -43,6 +43,9 @@ jobs:
         sudo curl -L --output /usr/local/bin/grain https://github.com/grain-lang/grain/releases/download/grain-v0.6.3/grain-linux-x64
         sudo chmod +x /usr/local/bin/grain
     -
+      name: Install WABT
+      run: sudo apt-get install -y wabt 
+    -
       name: Build WASM files
       run: |
         make clean
