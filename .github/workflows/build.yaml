@@ -33,6 +33,11 @@ jobs:
       with:
         platforms: ${{ env.PLATFORMS }}
     -
+      name: Install TinyGo
+      run: |
+        wget https://github.com/tinygo-org/tinygo/releases/download/v0.31.2/tinygo_0.31.2_amd64.deb
+        sudo dpkg -i tinygo_0.31.2_amd64.deb
+    -
       name: Install Grain
       run: |
         sudo curl -L --output /usr/local/bin/grain https://github.com/grain-lang/grain/releases/download/grain-v0.6.3/grain-linux-x64
