@@ -21,7 +21,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    -
+      name: Do Checkout
+      uses: actions/checkout@v4
+    - 
+      name: Allow `git`
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
     -
       name: Set up QEMU need for cross-platform building
       uses: docker/setup-qemu-action@v3
