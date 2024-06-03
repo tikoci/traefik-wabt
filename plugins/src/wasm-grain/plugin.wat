@@ -6,25 +6,26 @@
  (type $none_=>_i32 (func (result i32)))
  (type $i32_=>_i32 (func (param i32) (result i32)))
  (type $i32_i64_i64_=>_i64 (func (param i32 i64 i64) (result i64)))
- (type $i32_i64_i64_=>_i32 (func (param i32 i64 i64) (result i32)))
  (type $i32_i64_=>_i32 (func (param i32 i64) (result i32)))
+ (type $i32_i64_i64_=>_i32 (func (param i32 i64 i64) (result i32)))
  (type $i32_i32_i32_i32_i32_=>_i32 (func (param i32 i32 i32 i32 i32) (result i32)))
+ (type $i32_i32_=>_i64 (func (param i32 i32) (result i64)))
+ (type $i32_f64_=>_i32 (func (param i32 f64) (result i32)))
  (type $i32_i32_i32_=>_i64 (func (param i32 i32 i32) (result i64)))
  (type $i32_i64_=>_i64 (func (param i32 i64) (result i64)))
- (type $i32_f64_=>_i32 (func (param i32 f64) (result i32)))
  (type $i32_i32_i64_i32_=>_i32 (func (param i32 i32 i64 i32) (result i32)))
- (type $i32_i32_=>_i64 (func (param i32 i32) (result i64)))
  (type $i32_i32_i64_=>_i32 (func (param i32 i32 i64) (result i32)))
  (type $i32_f32_=>_f32 (func (param i32 f32) (result f32)))
  (type $i32_f32_f32_=>_f32 (func (param i32 f32 f32) (result f32)))
  (type $i32_f64_=>_f64 (func (param i32 f64) (result f64)))
  (type $i32_f64_f64_=>_f64 (func (param i32 f64 f64) (result f64)))
  (type $i32_f32_f32_=>_i32 (func (param i32 f32 f32) (result i32)))
- (type $i32_f64_f64_=>_i32 (func (param i32 f64 f64) (result i32)))
  (type $i32_i32_=>_f32 (func (param i32 i32) (result f32)))
+ (type $i32_f64_f64_=>_i32 (func (param i32 f64 f64) (result i32)))
  (type $i32_i32_=>_f64 (func (param i32 i32) (result f64)))
  (type $i32_f32_=>_i32 (func (param i32 f32) (result i32)))
  (type $i32_i64_i32_=>_i32 (func (param i32 i64 i32) (result i32)))
+ (type $i32_i32_i32_i32_i32_i32_=>_i32 (func (param i32 i32 i32 i32 i32 i32) (result i32)))
  (type $i32_i64_=>_f64 (func (param i32 i64) (result f64)))
  (type $i32_f64_=>_i64 (func (param i32 f64) (result i64)))
  (type $i32_f64_i32_i32_=>_i32 (func (param i32 f64 i32 i32) (result i32)))
@@ -56,11 +57,11 @@
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_1437.linked.1435 (param i32 i32 i32 i32) (result i32)))
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_1242.linked.6149 (param i32 i32 i32 i32) (result i32)))
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_5173.linked.15785 (param i32 i32 i32 i32) (result i32)))
- (import "http_handler" "log" (func $wimport_http_handler_log_1408.linked.18099 (param i32 i32 i32)))
- (global $GRAIN$RUNTIME_HEAP_NEXT_PTR (mut i32) (i32.const 1480))
+ (import "http_handler" "log" (func $wimport_http_handler_log_1568.linked.23248 (param i32 i32 i32)))
+ (global $GRAIN$RUNTIME_HEAP_NEXT_PTR (mut i32) (i32.const 1688))
  (global $gimport$0.linked.1 i32 (i32.const 0))
  (global $gimport$1.linked.2 i32 (i32.const 3))
- (global $gimport$2.linked.3 i32 (i32.const 1480))
+ (global $gimport$2.linked.3 i32 (i32.const 1688))
  (global $gimport$4.linked.5 i32 (i32.const 1032))
  (global $_SMAX16_I32_1008.linked.6 (mut i32) (i32.const 0))
  (global $_SMAX32_I64_1021.linked.7 (mut i64) (i64.const 0))
@@ -89,7 +90,7 @@
  (global $GRAIN$TABLE_SIZE.linked.30 i32 (i32.const 0))
  (global $gimport$0.linked.82 i32 (i32.const 0))
  (global $gimport$1.linked.83 i32 (i32.const 5))
- (global $gimport$2.linked.84 i32 (i32.const 1480))
+ (global $gimport$2.linked.84 i32 (i32.const 1688))
  (global $gimport$4.linked.86 i32 (i32.const 1032))
  (global $_GRAIN_ADT_HEAP_TAG_1017.linked.87 (mut i32) (i32.const 0))
  (global $_GRAIN_BIGINT_BOXED_NUM_TAG_1031.linked.88 (mut i32) (i32.const 0))
@@ -126,7 +127,7 @@
  (global $GRAIN$TABLE_SIZE.linked.119 i32 (i32.const 0))
  (global $gimport$0.linked.187 i32 (i32.const 0))
  (global $gimport$1.linked.188 i32 (i32.const 7))
- (global $gimport$2.linked.189 i32 (i32.const 1480))
+ (global $gimport$2.linked.189 i32 (i32.const 1688))
  (global $gimport$4.linked.191 i32 (i32.const 1032))
  (global $!=_1075.linked.192 (mut i32) (i32.const 0))
  (global $+_1051.linked.193 (mut i32) (i32.const 0))
@@ -159,7 +160,7 @@
  (global $GRAIN$TABLE_SIZE.linked.220 i32 (i32.const 0))
  (global $gimport$0.linked.309 i32 (i32.const 0))
  (global $gimport$1.linked.310 i32 (i32.const 9))
- (global $gimport$2.linked.311 i32 (i32.const 1480))
+ (global $gimport$2.linked.311 i32 (i32.const 1688))
  (global $gimport$4.linked.313 i32 (i32.const 1032))
  (global $!=_1075.linked.314 (mut i32) (i32.const 0))
  (global $+_1051.linked.315 (mut i32) (i32.const 0))
@@ -192,7 +193,7 @@
  (global $GRAIN$TABLE_SIZE.linked.342 i32 (i32.const 0))
  (global $gimport$0.linked.431 i32 (i32.const 0))
  (global $gimport$1.linked.432 i32 (i32.const 11))
- (global $gimport$2.linked.433 i32 (i32.const 1480))
+ (global $gimport$2.linked.433 i32 (i32.const 1688))
  (global $gimport$4.linked.435 i32 (i32.const 1032))
  (global $!=_1113.linked.436 (mut i32) (i32.const 0))
  (global $&_1086.linked.437 (mut i32) (i32.const 0))
@@ -244,7 +245,7 @@
  (global $GRAIN$TABLE_SIZE.linked.483 i32 (i32.const 0))
  (global $gimport$0.linked.631 i32 (i32.const 0))
  (global $gimport$1.linked.632 i32 (i32.const 13))
- (global $gimport$2.linked.633 i32 (i32.const 1480))
+ (global $gimport$2.linked.633 i32 (i32.const 1688))
  (global $gimport$4.linked.635 i32 (i32.const 1032))
  (global $dangerouslyRegisterBasePrinter_1144.linked.636 (mut i32) (i32.const 0))
  (global $exceptionToString_1155.linked.637 (mut i32) (i32.const 0))
@@ -259,7 +260,7 @@
  (global $GRAIN$TABLE_SIZE.linked.646 i32 (i32.const 1))
  (global $gimport$0.linked.994 i32 (i32.const 1))
  (global $gimport$1.linked.995 i32 (i32.const 15))
- (global $gimport$2.linked.996 i32 (i32.const 1480))
+ (global $gimport$2.linked.996 i32 (i32.const 1688))
  (global $gimport$4.linked.998 i32 (i32.const 1032))
  (global $_BASE_1195.linked.999 (mut i32) (i32.const 0))
  (global $free_1216.linked.1000 (mut i32) (i32.const 0))
@@ -278,7 +279,7 @@
  (global $GRAIN$TABLE_SIZE.linked.1013 i32 (i32.const 0))
  (global $gimport$0.linked.1418 i32 (i32.const 1))
  (global $gimport$1.linked.1419 i32 (i32.const 17))
- (global $gimport$2.linked.1420 i32 (i32.const 1480))
+ (global $gimport$2.linked.1420 i32 (i32.const 1688))
  (global $gimport$4.linked.1422 i32 (i32.const 1032))
  (global $_DEBUG_1257.linked.1423 (mut i32) (i32.const 0))
  (global $decRefChildren_1308.linked.1424 (mut i32) (i32.const 0))
@@ -294,7 +295,7 @@
  (global $GRAIN$TABLE_SIZE.linked.1434 i32 (i32.const 0))
  (global $gimport$0.linked.1704 i32 (i32.const 1))
  (global $gimport$1.linked.1705 i32 (i32.const 19))
- (global $gimport$2.linked.1706 i32 (i32.const 1480))
+ (global $gimport$2.linked.1706 i32 (i32.const 1688))
  (global $gimport$4.linked.1708 i32 (i32.const 1032))
  (global $allocateArray_1000.linked.1709 (mut i32) (i32.const 0))
  (global $allocateBytes_1336.linked.1710 (mut i32) (i32.const 0))
@@ -332,7 +333,7 @@
  (global $GRAIN$TABLE_SIZE.linked.1742 i32 (i32.const 0))
  (global $gimport$0.linked.1888 i32 (i32.const 1))
  (global $gimport$1.linked.1889 i32 (i32.const 21))
- (global $gimport$2.linked.1890 i32 (i32.const 1480))
+ (global $gimport$2.linked.1890 i32 (i32.const 1688))
  (global $gimport$4.linked.1892 i32 (i32.const 1032))
  (global $compare_1170.linked.1893 (mut i32) (i32.const 0))
  (global $fill_1164.linked.1894 (mut i32) (i32.const 0))
@@ -340,7 +341,7 @@
  (global $GRAIN$TABLE_SIZE.linked.1896 i32 (i32.const 0))
  (global $gimport$0.linked.2023 i32 (i32.const 1))
  (global $gimport$1.linked.2024 i32 (i32.const 23))
- (global $gimport$2.linked.2025 i32 (i32.const 1480))
+ (global $gimport$2.linked.2025 i32 (i32.const 1688))
  (global $gimport$4.linked.2027 i32 (i32.const 1032))
  (global $!=_1256.linked.2028 (mut i32) (i32.const 0))
  (global $&_1229.linked.2029 (mut i32) (i32.const 0))
@@ -395,7 +396,7 @@
  (global $GRAIN$TABLE_SIZE.linked.2078 i32 (i32.const 0))
  (global $gimport$0.linked.2236 i32 (i32.const 1))
  (global $gimport$1.linked.2237 i32 (i32.const 25))
- (global $gimport$2.linked.2238 i32 (i32.const 1480))
+ (global $gimport$2.linked.2238 i32 (i32.const 1688))
  (global $gimport$4.linked.2240 i32 (i32.const 1032))
  (global $_ANY_DIGITS_1459.linked.2241 (mut i32) (i32.const 0))
  (global $_DIGITS_1453.linked.2242 (mut i32) (i32.const 0))
@@ -445,7 +446,7 @@
  (global $GRAIN$TABLE_SIZE.linked.2286 i32 (i32.const 0))
  (global $gimport$0.linked.6139 i32 (i32.const 1))
  (global $gimport$1.linked.6140 i32 (i32.const 27))
- (global $gimport$2.linked.6141 i32 (i32.const 1480))
+ (global $gimport$2.linked.6141 i32 (i32.const 1688))
  (global $gimport$4.linked.6143 i32 (i32.const 1032))
  (global $fd_write_1132.linked.6144 (mut i32) (i32.const 0))
  (global $printString_1209.linked.6145 (mut i32) (i32.const 0))
@@ -454,7 +455,7 @@
  (global $GRAIN$TABLE_SIZE.linked.6148 i32 (i32.const 0))
  (global $gimport$0.linked.6226 i32 (i32.const 1))
  (global $gimport$1.linked.6227 i32 (i32.const 29))
- (global $gimport$2.linked.6228 i32 (i32.const 1480))
+ (global $gimport$2.linked.6228 i32 (i32.const 1688))
  (global $gimport$4.linked.6230 i32 (i32.const 1032))
  (global $abs_1813.linked.6231 (mut i32) (i32.const 0))
  (global $add_2102.linked.6232 (mut i32) (i32.const 0))
@@ -550,7 +551,7 @@
  (global $GRAIN$TABLE_SIZE.linked.6322 i32 (i32.const 0))
  (global $gimport$0.linked.9636 i32 (i32.const 1))
  (global $gimport$1.linked.9637 i32 (i32.const 31))
- (global $gimport$2.linked.9638 i32 (i32.const 1480))
+ (global $gimport$2.linked.9638 i32 (i32.const 1688))
  (global $gimport$4.linked.9640 i32 (i32.const 1032))
  (global $%_3523.linked.9641 (mut i32) (i32.const 0))
  (global $**_3545.linked.9642 (mut i32) (i32.const 0))
@@ -674,7 +675,7 @@
  (global $GRAIN$TABLE_SIZE.linked.9760 i32 (i32.const 0))
  (global $gimport$0.linked.14904 i32 (i32.const 1))
  (global $gimport$1.linked.14905 i32 (i32.const 33))
- (global $gimport$2.linked.14906 i32 (i32.const 1480))
+ (global $gimport$2.linked.14906 i32 (i32.const 1688))
  (global $gimport$4.linked.14908 i32 (i32.const 1032))
  (global $compare_3725.linked.14909 (mut i32) (i32.const 0))
  (global $compareHelp_3555.linked.14910 (mut i32) (i32.const 0))
@@ -683,7 +684,7 @@
  (global $GRAIN$TABLE_SIZE.linked.14913 i32 (i32.const 0))
  (global $gimport$0.linked.15335 i32 (i32.const 1))
  (global $gimport$1.linked.15336 i32 (i32.const 35))
- (global $gimport$2.linked.15337 i32 (i32.const 1480))
+ (global $gimport$2.linked.15337 i32 (i32.const 1688))
  (global $gimport$4.linked.15339 i32 (i32.const 1032))
  (global $equal_3895.linked.15340 (mut i32) (i32.const 0))
  (global $heapEqualHelp_3736.linked.15341 (mut i32) (i32.const 0))
@@ -691,7 +692,7 @@
  (global $GRAIN$TABLE_SIZE.linked.15343 i32 (i32.const 0))
  (global $gimport$0.linked.15743 i32 (i32.const 1))
  (global $gimport$1.linked.15744 i32 (i32.const 37))
- (global $gimport$2.linked.15745 i32 (i32.const 1480))
+ (global $gimport$2.linked.15745 i32 (i32.const 1688))
  (global $gimport$4.linked.15747 i32 (i32.const 1032))
  (global $_LIST_ID_3921.linked.15748 (mut i32) (i32.const 0))
  (global $_RESULT_ID_3923.linked.15749 (mut i32) (i32.const 0))
@@ -732,7 +733,7 @@
  (global $GRAIN$TABLE_SIZE.linked.15784 i32 (i32.const 0))
  (global $gimport$0.linked.17938 i32 (i32.const 1))
  (global $gimport$1.linked.17939 i32 (i32.const 39))
- (global $gimport$2.linked.17940 i32 (i32.const 1480))
+ (global $gimport$2.linked.17940 i32 (i32.const 1688))
  (global $gimport$4.linked.17942 i32 (i32.const 1032))
  (global $!=_4434.linked.17943 (mut i32) (i32.const 0))
  (global $!_1362.linked.17944 (mut i32) (i32.const 0))
@@ -749,17 +750,108 @@
  (global $throw_4472.linked.17955 (mut i32) (i32.const 0))
  (global $ignore_4466.linked.17956 (mut i32) (i32.const 0))
  (global $GRAIN$TABLE_SIZE.linked.17957 i32 (i32.const 2))
- (global $handle_request_1393.linked.18090 (mut i32) (i32.const 0))
- (global $log_1392.linked.18091 (mut i32) (i32.const 0))
- (global $handle_response_1395.linked.18092 (mut i32) (i32.const 0))
- (global $GRAIN$TABLE_SIZE.linked.18093 i32 (i32.const 0))
- (global $relocBase_0.linked.18094 i32 (i32.const 3))
- (global $moduleRuntimeId_0.linked.18095 i32 (i32.const 41))
- (global $runtimeHeapStart_0.linked.18096 i32 (i32.const 1480))
- (global $metadataPtr_0.linked.18098 i32 (i32.const 1032))
+ (global $gimport$0.linked.18090 i32 (i32.const 3))
+ (global $gimport$1.linked.18091 i32 (i32.const 41))
+ (global $gimport$2.linked.18092 i32 (i32.const 1688))
+ (global $gimport$4.linked.18094 i32 (i32.const 1032))
+ (global $<_1381.linked.18095 (mut i32) (i32.const 0))
+ (global $>=_1396.linked.18096 (mut i32) (i32.const 0))
+ (global $>_1391.linked.18097 (mut i32) (i32.const 0))
+ (global $<=_1386.linked.18098 (mut i32) (i32.const 0))
+ (global $isAsciiAlpha_1403.linked.18099 (mut i32) (i32.const 0))
+ (global $fromCode_1314.linked.18100 (mut i32) (i32.const 0))
+ (global $isValid_1309.linked.18101 (mut i32) (i32.const 0))
+ (global $isAsciiDigit_1401.linked.18102 (mut i32) (i32.const 0))
+ (global $code_1311.linked.18103 (mut i32) (i32.const 0))
+ (global $min_1307.linked.18104 (mut i32) (i32.const 0))
+ (global $succ_1365.linked.18105 (mut i32) (i32.const 0))
+ (global $pred_1368.linked.18106 (mut i32) (i32.const 0))
+ (global $toAsciiUppercase_1407.linked.18107 (mut i32) (i32.const 0))
+ (global $toString_1371.linked.18108 (mut i32) (i32.const 0))
+ (global $toAsciiLowercase_1405.linked.18109 (mut i32) (i32.const 0))
+ (global $max_1308.linked.18110 (mut i32) (i32.const 0))
+ (global $GRAIN$TABLE_SIZE.linked.18111 i32 (i32.const 0))
+ (global $gimport$0.linked.18362 i32 (i32.const 3))
+ (global $gimport$1.linked.18363 i32 (i32.const 43))
+ (global $gimport$2.linked.18364 i32 (i32.const 1688))
+ (global $gimport$4.linked.18366 i32 (i32.const 1032))
+ (global $fromFloat32_1637.linked.18367 (mut i32) (i32.const 0))
+ (global $fromInt32_1569.linked.18368 (mut i32) (i32.const 0))
+ (global $fromFloat64_1670.linked.18369 (mut i32) (i32.const 0))
+ (global $fromUint32_1572.linked.18370 (mut i32) (i32.const 0))
+ (global $fromInt64_1579.linked.18371 (mut i32) (i32.const 0))
+ (global $toFloat64_1668.linked.18372 (mut i32) (i32.const 0))
+ (global $toFloat32_1635.linked.18373 (mut i32) (i32.const 0))
+ (global $toInt64_1575.linked.18374 (mut i32) (i32.const 0))
+ (global $wasmI32ToNumber_1701.linked.18375 (mut i32) (i32.const 0))
+ (global $toUint64_1577.linked.18376 (mut i32) (i32.const 0))
+ (global $toUint32_1567.linked.18377 (mut i32) (i32.const 0))
+ (global $toInt32_1518.linked.18378 (mut i32) (i32.const 0))
+ (global $fromUint64_1632.linked.18379 (mut i32) (i32.const 0))
+ (global $GRAIN$TABLE_SIZE.linked.18380 i32 (i32.const 0))
+ (global $gimport$0.linked.18484 i32 (i32.const 3))
+ (global $gimport$1.linked.18485 i32 (i32.const 45))
+ (global $gimport$2.linked.18486 i32 (i32.const 1688))
+ (global $gimport$4.linked.18488 i32 (i32.const 1032))
+ (global $_BYTES_OFFSET_1728.linked.18489 (mut i32) (i32.const 0))
+ (global $_BYTES_SIZE_OFFSET_1727.linked.18490 (mut i32) (i32.const 0))
+ (global $bytesHaveBom_1787.linked.18491 (mut i32) (i32.const 0))
+ (global $charAt_1532.linked.18492 (mut i32) (i32.const 0))
+ (global $charCodeAt_1529.linked.18493 (mut i32) (i32.const 0))
+ (global $charAtHelp_1518.linked.18494 (mut i32) (i32.const 0))
+ (global $byteLength_1471.linked.18495 (mut i32) (i32.const 0))
+ (global $contains_1615.linked.18496 (mut i32) (i32.const 0))
+ (global $decodeHelp_1870.linked.18497 (mut i32) (i32.const 0))
+ (global $decode_1876.linked.18498 (mut i32) (i32.const 0))
+ (global $decodeRangeHelp_1829.linked.18499 (mut i32) (i32.const 0))
+ (global $encode_1769.linked.18500 (mut i32) (i32.const 0))
+ (global $decodedLength_1794.linked.18501 (mut i32) (i32.const 0))
+ (global $decodeRange_1862.linked.18502 (mut i32) (i32.const 0))
+ (global $encodeHelp_1763.linked.18503 (mut i32) (i32.const 0))
+ (global $encodeAtHelp_1729.linked.18504 (mut i32) (i32.const 0))
+ (global $endsWith_1637.linked.18505 (mut i32) (i32.const 0))
+ (global $explodeHelp_1535.linked.18506 (mut i32) (i32.const 0))
+ (global $forEachCodePointi_1893.linked.18507 (mut i32) (i32.const 0))
+ (global $forEachCodePoint_1882.linked.18508 (mut i32) (i32.const 0))
+ (global $explode_1549.linked.18509 (mut i32) (i32.const 0))
+ (global $encodedLength_1724.linked.18510 (mut i32) (i32.const 0))
+ (global $encodeAt_1755.linked.18511 (mut i32) (i32.const 0))
+ (global $concat_1402.linked.18512 (mut i32) (i32.const 0))
+ (global $grainToWasmNumber_1702.linked.18513 (mut i32) (i32.const 0))
+ (global $indexOf_1477.linked.18514 (mut i32) (i32.const 0))
+ (global $implode_1551.linked.18515 (mut i32) (i32.const 0))
+ (global $lastIndexOf_1496.linked.18516 (mut i32) (i32.const 0))
+ (global $isEmpty_1474.linked.18517 (mut i32) (i32.const 0))
+ (global $replaceAll_1677.linked.18518 (mut i32) (i32.const 0))
+ (global $replaceFirst_1646.linked.18519 (mut i32) (i32.const 0))
+ (global $reverse_1567.linked.18520 (mut i32) (i32.const 0))
+ (global $replaceLast_1661.linked.18521 (mut i32) (i32.const 0))
+ (global $length_1403.linked.18522 (mut i32) (i32.const 0))
+ (global $split_1576.linked.18523 (mut i32) (i32.const 0))
+ (global $toAsciiUppercase_1952.linked.18524 (mut i32) (i32.const 0))
+ (global $toAsciiLowercase_1931.linked.18525 (mut i32) (i32.const 0))
+ (global $startsWith_1628.linked.18526 (mut i32) (i32.const 0))
+ (global $trimStart_1912.linked.18527 (mut i32) (i32.const 0))
+ (global $trimEnd_1918.linked.18528 (mut i32) (i32.const 0))
+ (global $writeUtf8CodePoint_1775.linked.18529 (mut i32) (i32.const 0))
+ (global $utf16Length_1714.linked.18530 (mut i32) (i32.const 0))
+ (global $trimString_1904.linked.18531 (mut i32) (i32.const 0))
+ (global $trim_1924.linked.18532 (mut i32) (i32.const 0))
+ (global $slice_1596.linked.18533 (mut i32) (i32.const 0))
+ (global $getCodePoint_1509.linked.18534 (mut i32) (i32.const 0))
+ (global $GRAIN$TABLE_SIZE.linked.18535 i32 (i32.const 1))
+ (global $handle_response_1537.linked.23238 (mut i32) (i32.const 0))
+ (global $handle_request_1534.linked.23239 (mut i32) (i32.const 0))
+ (global $makeWatString_1501.linked.23240 (mut i32) (i32.const 0))
+ (global $log_1500.linked.23241 (mut i32) (i32.const 0))
+ (global $GRAIN$TABLE_SIZE.linked.23242 i32 (i32.const 0))
+ (global $relocBase_0.linked.23243 i32 (i32.const 4))
+ (global $moduleRuntimeId_0.linked.23244 i32 (i32.const 47))
+ (global $runtimeHeapStart_0.linked.23245 i32 (i32.const 1688))
+ (global $metadataPtr_0.linked.23247 i32 (i32.const 1032))
  (memory $0 64)
- (data $0 (i32.const 1032) "\01\00\00\00\00\00\00\00\10\00\00\00\01\00\00\00\00\00\00\00\18\00\00\00\a4\01\00\00 \00\00\00\00\00\00\00\92\04\00\00\0e\00\00\00DivisionByZero\00\00 \00\00\00\00\00\00\00\93\04\00\00\0c\00\00\00ModuloByZero\00\00\00\00\18\00\00\00\00\00\00\00\94\04\00\00\08\00\00\00Overflow \00\00\00\00\00\00\00\95\04\00\00\10\00\00\00NumberNotIntlike(\00\00\00\00\00\00\00\96\04\00\00\11\00\00\00NumberNotRational\00\00\00\00\00\00\00 \00\00\00\00\00\00\00\97\04\00\00\0c\00\00\00MatchFailure\00\00\00\00 \00\00\00\00\00\00\00\98\04\00\00\0f\00\00\00InvalidArgument\00 \00\00\00\00\00\00\00\e8\04\00\00\0b\00\00\00DecRefError\00\00\00\00\00 \00\00\00\00\00\00\00\\\t\00\00\10\00\00\00UnknownNumberTag(\00\00\00\00\00\00\00]\t\00\00\12\00\00\00InvariantViolation\00\00\00\00\00\00 \00\00\00\00\00\00\00D\0f\00\00\10\00\00\00MalformedUnicode\18\00\00\00\00\00\00\00v\11\00\00\07\00\00\00Failure\00 \00\00\00\00\00\00\00w\11\00\00\0f\00\00\00InvalidArgument\00\00\00\00\00")
- (table $tbl 3 3 funcref)
+ (data $0 (i32.const 1032) "\02\00\00\00\00\00\00\00\18\00\00\00\02\00\00\00(\00\00\00\00\00\00\00\00\00\00\00(\00\00\00\b6\9a2#\10\02\00\00\e4\01\00\00 \00\00\00\00\00\00\00\92\04\00\00\0e\00\00\00DivisionByZero\00\00 \00\00\00\00\00\00\00\93\04\00\00\0c\00\00\00ModuloByZero\00\00\00\00\18\00\00\00\00\00\00\00\94\04\00\00\08\00\00\00Overflow \00\00\00\00\00\00\00\95\04\00\00\10\00\00\00NumberNotIntlike(\00\00\00\00\00\00\00\96\04\00\00\11\00\00\00NumberNotRational\00\00\00\00\00\00\00 \00\00\00\00\00\00\00\97\04\00\00\0c\00\00\00MatchFailure\00\00\00\00 \00\00\00\00\00\00\00\98\04\00\00\0f\00\00\00InvalidArgument\00 \00\00\00\00\00\00\00\e8\04\00\00\0b\00\00\00DecRefError\00\00\00\00\00 \00\00\00\00\00\00\00\\\t\00\00\10\00\00\00UnknownNumberTag(\00\00\00\00\00\00\00]\t\00\00\12\00\00\00InvariantViolation\00\00\00\00\00\00 \00\00\00\00\00\00\00D\0f\00\00\10\00\00\00MalformedUnicode\18\00\00\00\00\00\00\00v\11\00\00\07\00\00\00Failure\00 \00\00\00\00\00\00\00w\11\00\00\0f\00\00\00InvalidArgument\00 \00\00\00\00\00\00\00\1a\05\00\00\r\00\00\00MalformedUtf8\00\00\00 \00\00\00\00\00\00\00y\05\00\00\10\00\00\00MalformedUnicode\00\00\00\00|\00\00\00\18\00\00\00\00\00\00\00\00\00\00\00\04\00\00\00UTF8\00\00\00\00\18\00\00\00\00\00\00\00\01\00\00\00\08\00\00\00UTF16_BE\18\00\00\00\00\00\00\00\02\00\00\00\08\00\00\00UTF16_LE\18\00\00\00\00\00\00\00\03\00\00\00\08\00\00\00UTF32_BE\18\00\00\00\00\00\00\00\04\00\00\00\08\00\00\00UTF32_LE\00\00\00\00")
+ (table $tbl 4 4 funcref)
  (elem $elem.linked.81 (i32.const 0))
  (elem $elem.linked.186 (i32.const 0))
  (elem $elem.linked.308 (i32.const 0))
@@ -779,12 +871,15 @@
  (elem $elem.linked.15742 (i32.const 1))
  (elem $elem.linked.17937 (i32.const 1))
  (elem $elem.linked.18089 (i32.const 1) $lam_lambda_4617.linked.17972 $lam_lambda_4635.linked.17973)
- (elem $elem.linked.18119 (i32.const 3))
+ (elem $elem.linked.18361 (i32.const 3))
+ (elem $elem.linked.18483 (i32.const 3))
+ (elem $elem.linked.23237 (i32.const 3) $concat_4017.linked.15804)
+ (elem $elem.linked.23316 (i32.const 4))
  (export "log" (func $log))
  (export "handle_request" (func $handle_request))
  (export "handle_response" (func $handle_response))
  (export "memory" (memory $0))
- (export "_start" (func $_start.linked.18120))
+ (export "_start" (func $_start.linked.23317))
  (func $_gmain.linked.31 (result i32)
   (local $0 i32)
   (local $1 i32)
@@ -123043,16 +123138,35024 @@
    (call $_gmain.linked.17974)
   )
  )
- (func $log_1392.linked.18100 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+ (func $isValid_1309.linked.18112 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18128
+   (local.set $5
+    (call $>=_3337.linked.9834
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $>=_3337.linked.9665)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$2.linked.18129
+   )
+  )
+  (block $label$3.linked.18130
+   (local.set $6
+    (if (result i32)
+     (i32.shr_u
+      (local.get $5)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$5.linked.18131
+       (local.set $7
+        (call $<=_3332.linked.9833
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $<=_3332.linked.9649)
+         )
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $1)
+         )
+         (i32.const 110591)
+        )
+       )
+       (block $label$6.linked.18132
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $7)
+        (i32.const 31)
+       )
+       (local.get $7)
+       (call $>=_3337.linked.9834
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $>=_3337.linked.9665)
+        )
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (local.get $1)
+        )
+        (i32.const 114689)
+       )
+      )
+     )
+     (local.get $5)
+    )
+   )
+   (block $label$10.linked.18133
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (if (result i32)
+     (i32.shr_u
+      (local.get $6)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$12.linked.18134
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+      )
+      (return
+       (call $<=_3332.linked.9833
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $<=_3332.linked.9649)
+        )
+        (local.get $1)
+        (i32.const 2228223)
+       )
+      )
+     )
+     (local.get $6)
+    )
+   )
+   (drop
+    (block $label$14.linked.18135 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $code_1311.linked.18113 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18136
+   (local.set $5
+    (i32.shr_s
+     (local.get $1)
+     (i32.const 8)
+    )
+   )
+   (block $label$2.linked.18137
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (i32.xor
+     (i32.shl
+      (local.get $5)
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (drop
+    (block $label$3.linked.18138 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromCode_1314.linked.18114 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i64)
+  (local $13 f32)
+  (local $14 f64)
+  (local $15 i32)
+  (block $label$1.linked.18139
+   (local.set $7
+    (call $isValid_1309.linked.18112
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $isValid_1309.linked.18101)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$2.linked.18140
+   )
+  )
+  (block $label$3.linked.18141
+   (local.set $8
+    (i32.xor
+     (local.get $7)
+     (i32.const -2147483648)
+    )
+   )
+   (block $label$4.linked.18142
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $8)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$6.linked.18143
+      (local.set $5
+       (block $label$7.linked.18144 (result i32)
+        (i32.store
+         (local.tee $2
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 32)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $2)
+         (i32.const 22)
+        )
+        (i64.store offset=8
+         (local.get $2)
+         (i64.const 2334106421097295433)
+        )
+        (i64.store offset=16
+         (local.get $2)
+         (i64.const 7310577365311121507)
+        )
+        (i64.store offset=24
+         (local.get $2)
+         (i64.const 111482039902322)
+        )
+        (local.get $2)
+       )
+      )
+      (block $label$8.linked.18145
+      )
+     )
+     (block $label$9.linked.18146
+      (local.set $6
+       (block $label$10.linked.18147 (result i32)
+        (i32.store
+         (local.tee $2
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $2)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $2)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $2)
+         (i32.const 8943)
+        )
+        (i32.store offset=16
+         (local.get $2)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $2)
+         (local.get $5)
+        )
+        (local.get $2)
+       )
+      )
+      (block $label$11.linked.18148
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $6)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$13.linked.18149
+   (local.set $9
+    (local.get $1)
+   )
+   (block $label$14.linked.18150
+   )
+  )
+  (block $label$15.linked.18151
+   (local.set $10
+    (i32.shl
+     (local.get $9)
+     (i32.const 7)
+    )
+   )
+   (block $label$16.linked.18152
+   )
+  )
+  (block $label$17.linked.18153
+   (local.set $11
+    (i32.sub
+     (local.get $10)
+     (i32.const 126)
+    )
+   )
+   (block $label$18.linked.18154
+   )
+  )
+  (block (result i32)
+   (local.set $15
+    (local.get $11)
+   )
+   (drop
+    (block $label$19.linked.18155 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $15)
+  )
+ )
+ (func $succ_1365.linked.18115 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i64)
+  (local $11 f32)
+  (local $12 f64)
+  (block $label$1.linked.18156
+   (local.set $5
+    (call $code_1311.linked.18113
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $code_1311.linked.18103)
+     )
+     (local.get $1)
+    )
+   )
+   (block $label$2.linked.18157
+   )
+  )
+  (block $label$3.linked.18158
+   (local.set $8
+    (call $equal_3895.linked.15346
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $equal_3895.linked.15340)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $5)
+     )
+     (i32.const 2228223)
+    )
+   )
+   (block $label$4.linked.18159
+   )
+  )
+  (if
+   (i32.shr_u
+    (local.get $8)
+    (i32.const 31)
+   )
+   (block
+    (block $label$6.linked.18160
+     (local.set $7
+      (block $label$7.linked.18161 (result i32)
+       (i32.store
+        (local.tee $2
+         (call $malloc_1264.linked.1440
+          (global.get $malloc_1264.linked.1430)
+          (i32.const 56)
+         )
+        )
+        (i32.const 1)
+       )
+       (i32.store offset=4
+        (local.get $2)
+        (i32.const 42)
+       )
+       (i64.store offset=8
+        (local.get $2)
+        (i64.const 7235433442196877166)
+       )
+       (i64.store offset=16
+        (local.get $2)
+        (i64.const 7306086968263071008)
+       )
+       (i64.store offset=24
+        (local.get $2)
+        (i64.const 2338038274676978464)
+       )
+       (i64.store offset=32
+        (local.get $2)
+        (i64.const 7021147439204426102)
+       )
+       (i64.store offset=40
+        (local.get $2)
+        (i64.const 5057596443718612083)
+       )
+       (i64.store offset=48
+        (local.get $2)
+        (i64.const 17990)
+       )
+       (local.get $2)
+      )
+     )
+     (block $label$8.linked.18162
+     )
+    )
+    (block $label$9.linked.18163
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $5)
+      )
+     )
+    )
+    (return
+     (call $fail_4474.linked.17967
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $fail_4474.linked.17948)
+      )
+      (local.get $7)
+     )
+    )
+   )
+   (block
+    (block $label$11.linked.18164
+     (local.set $9
+      (call $equal_3895.linked.15346
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $equal_3895.linked.15340)
+       )
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (local.get $5)
+       )
+       (i32.const 110591)
+      )
+     )
+     (block $label$12.linked.18165
+     )
+    )
+    (if
+     (i32.shr_u
+      (local.get $9)
+      (i32.const 31)
+     )
+     (block
+      (block $label$14.linked.18166
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $5)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (i32.const 114689)
+       )
+      )
+     )
+     (block
+      (block $label$16.linked.18167
+       (local.set $6
+        (call $+_3507.linked.9869
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $+_3507.linked.9651)
+         )
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $5)
+         )
+         (i32.const 3)
+        )
+       )
+       (block $label$17.linked.18168
+       )
+      )
+      (block $label$18.linked.18169
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $5)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (local.get $6)
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+ (func $pred_1368.linked.18116 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i64)
+  (local $11 f32)
+  (local $12 f64)
+  (block $label$1.linked.18170
+   (local.set $5
+    (call $code_1311.linked.18113
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $code_1311.linked.18103)
+     )
+     (local.get $1)
+    )
+   )
+   (block $label$2.linked.18171
+   )
+  )
+  (block $label$3.linked.18172
+   (local.set $8
+    (call $equal_3895.linked.15346
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $equal_3895.linked.15340)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $5)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$4.linked.18173
+   )
+  )
+  (if
+   (i32.shr_u
+    (local.get $8)
+    (i32.const 31)
+   )
+   (block
+    (block $label$6.linked.18174
+     (local.set $7
+      (block $label$7.linked.18175 (result i32)
+       (i32.store
+        (local.tee $2
+         (call $malloc_1264.linked.1440
+          (global.get $malloc_1264.linked.1430)
+          (i32.const 56)
+         )
+        )
+        (i32.const 1)
+       )
+       (i32.store offset=4
+        (local.get $2)
+        (i32.const 42)
+       )
+       (i64.store offset=8
+        (local.get $2)
+        (i64.const 7235433442196877166)
+       )
+       (i64.store offset=16
+        (local.get $2)
+        (i64.const 7306086968263071008)
+       )
+       (i64.store offset=24
+        (local.get $2)
+        (i64.const 2338038274676978464)
+       )
+       (i64.store offset=32
+        (local.get $2)
+        (i64.const 7305437165682188662)
+       )
+       (i64.store offset=40
+        (local.get $2)
+        (i64.const 3472322957319565164)
+       )
+       (i64.store offset=48
+        (local.get $2)
+        (i64.const 12336)
+       )
+       (local.get $2)
+      )
+     )
+     (block $label$8.linked.18176
+     )
+    )
+    (block $label$9.linked.18177
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $5)
+      )
+     )
+    )
+    (return
+     (call $fail_4474.linked.17967
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $fail_4474.linked.17948)
+      )
+      (local.get $7)
+     )
+    )
+   )
+   (block
+    (block $label$11.linked.18178
+     (local.set $9
+      (call $equal_3895.linked.15346
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $equal_3895.linked.15340)
+       )
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (local.get $5)
+       )
+       (i32.const 114689)
+      )
+     )
+     (block $label$12.linked.18179
+     )
+    )
+    (if
+     (i32.shr_u
+      (local.get $9)
+      (i32.const 31)
+     )
+     (block
+      (block $label$14.linked.18180
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $5)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (i32.const 110591)
+       )
+      )
+     )
+     (block
+      (block $label$16.linked.18181
+       (local.set $6
+        (call $-_3511.linked.9870
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $-_3511.linked.9646)
+         )
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $5)
+         )
+         (i32.const 3)
+        )
+       )
+       (block $label$17.linked.18182
+       )
+      )
+      (block $label$18.linked.18183
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $5)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (local.get $6)
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+ (func $toString_1371.linked.18117 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i64)
+  (local $43 f32)
+  (local $44 f64)
+  (local $45 i32)
+  (block $label$1.linked.18184
+   (local.set $5
+    (i32.shr_s
+     (local.get $1)
+     (i32.const 8)
+    )
+   )
+   (block $label$2.linked.18185
+   )
+  )
+  (block $label$3.linked.18186
+   (local.set $6
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $5)
+      (i32.const 128)
+     )
+    )
+   )
+   (block $label$4.linked.18187
+   )
+  )
+  (block (result i32)
+   (local.set $45
+    (if (result i32)
+     (i32.shr_u
+      (local.get $6)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$6.linked.18188
+       (local.set $40
+        (block $label$7.linked.18189 (result i32)
+         (i32.store
+          (local.tee $2
+           (call $malloc_1264.linked.1440
+            (global.get $malloc_1264.linked.1430)
+            (i32.add
+             (i32.const 1)
+             (i32.const 8)
+            )
+           )
+          )
+          (i32.const 1)
+         )
+         (i32.store offset=4
+          (local.get $2)
+          (i32.const 1)
+         )
+         (local.get $2)
+        )
+       )
+       (block $label$8.linked.18190
+       )
+      )
+      (block $label$9.linked.18191
+       (local.set $41
+        (block $label$10.linked.18192 (result i32)
+         (i32.store8 offset=8
+          (local.get $40)
+          (local.get $5)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$11.linked.18193
+       )
+      )
+      (local.get $40)
+     )
+     (block (result i32)
+      (block $label$13.linked.18194
+       (local.set $7
+        (i32.const 0)
+       )
+       (block $label$14.linked.18195
+       )
+      )
+      (block $label$15.linked.18196
+       (local.set $8
+        (i32.const 0)
+       )
+       (block $label$16.linked.18197
+       )
+      )
+      (block $label$17.linked.18198
+       (local.set $9
+        (select
+         (i32.const -2)
+         (i32.const 2147483646)
+         (i32.le_u
+          (local.get $5)
+          (i32.const 2047)
+         )
+        )
+       )
+       (block $label$18.linked.18199
+       )
+      )
+      (drop
+       (if (result i32)
+        (i32.shr_u
+         (local.get $9)
+         (i32.const 31)
+        )
+        (block (result i32)
+         (block $label$20.linked.18200
+          (local.set $39
+           (block $label$21.linked.18201 (result i32)
+            (local.set $7
+             (i32.const 1)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$22.linked.18202
+          )
+         )
+         (block $label$23.linked.18203 (result i32)
+          (local.set $8
+           (i32.const 192)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (block (result i32)
+         (block $label$25.linked.18204
+          (local.set $36
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.le_u
+             (local.get $5)
+             (i32.const 65535)
+            )
+           )
+          )
+          (block $label$26.linked.18205
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $36)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$28.linked.18206
+            (local.set $38
+             (block $label$29.linked.18207 (result i32)
+              (local.set $7
+               (i32.const 2)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$30.linked.18208
+            )
+           )
+           (block $label$31.linked.18209 (result i32)
+            (local.set $8
+             (i32.const 224)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block (result i32)
+           (block $label$33.linked.18210
+            (local.set $37
+             (block $label$34.linked.18211 (result i32)
+              (local.set $7
+               (i32.const 3)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$35.linked.18212
+            )
+           )
+           (block $label$36.linked.18213 (result i32)
+            (local.set $8
+             (i32.const 240)
+            )
+            (i32.const 1879048190)
+           )
+          )
+         )
+        )
+       )
+      )
+      (block $label$37.linked.18214
+       (local.set $10
+        (local.get $7)
+       )
+       (block $label$38.linked.18215
+       )
+      )
+      (block $label$39.linked.18216
+       (local.set $11
+        (i32.add
+         (local.get $10)
+         (i32.const 1)
+        )
+       )
+       (block $label$40.linked.18217
+       )
+      )
+      (block $label$41.linked.18218
+       (local.set $12
+        (block $label$42.linked.18219 (result i32)
+         (i32.store
+          (local.tee $2
+           (call $malloc_1264.linked.1440
+            (global.get $malloc_1264.linked.1430)
+            (i32.add
+             (local.get $11)
+             (i32.const 8)
+            )
+           )
+          )
+          (i32.const 1)
+         )
+         (i32.store offset=4
+          (local.get $2)
+          (local.get $11)
+         )
+         (local.get $2)
+        )
+       )
+       (block $label$43.linked.18220
+       )
+      )
+      (block $label$44.linked.18221
+       (local.set $13
+        (local.get $7)
+       )
+       (block $label$45.linked.18222
+       )
+      )
+      (block $label$46.linked.18223
+       (local.set $14
+        (i32.mul
+         (i32.const 6)
+         (local.get $13)
+        )
+       )
+       (block $label$47.linked.18224
+       )
+      )
+      (block $label$48.linked.18225
+       (local.set $15
+        (i32.shr_u
+         (local.get $5)
+         (local.get $14)
+        )
+       )
+       (block $label$49.linked.18226
+       )
+      )
+      (block $label$50.linked.18227
+       (local.set $16
+        (local.get $8)
+       )
+       (block $label$51.linked.18228
+       )
+      )
+      (block $label$52.linked.18229
+       (local.set $17
+        (i32.add
+         (local.get $15)
+         (local.get $16)
+        )
+       )
+       (block $label$53.linked.18230
+       )
+      )
+      (block $label$54.linked.18231
+       (local.set $18
+        (block $label$55.linked.18232 (result i32)
+         (i32.store8 offset=8
+          (local.get $12)
+          (local.get $17)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$56.linked.18233
+       )
+      )
+      (block $label$57.linked.18234
+       (local.set $19
+        (i32.const 0)
+       )
+       (block $label$58.linked.18235
+       )
+      )
+      (block $label$59.linked.18236
+       (local.set $20
+        (block $label$60.linked.18237 (result i32)
+         (loop $label$61.linked.18238
+          (drop
+           (br_if $label$60.linked.18237
+            (i32.const 1879048190)
+            (i32.eqz
+             (i32.shr_u
+              (block $label$62.linked.18239 (result i32)
+               (block $label$63.linked.18240
+                (local.set $35
+                 (local.get $7)
+                )
+                (block $label$64.linked.18241
+                )
+               )
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.gt_u
+                 (local.get $35)
+                 (i32.const 0)
+                )
+               )
+              )
+              (i32.const 31)
+             )
+            )
+           )
+          )
+          (block $label$65.linked.18242
+           (drop
+            (block $label$66.linked.18243 (result i32)
+             (block $label$67.linked.18244
+              (local.set $21
+               (local.get $19)
+              )
+              (block $label$68.linked.18245
+              )
+             )
+             (block $label$69.linked.18246
+              (local.set $22
+               (i32.add
+                (local.get $21)
+                (i32.const 1)
+               )
+              )
+              (block $label$70.linked.18247
+              )
+             )
+             (block $label$71.linked.18248
+              (local.set $23
+               (block $label$72.linked.18249 (result i32)
+                (local.set $19
+                 (local.get $22)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block $label$73.linked.18250
+              )
+             )
+             (block $label$74.linked.18251
+              (local.set $24
+               (local.get $7)
+              )
+              (block $label$75.linked.18252
+              )
+             )
+             (block $label$76.linked.18253
+              (local.set $25
+               (i32.sub
+                (local.get $24)
+                (i32.const 1)
+               )
+              )
+              (block $label$77.linked.18254
+              )
+             )
+             (block $label$78.linked.18255
+              (local.set $26
+               (i32.mul
+                (i32.const 6)
+                (local.get $25)
+               )
+              )
+              (block $label$79.linked.18256
+              )
+             )
+             (block $label$80.linked.18257
+              (local.set $27
+               (i32.shr_u
+                (local.get $5)
+                (local.get $26)
+               )
+              )
+              (block $label$81.linked.18258
+              )
+             )
+             (block $label$82.linked.18259
+              (local.set $28
+               (local.get $19)
+              )
+              (block $label$83.linked.18260
+              )
+             )
+             (block $label$84.linked.18261
+              (local.set $29
+               (i32.add
+                (local.get $12)
+                (local.get $28)
+               )
+              )
+              (block $label$85.linked.18262
+              )
+             )
+             (block $label$86.linked.18263
+              (local.set $30
+               (i32.and
+                (local.get $27)
+                (i32.const 63)
+               )
+              )
+              (block $label$87.linked.18264
+              )
+             )
+             (block $label$88.linked.18265
+              (local.set $31
+               (i32.or
+                (i32.const 128)
+                (local.get $30)
+               )
+              )
+              (block $label$89.linked.18266
+              )
+             )
+             (block $label$90.linked.18267
+              (local.set $32
+               (block $label$91.linked.18268 (result i32)
+                (i32.store8 offset=8
+                 (local.get $29)
+                 (local.get $31)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block $label$92.linked.18269
+              )
+             )
+             (block $label$93.linked.18270
+              (local.set $33
+               (local.get $7)
+              )
+              (block $label$94.linked.18271
+              )
+             )
+             (block $label$95.linked.18272
+              (local.set $34
+               (i32.sub
+                (local.get $33)
+                (i32.const 1)
+               )
+              )
+              (block $label$96.linked.18273
+              )
+             )
+             (block $label$97.linked.18274 (result i32)
+              (local.set $7
+               (local.get $34)
+              )
+              (i32.const 1879048190)
+             )
+            )
+           )
+          )
+          (br $label$61.linked.18238)
+         )
+        )
+       )
+       (block $label$98.linked.18275
+       )
+      )
+      (local.get $12)
+     )
+    )
+   )
+   (drop
+    (block $label$99.linked.18276 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $45)
+  )
+ )
+ (func $<_1381.linked.18118 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18277
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.18278
+   )
+  )
+  (block $label$3.linked.18279
+   (local.set $7
+    (local.get $2)
+   )
+   (block $label$4.linked.18280
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_s
+      (local.get $6)
+      (local.get $7)
+     )
+    )
+   )
+   (drop
+    (block $label$5.linked.18281 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $<=_1386.linked.18119 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18282
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.18283
+   )
+  )
+  (block $label$3.linked.18284
+   (local.set $7
+    (local.get $2)
+   )
+   (block $label$4.linked.18285
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.le_s
+      (local.get $6)
+      (local.get $7)
+     )
+    )
+   )
+   (drop
+    (block $label$5.linked.18286 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $>_1391.linked.18120 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18287
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.18288
+   )
+  )
+  (block $label$3.linked.18289
+   (local.set $7
+    (local.get $2)
+   )
+   (block $label$4.linked.18290
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_s
+      (local.get $6)
+      (local.get $7)
+     )
+    )
+   )
+   (drop
+    (block $label$5.linked.18291 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $>=_1396.linked.18121 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18292
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.18293
+   )
+  )
+  (block $label$3.linked.18294
+   (local.set $7
+    (local.get $2)
+   )
+   (block $label$4.linked.18295
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.ge_s
+      (local.get $6)
+      (local.get $7)
+     )
+    )
+   )
+   (drop
+    (block $label$5.linked.18296 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $isAsciiDigit_1401.linked.18122 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18297
+   (local.set $5
+    (call $>=_1396.linked.18121
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $>=_1396.linked.18096)
+     )
+     (local.get $1)
+     (i32.const 12290)
+    )
+   )
+   (block $label$2.linked.18298
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (if (result i32)
+     (i32.shr_u
+      (local.get $5)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$4.linked.18299
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+      )
+      (return
+       (call $<=_1386.linked.18119
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $<=_1386.linked.18098)
+        )
+        (local.get $1)
+        (i32.const 14594)
+       )
+      )
+     )
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$6.linked.18300 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $isAsciiAlpha_1403.linked.18123 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i64)
+  (local $9 f32)
+  (local $10 f64)
+  (local $11 i32)
+  (block $label$1.linked.18301
+   (local.set $5
+    (call $>=_1396.linked.18121
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $>=_1396.linked.18096)
+     )
+     (local.get $1)
+     (i32.const 24834)
+    )
+   )
+   (block $label$2.linked.18302
+   )
+  )
+  (block $label$3.linked.18303
+   (local.set $6
+    (if (result i32)
+     (i32.shr_u
+      (local.get $5)
+      (i32.const 31)
+     )
+     (call $<=_1386.linked.18119
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $<=_1386.linked.18098)
+      )
+      (local.get $1)
+      (i32.const 31234)
+     )
+     (local.get $5)
+    )
+   )
+   (block $label$6.linked.18304
+   )
+  )
+  (block (result i32)
+   (local.set $11
+    (if (result i32)
+     (i32.shr_u
+      (local.get $6)
+      (i32.const 31)
+     )
+     (local.get $6)
+     (block (result i32)
+      (block $label$9.linked.18305
+       (local.set $7
+        (call $>=_1396.linked.18121
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $>=_1396.linked.18096)
+         )
+         (local.get $1)
+         (i32.const 16642)
+        )
+       )
+       (block $label$10.linked.18306
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $7)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$12.linked.18307
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $0)
+          )
+         )
+        )
+        (return
+         (call $<=_1386.linked.18119
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (global.get $<=_1386.linked.18098)
+          )
+          (local.get $1)
+          (i32.const 23042)
+         )
+        )
+       )
+       (local.get $7)
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$14.linked.18308 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $11)
+  )
+ )
+ (func $toAsciiLowercase_1405.linked.18124 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i64)
+  (local $10 f32)
+  (local $11 f64)
+  (local $12 i32)
+  (block $label$1.linked.18309
+   (local.set $7
+    (call $>=_1396.linked.18121
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $>=_1396.linked.18096)
+     )
+     (local.get $1)
+     (i32.const 16642)
+    )
+   )
+   (block $label$2.linked.18310
+   )
+  )
+  (block $label$3.linked.18311
+   (local.set $8
+    (if (result i32)
+     (i32.shr_u
+      (local.get $7)
+      (i32.const 31)
+     )
+     (call $<=_1386.linked.18119
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $<=_1386.linked.18098)
+      )
+      (local.get $1)
+      (i32.const 23042)
+     )
+     (local.get $7)
+    )
+   )
+   (block $label$6.linked.18312
+   )
+  )
+  (block (result i32)
+   (local.set $12
+    (if (result i32)
+     (i32.shr_u
+      (local.get $8)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$8.linked.18313
+       (local.set $5
+        (call $code_1311.linked.18113
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $code_1311.linked.18103)
+         )
+         (local.get $1)
+        )
+       )
+       (block $label$9.linked.18314
+       )
+      )
+      (block $label$10.linked.18315
+       (local.set $6
+        (call $+_3507.linked.9869
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $+_3507.linked.9651)
+         )
+         (local.get $5)
+         (i32.const 65)
+        )
+       )
+       (block $label$11.linked.18316
+       )
+      )
+      (block $label$12.linked.18317
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (local.get $6)
+       )
+      )
+     )
+     (local.get $1)
+    )
+   )
+   (drop
+    (block $label$14.linked.18318 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $12)
+  )
+ )
+ (func $toAsciiUppercase_1407.linked.18125 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i64)
+  (local $10 f32)
+  (local $11 f64)
+  (local $12 i32)
+  (block $label$1.linked.18319
+   (local.set $7
+    (call $>=_1396.linked.18121
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $>=_1396.linked.18096)
+     )
+     (local.get $1)
+     (i32.const 24834)
+    )
+   )
+   (block $label$2.linked.18320
+   )
+  )
+  (block $label$3.linked.18321
+   (local.set $8
+    (if (result i32)
+     (i32.shr_u
+      (local.get $7)
+      (i32.const 31)
+     )
+     (call $<=_1386.linked.18119
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $<=_1386.linked.18098)
+      )
+      (local.get $1)
+      (i32.const 31234)
+     )
+     (local.get $7)
+    )
+   )
+   (block $label$6.linked.18322
+   )
+  )
+  (block (result i32)
+   (local.set $12
+    (if (result i32)
+     (i32.shr_u
+      (local.get $8)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$8.linked.18323
+       (local.set $5
+        (call $code_1311.linked.18113
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $code_1311.linked.18103)
+         )
+         (local.get $1)
+        )
+       )
+       (block $label$9.linked.18324
+       )
+      )
+      (block $label$10.linked.18325
+       (local.set $6
+        (call $-_3511.linked.9870
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $-_3511.linked.9646)
+         )
+         (local.get $5)
+         (i32.const 65)
+        )
+       )
+       (block $label$11.linked.18326
+       )
+      )
+      (block $label$12.linked.18327
+       (drop
+        (call $decRef_1332.linked.1445
+         (global.get $decRef_1332.linked.1425)
+         (local.get $0)
+        )
+       )
+      )
+      (return
+       (call $fromCode_1314.linked.18114
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $fromCode_1314.linked.18100)
+        )
+        (local.get $6)
+       )
+      )
+     )
+     (local.get $1)
+    )
+   )
+   (drop
+    (block $label$14.linked.18328 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $12)
+  )
+ )
+ (func $_gmain.linked.18126 (result i32)
+  (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
+  (local $3 i64)
+  (local $4 f32)
+  (local $5 f64)
+  (block $label$1.linked.18329
+   (global.set $min_1307.linked.18104
+    (i32.const 1)
+   )
+   (block $label$2.linked.18330
+   )
+  )
+  (block $label$3.linked.18331
+   (global.set $max_1308.linked.18110
+    (i32.const 2228223)
+   )
+   (block $label$4.linked.18332
+   )
+  )
+  (block $label$5.linked.18333
+   (global.set $isValid_1309.linked.18101
+    (i32.const 0)
+   )
+   (block $label$6.linked.18334
+   )
+  )
+  (block $label$7.linked.18335
+   (global.set $code_1311.linked.18103
+    (i32.const 0)
+   )
+   (block $label$8.linked.18336
+   )
+  )
+  (block $label$9.linked.18337
+   (global.set $fromCode_1314.linked.18100
+    (i32.const 0)
+   )
+   (block $label$10.linked.18338
+   )
+  )
+  (block $label$11.linked.18339
+   (global.set $succ_1365.linked.18105
+    (i32.const 0)
+   )
+   (block $label$12.linked.18340
+   )
+  )
+  (block $label$13.linked.18341
+   (global.set $pred_1368.linked.18106
+    (i32.const 0)
+   )
+   (block $label$14.linked.18342
+   )
+  )
+  (block $label$15.linked.18343
+   (global.set $toString_1371.linked.18108
+    (i32.const 0)
+   )
+   (block $label$16.linked.18344
+   )
+  )
+  (block $label$17.linked.18345
+   (global.set $<_1381.linked.18095
+    (i32.const 0)
+   )
+   (block $label$18.linked.18346
+   )
+  )
+  (block $label$19.linked.18347
+   (global.set $<=_1386.linked.18098
+    (i32.const 0)
+   )
+   (block $label$20.linked.18348
+   )
+  )
+  (block $label$21.linked.18349
+   (global.set $>_1391.linked.18097
+    (i32.const 0)
+   )
+   (block $label$22.linked.18350
+   )
+  )
+  (block $label$23.linked.18351
+   (global.set $>=_1396.linked.18096
+    (i32.const 0)
+   )
+   (block $label$24.linked.18352
+   )
+  )
+  (block $label$25.linked.18353
+   (global.set $isAsciiDigit_1401.linked.18102
+    (i32.const 0)
+   )
+   (block $label$26.linked.18354
+   )
+  )
+  (block $label$27.linked.18355
+   (global.set $isAsciiAlpha_1403.linked.18099
+    (i32.const 0)
+   )
+   (block $label$28.linked.18356
+   )
+  )
+  (block $label$29.linked.18357
+   (global.set $toAsciiLowercase_1405.linked.18109
+    (i32.const 0)
+   )
+   (block $label$30.linked.18358
+   )
+  )
+  (block $label$31.linked.18359
+   (global.set $toAsciiUppercase_1407.linked.18107
+    (i32.const 0)
+   )
+   (block $label$32.linked.18360
+   )
+  )
+  (i32.const 1879048190)
+ )
+ (func $_start.linked.18127
+  (drop
+   (call $_gmain.linked.18126)
+  )
+ )
+ (func $toInt32_1518.linked.18381 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18396
+   (local.set $5
+    (block $label$2.linked.18397 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 8)
+       )
+      )
+      (i32.const 9)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18398
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18399 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $toUint32_1567.linked.18382 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18400
+   (local.set $5
+    (block $label$2.linked.18401 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 8)
+       )
+      )
+      (i32.const 11)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18402
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18403 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromInt32_1569.linked.18383 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18404
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18405
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (i32.load offset=4
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18406 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromUint32_1572.linked.18384 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18407
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18408
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (i32.load offset=4
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18409 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $toInt64_1575.linked.18385 (param $0 i32) (param $1 i64) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18410
+   (local.set $5
+    (block $label$2.linked.18411 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 5)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (i32.const 2)
+     )
+     (i64.store offset=8
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18412
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18413 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $toUint64_1577.linked.18386 (param $0 i32) (param $1 i64) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18414
+   (local.set $5
+    (block $label$2.linked.18415 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 12)
+     )
+     (i64.store offset=8
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18416
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18417 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromInt64_1579.linked.18387 (param $0 i32) (param $1 i32) (result i64)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i64)
+  (block $label$1.linked.18418
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18419
+   )
+  )
+  (block (result i64)
+   (local.set $9
+    (i64.load offset=8
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18420 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromUint64_1632.linked.18388 (param $0 i32) (param $1 i32) (result i64)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i64)
+  (block $label$1.linked.18421
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18422
+   )
+  )
+  (block (result i64)
+   (local.set $9
+    (i64.load offset=8
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18423 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $toFloat32_1635.linked.18389 (param $0 i32) (param $1 f32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18424
+   (local.set $5
+    (block $label$2.linked.18425 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 8)
+       )
+      )
+      (i32.const 10)
+     )
+     (f32.store offset=4
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18426
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18427 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromFloat32_1637.linked.18390 (param $0 i32) (param $1 i32) (result f32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 f32)
+  (block $label$1.linked.18428
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18429
+   )
+  )
+  (block (result f32)
+   (local.set $9
+    (f32.load offset=4
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18430 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $toFloat64_1668.linked.18391 (param $0 i32) (param $1 f64) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.18431
+   (local.set $5
+    (block $label$2.linked.18432 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 5)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (i32.const 1)
+     )
+     (f64.store offset=8
+      (local.get $2)
+      (local.get $1)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$3.linked.18433
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$4.linked.18434 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $fromFloat64_1670.linked.18392 (param $0 i32) (param $1 i32) (result f64)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 f64)
+  (block $label$1.linked.18435
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18436
+   )
+  )
+  (block (result f64)
+   (local.set $9
+    (f64.load offset=8
+     (local.get $5)
+    )
+   )
+   (drop
+    (block $label$3.linked.18437 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $wasmI32ToNumber_1701.linked.18393 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i64)
+  (local $13 i64)
+  (local $14 f32)
+  (local $15 f64)
+  (block $label$1.linked.18438
+   (local.set $7
+    (i32.shl
+     (local.get $1)
+     (i32.const 1)
+    )
+   )
+   (block $label$2.linked.18439
+   )
+  )
+  (block $label$3.linked.18440
+   (local.set $8
+    (i32.xor
+     (local.get $7)
+     (i32.const 1)
+    )
+   )
+   (block $label$4.linked.18441
+   )
+  )
+  (block $label$5.linked.18442
+   (local.set $9
+    (i32.shr_s
+     (local.get $8)
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.18443
+   )
+  )
+  (block $label$7.linked.18444
+   (local.set $10
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $9)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$8.linked.18445
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $10)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$10.linked.18446
+      (local.set $6
+       (local.get $8)
+      )
+      (block $label$11.linked.18447
+      )
+     )
+     (block $label$12.linked.18448
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+     )
+     (return
+      (local.get $6)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$14.linked.18449
+   (local.set $13
+    (i64.extend_i32_s
+     (local.get $1)
+    )
+   )
+   (block $label$15.linked.18450
+   )
+  )
+  (block $label$16.linked.18451
+   (local.set $11
+    (block $label$17.linked.18452 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 5)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (i32.const 2)
+     )
+     (i64.store offset=8
+      (local.get $2)
+      (local.get $13)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$18.linked.18453
+   )
+  )
+  (block $label$19.linked.18454
+   (local.set $5
+    (local.get $11)
+   )
+   (block $label$20.linked.18455
+   )
+  )
+  (block $label$21.linked.18456
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (local.get $5)
+  )
+ )
+ (func $_gmain.linked.18394 (result i32)
+  (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
+  (local $3 i64)
+  (local $4 f32)
+  (local $5 f64)
+  (block $label$1.linked.18457
+   (global.set $toInt32_1518.linked.18378
+    (i32.const 0)
+   )
+   (block $label$2.linked.18458
+   )
+  )
+  (block $label$3.linked.18459
+   (global.set $toUint32_1567.linked.18377
+    (i32.const 0)
+   )
+   (block $label$4.linked.18460
+   )
+  )
+  (block $label$5.linked.18461
+   (global.set $fromInt32_1569.linked.18368
+    (i32.const 0)
+   )
+   (block $label$6.linked.18462
+   )
+  )
+  (block $label$7.linked.18463
+   (global.set $fromUint32_1572.linked.18370
+    (i32.const 0)
+   )
+   (block $label$8.linked.18464
+   )
+  )
+  (block $label$9.linked.18465
+   (global.set $toInt64_1575.linked.18374
+    (i32.const 0)
+   )
+   (block $label$10.linked.18466
+   )
+  )
+  (block $label$11.linked.18467
+   (global.set $toUint64_1577.linked.18376
+    (i32.const 0)
+   )
+   (block $label$12.linked.18468
+   )
+  )
+  (block $label$13.linked.18469
+   (global.set $fromInt64_1579.linked.18371
+    (i32.const 0)
+   )
+   (block $label$14.linked.18470
+   )
+  )
+  (block $label$15.linked.18471
+   (global.set $fromUint64_1632.linked.18379
+    (i32.const 0)
+   )
+   (block $label$16.linked.18472
+   )
+  )
+  (block $label$17.linked.18473
+   (global.set $toFloat32_1635.linked.18373
+    (i32.const 0)
+   )
+   (block $label$18.linked.18474
+   )
+  )
+  (block $label$19.linked.18475
+   (global.set $fromFloat32_1637.linked.18367
+    (i32.const 0)
+   )
+   (block $label$20.linked.18476
+   )
+  )
+  (block $label$21.linked.18477
+   (global.set $toFloat64_1668.linked.18372
+    (i32.const 0)
+   )
+   (block $label$22.linked.18478
+   )
+  )
+  (block $label$23.linked.18479
+   (global.set $fromFloat64_1670.linked.18369
+    (i32.const 0)
+   )
+   (block $label$24.linked.18480
+   )
+  )
+  (block $label$25.linked.18481
+   (global.set $wasmI32ToNumber_1701.linked.18375
+    (i32.const 0)
+   )
+   (block $label$26.linked.18482
+   )
+  )
+  (i32.const 1879048190)
+ )
+ (func $_start.linked.18395
+  (drop
+   (call $_gmain.linked.18394)
+  )
+ )
+ (func $length_1403.linked.18536 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i64)
+  (local $24 f32)
+  (local $25 f64)
+  (block $label$1.linked.18581
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18582
+   )
+  )
+  (block $label$3.linked.18583
+   (local.set $6
+    (i32.load offset=4
+     (local.get $5)
+    )
+   )
+   (block $label$4.linked.18584
+   )
+  )
+  (block $label$5.linked.18585
+   (local.set $7
+    (i32.const 0)
+   )
+   (block $label$6.linked.18586
+   )
+  )
+  (block $label$7.linked.18587
+   (local.set $8
+    (i32.add
+     (local.get $5)
+     (i32.const 8)
+    )
+   )
+   (block $label$8.linked.18588
+   )
+  )
+  (block $label$9.linked.18589
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$10.linked.18590
+   )
+  )
+  (block $label$11.linked.18591
+   (local.set $10
+    (local.get $9)
+   )
+   (block $label$12.linked.18592
+   )
+  )
+  (block $label$13.linked.18593
+   (local.set $11
+    (i32.add
+     (local.get $10)
+     (local.get $6)
+    )
+   )
+   (block $label$14.linked.18594
+   )
+  )
+  (block $label$15.linked.18595
+   (local.set $12
+    (block $label$16.linked.18596 (result i32)
+     (loop $label$17.linked.18597
+      (drop
+       (br_if $label$16.linked.18596
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$18.linked.18598 (result i32)
+           (block $label$19.linked.18599
+            (local.set $21
+             (local.get $9)
+            )
+            (block $label$20.linked.18600
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $21)
+             (local.get $11)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$21.linked.18601
+       (drop
+        (block $label$22.linked.18602 (result i32)
+         (block $label$23.linked.18603
+          (local.set $13
+           (local.get $9)
+          )
+          (block $label$24.linked.18604
+          )
+         )
+         (block $label$25.linked.18605
+          (local.set $14
+           (i32.load8_u
+            (local.get $13)
+           )
+          )
+          (block $label$26.linked.18606
+          )
+         )
+         (block $label$27.linked.18607
+          (local.set $15
+           (i32.and
+            (local.get $14)
+            (i32.const 192)
+           )
+          )
+          (block $label$28.linked.18608
+          )
+         )
+         (block $label$29.linked.18609
+          (local.set $16
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.ne
+             (local.get $15)
+             (i32.const 128)
+            )
+           )
+          )
+          (block $label$30.linked.18610
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $16)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$32.linked.18611
+             (local.set $19
+              (local.get $7)
+             )
+             (block $label$33.linked.18612
+             )
+            )
+            (block $label$34.linked.18613
+             (local.set $20
+              (i32.add
+               (local.get $19)
+               (i32.const 1)
+              )
+             )
+             (block $label$35.linked.18614
+             )
+            )
+            (block $label$36.linked.18615 (result i32)
+             (local.set $7
+              (local.get $20)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$38.linked.18616
+          (local.set $17
+           (local.get $9)
+          )
+          (block $label$39.linked.18617
+          )
+         )
+         (block $label$40.linked.18618
+          (local.set $18
+           (i32.add
+            (local.get $17)
+            (i32.const 1)
+           )
+          )
+          (block $label$41.linked.18619
+          )
+         )
+         (block $label$42.linked.18620 (result i32)
+          (local.set $9
+           (local.get $18)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$17.linked.18597)
+     )
+    )
+   )
+   (block $label$43.linked.18621
+   )
+  )
+  (block $label$44.linked.18622
+   (local.set $22
+    (local.get $7)
+   )
+   (block $label$45.linked.18623
+   )
+  )
+  (block $label$46.linked.18624
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+  )
+  (return
+   (call $wasmI32ToNumber_1701.linked.18393
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $wasmI32ToNumber_1701.linked.18375)
+    )
+    (local.get $22)
+   )
+  )
+ )
+ (func $byteLength_1471.linked.18537 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
   (local $4 i32)
   (local $5 i32)
   (local $6 i32)
   (local $7 i64)
   (local $8 f32)
   (local $9 f64)
-  (block $closure_elements.3.linked.18105 (result i32)
-   (block $compile_block.2.linked.18106 (result i32)
-    (call $wimport_http_handler_log_1408.linked.18099
+  (block $label$1.linked.18625
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18626
+   )
+  )
+  (block $label$3.linked.18627
+   (local.set $6
+    (i32.load offset=4
+     (local.get $5)
+    )
+   )
+   (block $label$4.linked.18628
+   )
+  )
+  (block $label$5.linked.18629
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+  )
+  (return
+   (call $wasmI32ToNumber_1701.linked.18393
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $wasmI32ToNumber_1701.linked.18375)
+    )
+    (local.get $6)
+   )
+  )
+ )
+ (func $isEmpty_1474.linked.18538 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i64)
+  (local $8 f32)
+  (local $9 f64)
+  (local $10 i32)
+  (block $label$1.linked.18630
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.18631
+   )
+  )
+  (block $label$3.linked.18632
+   (local.set $6
+    (i32.load offset=4
+     (local.get $5)
+    )
+   )
+   (block $label$4.linked.18633
+   )
+  )
+  (block (result i32)
+   (local.set $10
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $6)
+      (i32.const 0)
+     )
+    )
+   )
+   (drop
+    (block $label$5.linked.18634 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $10)
+  )
+ )
+ (func $indexOf_1477.linked.18539 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i64)
+  (local $49 f32)
+  (local $50 f64)
+  (block $label$1.linked.18635
+   (local.set $10
+    (local.get $1)
+   )
+   (block $label$2.linked.18636
+   )
+  )
+  (block $label$3.linked.18637
+   (local.set $11
+    (local.get $2)
+   )
+   (block $label$4.linked.18638
+   )
+  )
+  (block $label$5.linked.18639
+   (local.set $12
+    (i32.load offset=4
+     (local.get $11)
+    )
+   )
+   (block $label$6.linked.18640
+   )
+  )
+  (block $label$7.linked.18641
+   (local.set $13
+    (i32.load offset=4
+     (local.get $10)
+    )
+   )
+   (block $label$8.linked.18642
+   )
+  )
+  (block $label$9.linked.18643
+   (local.set $14
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_u
+      (local.get $13)
+      (local.get $12)
+     )
+    )
+   )
+   (block $label$10.linked.18644
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $14)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$12.linked.18645
+      (local.set $9
+       (block $label$13.linked.18646 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 20)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 501102191)
+        )
+        (i32.store offset=8
+         (local.get $3)
+         (i32.const 7)
+        )
+        (i32.store offset=12
+         (local.get $3)
+         (i32.const 3)
+        )
+        (i32.store offset=16
+         (local.get $3)
+         (i32.const 0)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$14.linked.18647
+      )
+     )
+     (block $label$15.linked.18648
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+     )
+     (return
+      (local.get $9)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$17.linked.18649
+   (local.set $15
+    (i32.const 0)
+   )
+   (block $label$18.linked.18650
+   )
+  )
+  (block $label$19.linked.18651
+   (local.set $16
+    (i32.add
+     (local.get $11)
+     (i32.const 8)
+    )
+   )
+   (block $label$20.linked.18652
+   )
+  )
+  (block $label$21.linked.18653
+   (local.set $17
+    (local.get $16)
+   )
+   (block $label$22.linked.18654
+   )
+  )
+  (block $label$23.linked.18655
+   (local.set $18
+    (i32.add
+     (local.get $10)
+     (i32.const 8)
+    )
+   )
+   (block $label$24.linked.18656
+   )
+  )
+  (block $label$25.linked.18657
+   (local.set $19
+    (local.get $17)
+   )
+   (block $label$26.linked.18658
+   )
+  )
+  (block $label$27.linked.18659
+   (local.set $20
+    (i32.add
+     (local.get $19)
+     (local.get $12)
+    )
+   )
+   (block $label$28.linked.18660
+   )
+  )
+  (block $label$29.linked.18661
+   (local.set $21
+    (i32.sub
+     (local.get $20)
+     (local.get $13)
+    )
+   )
+   (block $label$30.linked.18662
+   )
+  )
+  (block $label$31.linked.18663
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (i32.const 1)
+    )
+   )
+   (block $label$32.linked.18664
+   )
+  )
+  (block $label$33.linked.18665
+   (local.set $23
+    (block $label$34.linked.18666 (result i32)
+     (loop $label$35.linked.18667
+      (drop
+       (br_if $label$34.linked.18666
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$36.linked.18668 (result i32)
+           (block $label$37.linked.18669
+            (local.set $47
+             (local.get $17)
+            )
+            (block $label$38.linked.18670
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $47)
+             (local.get $22)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$39.linked.18671
+       (drop
+        (block $label$40.linked.18672 (result i32)
+         (block $label$41.linked.18673
+          (local.set $24
+           (local.get $17)
+          )
+          (block $label$42.linked.18674
+          )
+         )
+         (block $label$43.linked.18675
+          (local.set $25
+           (block $label$44.linked.18676 (result i32)
+            (local.set $3
+             (local.get $24)
+            )
+            (local.set $4
+             (local.get $18)
+            )
+            (local.set $5
+             (local.get $13)
+            )
+            (loop $label$45.linked.18677
+             (drop
+              (br_if $label$44.linked.18676
+               (i32.const 0)
+               (i32.eqz
+                (local.get $5)
+               )
+              )
+             )
+             (if
+              (i32.ne
+               (i32.load8_u
+                (local.get $3)
+               )
+               (i32.load8_u
+                (local.get $4)
+               )
+              )
+              (br $label$44.linked.18676
+               (select
+                (i32.const -1)
+                (i32.const 1)
+                (i32.lt_u
+                 (i32.load8_u
+                  (local.get $3)
+                 )
+                 (i32.load8_u
+                  (local.get $4)
+                 )
+                )
+               )
+              )
+              (block
+               (local.set $3
+                (i32.add
+                 (local.get $3)
+                 (i32.const 1)
+                )
+               )
+               (local.set $4
+                (i32.add
+                 (local.get $4)
+                 (i32.const 1)
+                )
+               )
+               (local.set $5
+                (i32.sub
+                 (local.get $5)
+                 (i32.const 1)
+                )
+               )
+               (br $label$45.linked.18677)
+              )
+             )
+            )
+           )
+          )
+          (block $label$48.linked.18678
+          )
+         )
+         (block $label$49.linked.18679
+          (local.set $26
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $25)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$50.linked.18680
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $26)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$52.linked.18681
+             (local.set $46
+              (local.get $15)
+             )
+             (block $label$53.linked.18682
+             )
+            )
+            (block $label$54.linked.18683
+             (local.set $6
+              (i32.xor
+               (i32.shl
+                (local.get $46)
+                (i32.const 1)
+               )
+               (i32.const 1)
+              )
+             )
+             (block $label$55.linked.18684
+             )
+            )
+            (block $label$56.linked.18685
+             (local.set $7
+              (block $label$57.linked.18686 (result i32)
+               (i32.store
+                (local.tee $3
+                 (call $malloc_1264.linked.1440
+                  (global.get $malloc_1264.linked.1430)
+                  (i32.const 24)
+                 )
+                )
+                (i32.const 2)
+               )
+               (i32.store offset=4
+                (local.get $3)
+                (i32.const 501102191)
+               )
+               (i32.store offset=8
+                (local.get $3)
+                (i32.const 7)
+               )
+               (i32.store offset=12
+                (local.get $3)
+                (i32.const 1)
+               )
+               (i32.store offset=16
+                (local.get $3)
+                (i32.const 1)
+               )
+               (i32.store offset=20
+                (local.get $3)
+                (local.get $6)
+               )
+               (local.get $3)
+              )
+             )
+             (block $label$58.linked.18687
+             )
+            )
+            (block $label$59.linked.18688
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $0)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $1)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $2)
+              )
+             )
+            )
+            (return
+             (local.get $7)
+            )
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$61.linked.18689
+          (local.set $27
+           (local.get $15)
+          )
+          (block $label$62.linked.18690
+          )
+         )
+         (block $label$63.linked.18691
+          (local.set $28
+           (i32.add
+            (local.get $27)
+            (i32.const 1)
+           )
+          )
+          (block $label$64.linked.18692
+          )
+         )
+         (block $label$65.linked.18693
+          (local.set $29
+           (block $label$66.linked.18694 (result i32)
+            (local.set $15
+             (local.get $28)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$67.linked.18695
+          )
+         )
+         (block $label$68.linked.18696
+          (local.set $30
+           (local.get $17)
+          )
+          (block $label$69.linked.18697
+          )
+         )
+         (block $label$70.linked.18698
+          (local.set $31
+           (i32.load8_u
+            (local.get $30)
+           )
+          )
+          (block $label$71.linked.18699
+          )
+         )
+         (block $label$72.linked.18700
+          (local.set $32
+           (i32.and
+            (local.get $31)
+            (i32.const 128)
+           )
+          )
+          (block $label$73.linked.18701
+          )
+         )
+         (block $label$74.linked.18702
+          (local.set $33
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $32)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$75.linked.18703
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $33)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$77.linked.18704
+            (local.set $44
+             (local.get $17)
+            )
+            (block $label$78.linked.18705
+            )
+           )
+           (block $label$79.linked.18706
+            (local.set $45
+             (i32.add
+              (local.get $44)
+              (i32.const 1)
+             )
+            )
+            (block $label$80.linked.18707
+            )
+           )
+           (block $label$81.linked.18708 (result i32)
+            (local.set $17
+             (local.get $45)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block (result i32)
+           (block $label$83.linked.18709
+            (local.set $34
+             (i32.and
+              (local.get $31)
+              (i32.const 240)
+             )
+            )
+            (block $label$84.linked.18710
+            )
+           )
+           (block $label$85.linked.18711
+            (local.set $35
+             (select
+              (i32.const -2)
+              (i32.const 2147483646)
+              (i32.eq
+               (local.get $34)
+               (i32.const 240)
+              )
+             )
+            )
+            (block $label$86.linked.18712
+            )
+           )
+           (if (result i32)
+            (i32.shr_u
+             (local.get $35)
+             (i32.const 31)
+            )
+            (block (result i32)
+             (block $label$88.linked.18713
+              (local.set $42
+               (local.get $17)
+              )
+              (block $label$89.linked.18714
+              )
+             )
+             (block $label$90.linked.18715
+              (local.set $43
+               (i32.add
+                (local.get $42)
+                (i32.const 4)
+               )
+              )
+              (block $label$91.linked.18716
+              )
+             )
+             (block $label$92.linked.18717 (result i32)
+              (local.set $17
+               (local.get $43)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block (result i32)
+             (block $label$94.linked.18718
+              (local.set $36
+               (i32.and
+                (local.get $31)
+                (i32.const 224)
+               )
+              )
+              (block $label$95.linked.18719
+              )
+             )
+             (block $label$96.linked.18720
+              (local.set $37
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $36)
+                 (i32.const 224)
+                )
+               )
+              )
+              (block $label$97.linked.18721
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $37)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$99.linked.18722
+                (local.set $40
+                 (local.get $17)
+                )
+                (block $label$100.linked.18723
+                )
+               )
+               (block $label$101.linked.18724
+                (local.set $41
+                 (i32.add
+                  (local.get $40)
+                  (i32.const 3)
+                 )
+                )
+                (block $label$102.linked.18725
+                )
+               )
+               (block $label$103.linked.18726 (result i32)
+                (local.set $17
+                 (local.get $41)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block (result i32)
+               (block $label$105.linked.18727
+                (local.set $38
+                 (local.get $17)
+                )
+                (block $label$106.linked.18728
+                )
+               )
+               (block $label$107.linked.18729
+                (local.set $39
+                 (i32.add
+                  (local.get $38)
+                  (i32.const 2)
+                 )
+                )
+                (block $label$108.linked.18730
+                )
+               )
+               (block $label$109.linked.18731 (result i32)
+                (local.set $17
+                 (local.get $39)
+                )
+                (i32.const 1879048190)
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+      (br $label$35.linked.18667)
+     )
+    )
+   )
+   (block $label$110.linked.18732
+   )
+  )
+  (block $label$111.linked.18733
+   (local.set $8
+    (block $label$112.linked.18734 (result i32)
+     (i32.store
+      (local.tee $3
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 20)
+       )
+      )
+      (i32.const 2)
+     )
+     (i32.store offset=4
+      (local.get $3)
+      (i32.const 501102191)
+     )
+     (i32.store offset=8
+      (local.get $3)
+      (i32.const 7)
+     )
+     (i32.store offset=12
+      (local.get $3)
+      (i32.const 3)
+     )
+     (i32.store offset=16
+      (local.get $3)
+      (i32.const 0)
+     )
+     (local.get $3)
+    )
+   )
+   (block $label$113.linked.18735
+   )
+  )
+  (block $label$114.linked.18736
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (return
+   (local.get $8)
+  )
+ )
+ (func $lastIndexOf_1496.linked.18540 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i64)
+  (local $40 f32)
+  (local $41 f64)
+  (block $label$1.linked.18737
+   (local.set $6
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$2.linked.18738
+   )
+  )
+  (block $label$3.linked.18739
+   (local.set $7
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$4.linked.18740
+   )
+  )
+  (block $label$5.linked.18741
+   (local.set $8
+    (call $-_3511.linked.9870
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $-_3511.linked.9646)
+     )
+     (local.get $6)
+     (local.get $7)
+    )
+   )
+   (block $label$6.linked.18742
+   )
+  )
+  (block $label$7.linked.18743
+   (local.set $13
+    (local.get $1)
+   )
+   (block $label$8.linked.18744
+   )
+  )
+  (block $label$9.linked.18745
+   (local.set $14
+    (local.get $2)
+   )
+   (block $label$10.linked.18746
+   )
+  )
+  (block $label$11.linked.18747
+   (local.set $15
+    (i32.load offset=4
+     (local.get $13)
+    )
+   )
+   (block $label$12.linked.18748
+   )
+  )
+  (block $label$13.linked.18749
+   (local.set $16
+    (i32.load offset=4
+     (local.get $14)
+    )
+   )
+   (block $label$14.linked.18750
+   )
+  )
+  (block $label$15.linked.18751
+   (local.set $17
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_u
+      (local.get $15)
+      (local.get $16)
+     )
+    )
+   )
+   (block $label$16.linked.18752
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $17)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$18.linked.18753
+      (local.set $12
+       (block $label$19.linked.18754 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 20)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 501102191)
+        )
+        (i32.store offset=8
+         (local.get $3)
+         (i32.const 7)
+        )
+        (i32.store offset=12
+         (local.get $3)
+         (i32.const 3)
+        )
+        (i32.store offset=16
+         (local.get $3)
+         (i32.const 0)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$20.linked.18755
+      )
+     )
+     (block $label$21.linked.18756
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $8)
+       )
+      )
+     )
+     (return
+      (local.get $12)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$23.linked.18757
+   (local.set $18
+    (i32.shr_s
+     (local.get $8)
+     (i32.const 1)
+    )
+   )
+   (block $label$24.linked.18758
+   )
+  )
+  (block $label$25.linked.18759
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $8)
+    )
+   )
+  )
+  (block $label$26.linked.18760
+   (local.set $19
+    (local.get $18)
+   )
+   (block $label$27.linked.18761
+   )
+  )
+  (block $label$28.linked.18762
+   (local.set $20
+    (i32.add
+     (local.get $13)
+     (i32.const 8)
+    )
+   )
+   (block $label$29.linked.18763
+   )
+  )
+  (block $label$30.linked.18764
+   (local.set $21
+    (i32.add
+     (local.get $14)
+     (i32.const 8)
+    )
+   )
+   (block $label$31.linked.18765
+   )
+  )
+  (block $label$32.linked.18766
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (local.get $16)
+    )
+   )
+   (block $label$33.linked.18767
+   )
+  )
+  (block $label$34.linked.18768
+   (local.set $23
+    (i32.sub
+     (local.get $22)
+     (local.get $15)
+    )
+   )
+   (block $label$35.linked.18769
+   )
+  )
+  (block $label$36.linked.18770
+   (local.set $24
+    (local.get $23)
+   )
+   (block $label$37.linked.18771
+   )
+  )
+  (block $label$38.linked.18772
+   (local.set $25
+    (block $label$39.linked.18773 (result i32)
+     (loop $label$40.linked.18774
+      (drop
+       (br_if $label$39.linked.18773
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$41.linked.18775 (result i32)
+           (block $label$42.linked.18776
+            (local.set $38
+             (local.get $24)
+            )
+            (block $label$43.linked.18777
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.ge_u
+             (local.get $38)
+             (local.get $21)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$44.linked.18778
+       (drop
+        (block $label$45.linked.18779 (result i32)
+         (block $label$46.linked.18780
+          (local.set $26
+           (local.get $24)
+          )
+          (block $label$47.linked.18781
+          )
+         )
+         (block $label$48.linked.18782
+          (local.set $27
+           (i32.load8_u
+            (local.get $26)
+           )
+          )
+          (block $label$49.linked.18783
+          )
+         )
+         (block $label$50.linked.18784
+          (local.set $28
+           (i32.and
+            (local.get $27)
+            (i32.const 192)
+           )
+          )
+          (block $label$51.linked.18785
+          )
+         )
+         (block $label$52.linked.18786
+          (local.set $29
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $28)
+             (i32.const 128)
+            )
+           )
+          )
+          (block $label$53.linked.18787
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $29)
+            (i32.const 31)
+           )
+           (br $label$44.linked.18778)
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$56.linked.18788
+          (local.set $30
+           (local.get $24)
+          )
+          (block $label$57.linked.18789
+          )
+         )
+         (block $label$58.linked.18790
+          (local.set $31
+           (block $label$59.linked.18791 (result i32)
+            (local.set $3
+             (local.get $30)
+            )
+            (local.set $4
+             (local.get $20)
+            )
+            (local.set $5
+             (local.get $15)
+            )
+            (loop $label$60.linked.18792
+             (drop
+              (br_if $label$59.linked.18791
+               (i32.const 0)
+               (i32.eqz
+                (local.get $5)
+               )
+              )
+             )
+             (if
+              (i32.ne
+               (i32.load8_u
+                (local.get $3)
+               )
+               (i32.load8_u
+                (local.get $4)
+               )
+              )
+              (br $label$59.linked.18791
+               (select
+                (i32.const -1)
+                (i32.const 1)
+                (i32.lt_u
+                 (i32.load8_u
+                  (local.get $3)
+                 )
+                 (i32.load8_u
+                  (local.get $4)
+                 )
+                )
+               )
+              )
+              (block
+               (local.set $3
+                (i32.add
+                 (local.get $3)
+                 (i32.const 1)
+                )
+               )
+               (local.set $4
+                (i32.add
+                 (local.get $4)
+                 (i32.const 1)
+                )
+               )
+               (local.set $5
+                (i32.sub
+                 (local.get $5)
+                 (i32.const 1)
+                )
+               )
+               (br $label$60.linked.18792)
+              )
+             )
+            )
+           )
+          )
+          (block $label$63.linked.18793
+          )
+         )
+         (block $label$64.linked.18794
+          (local.set $32
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $31)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$65.linked.18795
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $32)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$67.linked.18796
+             (local.set $35
+              (local.get $19)
+             )
+             (block $label$68.linked.18797
+             )
+            )
+            (block $label$69.linked.18798
+             (local.set $9
+              (i32.xor
+               (i32.shl
+                (local.get $35)
+                (i32.const 1)
+               )
+               (i32.const 1)
+              )
+             )
+             (block $label$70.linked.18799
+             )
+            )
+            (block $label$71.linked.18800
+             (local.set $10
+              (block $label$72.linked.18801 (result i32)
+               (i32.store
+                (local.tee $3
+                 (call $malloc_1264.linked.1440
+                  (global.get $malloc_1264.linked.1430)
+                  (i32.const 24)
+                 )
+                )
+                (i32.const 2)
+               )
+               (i32.store offset=4
+                (local.get $3)
+                (i32.const 501102191)
+               )
+               (i32.store offset=8
+                (local.get $3)
+                (i32.const 7)
+               )
+               (i32.store offset=12
+                (local.get $3)
+                (i32.const 1)
+               )
+               (i32.store offset=16
+                (local.get $3)
+                (i32.const 1)
+               )
+               (i32.store offset=20
+                (local.get $3)
+                (local.get $9)
+               )
+               (local.get $3)
+              )
+             )
+             (block $label$73.linked.18802
+             )
+            )
+            (block $label$74.linked.18803
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $0)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $1)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $2)
+              )
+             )
+            )
+            (return
+             (local.get $10)
+            )
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$76.linked.18804
+          (local.set $33
+           (local.get $19)
+          )
+          (block $label$77.linked.18805
+          )
+         )
+         (block $label$78.linked.18806
+          (local.set $34
+           (i32.sub
+            (local.get $33)
+            (i32.const 1)
+           )
+          )
+          (block $label$79.linked.18807
+          )
+         )
+         (block $label$80.linked.18808 (result i32)
+          (local.set $19
+           (local.get $34)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$81.linked.18809 (result i32)
+        (block $label$82.linked.18810
+         (local.set $36
+          (local.get $24)
+         )
+         (block $label$83.linked.18811
+         )
+        )
+        (block $label$84.linked.18812
+         (local.set $37
+          (i32.sub
+           (local.get $36)
+           (i32.const 1)
+          )
+         )
+         (block $label$85.linked.18813
+         )
+        )
+        (block $label$86.linked.18814 (result i32)
+         (local.set $24
+          (local.get $37)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$40.linked.18774)
+     )
+    )
+   )
+   (block $label$87.linked.18815
+   )
+  )
+  (block $label$88.linked.18816
+   (local.set $11
+    (block $label$89.linked.18817 (result i32)
+     (i32.store
+      (local.tee $3
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 20)
+       )
+      )
+      (i32.const 2)
+     )
+     (i32.store offset=4
+      (local.get $3)
+      (i32.const 501102191)
+     )
+     (i32.store offset=8
+      (local.get $3)
+      (i32.const 7)
+     )
+     (i32.store offset=12
+      (local.get $3)
+      (i32.const 3)
+     )
+     (i32.store offset=16
+      (local.get $3)
+      (i32.const 0)
+     )
+     (local.get $3)
+    )
+   )
+   (block $label$90.linked.18818
+   )
+  )
+  (block $label$91.linked.18819
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (return
+   (local.get $11)
+  )
+ )
+ (func $getCodePoint_1509.linked.18541 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i64)
+  (local $60 f32)
+  (local $61 f64)
+  (block $label$1.linked.18820
+   (local.set $7
+    (i32.const 0)
+   )
+   (block $label$2.linked.18821
+   )
+  )
+  (block $label$3.linked.18822
+   (local.set $8
+    (i32.const 0)
+   )
+   (block $label$4.linked.18823
+   )
+  )
+  (block $label$5.linked.18824
+   (local.set $9
+    (i32.const 0)
+   )
+   (block $label$6.linked.18825
+   )
+  )
+  (block $label$7.linked.18826
+   (local.set $10
+    (i32.const 128)
+   )
+   (block $label$8.linked.18827
+   )
+  )
+  (block $label$9.linked.18828
+   (local.set $11
+    (i32.const 191)
+   )
+   (block $label$10.linked.18829
+   )
+  )
+  (block $label$11.linked.18830
+   (local.set $12
+    (i32.const 0)
+   )
+   (block $label$12.linked.18831
+   )
+  )
+  (block $label$13.linked.18832
+   (local.set $13
+    (block $label$14.linked.18833 (result i32)
+     (loop $label$15.linked.18834
+      (drop
+       (br_if $label$14.linked.18833
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$16.linked.18835 (result i32)
+           (i32.const -2)
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$17.linked.18836
+       (drop
+        (block $label$18.linked.18837 (result i32)
+         (block $label$19.linked.18838
+          (local.set $14
+           (local.get $12)
+          )
+          (block $label$20.linked.18839
+          )
+         )
+         (block $label$21.linked.18840
+          (local.set $15
+           (i32.add
+            (local.get $1)
+            (local.get $14)
+           )
+          )
+          (block $label$22.linked.18841
+          )
+         )
+         (block $label$23.linked.18842
+          (local.set $16
+           (i32.load8_u
+            (local.get $15)
+           )
+          )
+          (block $label$24.linked.18843
+          )
+         )
+         (block $label$25.linked.18844
+          (local.set $17
+           (local.get $12)
+          )
+          (block $label$26.linked.18845
+          )
+         )
+         (block $label$27.linked.18846
+          (local.set $18
+           (i32.add
+            (local.get $17)
+            (i32.const 1)
+           )
+          )
+          (block $label$28.linked.18847
+          )
+         )
+         (block $label$29.linked.18848
+          (local.set $19
+           (block $label$30.linked.18849 (result i32)
+            (local.set $12
+             (local.get $18)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$31.linked.18850
+          )
+         )
+         (block $label$32.linked.18851
+          (local.set $20
+           (local.get $9)
+          )
+          (block $label$33.linked.18852
+          )
+         )
+         (block $label$34.linked.18853
+          (local.set $21
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $20)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$35.linked.18854
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $21)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$37.linked.18855
+             (local.set $41
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.ge_u
+                (local.get $16)
+                (i32.const 0)
+               )
+              )
+             )
+             (block $label$38.linked.18856
+             )
+            )
+            (block $label$39.linked.18857
+             (local.set $42
+              (if (result i32)
+               (i32.shr_u
+                (local.get $41)
+                (i32.const 31)
+               )
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.le_u
+                 (local.get $16)
+                 (i32.const 127)
+                )
+               )
+               (local.get $41)
+              )
+             )
+             (block $label$42.linked.18858
+             )
+            )
+            (drop
+             (if (result i32)
+              (i32.shr_u
+               (local.get $42)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$44.linked.18859
+                (drop
+                 (call $decRef_1332.linked.1445
+                  (global.get $decRef_1332.linked.1425)
+                  (local.get $0)
+                 )
+                )
+               )
+               (return
+                (local.get $16)
+               )
+              )
+              (block (result i32)
+               (block $label$46.linked.18860
+                (local.set $43
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.ge_u
+                   (local.get $16)
+                   (i32.const 194)
+                  )
+                 )
+                )
+                (block $label$47.linked.18861
+                )
+               )
+               (block $label$48.linked.18862
+                (local.set $44
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $43)
+                   (i32.const 31)
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.le_u
+                    (local.get $16)
+                    (i32.const 223)
+                   )
+                  )
+                  (local.get $43)
+                 )
+                )
+                (block $label$51.linked.18863
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $44)
+                 (i32.const 31)
+                )
+                (block (result i32)
+                 (block $label$53.linked.18864
+                  (local.set $57
+                   (block $label$54.linked.18865 (result i32)
+                    (local.set $9
+                     (i32.const 1)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block $label$55.linked.18866
+                  )
+                 )
+                 (block $label$56.linked.18867
+                  (local.set $58
+                   (i32.and
+                    (local.get $16)
+                    (i32.const 31)
+                   )
+                  )
+                  (block $label$57.linked.18868
+                  )
+                 )
+                 (block $label$58.linked.18869 (result i32)
+                  (local.set $7
+                   (local.get $58)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block (result i32)
+                 (block $label$60.linked.18870
+                  (local.set $45
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.ge_u
+                     (local.get $16)
+                     (i32.const 224)
+                    )
+                   )
+                  )
+                  (block $label$61.linked.18871
+                  )
+                 )
+                 (block $label$62.linked.18872
+                  (local.set $46
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $45)
+                     (i32.const 31)
+                    )
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.le_u
+                      (local.get $16)
+                      (i32.const 239)
+                     )
+                    )
+                    (local.get $45)
+                   )
+                  )
+                  (block $label$65.linked.18873
+                  )
+                 )
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $46)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$67.linked.18874
+                    (local.set $53
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.eq
+                       (local.get $16)
+                       (i32.const 224)
+                      )
+                     )
+                    )
+                    (block $label$68.linked.18875
+                    )
+                   )
+                   (drop
+                    (if (result i32)
+                     (i32.shr_u
+                      (local.get $53)
+                      (i32.const 31)
+                     )
+                     (block $label$70.linked.18876 (result i32)
+                      (local.set $10
+                       (i32.const 160)
+                      )
+                      (i32.const 1879048190)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$72.linked.18877
+                    (local.set $54
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.eq
+                       (local.get $16)
+                       (i32.const 237)
+                      )
+                     )
+                    )
+                    (block $label$73.linked.18878
+                    )
+                   )
+                   (drop
+                    (if (result i32)
+                     (i32.shr_u
+                      (local.get $54)
+                      (i32.const 31)
+                     )
+                     (block $label$75.linked.18879 (result i32)
+                      (local.set $11
+                       (i32.const 159)
+                      )
+                      (i32.const 1879048190)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$77.linked.18880
+                    (local.set $55
+                     (block $label$78.linked.18881 (result i32)
+                      (local.set $9
+                       (i32.const 2)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block $label$79.linked.18882
+                    )
+                   )
+                   (block $label$80.linked.18883
+                    (local.set $56
+                     (i32.and
+                      (local.get $16)
+                      (i32.const 15)
+                     )
+                    )
+                    (block $label$81.linked.18884
+                    )
+                   )
+                   (block $label$82.linked.18885 (result i32)
+                    (local.set $7
+                     (local.get $56)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block (result i32)
+                   (block $label$84.linked.18886
+                    (local.set $47
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.ge_u
+                       (local.get $16)
+                       (i32.const 240)
+                      )
+                     )
+                    )
+                    (block $label$85.linked.18887
+                    )
+                   )
+                   (block $label$86.linked.18888
+                    (local.set $48
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $47)
+                       (i32.const 31)
+                      )
+                      (select
+                       (i32.const -2)
+                       (i32.const 2147483646)
+                       (i32.le_u
+                        (local.get $16)
+                        (i32.const 244)
+                       )
+                      )
+                      (local.get $47)
+                     )
+                    )
+                    (block $label$89.linked.18889
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $48)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$91.linked.18890
+                      (local.set $49
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.eq
+                         (local.get $16)
+                         (i32.const 240)
+                        )
+                       )
+                      )
+                      (block $label$92.linked.18891
+                      )
+                     )
+                     (drop
+                      (if (result i32)
+                       (i32.shr_u
+                        (local.get $49)
+                        (i32.const 31)
+                       )
+                       (block $label$94.linked.18892 (result i32)
+                        (local.set $10
+                         (i32.const 144)
+                        )
+                        (i32.const 1879048190)
+                       )
+                       (i32.const 1879048190)
+                      )
+                     )
+                     (block $label$96.linked.18893
+                      (local.set $50
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.eq
+                         (local.get $16)
+                         (i32.const 244)
+                        )
+                       )
+                      )
+                      (block $label$97.linked.18894
+                      )
+                     )
+                     (drop
+                      (if (result i32)
+                       (i32.shr_u
+                        (local.get $50)
+                        (i32.const 31)
+                       )
+                       (block $label$99.linked.18895 (result i32)
+                        (local.set $11
+                         (i32.const 143)
+                        )
+                        (i32.const 1879048190)
+                       )
+                       (i32.const 1879048190)
+                      )
+                     )
+                     (block $label$101.linked.18896
+                      (local.set $51
+                       (block $label$102.linked.18897 (result i32)
+                        (local.set $9
+                         (i32.const 3)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block $label$103.linked.18898
+                      )
+                     )
+                     (block $label$104.linked.18899
+                      (local.set $52
+                       (i32.and
+                        (local.get $16)
+                        (i32.const 7)
+                       )
+                      )
+                      (block $label$105.linked.18900
+                      )
+                     )
+                     (block $label$106.linked.18901 (result i32)
+                      (local.set $7
+                       (local.get $52)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block (result i32)
+                     (block $label$108.linked.18902
+                      (local.set $6
+                       (block $label$109.linked.18903 (result i32)
+                        (i32.store
+                         (local.tee $2
+                          (call $malloc_1264.linked.1440
+                           (global.get $malloc_1264.linked.1430)
+                           (i32.const 20)
+                          )
+                         )
+                         (i32.const 2)
+                        )
+                        (i32.store offset=4
+                         (local.get $2)
+                         (i32.const 1)
+                        )
+                        (i32.store offset=8
+                         (local.get $2)
+                         (i32.const 5)
+                        )
+                        (i32.store offset=12
+                         (local.get $2)
+                         (i32.const 2803)
+                        )
+                        (i32.store offset=16
+                         (local.get $2)
+                         (i32.const 0)
+                        )
+                        (local.get $2)
+                       )
+                      )
+                      (block $label$110.linked.18904
+                      )
+                     )
+                     (drop
+                      (call $throw_4472.linked.17966
+                       (call $incRef_1273.linked.1442
+                        (global.get $incRef_1273.linked.1429)
+                        (global.get $throw_4472.linked.17955)
+                       )
+                       (local.get $6)
+                      )
+                     )
+                     (unreachable)
+                    )
+                   )
+                  )
+                 )
+                )
+               )
+              )
+             )
+            )
+            (br $label$17.linked.18836)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$112.linked.18905
+          (local.set $22
+           (local.get $10)
+          )
+          (block $label$113.linked.18906
+          )
+         )
+         (block $label$114.linked.18907
+          (local.set $23
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.le_u
+             (local.get $22)
+             (local.get $16)
+            )
+           )
+          )
+          (block $label$115.linked.18908
+          )
+         )
+         (block $label$116.linked.18909
+          (local.set $24
+           (if (result i32)
+            (i32.shr_u
+             (local.get $23)
+             (i32.const 31)
+            )
+            (block (result i32)
+             (block $label$118.linked.18910
+              (local.set $25
+               (local.get $11)
+              )
+              (block $label$119.linked.18911
+              )
+             )
+             (select
+              (i32.const -2)
+              (i32.const 2147483646)
+              (i32.le_u
+               (local.get $16)
+               (local.get $25)
+              )
+             )
+            )
+            (local.get $23)
+           )
+          )
+          (block $label$121.linked.18912
+          )
+         )
+         (block $label$122.linked.18913
+          (local.set $26
+           (i32.xor
+            (local.get $24)
+            (i32.const -2147483648)
+           )
+          )
+          (block $label$123.linked.18914
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $26)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$125.linked.18915
+             (local.set $5
+              (block $label$126.linked.18916 (result i32)
+               (i32.store
+                (local.tee $2
+                 (call $malloc_1264.linked.1440
+                  (global.get $malloc_1264.linked.1430)
+                  (i32.const 20)
+                 )
+                )
+                (i32.const 2)
+               )
+               (i32.store offset=4
+                (local.get $2)
+                (i32.const 1)
+               )
+               (i32.store offset=8
+                (local.get $2)
+                (i32.const 5)
+               )
+               (i32.store offset=12
+                (local.get $2)
+                (i32.const 2803)
+               )
+               (i32.store offset=16
+                (local.get $2)
+                (i32.const 0)
+               )
+               (local.get $2)
+              )
+             )
+             (block $label$127.linked.18917
+             )
+            )
+            (drop
+             (call $throw_4472.linked.17966
+              (call $incRef_1273.linked.1442
+               (global.get $incRef_1273.linked.1429)
+               (global.get $throw_4472.linked.17955)
+              )
+              (local.get $5)
+             )
+            )
+            (unreachable)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$129.linked.18918
+          (local.set $27
+           (block $label$130.linked.18919 (result i32)
+            (local.set $10
+             (i32.const 128)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$131.linked.18920
+          )
+         )
+         (block $label$132.linked.18921
+          (local.set $28
+           (block $label$133.linked.18922 (result i32)
+            (local.set $11
+             (i32.const 191)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$134.linked.18923
+          )
+         )
+         (block $label$135.linked.18924
+          (local.set $29
+           (local.get $7)
+          )
+          (block $label$136.linked.18925
+          )
+         )
+         (block $label$137.linked.18926
+          (local.set $30
+           (i32.shl
+            (local.get $29)
+            (i32.const 6)
+           )
+          )
+          (block $label$138.linked.18927
+          )
+         )
+         (block $label$139.linked.18928
+          (local.set $31
+           (i32.and
+            (local.get $16)
+            (i32.const 63)
+           )
+          )
+          (block $label$140.linked.18929
+          )
+         )
+         (block $label$141.linked.18930
+          (local.set $32
+           (i32.or
+            (local.get $30)
+            (local.get $31)
+           )
+          )
+          (block $label$142.linked.18931
+          )
+         )
+         (block $label$143.linked.18932
+          (local.set $33
+           (block $label$144.linked.18933 (result i32)
+            (local.set $7
+             (local.get $32)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$145.linked.18934
+          )
+         )
+         (block $label$146.linked.18935
+          (local.set $34
+           (local.get $8)
+          )
+          (block $label$147.linked.18936
+          )
+         )
+         (block $label$148.linked.18937
+          (local.set $35
+           (i32.add
+            (local.get $34)
+            (i32.const 1)
+           )
+          )
+          (block $label$149.linked.18938
+          )
+         )
+         (block $label$150.linked.18939
+          (local.set $36
+           (block $label$151.linked.18940 (result i32)
+            (local.set $8
+             (local.get $35)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$152.linked.18941
+          )
+         )
+         (block $label$153.linked.18942
+          (local.set $37
+           (local.get $8)
+          )
+          (block $label$154.linked.18943
+          )
+         )
+         (block $label$155.linked.18944
+          (local.set $38
+           (local.get $9)
+          )
+          (block $label$156.linked.18945
+          )
+         )
+         (block $label$157.linked.18946
+          (local.set $39
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $37)
+             (local.get $38)
+            )
+           )
+          )
+          (block $label$158.linked.18947
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $39)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$160.linked.18948
+            (local.set $40
+             (local.get $7)
+            )
+            (block $label$161.linked.18949
+            )
+           )
+           (block $label$162.linked.18950
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $0)
+             )
+            )
+           )
+           (return
+            (local.get $40)
+           )
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$15.linked.18834)
+     )
+    )
+   )
+   (block $label$164.linked.18951
+   )
+  )
+  (block $label$165.linked.18952
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (i32.const 0)
+  )
+ )
+ (func $charAtHelp_1518.linked.18542 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i64)
+  (local $44 f32)
+  (local $45 f64)
+  (block $label$1.linked.18953
+   (local.set $6
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$2.linked.18954
+   )
+  )
+  (block $label$3.linked.18955
+   (local.set $12
+    (call $<=_3332.linked.9833
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $<=_3332.linked.9649)
+     )
+     (local.get $6)
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$4.linked.18956
+   )
+  )
+  (block $label$5.linked.18957
+   (local.set $13
+    (if (result i32)
+     (i32.shr_u
+      (local.get $12)
+      (i32.const 31)
+     )
+     (local.get $12)
+     (call $<_3322.linked.9831
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $<_3322.linked.9650)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+      (i32.const 1)
+     )
+    )
+   )
+   (block $label$8.linked.18958
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $13)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$10.linked.18959
+      (local.set $9
+       (block $label$11.linked.18960 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 16)
+        )
+        (i64.store offset=8
+         (local.get $3)
+         (i64.const 2334106421097295433)
+        )
+        (i64.store offset=16
+         (local.get $3)
+         (i64.const 2322296536939521647)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$12.linked.18961
+      )
+     )
+     (block $label$13.linked.18962
+      (local.set $10
+       (call $toString_4408.linked.15816
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $toString_4408.linked.15774)
+        )
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (local.get $1)
+        )
+       )
+      )
+      (block $label$14.linked.18963
+      )
+     )
+     (block $label$15.linked.18964
+      (local.set $11
+       (call $concat_4017.linked.15804
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $concat_4017.linked.15753)
+        )
+        (local.get $9)
+        (local.get $10)
+       )
+      )
+      (block $label$16.linked.18965
+      )
+     )
+     (call $fail_4474.linked.17967
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $fail_4474.linked.17948)
+      )
+      (local.get $11)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$18.linked.18966
+   (local.set $7
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$19.linked.18967
+   )
+  )
+  (block $label$20.linked.18968
+   (local.set $14
+    (local.get $7)
+   )
+   (block $label$21.linked.18969
+   )
+  )
+  (block $label$22.linked.18970
+   (local.set $15
+    (i32.shr_u
+     (local.get $14)
+     (i32.const 1)
+    )
+   )
+   (block $label$23.linked.18971
+   )
+  )
+  (block $label$24.linked.18972
+   (local.set $16
+    (local.get $1)
+   )
+   (block $label$25.linked.18973
+   )
+  )
+  (block $label$26.linked.18974
+   (local.set $17
+    (i32.shr_u
+     (local.get $16)
+     (i32.const 1)
+    )
+   )
+   (block $label$27.linked.18975
+   )
+  )
+  (block $label$28.linked.18976
+   (local.set $18
+    (local.get $2)
+   )
+   (block $label$29.linked.18977
+   )
+  )
+  (block $label$30.linked.18978
+   (local.set $19
+    (i32.add
+     (local.get $18)
+     (i32.const 8)
+    )
+   )
+   (block $label$31.linked.18979
+   )
+  )
+  (block $label$32.linked.18980
+   (local.set $20
+    (local.get $19)
+   )
+   (block $label$33.linked.18981
+   )
+  )
+  (block $label$34.linked.18982
+   (local.set $21
+    (local.get $20)
+   )
+   (block $label$35.linked.18983
+   )
+  )
+  (block $label$36.linked.18984
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (local.get $15)
+    )
+   )
+   (block $label$37.linked.18985
+   )
+  )
+  (block $label$38.linked.18986
+   (local.set $23
+    (i32.const 0)
+   )
+   (block $label$39.linked.18987
+   )
+  )
+  (block $label$40.linked.18988
+   (local.set $24
+    (block $label$41.linked.18989 (result i32)
+     (loop $label$42.linked.18990
+      (drop
+       (br_if $label$41.linked.18989
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$43.linked.18991 (result i32)
+           (block $label$44.linked.18992
+            (local.set $42
+             (local.get $20)
+            )
+            (block $label$45.linked.18993
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $42)
+             (local.get $22)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$46.linked.18994
+       (drop
+        (block $label$47.linked.18995 (result i32)
+         (block $label$48.linked.18996
+          (local.set $25
+           (local.get $23)
+          )
+          (block $label$49.linked.18997
+          )
+         )
+         (block $label$50.linked.18998
+          (local.set $26
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $25)
+             (local.get $17)
+            )
+           )
+          )
+          (block $label$51.linked.18999
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $26)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$53.linked.19000
+             (local.set $41
+              (local.get $20)
+             )
+             (block $label$54.linked.19001
+             )
+            )
+            (block $label$55.linked.19002
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $0)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $1)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $2)
+              )
+             )
+             (drop
+              (call $decRef_1332.linked.1445
+               (global.get $decRef_1332.linked.1425)
+               (local.get $7)
+              )
+             )
+            )
+            (return
+             (call $getCodePoint_1509.linked.18541
+              (call $incRef_1273.linked.1442
+               (global.get $incRef_1273.linked.1429)
+               (global.get $getCodePoint_1509.linked.18534)
+              )
+              (local.get $41)
+             )
+            )
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$57.linked.19003
+          (local.set $27
+           (local.get $20)
+          )
+          (block $label$58.linked.19004
+          )
+         )
+         (block $label$59.linked.19005
+          (local.set $28
+           (i32.load8_u
+            (local.get $27)
+           )
+          )
+          (block $label$60.linked.19006
+          )
+         )
+         (block $label$61.linked.19007
+          (local.set $29
+           (i32.and
+            (local.get $28)
+            (i32.const 128)
+           )
+          )
+          (block $label$62.linked.19008
+          )
+         )
+         (block $label$63.linked.19009
+          (local.set $30
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $29)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$64.linked.19010
+          )
+         )
+         (block $label$65.linked.19011
+          (local.set $31
+           (if (result i32)
+            (i32.shr_u
+             (local.get $30)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$68.linked.19012
+              (local.set $32
+               (i32.and
+                (local.get $28)
+                (i32.const 240)
+               )
+              )
+              (block $label$69.linked.19013
+              )
+             )
+             (block $label$70.linked.19014
+              (local.set $33
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $32)
+                 (i32.const 240)
+                )
+               )
+              )
+              (block $label$71.linked.19015
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $33)
+               (i32.const 31)
+              )
+              (i32.const 4)
+              (block (result i32)
+               (block $label$74.linked.19016
+                (local.set $34
+                 (i32.and
+                  (local.get $28)
+                  (i32.const 224)
+                 )
+                )
+                (block $label$75.linked.19017
+                )
+               )
+               (block $label$76.linked.19018
+                (local.set $35
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $34)
+                   (i32.const 224)
+                  )
+                 )
+                )
+                (block $label$77.linked.19019
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $35)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$80.linked.19020
+          )
+         )
+         (block $label$81.linked.19021
+          (local.set $36
+           (local.get $23)
+          )
+          (block $label$82.linked.19022
+          )
+         )
+         (block $label$83.linked.19023
+          (local.set $37
+           (i32.add
+            (local.get $36)
+            (i32.const 1)
+           )
+          )
+          (block $label$84.linked.19024
+          )
+         )
+         (block $label$85.linked.19025
+          (local.set $38
+           (block $label$86.linked.19026 (result i32)
+            (local.set $23
+             (local.get $37)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$87.linked.19027
+          )
+         )
+         (block $label$88.linked.19028
+          (local.set $39
+           (local.get $20)
+          )
+          (block $label$89.linked.19029
+          )
+         )
+         (block $label$90.linked.19030
+          (local.set $40
+           (i32.add
+            (local.get $39)
+            (local.get $31)
+           )
+          )
+          (block $label$91.linked.19031
+          )
+         )
+         (block $label$92.linked.19032 (result i32)
+          (local.set $20
+           (local.get $40)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$42.linked.18990)
+     )
+    )
+   )
+   (block $label$93.linked.19033
+   )
+  )
+  (block $label$94.linked.19034
+   (local.set $8
+    (block $label$95.linked.19035 (result i32)
+     (i32.store
+      (local.tee $3
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 56)
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $3)
+      (i32.const 44)
+     )
+     (i64.store offset=8
+      (local.get $3)
+      (i64.const 2322296382303594595)
+     )
+     (i64.store offset=16
+      (local.get $3)
+      (i64.const 7070761831961159795)
+     )
+     (i64.store offset=24
+      (local.get $3)
+      (i64.const 8319115465346064485)
+     )
+     (i64.store offset=32
+      (local.get $3)
+      (i64.const 7813789473093476969)
+     )
+     (i64.store offset=40
+      (local.get $3)
+      (i64.const 8099004988362285413)
+     )
+     (i64.store offset=48
+      (local.get $3)
+      (i64.const 695497327)
+     )
+     (local.get $3)
+    )
+   )
+   (block $label$96.linked.19036
+   )
+  )
+  (block $label$97.linked.19037
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (return
+   (call $fail_4474.linked.17967
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $fail_4474.linked.17948)
+    )
+    (local.get $8)
+   )
+  )
+ )
+ (func $charCodeAt_1529.linked.18543 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i64)
+  (local $8 f32)
+  (local $9 f64)
+  (local $10 i32)
+  (block $label$1.linked.19038
+   (local.set $6
+    (call $charAtHelp_1518.linked.18542
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $charAtHelp_1518.linked.18494)
+     )
+     (local.get $1)
+     (local.get $2)
+    )
+   )
+   (block $label$2.linked.19039
+   )
+  )
+  (block (result i32)
+   (local.set $10
+    (i32.xor
+     (i32.shl
+      (local.get $6)
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (drop
+    (block $label$3.linked.19040 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $10)
+  )
+ )
+ (func $charAt_1532.linked.18544 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i64)
+  (local $8 f32)
+  (local $9 f64)
+  (local $10 i32)
+  (block $label$1.linked.19041
+   (local.set $6
+    (call $charAtHelp_1518.linked.18542
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $charAtHelp_1518.linked.18494)
+     )
+     (local.get $1)
+     (local.get $2)
+    )
+   )
+   (block $label$2.linked.19042
+   )
+  )
+  (block (result i32)
+   (local.set $10
+    (i32.xor
+     (i32.shl
+      (local.get $6)
+      (i32.const 8)
+     )
+     (i32.const 2)
+    )
+   )
+   (drop
+    (block $label$3.linked.19043 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $10)
+  )
+ )
+ (func $explodeHelp_1535.linked.18545 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i64)
+  (local $46 f32)
+  (local $47 f64)
+  (local $48 i32)
+  (block $label$1.linked.19044
+   (local.set $6
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$2.linked.19045
+   )
+  )
+  (block $label$3.linked.19046
+   (local.set $8
+    (local.get $6)
+   )
+   (block $label$4.linked.19047
+   )
+  )
+  (block $label$5.linked.19048
+   (local.set $9
+    (i32.shr_u
+     (local.get $8)
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.19049
+   )
+  )
+  (block $label$7.linked.19050
+   (local.set $7
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$8.linked.19051
+   )
+  )
+  (block $label$9.linked.19052
+   (local.set $10
+    (local.get $7)
+   )
+   (block $label$10.linked.19053
+   )
+  )
+  (block $label$11.linked.19054
+   (local.set $11
+    (i32.shr_u
+     (local.get $10)
+     (i32.const 1)
+    )
+   )
+   (block $label$12.linked.19055
+   )
+  )
+  (block $label$13.linked.19056
+   (local.set $12
+    (local.get $1)
+   )
+   (block $label$14.linked.19057
+   )
+  )
+  (block $label$15.linked.19058
+   (local.set $13
+    (i32.add
+     (local.get $12)
+     (i32.const 8)
+    )
+   )
+   (block $label$16.linked.19059
+   )
+  )
+  (block $label$17.linked.19060
+   (local.set $14
+    (local.get $13)
+   )
+   (block $label$18.linked.19061
+   )
+  )
+  (block $label$19.linked.19062
+   (local.set $15
+    (local.get $14)
+   )
+   (block $label$20.linked.19063
+   )
+  )
+  (block $label$21.linked.19064
+   (local.set $16
+    (i32.add
+     (local.get $15)
+     (local.get $9)
+    )
+   )
+   (block $label$22.linked.19065
+   )
+  )
+  (block $label$23.linked.19066
+   (local.set $17
+    (block $label$24.linked.19067 (result i32)
+     (i32.store
+      (local.tee $3
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.mul
+         (i32.add
+          (local.get $11)
+          (i32.const 2)
+         )
+         (i32.const 4)
+        )
+       )
+      )
+      (i32.const 4)
+     )
+     (i32.store offset=4
+      (local.get $3)
+      (local.get $11)
+     )
+     (local.get $3)
+    )
+   )
+   (block $label$25.linked.19068
+   )
+  )
+  (block $label$26.linked.19069
+   (local.set $18
+    (i32.const 0)
+   )
+   (block $label$27.linked.19070
+   )
+  )
+  (block $label$28.linked.19071
+   (local.set $19
+    (block $label$29.linked.19072 (result i32)
+     (loop $label$30.linked.19073
+      (drop
+       (br_if $label$29.linked.19072
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$31.linked.19074 (result i32)
+           (block $label$32.linked.19075
+            (local.set $44
+             (local.get $14)
+            )
+            (block $label$33.linked.19076
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $44)
+             (local.get $16)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$34.linked.19077
+       (drop
+        (block $label$35.linked.19078 (result i32)
+         (block $label$36.linked.19079
+          (local.set $20
+           (local.get $14)
+          )
+          (block $label$37.linked.19080
+          )
+         )
+         (block $label$38.linked.19081
+          (local.set $21
+           (i32.load8_u
+            (local.get $20)
+           )
+          )
+          (block $label$39.linked.19082
+          )
+         )
+         (block $label$40.linked.19083
+          (local.set $22
+           (i32.and
+            (local.get $21)
+            (i32.const 128)
+           )
+          )
+          (block $label$41.linked.19084
+          )
+         )
+         (block $label$42.linked.19085
+          (local.set $23
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $22)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$43.linked.19086
+          )
+         )
+         (block $label$44.linked.19087
+          (local.set $24
+           (if (result i32)
+            (i32.shr_u
+             (local.get $23)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$47.linked.19088
+              (local.set $25
+               (i32.and
+                (local.get $21)
+                (i32.const 240)
+               )
+              )
+              (block $label$48.linked.19089
+              )
+             )
+             (block $label$49.linked.19090
+              (local.set $26
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $25)
+                 (i32.const 240)
+                )
+               )
+              )
+              (block $label$50.linked.19091
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $26)
+               (i32.const 31)
+              )
+              (i32.const 4)
+              (block (result i32)
+               (block $label$53.linked.19092
+                (local.set $27
+                 (i32.and
+                  (local.get $21)
+                  (i32.const 224)
+                 )
+                )
+                (block $label$54.linked.19093
+                )
+               )
+               (block $label$55.linked.19094
+                (local.set $28
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $27)
+                   (i32.const 224)
+                  )
+                 )
+                )
+                (block $label$56.linked.19095
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $28)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$59.linked.19096
+          )
+         )
+         (block $label$60.linked.19097
+          (local.set $29
+           (if (result i32)
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 31)
+            )
+            (block (result i32)
+             (block $label$62.linked.19098
+              (local.set $33
+               (local.get $14)
+              )
+              (block $label$63.linked.19099
+              )
+             )
+             (block $label$64.linked.19100
+              (local.set $34
+               (call $getCodePoint_1509.linked.18541
+                (call $incRef_1273.linked.1442
+                 (global.get $incRef_1273.linked.1429)
+                 (global.get $getCodePoint_1509.linked.18534)
+                )
+                (local.get $33)
+               )
+              )
+              (block $label$65.linked.19101
+              )
+             )
+             (block $label$66.linked.19102
+              (local.set $35
+               (i32.xor
+                (i32.shl
+                 (local.get $34)
+                 (i32.const 8)
+                )
+                (i32.const 2)
+               )
+              )
+              (block $label$67.linked.19103
+              )
+             )
+             (local.get $35)
+            )
+            (block (result i32)
+             (block $label$69.linked.19104
+              (local.set $30
+               (block $label$70.linked.19105 (result i32)
+                (i32.store
+                 (local.tee $3
+                  (call $malloc_1264.linked.1440
+                   (global.get $malloc_1264.linked.1430)
+                   (i32.add
+                    (local.get $24)
+                    (i32.const 8)
+                   )
+                  )
+                 )
+                 (i32.const 1)
+                )
+                (i32.store offset=4
+                 (local.get $3)
+                 (local.get $24)
+                )
+                (local.get $3)
+               )
+              )
+              (block $label$71.linked.19106
+              )
+             )
+             (block $label$72.linked.19107
+              (local.set $31
+               (i32.add
+                (local.get $30)
+                (i32.const 8)
+               )
+              )
+              (block $label$73.linked.19108
+              )
+             )
+             (block $label$74.linked.19109
+              (local.set $32
+               (local.get $14)
+              )
+              (block $label$75.linked.19110
+              )
+             )
+             (drop
+              (block $label$76.linked.19111 (result i32)
+               (memory.copy
+                (local.get $31)
+                (local.get $32)
+                (local.get $24)
+               )
+               (i32.const 1879048190)
+              )
+             )
+             (local.get $30)
+            )
+           )
+          )
+          (block $label$77.linked.19112
+          )
+         )
+         (block $label$78.linked.19113
+          (local.set $36
+           (local.get $18)
+          )
+          (block $label$79.linked.19114
+          )
+         )
+         (block $label$80.linked.19115
+          (local.set $37
+           (i32.add
+            (local.get $17)
+            (local.get $36)
+           )
+          )
+          (block $label$81.linked.19116
+          )
+         )
+         (block $label$82.linked.19117
+          (local.set $38
+           (block $label$83.linked.19118 (result i32)
+            (i32.store offset=8
+             (local.get $37)
+             (local.get $29)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$84.linked.19119
+          )
+         )
+         (block $label$85.linked.19120
+          (local.set $39
+           (local.get $18)
+          )
+          (block $label$86.linked.19121
+          )
+         )
+         (block $label$87.linked.19122
+          (local.set $40
+           (i32.add
+            (local.get $39)
+            (i32.const 4)
+           )
+          )
+          (block $label$88.linked.19123
+          )
+         )
+         (block $label$89.linked.19124
+          (local.set $41
+           (block $label$90.linked.19125 (result i32)
+            (local.set $18
+             (local.get $40)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$91.linked.19126
+          )
+         )
+         (block $label$92.linked.19127
+          (local.set $42
+           (local.get $14)
+          )
+          (block $label$93.linked.19128
+          )
+         )
+         (block $label$94.linked.19129
+          (local.set $43
+           (i32.add
+            (local.get $42)
+            (local.get $24)
+           )
+          )
+          (block $label$95.linked.19130
+          )
+         )
+         (block $label$96.linked.19131 (result i32)
+          (local.set $14
+           (local.get $43)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$30.linked.19073)
+     )
+    )
+   )
+   (block $label$97.linked.19132
+   )
+  )
+  (block (result i32)
+   (local.set $48
+    (local.get $17)
+   )
+   (drop
+    (block $label$98.linked.19133 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $6)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $7)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $48)
+  )
+ )
+ (func $explode_1549.linked.18546 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (local $9 i32)
+  (block $label$1.linked.19134
+   (local.set $5
+    (call $explodeHelp_1535.linked.18545
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $explodeHelp_1535.linked.18506)
+     )
+     (local.get $1)
+     (i32.const -2)
+    )
+   )
+   (block $label$2.linked.19135
+   )
+  )
+  (block (result i32)
+   (local.set $9
+    (local.get $5)
+   )
+   (drop
+    (block $label$3.linked.19136 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $9)
+  )
+ )
+ (func $implode_1551.linked.18547 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i64)
+  (local $75 f32)
+  (local $76 f64)
+  (local $77 i32)
+  (block $label$1.linked.19137
+   (local.set $7
+    (local.get $1)
+   )
+   (block $label$2.linked.19138
+   )
+  )
+  (block $label$3.linked.19139
+   (local.set $8
+    (i32.load offset=4
+     (local.get $7)
+    )
+   )
+   (block $label$4.linked.19140
+   )
+  )
+  (block $label$5.linked.19141
+   (local.set $9
+    (i32.const 0)
+   )
+   (block $label$6.linked.19142
+   )
+  )
+  (block $label$7.linked.19143
+   (local.set $10
+    (i32.const 0)
+   )
+   (block $label$8.linked.19144
+   )
+  )
+  (block $label$9.linked.19145
+   (local.set $11
+    (block $label$10.linked.19146 (result i32)
+     (loop $label$11.linked.19147
+      (drop
+       (br_if $label$10.linked.19146
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$12.linked.19148 (result i32)
+           (block $label$13.linked.19149
+            (local.set $23
+             (local.get $10)
+            )
+            (block $label$14.linked.19150
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $23)
+             (local.get $8)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$15.linked.19151
+       (drop
+        (block $label$16.linked.19152 (result i32)
+         (block $label$17.linked.19153
+          (local.set $12
+           (local.get $10)
+          )
+          (block $label$18.linked.19154
+          )
+         )
+         (block $label$19.linked.19155
+          (local.set $5
+           (i32.xor
+            (i32.shl
+             (local.get $12)
+             (i32.const 1)
+            )
+            (i32.const 1)
+           )
+          )
+          (block $label$20.linked.19156
+          )
+         )
+         (block $label$21.linked.19157
+          (local.set $13
+           (block $label$22.linked.19158 (result i32)
+            (local.set $3
+             (local.get $5)
+            )
+            (local.set $4
+             (local.get $1)
+            )
+            (block $label$23.linked.19159
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$26.linked.19160 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$28.linked.19161 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$31.linked.19162 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$32.linked.19163
+          )
+         )
+         (block $label$33.linked.19164
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $5)
+           )
+          )
+         )
+         (block $label$34.linked.19165
+          (local.set $14
+           (i32.shr_s
+            (local.get $13)
+            (i32.const 8)
+           )
+          )
+          (block $label$35.linked.19166
+          )
+         )
+         (block $label$36.linked.19167
+          (local.set $15
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.le_u
+             (local.get $14)
+             (i32.const 127)
+            )
+           )
+          )
+          (block $label$37.linked.19168
+          )
+         )
+         (block $label$38.linked.19169
+          (local.set $16
+           (if (result i32)
+            (i32.shr_u
+             (local.get $15)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$41.linked.19170
+              (local.set $17
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.le_u
+                 (local.get $14)
+                 (i32.const 2047)
+                )
+               )
+              )
+              (block $label$42.linked.19171
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $17)
+               (i32.const 31)
+              )
+              (i32.const 2)
+              (block (result i32)
+               (block $label$45.linked.19172
+                (local.set $18
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.le_u
+                   (local.get $14)
+                   (i32.const 65535)
+                  )
+                 )
+                )
+                (block $label$46.linked.19173
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $18)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 4)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$49.linked.19174
+          )
+         )
+         (block $label$50.linked.19175
+          (local.set $19
+           (local.get $9)
+          )
+          (block $label$51.linked.19176
+          )
+         )
+         (block $label$52.linked.19177
+          (local.set $20
+           (i32.add
+            (local.get $19)
+            (local.get $16)
+           )
+          )
+          (block $label$53.linked.19178
+          )
+         )
+         (block $label$54.linked.19179 (result i32)
+          (local.set $9
+           (local.get $20)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$55.linked.19180 (result i32)
+        (block $label$56.linked.19181
+         (local.set $21
+          (local.get $10)
+         )
+         (block $label$57.linked.19182
+         )
+        )
+        (block $label$58.linked.19183
+         (local.set $22
+          (i32.add
+           (local.get $21)
+           (i32.const 1)
+          )
+         )
+         (block $label$59.linked.19184
+         )
+        )
+        (block $label$60.linked.19185 (result i32)
+         (local.set $10
+          (local.get $22)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$11.linked.19147)
+     )
+    )
+   )
+   (block $label$61.linked.19186
+   )
+  )
+  (block $label$62.linked.19187
+   (local.set $24
+    (local.get $9)
+   )
+   (block $label$63.linked.19188
+   )
+  )
+  (block $label$64.linked.19189
+   (local.set $25
+    (block $label$65.linked.19190 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $24)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $24)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$66.linked.19191
+   )
+  )
+  (block $label$67.linked.19192
+   (local.set $26
+    (i32.const 8)
+   )
+   (block $label$68.linked.19193
+   )
+  )
+  (block $label$69.linked.19194
+   (local.set $27
+    (i32.const 0)
+   )
+   (block $label$70.linked.19195
+   )
+  )
+  (block $label$71.linked.19196
+   (local.set $28
+    (block $label$72.linked.19197 (result i32)
+     (loop $label$73.linked.19198
+      (drop
+       (br_if $label$72.linked.19197
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$74.linked.19199 (result i32)
+           (block $label$75.linked.19200
+            (local.set $73
+             (local.get $27)
+            )
+            (block $label$76.linked.19201
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $73)
+             (local.get $8)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$77.linked.19202
+       (drop
+        (block $label$78.linked.19203 (result i32)
+         (block $label$79.linked.19204
+          (local.set $29
+           (local.get $27)
+          )
+          (block $label$80.linked.19205
+          )
+         )
+         (block $label$81.linked.19206
+          (local.set $6
+           (i32.xor
+            (i32.shl
+             (local.get $29)
+             (i32.const 1)
+            )
+            (i32.const 1)
+           )
+          )
+          (block $label$82.linked.19207
+          )
+         )
+         (block $label$83.linked.19208
+          (local.set $30
+           (block $label$84.linked.19209 (result i32)
+            (local.set $3
+             (local.get $6)
+            )
+            (local.set $4
+             (local.get $1)
+            )
+            (block $label$85.linked.19210
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$88.linked.19211 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$90.linked.19212 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$93.linked.19213 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$94.linked.19214
+          )
+         )
+         (block $label$95.linked.19215
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $6)
+           )
+          )
+         )
+         (block $label$96.linked.19216
+          (local.set $31
+           (i32.shr_s
+            (local.get $30)
+            (i32.const 8)
+           )
+          )
+          (block $label$97.linked.19217
+          )
+         )
+         (block $label$98.linked.19218
+          (local.set $32
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $31)
+             (i32.const 127)
+            )
+           )
+          )
+          (block $label$99.linked.19219
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $32)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$101.linked.19220
+            (local.set $66
+             (local.get $26)
+            )
+            (block $label$102.linked.19221
+            )
+           )
+           (block $label$103.linked.19222
+            (local.set $67
+             (i32.add
+              (local.get $25)
+              (local.get $66)
+             )
+            )
+            (block $label$104.linked.19223
+            )
+           )
+           (block $label$105.linked.19224
+            (local.set $68
+             (block $label$106.linked.19225 (result i32)
+              (i32.store8
+               (local.get $67)
+               (local.get $31)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$107.linked.19226
+            )
+           )
+           (block $label$108.linked.19227
+            (local.set $69
+             (local.get $26)
+            )
+            (block $label$109.linked.19228
+            )
+           )
+           (block $label$110.linked.19229
+            (local.set $70
+             (i32.add
+              (local.get $69)
+              (i32.const 1)
+             )
+            )
+            (block $label$111.linked.19230
+            )
+           )
+           (block $label$112.linked.19231 (result i32)
+            (local.set $26
+             (local.get $70)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block (result i32)
+           (block $label$114.linked.19232
+            (local.set $33
+             (i32.const 0)
+            )
+            (block $label$115.linked.19233
+            )
+           )
+           (block $label$116.linked.19234
+            (local.set $34
+             (i32.const 0)
+            )
+            (block $label$117.linked.19235
+            )
+           )
+           (block $label$118.linked.19236
+            (local.set $35
+             (select
+              (i32.const -2)
+              (i32.const 2147483646)
+              (i32.le_u
+               (local.get $31)
+               (i32.const 2047)
+              )
+             )
+            )
+            (block $label$119.linked.19237
+            )
+           )
+           (drop
+            (if (result i32)
+             (i32.shr_u
+              (local.get $35)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$121.linked.19238
+               (local.set $65
+                (block $label$122.linked.19239 (result i32)
+                 (local.set $33
+                  (i32.const 1)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$123.linked.19240
+               )
+              )
+              (block $label$124.linked.19241 (result i32)
+               (local.set $34
+                (i32.const 192)
+               )
+               (i32.const 1879048190)
+              )
+             )
+             (block (result i32)
+              (block $label$126.linked.19242
+               (local.set $62
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.le_u
+                  (local.get $31)
+                  (i32.const 65535)
+                 )
+                )
+               )
+               (block $label$127.linked.19243
+               )
+              )
+              (if (result i32)
+               (i32.shr_u
+                (local.get $62)
+                (i32.const 31)
+               )
+               (block (result i32)
+                (block $label$129.linked.19244
+                 (local.set $64
+                  (block $label$130.linked.19245 (result i32)
+                   (local.set $33
+                    (i32.const 2)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$131.linked.19246
+                 )
+                )
+                (block $label$132.linked.19247 (result i32)
+                 (local.set $34
+                  (i32.const 224)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block (result i32)
+                (block $label$134.linked.19248
+                 (local.set $63
+                  (block $label$135.linked.19249 (result i32)
+                   (local.set $33
+                    (i32.const 3)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$136.linked.19250
+                 )
+                )
+                (block $label$137.linked.19251 (result i32)
+                 (local.set $34
+                  (i32.const 240)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+              )
+             )
+            )
+           )
+           (block $label$138.linked.19252
+            (local.set $36
+             (local.get $26)
+            )
+            (block $label$139.linked.19253
+            )
+           )
+           (block $label$140.linked.19254
+            (local.set $37
+             (i32.add
+              (local.get $25)
+              (local.get $36)
+             )
+            )
+            (block $label$141.linked.19255
+            )
+           )
+           (block $label$142.linked.19256
+            (local.set $38
+             (local.get $33)
+            )
+            (block $label$143.linked.19257
+            )
+           )
+           (block $label$144.linked.19258
+            (local.set $39
+             (i32.mul
+              (i32.const 6)
+              (local.get $38)
+             )
+            )
+            (block $label$145.linked.19259
+            )
+           )
+           (block $label$146.linked.19260
+            (local.set $40
+             (i32.shr_u
+              (local.get $31)
+              (local.get $39)
+             )
+            )
+            (block $label$147.linked.19261
+            )
+           )
+           (block $label$148.linked.19262
+            (local.set $41
+             (local.get $34)
+            )
+            (block $label$149.linked.19263
+            )
+           )
+           (block $label$150.linked.19264
+            (local.set $42
+             (i32.add
+              (local.get $40)
+              (local.get $41)
+             )
+            )
+            (block $label$151.linked.19265
+            )
+           )
+           (block $label$152.linked.19266
+            (local.set $43
+             (block $label$153.linked.19267 (result i32)
+              (i32.store8
+               (local.get $37)
+               (local.get $42)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$154.linked.19268
+            )
+           )
+           (block $label$155.linked.19269
+            (local.set $44
+             (local.get $26)
+            )
+            (block $label$156.linked.19270
+            )
+           )
+           (block $label$157.linked.19271
+            (local.set $45
+             (i32.add
+              (local.get $44)
+              (i32.const 1)
+             )
+            )
+            (block $label$158.linked.19272
+            )
+           )
+           (block $label$159.linked.19273
+            (local.set $46
+             (block $label$160.linked.19274 (result i32)
+              (local.set $26
+               (local.get $45)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$161.linked.19275
+            )
+           )
+           (block $label$162.linked.19276 (result i32)
+            (loop $label$163.linked.19277
+             (drop
+              (br_if $label$162.linked.19276
+               (i32.const 1879048190)
+               (i32.eqz
+                (i32.shr_u
+                 (block $label$164.linked.19278 (result i32)
+                  (block $label$165.linked.19279
+                   (local.set $61
+                    (local.get $33)
+                   )
+                   (block $label$166.linked.19280
+                   )
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.gt_u
+                    (local.get $61)
+                    (i32.const 0)
+                   )
+                  )
+                 )
+                 (i32.const 31)
+                )
+               )
+              )
+             )
+             (block $label$167.linked.19281
+              (drop
+               (block $label$168.linked.19282 (result i32)
+                (block $label$169.linked.19283
+                 (local.set $47
+                  (local.get $33)
+                 )
+                 (block $label$170.linked.19284
+                 )
+                )
+                (block $label$171.linked.19285
+                 (local.set $48
+                  (i32.sub
+                   (local.get $47)
+                   (i32.const 1)
+                  )
+                 )
+                 (block $label$172.linked.19286
+                 )
+                )
+                (block $label$173.linked.19287
+                 (local.set $49
+                  (i32.mul
+                   (i32.const 6)
+                   (local.get $48)
+                  )
+                 )
+                 (block $label$174.linked.19288
+                 )
+                )
+                (block $label$175.linked.19289
+                 (local.set $50
+                  (i32.shr_u
+                   (local.get $31)
+                   (local.get $49)
+                  )
+                 )
+                 (block $label$176.linked.19290
+                 )
+                )
+                (block $label$177.linked.19291
+                 (local.set $51
+                  (local.get $26)
+                 )
+                 (block $label$178.linked.19292
+                 )
+                )
+                (block $label$179.linked.19293
+                 (local.set $52
+                  (i32.add
+                   (local.get $25)
+                   (local.get $51)
+                  )
+                 )
+                 (block $label$180.linked.19294
+                 )
+                )
+                (block $label$181.linked.19295
+                 (local.set $53
+                  (i32.and
+                   (local.get $50)
+                   (i32.const 63)
+                  )
+                 )
+                 (block $label$182.linked.19296
+                 )
+                )
+                (block $label$183.linked.19297
+                 (local.set $54
+                  (i32.or
+                   (i32.const 128)
+                   (local.get $53)
+                  )
+                 )
+                 (block $label$184.linked.19298
+                 )
+                )
+                (block $label$185.linked.19299
+                 (local.set $55
+                  (block $label$186.linked.19300 (result i32)
+                   (i32.store8
+                    (local.get $52)
+                    (local.get $54)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$187.linked.19301
+                 )
+                )
+                (block $label$188.linked.19302
+                 (local.set $56
+                  (local.get $33)
+                 )
+                 (block $label$189.linked.19303
+                 )
+                )
+                (block $label$190.linked.19304
+                 (local.set $57
+                  (i32.sub
+                   (local.get $56)
+                   (i32.const 1)
+                  )
+                 )
+                 (block $label$191.linked.19305
+                 )
+                )
+                (block $label$192.linked.19306
+                 (local.set $58
+                  (block $label$193.linked.19307 (result i32)
+                   (local.set $33
+                    (local.get $57)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$194.linked.19308
+                 )
+                )
+                (block $label$195.linked.19309
+                 (local.set $59
+                  (local.get $26)
+                 )
+                 (block $label$196.linked.19310
+                 )
+                )
+                (block $label$197.linked.19311
+                 (local.set $60
+                  (i32.add
+                   (local.get $59)
+                   (i32.const 1)
+                  )
+                 )
+                 (block $label$198.linked.19312
+                 )
+                )
+                (block $label$199.linked.19313 (result i32)
+                 (local.set $26
+                  (local.get $60)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+              )
+             )
+             (br $label$163.linked.19277)
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$200.linked.19314 (result i32)
+        (block $label$201.linked.19315
+         (local.set $71
+          (local.get $27)
+         )
+         (block $label$202.linked.19316
+         )
+        )
+        (block $label$203.linked.19317
+         (local.set $72
+          (i32.add
+           (local.get $71)
+           (i32.const 1)
+          )
+         )
+         (block $label$204.linked.19318
+         )
+        )
+        (block $label$205.linked.19319 (result i32)
+         (local.set $27
+          (local.get $72)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$73.linked.19198)
+     )
+    )
+   )
+   (block $label$206.linked.19320
+   )
+  )
+  (block (result i32)
+   (local.set $77
+    (local.get $25)
+   )
+   (drop
+    (block $label$207.linked.19321 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $77)
+  )
+ )
+ (func $reverse_1567.linked.18548 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i64)
+  (local $29 f32)
+  (local $30 f64)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (block $label$1.linked.19322
+   (local.set $5
+    (call $explode_1549.linked.18546
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $explode_1549.linked.18509)
+     )
+     (local.get $1)
+    )
+   )
+   (block $label$2.linked.19323
+   )
+  )
+  (block $label$3.linked.19324
+   (local.set $6
+    (local.get $5)
+   )
+   (block $label$4.linked.19325
+   )
+  )
+  (block $label$5.linked.19326
+   (local.set $7
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (local.get $6)
+    )
+   )
+   (block $label$6.linked.19327
+   )
+  )
+  (block $label$7.linked.19328
+   (local.set $8
+    (i32.or
+     (i32.shl
+      (i32.load offset=4
+       (local.get $7)
+      )
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$8.linked.19329
+   )
+  )
+  (block $label$9.linked.19330
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (block $label$10.linked.19331
+   (local.set $9
+    (call $/_3519.linked.9872
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $/_3519.linked.9645)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $8)
+     )
+     (i32.const 5)
+    )
+   )
+   (block $label$11.linked.19332
+   )
+  )
+  (block $label$12.linked.19333
+   (local.set $10
+    (i32.const 1)
+   )
+   (block $label$13.linked.19334
+   )
+  )
+  (block $label$14.linked.19335
+   (local.set $24
+    (block $label$15.linked.19336 (result i32)
+     (loop $label$16.linked.19337
+      (drop
+       (br_if $label$15.linked.19336
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$17.linked.19338 (result i32)
+           (block $label$18.linked.19339
+            (local.set $22
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (local.get $10)
+             )
+            )
+            (block $label$19.linked.19340
+            )
+           )
+           (call $<_3322.linked.9831
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $<_3322.linked.9650)
+            )
+            (local.get $22)
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $9)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$20.linked.19341
+       (drop
+        (block $label$21.linked.19342 (result i32)
+         (block $label$22.linked.19343
+          (local.set $11
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $10)
+           )
+          )
+          (block $label$23.linked.19344
+          )
+         )
+         (block $label$24.linked.19345
+          (local.set $12
+           (call $-_3511.linked.9870
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $-_3511.linked.9646)
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $8)
+            )
+            (local.get $11)
+           )
+          )
+          (block $label$25.linked.19346
+          )
+         )
+         (block $label$26.linked.19347
+          (local.set $13
+           (call $-_3511.linked.9870
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $-_3511.linked.9646)
+            )
+            (local.get $12)
+            (i32.const 3)
+           )
+          )
+          (block $label$27.linked.19348
+          )
+         )
+         (block $label$28.linked.19349
+          (local.set $14
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $6)
+           )
+          )
+          (block $label$29.linked.19350
+          )
+         )
+         (block $label$30.linked.19351
+          (local.set $25
+           (block $label$31.linked.19352 (result i32)
+            (local.set $3
+             (local.get $13)
+            )
+            (local.set $4
+             (local.get $14)
+            )
+            (block $label$32.linked.19353
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$35.linked.19354 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$37.linked.19355 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$40.linked.19356 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$41.linked.19357
+          )
+         )
+         (block $label$42.linked.19358
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $14)
+           )
+          )
+         )
+         (block $label$43.linked.19359
+          (local.set $15
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $6)
+           )
+          )
+          (block $label$44.linked.19360
+          )
+         )
+         (block $label$45.linked.19361
+          (local.set $16
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $10)
+           )
+          )
+          (block $label$46.linked.19362
+          )
+         )
+         (block $label$47.linked.19363
+          (local.set $26
+           (block $label$48.linked.19364 (result i32)
+            (local.set $3
+             (local.get $16)
+            )
+            (local.set $4
+             (local.get $15)
+            )
+            (block $label$49.linked.19365
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$52.linked.19366 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$54.linked.19367 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$57.linked.19368 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$58.linked.19369
+          )
+         )
+         (block $label$59.linked.19370
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $15)
+           )
+          )
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $16)
+           )
+          )
+         )
+         (block $label$60.linked.19371
+          (local.set $17
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $6)
+           )
+          )
+          (block $label$61.linked.19372
+          )
+         )
+         (block $label$62.linked.19373
+          (local.set $18
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $10)
+           )
+          )
+          (block $label$63.linked.19374
+          )
+         )
+         (block $label$64.linked.19375
+          (local.set $27
+           (block $label$65.linked.19376 (result i32)
+            (local.set $3
+             (local.get $18)
+            )
+            (local.set $4
+             (local.get $17)
+            )
+            (block $label$66.linked.19377
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$69.linked.19378 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$71.linked.19379 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$74.linked.19380 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (local.set $4
+             (i32.add
+              (i32.shl
+               (local.get $3)
+               (i32.const 2)
+              )
+              (local.get $4)
+             )
+            )
+            (i32.store offset=8
+             (local.get $4)
+             (block (result i32)
+              (local.set $31
+               (local.get $25)
+              )
+              (drop
+               (call $decRef_1332.linked.1445
+                (global.get $decRef_1332.linked.1425)
+                (i32.load offset=8
+                 (local.get $4)
+                )
+               )
+              )
+              (local.get $31)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$75.linked.19381
+          )
+         )
+         (block $label$76.linked.19382
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $17)
+           )
+          )
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $18)
+           )
+          )
+         )
+         (block $label$77.linked.19383
+          (local.set $19
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $6)
+           )
+          )
+          (block $label$78.linked.19384
+          )
+         )
+         (block (result i32)
+          (local.set $33
+           (block $label$79.linked.19385 (result i32)
+            (local.set $3
+             (local.get $13)
+            )
+            (local.set $4
+             (local.get $19)
+            )
+            (block $label$80.linked.19386
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$83.linked.19387 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$85.linked.19388 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$88.linked.19389 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (local.set $4
+             (i32.add
+              (i32.shl
+               (local.get $3)
+               (i32.const 2)
+              )
+              (local.get $4)
+             )
+            )
+            (i32.store offset=8
+             (local.get $4)
+             (block (result i32)
+              (local.set $32
+               (local.get $26)
+              )
+              (drop
+               (call $decRef_1332.linked.1445
+                (global.get $decRef_1332.linked.1425)
+                (i32.load offset=8
+                 (local.get $4)
+                )
+               )
+              )
+              (local.get $32)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (drop
+           (block $label$89.linked.19390 (result i32)
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $13)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $19)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (local.get $33)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$90.linked.19391 (result i32)
+        (block $label$91.linked.19392
+         (local.set $20
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (local.get $10)
+          )
+         )
+         (block $label$92.linked.19393
+         )
+        )
+        (block $label$93.linked.19394
+         (local.set $21
+          (call $+_3507.linked.9869
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (global.get $+_3507.linked.9651)
+           )
+           (local.get $20)
+           (i32.const 3)
+          )
+         )
+         (block $label$94.linked.19395
+         )
+        )
+        (block $label$95.linked.19396 (result i32)
+         (local.set $10
+          (block (result i32)
+           (local.set $34
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $21)
+            )
+           )
+           (drop
+            (call $decRef_1332.linked.1445
+             (global.get $decRef_1332.linked.1425)
+             (local.get $10)
+            )
+           )
+           (local.get $34)
+          )
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$16.linked.19337)
+     )
+    )
+   )
+   (block $label$96.linked.19397
+   )
+  )
+  (block $label$97.linked.19398
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $8)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $9)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $10)
+    )
+   )
+  )
+  (block $label$98.linked.19399
+   (local.set $23
+    (local.get $6)
+   )
+   (block $label$99.linked.19400
+   )
+  )
+  (block $label$100.linked.19401
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $implode_1551.linked.18547
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $implode_1551.linked.18515)
+    )
+    (local.get $23)
+   )
+  )
+ )
+ (func $split_1576.linked.18549 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i32)
+  (local $102 i32)
+  (local $103 i32)
+  (local $104 i32)
+  (local $105 i32)
+  (local $106 i64)
+  (local $107 f32)
+  (local $108 f64)
+  (local $109 i32)
+  (block $label$1.linked.19402
+   (local.set $6
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$2.linked.19403
+   )
+  )
+  (block $label$3.linked.19404
+   (local.set $8
+    (local.get $6)
+   )
+   (block $label$4.linked.19405
+   )
+  )
+  (block $label$5.linked.19406
+   (local.set $9
+    (i32.shr_s
+     (local.get $8)
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.19407
+   )
+  )
+  (block $label$7.linked.19408
+   (local.set $7
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$8.linked.19409
+   )
+  )
+  (block $label$9.linked.19410
+   (local.set $10
+    (local.get $7)
+   )
+   (block $label$10.linked.19411
+   )
+  )
+  (block $label$11.linked.19412
+   (local.set $11
+    (i32.shr_s
+     (local.get $10)
+     (i32.const 1)
+    )
+   )
+   (block $label$12.linked.19413
+   )
+  )
+  (block $label$13.linked.19414
+   (local.set $12
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $11)
+      (i32.const 0)
+     )
+    )
+   )
+   (block $label$14.linked.19415
+   )
+  )
+  (block (result i32)
+   (local.set $109
+    (if (result i32)
+     (i32.shr_u
+      (local.get $12)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$16.linked.19416
+       (local.set $105
+        (call $explodeHelp_1535.linked.18545
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $explodeHelp_1535.linked.18506)
+         )
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $2)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$17.linked.19417
+       )
+      )
+      (local.get $105)
+     )
+     (block (result i32)
+      (block $label$19.linked.19418
+       (local.set $13
+        (select
+         (i32.const -2)
+         (i32.const 2147483646)
+         (i32.gt_u
+          (local.get $11)
+          (local.get $9)
+         )
+        )
+       )
+       (block $label$20.linked.19419
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $13)
+        (i32.const 31)
+       )
+       (block $label$22.linked.19420 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 12)
+          )
+         )
+         (i32.const 4)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $3)
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $2)
+         )
+        )
+        (local.get $3)
+       )
+       (block (result i32)
+        (block $label$24.linked.19421
+         (local.set $14
+          (local.get $2)
+         )
+         (block $label$25.linked.19422
+         )
+        )
+        (block $label$26.linked.19423
+         (local.set $15
+          (local.get $1)
+         )
+         (block $label$27.linked.19424
+         )
+        )
+        (block $label$28.linked.19425
+         (local.set $16
+          (i32.add
+           (local.get $14)
+           (i32.const 8)
+          )
+         )
+         (block $label$29.linked.19426
+         )
+        )
+        (block $label$30.linked.19427
+         (local.set $17
+          (local.get $16)
+         )
+         (block $label$31.linked.19428
+         )
+        )
+        (block $label$32.linked.19429
+         (local.set $18
+          (i32.add
+           (local.get $15)
+           (i32.const 8)
+          )
+         )
+         (block $label$33.linked.19430
+         )
+        )
+        (block $label$34.linked.19431
+         (local.set $19
+          (local.get $18)
+         )
+         (block $label$35.linked.19432
+         )
+        )
+        (block $label$36.linked.19433
+         (local.set $20
+          (local.get $17)
+         )
+         (block $label$37.linked.19434
+         )
+        )
+        (block $label$38.linked.19435
+         (local.set $21
+          (i32.add
+           (local.get $20)
+           (local.get $9)
+          )
+         )
+         (block $label$39.linked.19436
+         )
+        )
+        (block $label$40.linked.19437
+         (local.set $22
+          (i32.sub
+           (local.get $21)
+           (local.get $11)
+          )
+         )
+         (block $label$41.linked.19438
+         )
+        )
+        (block $label$42.linked.19439
+         (local.set $23
+          (i32.add
+           (local.get $22)
+           (i32.const 1)
+          )
+         )
+         (block $label$43.linked.19440
+         )
+        )
+        (block $label$44.linked.19441
+         (local.set $24
+          (i32.const 1)
+         )
+         (block $label$45.linked.19442
+         )
+        )
+        (block $label$46.linked.19443
+         (local.set $25
+          (block $label$47.linked.19444 (result i32)
+           (loop $label$48.linked.19445
+            (drop
+             (br_if $label$47.linked.19444
+              (i32.const 1879048190)
+              (i32.eqz
+               (i32.shr_u
+                (block $label$49.linked.19446 (result i32)
+                 (block $label$50.linked.19447
+                  (local.set $48
+                   (local.get $17)
+                  )
+                  (block $label$51.linked.19448
+                  )
+                 )
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.lt_u
+                   (local.get $48)
+                   (local.get $23)
+                  )
+                 )
+                )
+                (i32.const 31)
+               )
+              )
+             )
+            )
+            (block $label$52.linked.19449
+             (drop
+              (block $label$53.linked.19450 (result i32)
+               (block $label$54.linked.19451
+                (local.set $26
+                 (local.get $17)
+                )
+                (block $label$55.linked.19452
+                )
+               )
+               (block $label$56.linked.19453
+                (local.set $27
+                 (local.get $19)
+                )
+                (block $label$57.linked.19454
+                )
+               )
+               (block $label$58.linked.19455
+                (local.set $28
+                 (block $label$59.linked.19456 (result i32)
+                  (local.set $3
+                   (local.get $26)
+                  )
+                  (local.set $4
+                   (local.get $27)
+                  )
+                  (local.set $5
+                   (local.get $11)
+                  )
+                  (loop $label$60.linked.19457
+                   (drop
+                    (br_if $label$59.linked.19456
+                     (i32.const 0)
+                     (i32.eqz
+                      (local.get $5)
+                     )
+                    )
+                   )
+                   (if
+                    (i32.ne
+                     (i32.load8_u
+                      (local.get $3)
+                     )
+                     (i32.load8_u
+                      (local.get $4)
+                     )
+                    )
+                    (br $label$59.linked.19456
+                     (select
+                      (i32.const -1)
+                      (i32.const 1)
+                      (i32.lt_u
+                       (i32.load8_u
+                        (local.get $3)
+                       )
+                       (i32.load8_u
+                        (local.get $4)
+                       )
+                      )
+                     )
+                    )
+                    (block
+                     (local.set $3
+                      (i32.add
+                       (local.get $3)
+                       (i32.const 1)
+                      )
+                     )
+                     (local.set $4
+                      (i32.add
+                       (local.get $4)
+                       (i32.const 1)
+                      )
+                     )
+                     (local.set $5
+                      (i32.sub
+                       (local.get $5)
+                       (i32.const 1)
+                      )
+                     )
+                     (br $label$60.linked.19457)
+                    )
+                   )
+                  )
+                 )
+                )
+                (block $label$63.linked.19458
+                )
+               )
+               (block $label$64.linked.19459
+                (local.set $29
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $28)
+                   (i32.const 0)
+                  )
+                 )
+                )
+                (block $label$65.linked.19460
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $29)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$67.linked.19461
+                   (local.set $46
+                    (local.get $24)
+                   )
+                   (block $label$68.linked.19462
+                   )
+                  )
+                  (block $label$69.linked.19463
+                   (local.set $47
+                    (i32.add
+                     (local.get $46)
+                     (i32.const 1)
+                    )
+                   )
+                   (block $label$70.linked.19464
+                   )
+                  )
+                  (block $label$71.linked.19465 (result i32)
+                   (local.set $24
+                    (local.get $47)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$73.linked.19466
+                (local.set $30
+                 (local.get $17)
+                )
+                (block $label$74.linked.19467
+                )
+               )
+               (block $label$75.linked.19468
+                (local.set $31
+                 (i32.load8_u
+                  (local.get $30)
+                 )
+                )
+                (block $label$76.linked.19469
+                )
+               )
+               (block $label$77.linked.19470
+                (local.set $32
+                 (i32.and
+                  (local.get $31)
+                  (i32.const 128)
+                 )
+                )
+                (block $label$78.linked.19471
+                )
+               )
+               (block $label$79.linked.19472
+                (local.set $33
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $32)
+                   (i32.const 0)
+                  )
+                 )
+                )
+                (block $label$80.linked.19473
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $33)
+                 (i32.const 31)
+                )
+                (block (result i32)
+                 (block $label$82.linked.19474
+                  (local.set $44
+                   (local.get $17)
+                  )
+                  (block $label$83.linked.19475
+                  )
+                 )
+                 (block $label$84.linked.19476
+                  (local.set $45
+                   (i32.add
+                    (local.get $44)
+                    (i32.const 1)
+                   )
+                  )
+                  (block $label$85.linked.19477
+                  )
+                 )
+                 (block $label$86.linked.19478 (result i32)
+                  (local.set $17
+                   (local.get $45)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block (result i32)
+                 (block $label$88.linked.19479
+                  (local.set $34
+                   (i32.and
+                    (local.get $31)
+                    (i32.const 240)
+                   )
+                  )
+                  (block $label$89.linked.19480
+                  )
+                 )
+                 (block $label$90.linked.19481
+                  (local.set $35
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.eq
+                     (local.get $34)
+                     (i32.const 240)
+                    )
+                   )
+                  )
+                  (block $label$91.linked.19482
+                  )
+                 )
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $35)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$93.linked.19483
+                    (local.set $42
+                     (local.get $17)
+                    )
+                    (block $label$94.linked.19484
+                    )
+                   )
+                   (block $label$95.linked.19485
+                    (local.set $43
+                     (i32.add
+                      (local.get $42)
+                      (i32.const 4)
+                     )
+                    )
+                    (block $label$96.linked.19486
+                    )
+                   )
+                   (block $label$97.linked.19487 (result i32)
+                    (local.set $17
+                     (local.get $43)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block (result i32)
+                   (block $label$99.linked.19488
+                    (local.set $36
+                     (i32.and
+                      (local.get $31)
+                      (i32.const 224)
+                     )
+                    )
+                    (block $label$100.linked.19489
+                    )
+                   )
+                   (block $label$101.linked.19490
+                    (local.set $37
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.eq
+                       (local.get $36)
+                       (i32.const 224)
+                      )
+                     )
+                    )
+                    (block $label$102.linked.19491
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $37)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$104.linked.19492
+                      (local.set $40
+                       (local.get $17)
+                      )
+                      (block $label$105.linked.19493
+                      )
+                     )
+                     (block $label$106.linked.19494
+                      (local.set $41
+                       (i32.add
+                        (local.get $40)
+                        (i32.const 3)
+                       )
+                      )
+                      (block $label$107.linked.19495
+                      )
+                     )
+                     (block $label$108.linked.19496 (result i32)
+                      (local.set $17
+                       (local.get $41)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block (result i32)
+                     (block $label$110.linked.19497
+                      (local.set $38
+                       (local.get $17)
+                      )
+                      (block $label$111.linked.19498
+                      )
+                     )
+                     (block $label$112.linked.19499
+                      (local.set $39
+                       (i32.add
+                        (local.get $38)
+                        (i32.const 2)
+                       )
+                      )
+                      (block $label$113.linked.19500
+                      )
+                     )
+                     (block $label$114.linked.19501 (result i32)
+                      (local.set $17
+                       (local.get $39)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+               )
+              )
+             )
+            )
+            (br $label$48.linked.19445)
+           )
+          )
+         )
+         (block $label$115.linked.19502
+         )
+        )
+        (block $label$116.linked.19503
+         (local.set $49
+          (i32.add
+           (local.get $14)
+           (i32.const 8)
+          )
+         )
+         (block $label$117.linked.19504
+         )
+        )
+        (block $label$118.linked.19505
+         (local.set $50
+          (block $label$119.linked.19506 (result i32)
+           (local.set $17
+            (local.get $49)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$120.linked.19507
+         )
+        )
+        (block $label$121.linked.19508
+         (local.set $51
+          (local.get $17)
+         )
+         (block $label$122.linked.19509
+         )
+        )
+        (block $label$123.linked.19510
+         (local.set $52
+          (local.get $51)
+         )
+         (block $label$124.linked.19511
+         )
+        )
+        (block $label$125.linked.19512
+         (local.set $53
+          (local.get $24)
+         )
+         (block $label$126.linked.19513
+         )
+        )
+        (block $label$127.linked.19514
+         (local.set $54
+          (block $label$128.linked.19515 (result i32)
+           (i32.store
+            (local.tee $3
+             (call $malloc_1264.linked.1440
+              (global.get $malloc_1264.linked.1430)
+              (i32.mul
+               (i32.add
+                (local.get $53)
+                (i32.const 2)
+               )
+               (i32.const 4)
+              )
+             )
+            )
+            (i32.const 4)
+           )
+           (i32.store offset=4
+            (local.get $3)
+            (local.get $53)
+           )
+           (local.get $3)
+          )
+         )
+         (block $label$129.linked.19516
+         )
+        )
+        (block $label$130.linked.19517
+         (local.set $55
+          (i32.const 0)
+         )
+         (block $label$131.linked.19518
+         )
+        )
+        (block $label$132.linked.19519
+         (local.set $56
+          (block $label$133.linked.19520 (result i32)
+           (loop $label$134.linked.19521
+            (drop
+             (br_if $label$133.linked.19520
+              (i32.const 1879048190)
+              (i32.eqz
+               (i32.shr_u
+                (block $label$135.linked.19522 (result i32)
+                 (block $label$136.linked.19523
+                  (local.set $94
+                   (local.get $17)
+                  )
+                  (block $label$137.linked.19524
+                  )
+                 )
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.lt_u
+                   (local.get $94)
+                   (local.get $23)
+                  )
+                 )
+                )
+                (i32.const 31)
+               )
+              )
+             )
+            )
+            (block $label$138.linked.19525
+             (drop
+              (block $label$139.linked.19526 (result i32)
+               (block $label$140.linked.19527
+                (local.set $57
+                 (local.get $17)
+                )
+                (block $label$141.linked.19528
+                )
+               )
+               (block $label$142.linked.19529
+                (local.set $58
+                 (local.get $19)
+                )
+                (block $label$143.linked.19530
+                )
+               )
+               (block $label$144.linked.19531
+                (local.set $59
+                 (block $label$145.linked.19532 (result i32)
+                  (local.set $3
+                   (local.get $57)
+                  )
+                  (local.set $4
+                   (local.get $58)
+                  )
+                  (local.set $5
+                   (local.get $11)
+                  )
+                  (loop $label$146.linked.19533
+                   (drop
+                    (br_if $label$145.linked.19532
+                     (i32.const 0)
+                     (i32.eqz
+                      (local.get $5)
+                     )
+                    )
+                   )
+                   (if
+                    (i32.ne
+                     (i32.load8_u
+                      (local.get $3)
+                     )
+                     (i32.load8_u
+                      (local.get $4)
+                     )
+                    )
+                    (br $label$145.linked.19532
+                     (select
+                      (i32.const -1)
+                      (i32.const 1)
+                      (i32.lt_u
+                       (i32.load8_u
+                        (local.get $3)
+                       )
+                       (i32.load8_u
+                        (local.get $4)
+                       )
+                      )
+                     )
+                    )
+                    (block
+                     (local.set $3
+                      (i32.add
+                       (local.get $3)
+                       (i32.const 1)
+                      )
+                     )
+                     (local.set $4
+                      (i32.add
+                       (local.get $4)
+                       (i32.const 1)
+                      )
+                     )
+                     (local.set $5
+                      (i32.sub
+                       (local.get $5)
+                       (i32.const 1)
+                      )
+                     )
+                     (br $label$146.linked.19533)
+                    )
+                   )
+                  )
+                 )
+                )
+                (block $label$149.linked.19534
+                )
+               )
+               (block $label$150.linked.19535
+                (local.set $60
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $59)
+                   (i32.const 0)
+                  )
+                 )
+                )
+                (block $label$151.linked.19536
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $60)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$153.linked.19537
+                   (local.set $77
+                    (local.get $17)
+                   )
+                   (block $label$154.linked.19538
+                   )
+                  )
+                  (block $label$155.linked.19539
+                   (local.set $78
+                    (local.get $52)
+                   )
+                   (block $label$156.linked.19540
+                   )
+                  )
+                  (block $label$157.linked.19541
+                   (local.set $79
+                    (i32.sub
+                     (local.get $77)
+                     (local.get $78)
+                    )
+                   )
+                   (block $label$158.linked.19542
+                   )
+                  )
+                  (block $label$159.linked.19543
+                   (local.set $80
+                    (block $label$160.linked.19544 (result i32)
+                     (i32.store
+                      (local.tee $3
+                       (call $malloc_1264.linked.1440
+                        (global.get $malloc_1264.linked.1430)
+                        (i32.add
+                         (local.get $79)
+                         (i32.const 8)
+                        )
+                       )
+                      )
+                      (i32.const 1)
+                     )
+                     (i32.store offset=4
+                      (local.get $3)
+                      (local.get $79)
+                     )
+                     (local.get $3)
+                    )
+                   )
+                   (block $label$161.linked.19545
+                   )
+                  )
+                  (block $label$162.linked.19546
+                   (local.set $81
+                    (i32.add
+                     (local.get $80)
+                     (i32.const 8)
+                    )
+                   )
+                   (block $label$163.linked.19547
+                   )
+                  )
+                  (block $label$164.linked.19548
+                   (local.set $82
+                    (local.get $52)
+                   )
+                   (block $label$165.linked.19549
+                   )
+                  )
+                  (drop
+                   (block $label$166.linked.19550 (result i32)
+                    (memory.copy
+                     (local.get $81)
+                     (local.get $82)
+                     (local.get $79)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block $label$167.linked.19551
+                   (local.set $83
+                    (local.get $55)
+                   )
+                   (block $label$168.linked.19552
+                   )
+                  )
+                  (block $label$169.linked.19553
+                   (local.set $84
+                    (i32.add
+                     (local.get $54)
+                     (local.get $83)
+                    )
+                   )
+                   (block $label$170.linked.19554
+                   )
+                  )
+                  (block $label$171.linked.19555
+                   (local.set $85
+                    (block $label$172.linked.19556 (result i32)
+                     (i32.store offset=8
+                      (local.get $84)
+                      (local.get $80)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$173.linked.19557
+                   )
+                  )
+                  (block $label$174.linked.19558
+                   (local.set $86
+                    (local.get $55)
+                   )
+                   (block $label$175.linked.19559
+                   )
+                  )
+                  (block $label$176.linked.19560
+                   (local.set $87
+                    (i32.add
+                     (local.get $86)
+                     (i32.const 4)
+                    )
+                   )
+                   (block $label$177.linked.19561
+                   )
+                  )
+                  (block $label$178.linked.19562
+                   (local.set $88
+                    (block $label$179.linked.19563 (result i32)
+                     (local.set $55
+                      (local.get $87)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$180.linked.19564
+                   )
+                  )
+                  (block $label$181.linked.19565
+                   (local.set $89
+                    (local.get $17)
+                   )
+                   (block $label$182.linked.19566
+                   )
+                  )
+                  (block $label$183.linked.19567
+                   (local.set $90
+                    (i32.add
+                     (local.get $89)
+                     (local.get $11)
+                    )
+                   )
+                   (block $label$184.linked.19568
+                   )
+                  )
+                  (block $label$185.linked.19569
+                   (local.set $91
+                    (block $label$186.linked.19570 (result i32)
+                     (local.set $17
+                      (local.get $90)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$187.linked.19571
+                   )
+                  )
+                  (block $label$188.linked.19572
+                   (local.set $92
+                    (local.get $17)
+                   )
+                   (block $label$189.linked.19573
+                   )
+                  )
+                  (block $label$190.linked.19574
+                   (local.set $93
+                    (block $label$191.linked.19575 (result i32)
+                     (local.set $52
+                      (local.get $92)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$192.linked.19576
+                   )
+                  )
+                  (br $label$138.linked.19525)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$194.linked.19577
+                (local.set $61
+                 (local.get $17)
+                )
+                (block $label$195.linked.19578
+                )
+               )
+               (block $label$196.linked.19579
+                (local.set $62
+                 (i32.load8_u
+                  (local.get $61)
+                 )
+                )
+                (block $label$197.linked.19580
+                )
+               )
+               (block $label$198.linked.19581
+                (local.set $63
+                 (i32.and
+                  (local.get $62)
+                  (i32.const 128)
+                 )
+                )
+                (block $label$199.linked.19582
+                )
+               )
+               (block $label$200.linked.19583
+                (local.set $64
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $63)
+                   (i32.const 0)
+                  )
+                 )
+                )
+                (block $label$201.linked.19584
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $64)
+                 (i32.const 31)
+                )
+                (block (result i32)
+                 (block $label$203.linked.19585
+                  (local.set $75
+                   (local.get $17)
+                  )
+                  (block $label$204.linked.19586
+                  )
+                 )
+                 (block $label$205.linked.19587
+                  (local.set $76
+                   (i32.add
+                    (local.get $75)
+                    (i32.const 1)
+                   )
+                  )
+                  (block $label$206.linked.19588
+                  )
+                 )
+                 (block $label$207.linked.19589 (result i32)
+                  (local.set $17
+                   (local.get $76)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block (result i32)
+                 (block $label$209.linked.19590
+                  (local.set $65
+                   (i32.and
+                    (local.get $62)
+                    (i32.const 240)
+                   )
+                  )
+                  (block $label$210.linked.19591
+                  )
+                 )
+                 (block $label$211.linked.19592
+                  (local.set $66
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.eq
+                     (local.get $65)
+                     (i32.const 240)
+                    )
+                   )
+                  )
+                  (block $label$212.linked.19593
+                  )
+                 )
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $66)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$214.linked.19594
+                    (local.set $73
+                     (local.get $17)
+                    )
+                    (block $label$215.linked.19595
+                    )
+                   )
+                   (block $label$216.linked.19596
+                    (local.set $74
+                     (i32.add
+                      (local.get $73)
+                      (i32.const 4)
+                     )
+                    )
+                    (block $label$217.linked.19597
+                    )
+                   )
+                   (block $label$218.linked.19598 (result i32)
+                    (local.set $17
+                     (local.get $74)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block (result i32)
+                   (block $label$220.linked.19599
+                    (local.set $67
+                     (i32.and
+                      (local.get $62)
+                      (i32.const 224)
+                     )
+                    )
+                    (block $label$221.linked.19600
+                    )
+                   )
+                   (block $label$222.linked.19601
+                    (local.set $68
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.eq
+                       (local.get $67)
+                       (i32.const 224)
+                      )
+                     )
+                    )
+                    (block $label$223.linked.19602
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $68)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$225.linked.19603
+                      (local.set $71
+                       (local.get $17)
+                      )
+                      (block $label$226.linked.19604
+                      )
+                     )
+                     (block $label$227.linked.19605
+                      (local.set $72
+                       (i32.add
+                        (local.get $71)
+                        (i32.const 3)
+                       )
+                      )
+                      (block $label$228.linked.19606
+                      )
+                     )
+                     (block $label$229.linked.19607 (result i32)
+                      (local.set $17
+                       (local.get $72)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block (result i32)
+                     (block $label$231.linked.19608
+                      (local.set $69
+                       (local.get $17)
+                      )
+                      (block $label$232.linked.19609
+                      )
+                     )
+                     (block $label$233.linked.19610
+                      (local.set $70
+                       (i32.add
+                        (local.get $69)
+                        (i32.const 2)
+                       )
+                      )
+                      (block $label$234.linked.19611
+                      )
+                     )
+                     (block $label$235.linked.19612 (result i32)
+                      (local.set $17
+                       (local.get $70)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+               )
+              )
+             )
+            )
+            (br $label$134.linked.19521)
+           )
+          )
+         )
+         (block $label$236.linked.19613
+         )
+        )
+        (block $label$237.linked.19614
+         (local.set $95
+          (i32.add
+           (local.get $14)
+           (i32.const 8)
+          )
+         )
+         (block $label$238.linked.19615
+         )
+        )
+        (block $label$239.linked.19616
+         (local.set $96
+          (i32.add
+           (local.get $95)
+           (local.get $9)
+          )
+         )
+         (block $label$240.linked.19617
+         )
+        )
+        (block $label$241.linked.19618
+         (local.set $97
+          (local.get $52)
+         )
+         (block $label$242.linked.19619
+         )
+        )
+        (block $label$243.linked.19620
+         (local.set $98
+          (i32.sub
+           (local.get $96)
+           (local.get $97)
+          )
+         )
+         (block $label$244.linked.19621
+         )
+        )
+        (block $label$245.linked.19622
+         (local.set $99
+          (block $label$246.linked.19623 (result i32)
+           (i32.store
+            (local.tee $3
+             (call $malloc_1264.linked.1440
+              (global.get $malloc_1264.linked.1430)
+              (i32.add
+               (local.get $98)
+               (i32.const 8)
+              )
+             )
+            )
+            (i32.const 1)
+           )
+           (i32.store offset=4
+            (local.get $3)
+            (local.get $98)
+           )
+           (local.get $3)
+          )
+         )
+         (block $label$247.linked.19624
+         )
+        )
+        (block $label$248.linked.19625
+         (local.set $100
+          (i32.add
+           (local.get $99)
+           (i32.const 8)
+          )
+         )
+         (block $label$249.linked.19626
+         )
+        )
+        (block $label$250.linked.19627
+         (local.set $101
+          (local.get $52)
+         )
+         (block $label$251.linked.19628
+         )
+        )
+        (drop
+         (block $label$252.linked.19629 (result i32)
+          (memory.copy
+           (local.get $100)
+           (local.get $101)
+           (local.get $98)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (block $label$253.linked.19630
+         (local.set $102
+          (local.get $55)
+         )
+         (block $label$254.linked.19631
+         )
+        )
+        (block $label$255.linked.19632
+         (local.set $103
+          (i32.add
+           (local.get $54)
+           (local.get $102)
+          )
+         )
+         (block $label$256.linked.19633
+         )
+        )
+        (block $label$257.linked.19634
+         (local.set $104
+          (block $label$258.linked.19635 (result i32)
+           (i32.store offset=8
+            (local.get $103)
+            (local.get $99)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$259.linked.19636
+         )
+        )
+        (local.get $54)
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$260.linked.19637 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $6)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $7)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $109)
+  )
+ )
+ (func $slice_1596.linked.18550 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i64)
+  (local $102 f32)
+  (local $103 f64)
+  (local $104 i32)
+  (local $105 i32)
+  (block $label$1.linked.19638
+   (local.set $7
+    (i32.const 0)
+   )
+   (block $label$2.linked.19639
+   )
+  )
+  (block $label$3.linked.19640
+   (local.set $19
+    (i32.load offset=12
+     (local.get $2)
+    )
+   )
+   (block $label$4.linked.19641
+   )
+  )
+  (block $label$5.linked.19642
+   (local.set $20
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $19)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$6.linked.19643
+   )
+  )
+  (block $label$7.linked.19644
+   (local.set $21
+    (if (result i32)
+     (i32.shr_u
+      (local.get $20)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$10.linked.19645
+       (local.set $22
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $19)
+           (i32.const 1)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$11.linked.19646
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $22)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$13.linked.19647
+         (local.set $8
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (i32.load offset=20
+            (local.get $2)
+           )
+          )
+         )
+         (block $label$14.linked.19648
+         )
+        )
+        (drop
+         (block $label$15.linked.19649 (result i32)
+          (local.set $7
+           (block (result i32)
+            (local.set $104
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (local.get $8)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $7)
+             )
+            )
+            (local.get $104)
+           )
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (i32.const 1)
+       )
+       (unreachable)
+      )
+     )
+    )
+   )
+   (block $label$17.linked.19650
+   )
+  )
+  (block $label$18.linked.19651
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (block $label$19.linked.19652
+   (local.set $9
+    (block $label$20.linked.19653 (result i32)
+     (block $label$21.linked.19654 (result i32)
+      (drop
+       (block $label$22.linked.19655 (result i32)
+        (drop
+         (block $label$23.linked.19656 (result i32)
+          (drop
+           (block $label$24.linked.19657 (result i32)
+            (br_table $label$22.linked.19655 $label$23.linked.19656 $label$24.linked.19657 $label$24.linked.19657
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $21)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$20.linked.19653
+           (block $label$25.linked.19658 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$20.linked.19653
+         (block $label$26.linked.19659 (result i32)
+          (call $length_1403.linked.18536
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (global.get $length_1403.linked.18522)
+           )
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $3)
+           )
+          )
+         )
+        )
+       )
+      )
+      (br $label$20.linked.19653
+       (block $label$27.linked.19660 (result i32)
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (local.get $7)
+        )
+       )
+      )
+     )
+    )
+   )
+   (block $label$28.linked.19661
+   )
+  )
+  (block $label$29.linked.19662
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (block $label$30.linked.19663
+   (local.set $10
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $3)
+     )
+    )
+   )
+   (block $label$31.linked.19664
+   )
+  )
+  (block $label$32.linked.19665
+   (local.set $23
+    (local.get $10)
+   )
+   (block $label$33.linked.19666
+   )
+  )
+  (block $label$34.linked.19667
+   (local.set $24
+    (i32.shr_s
+     (local.get $23)
+     (i32.const 1)
+    )
+   )
+   (block $label$35.linked.19668
+   )
+  )
+  (block $label$36.linked.19669
+   (local.set $11
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $3)
+     )
+    )
+   )
+   (block $label$37.linked.19670
+   )
+  )
+  (block $label$38.linked.19671
+   (local.set $25
+    (local.get $11)
+   )
+   (block $label$39.linked.19672
+   )
+  )
+  (block $label$40.linked.19673
+   (local.set $26
+    (i32.shr_s
+     (local.get $25)
+     (i32.const 1)
+    )
+   )
+   (block $label$41.linked.19674
+   )
+  )
+  (block $label$42.linked.19675
+   (local.set $27
+    (local.get $3)
+   )
+   (block $label$43.linked.19676
+   )
+  )
+  (block $label$44.linked.19677
+   (local.set $28
+    (local.get $1)
+   )
+   (block $label$45.linked.19678
+   )
+  )
+  (block $label$46.linked.19679
+   (local.set $29
+    (local.get $28)
+   )
+   (block $label$47.linked.19680
+   )
+  )
+  (block $label$48.linked.19681
+   (local.set $30
+    (local.get $29)
+   )
+   (block $label$49.linked.19682
+   )
+  )
+  (block $label$50.linked.19683
+   (local.set $31
+    (i32.and
+     (local.get $30)
+     (i32.const 1)
+    )
+   )
+   (block $label$51.linked.19684
+   )
+  )
+  (block $label$52.linked.19685
+   (local.set $32
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.ne
+      (local.get $31)
+      (i32.const 1)
+     )
+    )
+   )
+   (block $label$53.linked.19686
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $32)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$55.linked.19687
+      (local.set $17
+       (block $label$56.linked.19688 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 32)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 19)
+        )
+        (i64.store offset=8
+         (local.get $4)
+         (i64.const 2334106421097295433)
+        )
+        (i64.store offset=16
+         (local.get $4)
+         (i64.const 7955925901233976435)
+        )
+        (i64.store offset=24
+         (local.get $4)
+         (i64.const 7890276)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$57.linked.19689
+      )
+     )
+     (block $label$58.linked.19690
+      (local.set $18
+       (block $label$59.linked.19691 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $4)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $4)
+         (i32.const 8943)
+        )
+        (i32.store offset=16
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $4)
+         (local.get $17)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$60.linked.19692
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $18)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$62.linked.19693
+   (local.set $33
+    (local.get $29)
+   )
+   (block $label$63.linked.19694
+   )
+  )
+  (block $label$64.linked.19695
+   (local.set $34
+    (i32.shr_s
+     (local.get $33)
+     (i32.const 1)
+    )
+   )
+   (block $label$65.linked.19696
+   )
+  )
+  (block $label$66.linked.19697
+   (local.set $35
+    (block $label$67.linked.19698 (result i32)
+     (local.set $29
+      (local.get $34)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$68.linked.19699
+   )
+  )
+  (block $label$69.linked.19700
+   (local.set $36
+    (local.get $9)
+   )
+   (block $label$70.linked.19701
+   )
+  )
+  (block $label$71.linked.19702
+   (local.set $37
+    (local.get $36)
+   )
+   (block $label$72.linked.19703
+   )
+  )
+  (block $label$73.linked.19704
+   (local.set $38
+    (local.get $37)
+   )
+   (block $label$74.linked.19705
+   )
+  )
+  (block $label$75.linked.19706
+   (local.set $39
+    (i32.and
+     (local.get $38)
+     (i32.const 1)
+    )
+   )
+   (block $label$76.linked.19707
+   )
+  )
+  (block $label$77.linked.19708
+   (local.set $40
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.ne
+      (local.get $39)
+      (i32.const 1)
+     )
+    )
+   )
+   (block $label$78.linked.19709
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $40)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$80.linked.19710
+      (local.set $15
+       (block $label$81.linked.19711 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 32)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 17)
+        )
+        (i64.store offset=8
+         (local.get $4)
+         (i64.const 2334106421097295433)
+        )
+        (i64.store offset=16
+         (local.get $4)
+         (i64.const 7306085893295861349)
+        )
+        (i64.store offset=24
+         (local.get $4)
+         (i64.const 120)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$82.linked.19712
+      )
+     )
+     (block $label$83.linked.19713
+      (local.set $16
+       (block $label$84.linked.19714 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $4)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $4)
+         (i32.const 8943)
+        )
+        (i32.store offset=16
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $4)
+         (local.get $15)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$85.linked.19715
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $16)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$87.linked.19716
+   (local.set $41
+    (local.get $37)
+   )
+   (block $label$88.linked.19717
+   )
+  )
+  (block $label$89.linked.19718
+   (local.set $42
+    (i32.shr_s
+     (local.get $41)
+     (i32.const 1)
+    )
+   )
+   (block $label$90.linked.19719
+   )
+  )
+  (block $label$91.linked.19720
+   (local.set $43
+    (block $label$92.linked.19721 (result i32)
+     (local.set $37
+      (local.get $42)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$93.linked.19722
+   )
+  )
+  (block $label$94.linked.19723
+   (local.set $44
+    (local.get $29)
+   )
+   (block $label$95.linked.19724
+   )
+  )
+  (block $label$96.linked.19725
+   (local.set $45
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_s
+      (local.get $44)
+      (i32.const 0)
+     )
+    )
+   )
+   (block $label$97.linked.19726
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $45)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$99.linked.19727
+      (local.set $99
+       (local.get $29)
+      )
+      (block $label$100.linked.19728
+      )
+     )
+     (block $label$101.linked.19729
+      (local.set $100
+       (i32.add
+        (local.get $99)
+        (local.get $24)
+       )
+      )
+      (block $label$102.linked.19730
+      )
+     )
+     (block $label$103.linked.19731 (result i32)
+      (local.set $29
+       (local.get $100)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$105.linked.19732
+   (local.set $46
+    (local.get $37)
+   )
+   (block $label$106.linked.19733
+   )
+  )
+  (block $label$107.linked.19734
+   (local.set $47
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_s
+      (local.get $46)
+      (i32.const 0)
+     )
+    )
+   )
+   (block $label$108.linked.19735
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $47)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$110.linked.19736
+      (local.set $97
+       (local.get $37)
+      )
+      (block $label$111.linked.19737
+      )
+     )
+     (block $label$112.linked.19738
+      (local.set $98
+       (i32.add
+        (local.get $97)
+        (local.get $24)
+       )
+      )
+      (block $label$113.linked.19739
+      )
+     )
+     (block $label$114.linked.19740 (result i32)
+      (local.set $37
+       (local.get $98)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$116.linked.19741
+   (local.set $48
+    (local.get $29)
+   )
+   (block $label$117.linked.19742
+   )
+  )
+  (block $label$118.linked.19743
+   (local.set $49
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_s
+      (local.get $48)
+      (local.get $24)
+     )
+    )
+   )
+   (block $label$119.linked.19744
+   )
+  )
+  (block $label$120.linked.19745
+   (local.set $50
+    (if (result i32)
+     (i32.shr_u
+      (local.get $49)
+      (i32.const 31)
+     )
+     (local.get $49)
+     (block (result i32)
+      (block $label$123.linked.19746
+       (local.set $51
+        (local.get $37)
+       )
+       (block $label$124.linked.19747
+       )
+      )
+      (select
+       (i32.const -2)
+       (i32.const 2147483646)
+       (i32.gt_s
+        (local.get $51)
+        (local.get $24)
+       )
+      )
+     )
+    )
+   )
+   (block $label$125.linked.19748
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $50)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$127.linked.19749
+      (local.set $14
+       (block $label$128.linked.19750 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 20)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $4)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $4)
+         (i32.const 67)
+        )
+        (i32.store offset=16
+         (local.get $4)
+         (i32.const 0)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$129.linked.19751
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $14)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$131.linked.19752
+   (local.set $52
+    (local.get $37)
+   )
+   (block $label$132.linked.19753
+   )
+  )
+  (block $label$133.linked.19754
+   (local.set $53
+    (local.get $29)
+   )
+   (block $label$134.linked.19755
+   )
+  )
+  (block $label$135.linked.19756
+   (local.set $54
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_s
+      (local.get $52)
+      (local.get $53)
+     )
+    )
+   )
+   (block $label$136.linked.19757
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $54)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$138.linked.19758
+      (local.set $12
+       (block $label$139.linked.19759 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 40)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 29)
+        )
+        (i64.store offset=8
+         (local.get $4)
+         (i64.const 7955925901233976403)
+        )
+        (i64.store offset=16
+         (local.get $4)
+         (i64.const 7305815396256867684)
+        )
+        (i64.store offset=24
+         (local.get $4)
+         (i64.const 2334111887499945061)
+        )
+        (i64.store offset=32
+         (local.get $4)
+         (i64.const 517097156201)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$140.linked.19760
+      )
+     )
+     (block $label$141.linked.19761
+      (local.set $13
+       (block $label$142.linked.19762 (result i32)
+        (i32.store
+         (local.tee $4
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $4)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $4)
+         (i32.const 8943)
+        )
+        (i32.store offset=16
+         (local.get $4)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $4)
+         (local.get $12)
+        )
+        (local.get $4)
+       )
+      )
+      (block $label$143.linked.19763
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $13)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$145.linked.19764
+   (local.set $55
+    (i32.add
+     (local.get $27)
+     (i32.const 8)
+    )
+   )
+   (block $label$146.linked.19765
+   )
+  )
+  (block $label$147.linked.19766
+   (local.set $56
+    (local.get $55)
+   )
+   (block $label$148.linked.19767
+   )
+  )
+  (block $label$149.linked.19768
+   (local.set $57
+    (local.get $56)
+   )
+   (block $label$150.linked.19769
+   )
+  )
+  (block $label$151.linked.19770
+   (local.set $58
+    (local.get $57)
+   )
+   (block $label$152.linked.19771
+   )
+  )
+  (block $label$153.linked.19772
+   (local.set $59
+    (local.get $56)
+   )
+   (block $label$154.linked.19773
+   )
+  )
+  (block $label$155.linked.19774
+   (local.set $60
+    (local.get $59)
+   )
+   (block $label$156.linked.19775
+   )
+  )
+  (block $label$157.linked.19776
+   (local.set $61
+    (local.get $56)
+   )
+   (block $label$158.linked.19777
+   )
+  )
+  (block $label$159.linked.19778
+   (local.set $62
+    (i32.add
+     (local.get $61)
+     (local.get $26)
+    )
+   )
+   (block $label$160.linked.19779
+   )
+  )
+  (block $label$161.linked.19780
+   (local.set $63
+    (i32.const 0)
+   )
+   (block $label$162.linked.19781
+   )
+  )
+  (block $label$163.linked.19782
+   (local.set $64
+    (block $label$164.linked.19783 (result i32)
+     (loop $label$165.linked.19784
+      (drop
+       (br_if $label$164.linked.19783
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$166.linked.19785 (result i32)
+           (block $label$167.linked.19786
+            (local.set $82
+             (local.get $56)
+            )
+            (block $label$168.linked.19787
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_s
+             (local.get $82)
+             (local.get $62)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$169.linked.19788
+       (drop
+        (block $label$170.linked.19789 (result i32)
+         (block $label$171.linked.19790
+          (local.set $65
+           (local.get $56)
+          )
+          (block $label$172.linked.19791
+          )
+         )
+         (block $label$173.linked.19792
+          (local.set $66
+           (i32.load8_u
+            (local.get $65)
+           )
+          )
+          (block $label$174.linked.19793
+          )
+         )
+         (block $label$175.linked.19794
+          (local.set $67
+           (i32.and
+            (local.get $66)
+            (i32.const 192)
+           )
+          )
+          (block $label$176.linked.19795
+          )
+         )
+         (block $label$177.linked.19796
+          (local.set $68
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.ne
+             (local.get $67)
+             (i32.const 128)
+            )
+           )
+          )
+          (block $label$178.linked.19797
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $68)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$180.linked.19798
+             (local.set $71
+              (local.get $63)
+             )
+             (block $label$181.linked.19799
+             )
+            )
+            (block $label$182.linked.19800
+             (local.set $72
+              (local.get $29)
+             )
+             (block $label$183.linked.19801
+             )
+            )
+            (block $label$184.linked.19802
+             (local.set $73
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $71)
+                (local.get $72)
+               )
+              )
+             )
+             (block $label$185.linked.19803
+             )
+            )
+            (drop
+             (if (result i32)
+              (i32.shr_u
+               (local.get $73)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$187.linked.19804
+                (local.set $81
+                 (local.get $56)
+                )
+                (block $label$188.linked.19805
+                )
+               )
+               (block $label$189.linked.19806 (result i32)
+                (local.set $58
+                 (local.get $81)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$191.linked.19807
+             (local.set $74
+              (local.get $63)
+             )
+             (block $label$192.linked.19808
+             )
+            )
+            (block $label$193.linked.19809
+             (local.set $75
+              (local.get $37)
+             )
+             (block $label$194.linked.19810
+             )
+            )
+            (block $label$195.linked.19811
+             (local.set $76
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $74)
+                (local.get $75)
+               )
+              )
+             )
+             (block $label$196.linked.19812
+             )
+            )
+            (drop
+             (if (result i32)
+              (i32.shr_u
+               (local.get $76)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$198.linked.19813
+                (local.set $79
+                 (local.get $56)
+                )
+                (block $label$199.linked.19814
+                )
+               )
+               (block $label$200.linked.19815
+                (local.set $80
+                 (block $label$201.linked.19816 (result i32)
+                  (local.set $60
+                   (local.get $79)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$202.linked.19817
+                )
+               )
+               (br $label$164.linked.19783
+                (i32.const 1879048190)
+               )
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$204.linked.19818
+             (local.set $77
+              (local.get $63)
+             )
+             (block $label$205.linked.19819
+             )
+            )
+            (block $label$206.linked.19820
+             (local.set $78
+              (i32.add
+               (local.get $77)
+               (i32.const 1)
+              )
+             )
+             (block $label$207.linked.19821
+             )
+            )
+            (block $label$208.linked.19822 (result i32)
+             (local.set $63
+              (local.get $78)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$210.linked.19823
+          (local.set $69
+           (local.get $56)
+          )
+          (block $label$211.linked.19824
+          )
+         )
+         (block $label$212.linked.19825
+          (local.set $70
+           (i32.add
+            (local.get $69)
+            (i32.const 1)
+           )
+          )
+          (block $label$213.linked.19826
+          )
+         )
+         (block $label$214.linked.19827 (result i32)
+          (local.set $56
+           (local.get $70)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$165.linked.19784)
+     )
+    )
+   )
+   (block $label$215.linked.19828
+   )
+  )
+  (block $label$216.linked.19829
+   (local.set $83
+    (local.get $37)
+   )
+   (block $label$217.linked.19830
+   )
+  )
+  (block $label$218.linked.19831
+   (local.set $84
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $83)
+      (local.get $24)
+     )
+    )
+   )
+   (block $label$219.linked.19832
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $84)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$221.linked.19833
+      (local.set $95
+       (i32.add
+        (local.get $27)
+        (i32.const 8)
+       )
+      )
+      (block $label$222.linked.19834
+      )
+     )
+     (block $label$223.linked.19835
+      (local.set $96
+       (i32.add
+        (local.get $95)
+        (local.get $26)
+       )
+      )
+      (block $label$224.linked.19836
+      )
+     )
+     (block $label$225.linked.19837 (result i32)
+      (local.set $60
+       (local.get $96)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$227.linked.19838
+   (local.set $85
+    (local.get $29)
+   )
+   (block $label$228.linked.19839
+   )
+  )
+  (block $label$229.linked.19840
+   (local.set $86
+    (local.get $37)
+   )
+   (block $label$230.linked.19841
+   )
+  )
+  (block $label$231.linked.19842
+   (local.set $87
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $85)
+      (local.get $86)
+     )
+    )
+   )
+   (block $label$232.linked.19843
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $87)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$234.linked.19844
+      (local.set $94
+       (local.get $60)
+      )
+      (block $label$235.linked.19845
+      )
+     )
+     (block $label$236.linked.19846 (result i32)
+      (local.set $58
+       (local.get $94)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$238.linked.19847
+   (local.set $88
+    (local.get $60)
+   )
+   (block $label$239.linked.19848
+   )
+  )
+  (block $label$240.linked.19849
+   (local.set $89
+    (local.get $58)
+   )
+   (block $label$241.linked.19850
+   )
+  )
+  (block $label$242.linked.19851
+   (local.set $90
+    (i32.sub
+     (local.get $88)
+     (local.get $89)
+    )
+   )
+   (block $label$243.linked.19852
+   )
+  )
+  (block $label$244.linked.19853
+   (local.set $91
+    (block $label$245.linked.19854 (result i32)
+     (i32.store
+      (local.tee $4
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $90)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $4)
+      (local.get $90)
+     )
+     (local.get $4)
+    )
+   )
+   (block $label$246.linked.19855
+   )
+  )
+  (block $label$247.linked.19856
+   (local.set $92
+    (i32.add
+     (local.get $91)
+     (i32.const 8)
+    )
+   )
+   (block $label$248.linked.19857
+   )
+  )
+  (block $label$249.linked.19858
+   (local.set $93
+    (local.get $58)
+   )
+   (block $label$250.linked.19859
+   )
+  )
+  (drop
+   (block $label$251.linked.19860 (result i32)
+    (memory.copy
+     (local.get $92)
+     (local.get $93)
+     (local.get $90)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block (result i32)
+   (local.set $105
+    (local.get $91)
+   )
+   (drop
+    (block $label$252.linked.19861 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $3)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $9)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $10)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $11)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $105)
+  )
+ )
+ (func $contains_1615.linked.18551 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i64)
+  (local $79 f32)
+  (local $80 f64)
+  (block $label$1.linked.19862
+   (local.set $6
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$2.linked.19863
+   )
+  )
+  (block $label$3.linked.19864
+   (local.set $8
+    (local.get $6)
+   )
+   (block $label$4.linked.19865
+   )
+  )
+  (block $label$5.linked.19866
+   (local.set $9
+    (i32.shr_s
+     (local.get $8)
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.19867
+   )
+  )
+  (block $label$7.linked.19868
+   (local.set $7
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$8.linked.19869
+   )
+  )
+  (block $label$9.linked.19870
+   (local.set $10
+    (local.get $7)
+   )
+   (block $label$10.linked.19871
+   )
+  )
+  (block $label$11.linked.19872
+   (local.set $11
+    (i32.shr_s
+     (local.get $10)
+     (i32.const 1)
+    )
+   )
+   (block $label$12.linked.19873
+   )
+  )
+  (block $label$13.linked.19874
+   (local.set $12
+    (local.get $2)
+   )
+   (block $label$14.linked.19875
+   )
+  )
+  (block $label$15.linked.19876
+   (local.set $13
+    (local.get $12)
+   )
+   (block $label$16.linked.19877
+   )
+  )
+  (block $label$17.linked.19878
+   (local.set $14
+    (local.get $1)
+   )
+   (block $label$18.linked.19879
+   )
+  )
+  (block $label$19.linked.19880
+   (local.set $15
+    (local.get $14)
+   )
+   (block $label$20.linked.19881
+   )
+  )
+  (block $label$21.linked.19882
+   (local.set $16
+    (local.get $13)
+   )
+   (block $label$22.linked.19883
+   )
+  )
+  (block $label$23.linked.19884
+   (local.set $17
+    (i32.add
+     (local.get $16)
+     (i32.const 8)
+    )
+   )
+   (block $label$24.linked.19885
+   )
+  )
+  (block $label$25.linked.19886
+   (local.set $18
+    (block $label$26.linked.19887 (result i32)
+     (local.set $13
+      (local.get $17)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$27.linked.19888
+   )
+  )
+  (block $label$28.linked.19889
+   (local.set $19
+    (local.get $15)
+   )
+   (block $label$29.linked.19890
+   )
+  )
+  (block $label$30.linked.19891
+   (local.set $20
+    (i32.add
+     (local.get $19)
+     (i32.const 8)
+    )
+   )
+   (block $label$31.linked.19892
+   )
+  )
+  (block $label$32.linked.19893
+   (local.set $21
+    (block $label$33.linked.19894 (result i32)
+     (local.set $15
+      (local.get $20)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$34.linked.19895
+   )
+  )
+  (block $label$35.linked.19896
+   (local.set $22
+    (i32.const 0)
+   )
+   (block $label$36.linked.19897
+   )
+  )
+  (block $label$37.linked.19898
+   (local.set $23
+    (i32.const 0)
+   )
+   (block $label$38.linked.19899
+   )
+  )
+  (block $label$39.linked.19900
+   (local.set $24
+    (i32.const 0)
+   )
+   (block $label$40.linked.19901
+   )
+  )
+  (block $label$41.linked.19902
+   (local.set $25
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_u
+      (local.get $11)
+      (local.get $9)
+     )
+    )
+   )
+   (block $label$42.linked.19903
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $25)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$44.linked.19904
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $6)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $7)
+       )
+      )
+     )
+     (return
+      (i32.const 2147483646)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$46.linked.19905
+   (local.set $26
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $11)
+      (i32.const 2)
+     )
+    )
+   )
+   (block $label$47.linked.19906
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $26)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$49.linked.19907
+      (local.set $66
+       (select
+        (i32.const -2)
+        (i32.const 2147483646)
+        (i32.eq
+         (local.get $11)
+         (i32.const 0)
+        )
+       )
+      )
+      (block $label$50.linked.19908
+      )
+     )
+     (drop
+      (if (result i32)
+       (i32.shr_u
+        (local.get $66)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$52.linked.19909
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $0)
+          )
+         )
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $1)
+          )
+         )
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $2)
+          )
+         )
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $6)
+          )
+         )
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $7)
+          )
+         )
+        )
+        (return
+         (i32.const -2)
+        )
+       )
+       (i32.const 1879048190)
+      )
+     )
+     (block $label$54.linked.19910
+      (local.set $67
+       (local.get $15)
+      )
+      (block $label$55.linked.19911
+      )
+     )
+     (block $label$56.linked.19912
+      (local.set $68
+       (i32.load8_u
+        (local.get $67)
+       )
+      )
+      (block $label$57.linked.19913
+      )
+     )
+     (block $label$58.linked.19914
+      (local.set $69
+       (block $label$59.linked.19915 (result i32)
+        (loop $label$60.linked.19916
+         (drop
+          (br_if $label$59.linked.19915
+           (i32.const 1879048190)
+           (i32.eqz
+            (i32.shr_u
+             (block $label$61.linked.19917 (result i32)
+              (block $label$62.linked.19918
+               (local.set $77
+                (local.get $22)
+               )
+               (block $label$63.linked.19919
+               )
+              )
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.lt_u
+                (local.get $77)
+                (local.get $9)
+               )
+              )
+             )
+             (i32.const 31)
+            )
+           )
+          )
+         )
+         (block $label$64.linked.19920
+          (drop
+           (block $label$65.linked.19921 (result i32)
+            (block $label$66.linked.19922
+             (local.set $70
+              (local.get $13)
+             )
+             (block $label$67.linked.19923
+             )
+            )
+            (block $label$68.linked.19924
+             (local.set $71
+              (local.get $22)
+             )
+             (block $label$69.linked.19925
+             )
+            )
+            (block $label$70.linked.19926
+             (local.set $72
+              (i32.add
+               (local.get $70)
+               (local.get $71)
+              )
+             )
+             (block $label$71.linked.19927
+             )
+            )
+            (block $label$72.linked.19928
+             (local.set $73
+              (i32.load8_u
+               (local.get $72)
+              )
+             )
+             (block $label$73.linked.19929
+             )
+            )
+            (block $label$74.linked.19930
+             (local.set $74
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $68)
+                (local.get $73)
+               )
+              )
+             )
+             (block $label$75.linked.19931
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $74)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$77.linked.19932
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $0)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $1)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $2)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $6)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $7)
+                )
+               )
+              )
+              (return
+               (i32.const -2)
+              )
+             )
+             (block (result i32)
+              (block $label$79.linked.19933
+               (local.set $75
+                (local.get $22)
+               )
+               (block $label$80.linked.19934
+               )
+              )
+              (block $label$81.linked.19935
+               (local.set $76
+                (i32.add
+                 (local.get $75)
+                 (i32.const 1)
+                )
+               )
+               (block $label$82.linked.19936
+               )
+              )
+              (block $label$83.linked.19937 (result i32)
+               (local.set $22
+                (local.get $76)
+               )
+               (i32.const 1879048190)
+              )
+             )
+            )
+           )
+          )
+         )
+         (br $label$60.linked.19916)
+        )
+       )
+      )
+      (block $label$84.linked.19938
+      )
+     )
+     (block $label$85.linked.19939
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $6)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $7)
+       )
+      )
+     )
+     (return
+      (i32.const 2147483646)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$87.linked.19940
+   (local.set $27
+    (local.get $15)
+   )
+   (block $label$88.linked.19941
+   )
+  )
+  (block $label$89.linked.19942
+   (local.set $28
+    (i32.load8_u
+     (local.get $27)
+    )
+   )
+   (block $label$90.linked.19943
+   )
+  )
+  (block $label$91.linked.19944
+   (local.set $29
+    (local.get $15)
+   )
+   (block $label$92.linked.19945
+   )
+  )
+  (block $label$93.linked.19946
+   (local.set $30
+    (i32.load8_u offset=1
+     (local.get $29)
+    )
+   )
+   (block $label$94.linked.19947
+   )
+  )
+  (block $label$95.linked.19948
+   (local.set $31
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $28)
+      (local.get $30)
+     )
+    )
+   )
+   (block $label$96.linked.19949
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $31)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$98.linked.19950
+      (local.set $65
+       (block $label$99.linked.19951 (result i32)
+        (local.set $23
+         (i32.const 2)
+        )
+        (i32.const 1879048190)
+       )
+      )
+      (block $label$100.linked.19952
+      )
+     )
+     (block $label$101.linked.19953 (result i32)
+      (local.set $24
+       (i32.const 1)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (block (result i32)
+     (block $label$103.linked.19954
+      (local.set $64
+       (block $label$104.linked.19955 (result i32)
+        (local.set $23
+         (i32.const 1)
+        )
+        (i32.const 1879048190)
+       )
+      )
+      (block $label$105.linked.19956
+      )
+     )
+     (block $label$106.linked.19957 (result i32)
+      (local.set $24
+       (i32.const 2)
+      )
+      (i32.const 1879048190)
+     )
+    )
+   )
+  )
+  (block $label$107.linked.19958
+   (local.set $32
+    (block $label$108.linked.19959 (result i32)
+     (loop $label$109.linked.19960
+      (drop
+       (br_if $label$108.linked.19959
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$110.linked.19961 (result i32)
+           (block $label$111.linked.19962
+            (local.set $62
+             (local.get $22)
+            )
+            (block $label$112.linked.19963
+            )
+           )
+           (block $label$113.linked.19964
+            (local.set $63
+             (i32.sub
+              (local.get $9)
+              (local.get $11)
+             )
+            )
+            (block $label$114.linked.19965
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.le_u
+             (local.get $62)
+             (local.get $63)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$115.linked.19966
+       (drop
+        (block $label$116.linked.19967 (result i32)
+         (block $label$117.linked.19968
+          (local.set $33
+           (local.get $15)
+          )
+          (block $label$118.linked.19969
+          )
+         )
+         (block $label$119.linked.19970
+          (local.set $34
+           (i32.load8_u offset=1
+            (local.get $33)
+           )
+          )
+          (block $label$120.linked.19971
+          )
+         )
+         (block $label$121.linked.19972
+          (local.set $35
+           (local.get $13)
+          )
+          (block $label$122.linked.19973
+          )
+         )
+         (block $label$123.linked.19974
+          (local.set $36
+           (local.get $22)
+          )
+          (block $label$124.linked.19975
+          )
+         )
+         (block $label$125.linked.19976
+          (local.set $37
+           (i32.add
+            (local.get $35)
+            (local.get $36)
+           )
+          )
+          (block $label$126.linked.19977
+          )
+         )
+         (block $label$127.linked.19978
+          (local.set $38
+           (i32.load8_u offset=1
+            (local.get $37)
+           )
+          )
+          (block $label$128.linked.19979
+          )
+         )
+         (block $label$129.linked.19980
+          (local.set $39
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.ne
+             (local.get $34)
+             (local.get $38)
+            )
+           )
+          )
+          (block $label$130.linked.19981
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $39)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$132.linked.19982
+            (local.set $59
+             (local.get $22)
+            )
+            (block $label$133.linked.19983
+            )
+           )
+           (block $label$134.linked.19984
+            (local.set $60
+             (local.get $23)
+            )
+            (block $label$135.linked.19985
+            )
+           )
+           (block $label$136.linked.19986
+            (local.set $61
+             (i32.add
+              (local.get $59)
+              (local.get $60)
+             )
+            )
+            (block $label$137.linked.19987
+            )
+           )
+           (block $label$138.linked.19988 (result i32)
+            (local.set $22
+             (local.get $61)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block (result i32)
+           (block $label$140.linked.19989
+            (local.set $40
+             (local.get $15)
+            )
+            (block $label$141.linked.19990
+            )
+           )
+           (block $label$142.linked.19991
+            (local.set $41
+             (i32.add
+              (local.get $40)
+              (i32.const 2)
+             )
+            )
+            (block $label$143.linked.19992
+            )
+           )
+           (block $label$144.linked.19993
+            (local.set $42
+             (local.get $13)
+            )
+            (block $label$145.linked.19994
+            )
+           )
+           (block $label$146.linked.19995
+            (local.set $43
+             (local.get $22)
+            )
+            (block $label$147.linked.19996
+            )
+           )
+           (block $label$148.linked.19997
+            (local.set $44
+             (i32.add
+              (local.get $42)
+              (local.get $43)
+             )
+            )
+            (block $label$149.linked.19998
+            )
+           )
+           (block $label$150.linked.19999
+            (local.set $45
+             (i32.add
+              (local.get $44)
+              (i32.const 2)
+             )
+            )
+            (block $label$151.linked.20000
+            )
+           )
+           (block $label$152.linked.20001
+            (local.set $46
+             (i32.sub
+              (local.get $11)
+              (i32.const 2)
+             )
+            )
+            (block $label$153.linked.20002
+            )
+           )
+           (block $label$154.linked.20003
+            (local.set $47
+             (block $label$155.linked.20004 (result i32)
+              (local.set $3
+               (local.get $41)
+              )
+              (local.set $4
+               (local.get $45)
+              )
+              (local.set $5
+               (local.get $46)
+              )
+              (loop $label$156.linked.20005
+               (drop
+                (br_if $label$155.linked.20004
+                 (i32.const 0)
+                 (i32.eqz
+                  (local.get $5)
+                 )
+                )
+               )
+               (if
+                (i32.ne
+                 (i32.load8_u
+                  (local.get $3)
+                 )
+                 (i32.load8_u
+                  (local.get $4)
+                 )
+                )
+                (br $label$155.linked.20004
+                 (select
+                  (i32.const -1)
+                  (i32.const 1)
+                  (i32.lt_u
+                   (i32.load8_u
+                    (local.get $3)
+                   )
+                   (i32.load8_u
+                    (local.get $4)
+                   )
+                  )
+                 )
+                )
+                (block
+                 (local.set $3
+                  (i32.add
+                   (local.get $3)
+                   (i32.const 1)
+                  )
+                 )
+                 (local.set $4
+                  (i32.add
+                   (local.get $4)
+                   (i32.const 1)
+                  )
+                 )
+                 (local.set $5
+                  (i32.sub
+                   (local.get $5)
+                   (i32.const 1)
+                  )
+                 )
+                 (br $label$156.linked.20005)
+                )
+               )
+              )
+             )
+            )
+            (block $label$159.linked.20006
+            )
+           )
+           (block $label$160.linked.20007
+            (local.set $48
+             (select
+              (i32.const -2)
+              (i32.const 2147483646)
+              (i32.eq
+               (local.get $47)
+               (i32.const 0)
+              )
+             )
+            )
+            (block $label$161.linked.20008
+            )
+           )
+           (block $label$162.linked.20009
+            (local.set $49
+             (if (result i32)
+              (i32.shr_u
+               (local.get $48)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$164.linked.20010
+                (local.set $50
+                 (local.get $15)
+                )
+                (block $label$165.linked.20011
+                )
+               )
+               (block $label$166.linked.20012
+                (local.set $51
+                 (i32.load8_u
+                  (local.get $50)
+                 )
+                )
+                (block $label$167.linked.20013
+                )
+               )
+               (block $label$168.linked.20014
+                (local.set $52
+                 (local.get $13)
+                )
+                (block $label$169.linked.20015
+                )
+               )
+               (block $label$170.linked.20016
+                (local.set $53
+                 (local.get $22)
+                )
+                (block $label$171.linked.20017
+                )
+               )
+               (block $label$172.linked.20018
+                (local.set $54
+                 (i32.add
+                  (local.get $52)
+                  (local.get $53)
+                 )
+                )
+                (block $label$173.linked.20019
+                )
+               )
+               (block $label$174.linked.20020
+                (local.set $55
+                 (i32.load8_u
+                  (local.get $54)
+                 )
+                )
+                (block $label$175.linked.20021
+                )
+               )
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $51)
+                 (local.get $55)
+                )
+               )
+              )
+              (local.get $48)
+             )
+            )
+            (block $label$177.linked.20022
+            )
+           )
+           (drop
+            (if (result i32)
+             (i32.shr_u
+              (local.get $49)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$179.linked.20023
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $0)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $1)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $2)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $6)
+                )
+               )
+               (drop
+                (call $decRef_1332.linked.1445
+                 (global.get $decRef_1332.linked.1425)
+                 (local.get $7)
+                )
+               )
+              )
+              (return
+               (i32.const -2)
+              )
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$181.linked.20024
+            (local.set $56
+             (local.get $22)
+            )
+            (block $label$182.linked.20025
+            )
+           )
+           (block $label$183.linked.20026
+            (local.set $57
+             (local.get $24)
+            )
+            (block $label$184.linked.20027
+            )
+           )
+           (block $label$185.linked.20028
+            (local.set $58
+             (i32.add
+              (local.get $56)
+              (local.get $57)
+             )
+            )
+            (block $label$186.linked.20029
+            )
+           )
+           (block $label$187.linked.20030 (result i32)
+            (local.set $22
+             (local.get $58)
+            )
+            (i32.const 1879048190)
+           )
+          )
+         )
+        )
+       )
+      )
+      (br $label$109.linked.19960)
+     )
+    )
+   )
+   (block $label$188.linked.20031
+   )
+  )
+  (block $label$189.linked.20032
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $6)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (return
+   (i32.const 2147483646)
+  )
+ )
+ (func $startsWith_1628.linked.18552 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i64)
+  (local $25 f32)
+  (local $26 f64)
+  (local $27 i32)
+  (block $label$1.linked.20033
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.20034
+   )
+  )
+  (block $label$3.linked.20035
+   (local.set $7
+    (local.get $6)
+   )
+   (block $label$4.linked.20036
+   )
+  )
+  (block $label$5.linked.20037
+   (local.set $8
+    (local.get $2)
+   )
+   (block $label$6.linked.20038
+   )
+  )
+  (block $label$7.linked.20039
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$8.linked.20040
+   )
+  )
+  (block $label$9.linked.20041
+   (local.set $10
+    (local.get $9)
+   )
+   (block $label$10.linked.20042
+   )
+  )
+  (block $label$11.linked.20043
+   (local.set $11
+    (i32.load offset=4
+     (local.get $10)
+    )
+   )
+   (block $label$12.linked.20044
+   )
+  )
+  (block $label$13.linked.20045
+   (local.set $12
+    (local.get $7)
+   )
+   (block $label$14.linked.20046
+   )
+  )
+  (block $label$15.linked.20047
+   (local.set $13
+    (i32.load offset=4
+     (local.get $12)
+    )
+   )
+   (block $label$16.linked.20048
+   )
+  )
+  (block $label$17.linked.20049
+   (local.set $14
+    (local.get $9)
+   )
+   (block $label$18.linked.20050
+   )
+  )
+  (block $label$19.linked.20051
+   (local.set $15
+    (i32.add
+     (local.get $14)
+     (i32.const 8)
+    )
+   )
+   (block $label$20.linked.20052
+   )
+  )
+  (block $label$21.linked.20053
+   (local.set $16
+    (block $label$22.linked.20054 (result i32)
+     (local.set $9
+      (local.get $15)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$23.linked.20055
+   )
+  )
+  (block $label$24.linked.20056
+   (local.set $17
+    (local.get $7)
+   )
+   (block $label$25.linked.20057
+   )
+  )
+  (block $label$26.linked.20058
+   (local.set $18
+    (i32.add
+     (local.get $17)
+     (i32.const 8)
+    )
+   )
+   (block $label$27.linked.20059
+   )
+  )
+  (block $label$28.linked.20060
+   (local.set $19
+    (block $label$29.linked.20061 (result i32)
+     (local.set $7
+      (local.get $18)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$30.linked.20062
+   )
+  )
+  (block $label$31.linked.20063
+   (local.set $20
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_u
+      (local.get $13)
+      (local.get $11)
+     )
+    )
+   )
+   (block $label$32.linked.20064
+   )
+  )
+  (block (result i32)
+   (local.set $27
+    (if (result i32)
+     (i32.shr_u
+      (local.get $20)
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+     (block (result i32)
+      (block $label$35.linked.20065
+       (local.set $21
+        (local.get $7)
+       )
+       (block $label$36.linked.20066
+       )
+      )
+      (block $label$37.linked.20067
+       (local.set $22
+        (local.get $9)
+       )
+       (block $label$38.linked.20068
+       )
+      )
+      (block $label$39.linked.20069
+       (local.set $23
+        (block $label$40.linked.20070 (result i32)
+         (local.set $3
+          (local.get $21)
+         )
+         (local.set $4
+          (local.get $22)
+         )
+         (local.set $5
+          (local.get $13)
+         )
+         (loop $label$41.linked.20071
+          (drop
+           (br_if $label$40.linked.20070
+            (i32.const 0)
+            (i32.eqz
+             (local.get $5)
+            )
+           )
+          )
+          (if
+           (i32.ne
+            (i32.load8_u
+             (local.get $3)
+            )
+            (i32.load8_u
+             (local.get $4)
+            )
+           )
+           (br $label$40.linked.20070
+            (select
+             (i32.const -1)
+             (i32.const 1)
+             (i32.lt_u
+              (i32.load8_u
+               (local.get $3)
+              )
+              (i32.load8_u
+               (local.get $4)
+              )
+             )
+            )
+           )
+           (block
+            (local.set $3
+             (i32.add
+              (local.get $3)
+              (i32.const 1)
+             )
+            )
+            (local.set $4
+             (i32.add
+              (local.get $4)
+              (i32.const 1)
+             )
+            )
+            (local.set $5
+             (i32.sub
+              (local.get $5)
+              (i32.const 1)
+             )
+            )
+            (br $label$41.linked.20071)
+           )
+          )
+         )
+        )
+       )
+       (block $label$44.linked.20072
+       )
+      )
+      (select
+       (i32.const -2)
+       (i32.const 2147483646)
+       (i32.eq
+        (local.get $23)
+        (i32.const 0)
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$45.linked.20073 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $27)
+  )
+ )
+ (func $endsWith_1637.linked.18553 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i64)
+  (local $27 f32)
+  (local $28 f64)
+  (local $29 i32)
+  (block $label$1.linked.20074
+   (local.set $6
+    (local.get $1)
+   )
+   (block $label$2.linked.20075
+   )
+  )
+  (block $label$3.linked.20076
+   (local.set $7
+    (local.get $6)
+   )
+   (block $label$4.linked.20077
+   )
+  )
+  (block $label$5.linked.20078
+   (local.set $8
+    (local.get $2)
+   )
+   (block $label$6.linked.20079
+   )
+  )
+  (block $label$7.linked.20080
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$8.linked.20081
+   )
+  )
+  (block $label$9.linked.20082
+   (local.set $10
+    (local.get $9)
+   )
+   (block $label$10.linked.20083
+   )
+  )
+  (block $label$11.linked.20084
+   (local.set $11
+    (i32.load offset=4
+     (local.get $10)
+    )
+   )
+   (block $label$12.linked.20085
+   )
+  )
+  (block $label$13.linked.20086
+   (local.set $12
+    (local.get $7)
+   )
+   (block $label$14.linked.20087
+   )
+  )
+  (block $label$15.linked.20088
+   (local.set $13
+    (i32.load offset=4
+     (local.get $12)
+    )
+   )
+   (block $label$16.linked.20089
+   )
+  )
+  (block $label$17.linked.20090
+   (local.set $14
+    (local.get $9)
+   )
+   (block $label$18.linked.20091
+   )
+  )
+  (block $label$19.linked.20092
+   (local.set $15
+    (i32.add
+     (local.get $14)
+     (i32.const 8)
+    )
+   )
+   (block $label$20.linked.20093
+   )
+  )
+  (block $label$21.linked.20094
+   (local.set $16
+    (block $label$22.linked.20095 (result i32)
+     (local.set $9
+      (local.get $15)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$23.linked.20096
+   )
+  )
+  (block $label$24.linked.20097
+   (local.set $17
+    (local.get $7)
+   )
+   (block $label$25.linked.20098
+   )
+  )
+  (block $label$26.linked.20099
+   (local.set $18
+    (i32.add
+     (local.get $17)
+     (i32.const 8)
+    )
+   )
+   (block $label$27.linked.20100
+   )
+  )
+  (block $label$28.linked.20101
+   (local.set $19
+    (block $label$29.linked.20102 (result i32)
+     (local.set $7
+      (local.get $18)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$30.linked.20103
+   )
+  )
+  (block $label$31.linked.20104
+   (local.set $20
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.gt_u
+      (local.get $13)
+      (local.get $11)
+     )
+    )
+   )
+   (block $label$32.linked.20105
+   )
+  )
+  (block (result i32)
+   (local.set $29
+    (if (result i32)
+     (i32.shr_u
+      (local.get $20)
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+     (block (result i32)
+      (block $label$35.linked.20106
+       (local.set $21
+        (local.get $7)
+       )
+       (block $label$36.linked.20107
+       )
+      )
+      (block $label$37.linked.20108
+       (local.set $22
+        (local.get $9)
+       )
+       (block $label$38.linked.20109
+       )
+      )
+      (block $label$39.linked.20110
+       (local.set $23
+        (i32.add
+         (local.get $22)
+         (local.get $11)
+        )
+       )
+       (block $label$40.linked.20111
+       )
+      )
+      (block $label$41.linked.20112
+       (local.set $24
+        (i32.sub
+         (local.get $23)
+         (local.get $13)
+        )
+       )
+       (block $label$42.linked.20113
+       )
+      )
+      (block $label$43.linked.20114
+       (local.set $25
+        (block $label$44.linked.20115 (result i32)
+         (local.set $3
+          (local.get $21)
+         )
+         (local.set $4
+          (local.get $24)
+         )
+         (local.set $5
+          (local.get $13)
+         )
+         (loop $label$45.linked.20116
+          (drop
+           (br_if $label$44.linked.20115
+            (i32.const 0)
+            (i32.eqz
+             (local.get $5)
+            )
+           )
+          )
+          (if
+           (i32.ne
+            (i32.load8_u
+             (local.get $3)
+            )
+            (i32.load8_u
+             (local.get $4)
+            )
+           )
+           (br $label$44.linked.20115
+            (select
+             (i32.const -1)
+             (i32.const 1)
+             (i32.lt_u
+              (i32.load8_u
+               (local.get $3)
+              )
+              (i32.load8_u
+               (local.get $4)
+              )
+             )
+            )
+           )
+           (block
+            (local.set $3
+             (i32.add
+              (local.get $3)
+              (i32.const 1)
+             )
+            )
+            (local.set $4
+             (i32.add
+              (local.get $4)
+              (i32.const 1)
+             )
+            )
+            (local.set $5
+             (i32.sub
+              (local.get $5)
+              (i32.const 1)
+             )
+            )
+            (br $label$45.linked.20116)
+           )
+          )
+         )
+        )
+       )
+       (block $label$48.linked.20117
+       )
+      )
+      (select
+       (i32.const -2)
+       (i32.const 2147483646)
+       (i32.eq
+        (local.get $25)
+        (i32.const 0)
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$49.linked.20118 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $29)
+  )
+ )
+ (func $replaceFirst_1646.linked.18554 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i64)
+  (local $67 f32)
+  (local $68 f64)
+  (block $label$1.linked.20119
+   (local.set $8
+    (local.get $1)
+   )
+   (block $label$2.linked.20120
+   )
+  )
+  (block $label$3.linked.20121
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$4.linked.20122
+   )
+  )
+  (block $label$5.linked.20123
+   (local.set $10
+    (local.get $3)
+   )
+   (block $label$6.linked.20124
+   )
+  )
+  (block $label$7.linked.20125
+   (local.set $11
+    (local.get $10)
+   )
+   (block $label$8.linked.20126
+   )
+  )
+  (block $label$9.linked.20127
+   (local.set $12
+    (local.get $2)
+   )
+   (block $label$10.linked.20128
+   )
+  )
+  (block $label$11.linked.20129
+   (local.set $13
+    (local.get $12)
+   )
+   (block $label$12.linked.20130
+   )
+  )
+  (block $label$13.linked.20131
+   (local.set $14
+    (local.get $9)
+   )
+   (block $label$14.linked.20132
+   )
+  )
+  (block $label$15.linked.20133
+   (local.set $15
+    (i32.load offset=4
+     (local.get $14)
+    )
+   )
+   (block $label$16.linked.20134
+   )
+  )
+  (block $label$17.linked.20135
+   (local.set $16
+    (local.get $11)
+   )
+   (block $label$18.linked.20136
+   )
+  )
+  (block $label$19.linked.20137
+   (local.set $17
+    (i32.load offset=4
+     (local.get $16)
+    )
+   )
+   (block $label$20.linked.20138
+   )
+  )
+  (block $label$21.linked.20139
+   (local.set $18
+    (local.get $13)
+   )
+   (block $label$22.linked.20140
+   )
+  )
+  (block $label$23.linked.20141
+   (local.set $19
+    (i32.load offset=4
+     (local.get $18)
+    )
+   )
+   (block $label$24.linked.20142
+   )
+  )
+  (block $label$25.linked.20143
+   (local.set $20
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $17)
+      (local.get $15)
+     )
+    )
+   )
+   (block $label$26.linked.20144
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $20)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$28.linked.20145
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+     )
+     (return
+      (local.get $3)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$30.linked.20146
+   (local.set $21
+    (local.get $9)
+   )
+   (block $label$31.linked.20147
+   )
+  )
+  (block $label$32.linked.20148
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (i32.const 8)
+    )
+   )
+   (block $label$33.linked.20149
+   )
+  )
+  (block $label$34.linked.20150
+   (local.set $23
+    (block $label$35.linked.20151 (result i32)
+     (local.set $9
+      (local.get $22)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$36.linked.20152
+   )
+  )
+  (block $label$37.linked.20153
+   (local.set $24
+    (local.get $11)
+   )
+   (block $label$38.linked.20154
+   )
+  )
+  (block $label$39.linked.20155
+   (local.set $25
+    (i32.add
+     (local.get $24)
+     (i32.const 8)
+    )
+   )
+   (block $label$40.linked.20156
+   )
+  )
+  (block $label$41.linked.20157
+   (local.set $26
+    (block $label$42.linked.20158 (result i32)
+     (local.set $11
+      (local.get $25)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$43.linked.20159
+   )
+  )
+  (block $label$44.linked.20160
+   (local.set $27
+    (local.get $13)
+   )
+   (block $label$45.linked.20161
+   )
+  )
+  (block $label$46.linked.20162
+   (local.set $28
+    (i32.add
+     (local.get $27)
+     (i32.const 8)
+    )
+   )
+   (block $label$47.linked.20163
+   )
+  )
+  (block $label$48.linked.20164
+   (local.set $29
+    (block $label$49.linked.20165 (result i32)
+     (local.set $13
+      (local.get $28)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$50.linked.20166
+   )
+  )
+  (block $label$51.linked.20167
+   (local.set $30
+    (i32.const -1)
+   )
+   (block $label$52.linked.20168
+   )
+  )
+  (block $label$53.linked.20169
+   (local.set $31
+    (local.get $11)
+   )
+   (block $label$54.linked.20170
+   )
+  )
+  (block $label$55.linked.20171
+   (local.set $32
+    (i32.add
+     (local.get $31)
+     (local.get $17)
+    )
+   )
+   (block $label$56.linked.20172
+   )
+  )
+  (block $label$57.linked.20173
+   (local.set $33
+    (i32.sub
+     (local.get $32)
+     (local.get $15)
+    )
+   )
+   (block $label$58.linked.20174
+   )
+  )
+  (block $label$59.linked.20175
+   (local.set $34
+    (i32.add
+     (local.get $33)
+     (i32.const 1)
+    )
+   )
+   (block $label$60.linked.20176
+   )
+  )
+  (block $label$61.linked.20177
+   (local.set $35
+    (local.get $11)
+   )
+   (block $label$62.linked.20178
+   )
+  )
+  (block $label$63.linked.20179
+   (local.set $36
+    (local.get $35)
+   )
+   (block $label$64.linked.20180
+   )
+  )
+  (block $label$65.linked.20181
+   (local.set $37
+    (block $label$66.linked.20182 (result i32)
+     (loop $label$67.linked.20183
+      (drop
+       (br_if $label$66.linked.20182
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$68.linked.20184 (result i32)
+           (block $label$69.linked.20185
+            (local.set $65
+             (local.get $36)
+            )
+            (block $label$70.linked.20186
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $65)
+             (local.get $34)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$71.linked.20187
+       (drop
+        (block $label$72.linked.20188 (result i32)
+         (block $label$73.linked.20189
+          (local.set $38
+           (local.get $30)
+          )
+          (block $label$74.linked.20190
+          )
+         )
+         (block $label$75.linked.20191
+          (local.set $39
+           (i32.add
+            (local.get $38)
+            (i32.const 1)
+           )
+          )
+          (block $label$76.linked.20192
+          )
+         )
+         (block $label$77.linked.20193
+          (local.set $40
+           (block $label$78.linked.20194 (result i32)
+            (local.set $30
+             (local.get $39)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$79.linked.20195
+          )
+         )
+         (block $label$80.linked.20196
+          (local.set $41
+           (local.get $36)
+          )
+          (block $label$81.linked.20197
+          )
+         )
+         (block $label$82.linked.20198
+          (local.set $42
+           (local.get $9)
+          )
+          (block $label$83.linked.20199
+          )
+         )
+         (block $label$84.linked.20200
+          (local.set $43
+           (block $label$85.linked.20201 (result i32)
+            (local.set $4
+             (local.get $41)
+            )
+            (local.set $5
+             (local.get $42)
+            )
+            (local.set $6
+             (local.get $15)
+            )
+            (loop $label$86.linked.20202
+             (drop
+              (br_if $label$85.linked.20201
+               (i32.const 0)
+               (i32.eqz
+                (local.get $6)
+               )
+              )
+             )
+             (if
+              (i32.ne
+               (i32.load8_u
+                (local.get $4)
+               )
+               (i32.load8_u
+                (local.get $5)
+               )
+              )
+              (br $label$85.linked.20201
+               (select
+                (i32.const -1)
+                (i32.const 1)
+                (i32.lt_u
+                 (i32.load8_u
+                  (local.get $4)
+                 )
+                 (i32.load8_u
+                  (local.get $5)
+                 )
+                )
+               )
+              )
+              (block
+               (local.set $4
+                (i32.add
+                 (local.get $4)
+                 (i32.const 1)
+                )
+               )
+               (local.set $5
+                (i32.add
+                 (local.get $5)
+                 (i32.const 1)
+                )
+               )
+               (local.set $6
+                (i32.sub
+                 (local.get $6)
+                 (i32.const 1)
+                )
+               )
+               (br $label$86.linked.20202)
+              )
+             )
+            )
+           )
+          )
+          (block $label$89.linked.20203
+          )
+         )
+         (block $label$90.linked.20204
+          (local.set $44
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $43)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$91.linked.20205
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $44)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$93.linked.20206
+            (local.set $45
+             (i32.sub
+              (local.get $17)
+              (local.get $15)
+             )
+            )
+            (block $label$94.linked.20207
+            )
+           )
+           (block $label$95.linked.20208
+            (local.set $46
+             (i32.add
+              (local.get $45)
+              (local.get $19)
+             )
+            )
+            (block $label$96.linked.20209
+            )
+           )
+           (block $label$97.linked.20210
+            (local.set $47
+             (block $label$98.linked.20211 (result i32)
+              (i32.store
+               (local.tee $4
+                (call $malloc_1264.linked.1440
+                 (global.get $malloc_1264.linked.1430)
+                 (i32.add
+                  (local.get $46)
+                  (i32.const 8)
+                 )
+                )
+               )
+               (i32.const 1)
+              )
+              (i32.store offset=4
+               (local.get $4)
+               (local.get $46)
+              )
+              (local.get $4)
+             )
+            )
+            (block $label$99.linked.20212
+            )
+           )
+           (block $label$100.linked.20213
+            (local.set $48
+             (i32.add
+              (local.get $47)
+              (i32.const 8)
+             )
+            )
+            (block $label$101.linked.20214
+            )
+           )
+           (block $label$102.linked.20215
+            (local.set $49
+             (local.get $11)
+            )
+            (block $label$103.linked.20216
+            )
+           )
+           (block $label$104.linked.20217
+            (local.set $50
+             (local.get $30)
+            )
+            (block $label$105.linked.20218
+            )
+           )
+           (drop
+            (block $label$106.linked.20219 (result i32)
+             (memory.copy
+              (local.get $48)
+              (local.get $49)
+              (local.get $50)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$107.linked.20220
+            (local.set $51
+             (local.get $30)
+            )
+            (block $label$108.linked.20221
+            )
+           )
+           (block $label$109.linked.20222
+            (local.set $52
+             (i32.add
+              (local.get $48)
+              (local.get $51)
+             )
+            )
+            (block $label$110.linked.20223
+            )
+           )
+           (block $label$111.linked.20224
+            (local.set $53
+             (local.get $13)
+            )
+            (block $label$112.linked.20225
+            )
+           )
+           (drop
+            (block $label$113.linked.20226 (result i32)
+             (memory.copy
+              (local.get $52)
+              (local.get $53)
+              (local.get $19)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$114.linked.20227
+            (local.set $54
+             (local.get $30)
+            )
+            (block $label$115.linked.20228
+            )
+           )
+           (block $label$116.linked.20229
+            (local.set $55
+             (i32.add
+              (local.get $48)
+              (local.get $54)
+             )
+            )
+            (block $label$117.linked.20230
+            )
+           )
+           (block $label$118.linked.20231
+            (local.set $56
+             (i32.add
+              (local.get $55)
+              (local.get $19)
+             )
+            )
+            (block $label$119.linked.20232
+            )
+           )
+           (block $label$120.linked.20233
+            (local.set $57
+             (local.get $11)
+            )
+            (block $label$121.linked.20234
+            )
+           )
+           (block $label$122.linked.20235
+            (local.set $58
+             (local.get $30)
+            )
+            (block $label$123.linked.20236
+            )
+           )
+           (block $label$124.linked.20237
+            (local.set $59
+             (i32.add
+              (local.get $57)
+              (local.get $58)
+             )
+            )
+            (block $label$125.linked.20238
+            )
+           )
+           (block $label$126.linked.20239
+            (local.set $60
+             (i32.add
+              (local.get $59)
+              (local.get $15)
+             )
+            )
+            (block $label$127.linked.20240
+            )
+           )
+           (block $label$128.linked.20241
+            (local.set $61
+             (local.get $30)
+            )
+            (block $label$129.linked.20242
+            )
+           )
+           (block $label$130.linked.20243
+            (local.set $62
+             (i32.sub
+              (local.get $17)
+              (local.get $61)
+             )
+            )
+            (block $label$131.linked.20244
+            )
+           )
+           (drop
+            (block $label$132.linked.20245 (result i32)
+             (memory.copy
+              (local.get $56)
+              (local.get $60)
+              (local.get $62)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$133.linked.20246
+            (local.set $7
+             (local.get $47)
+            )
+            (block $label$134.linked.20247
+            )
+           )
+           (block $label$135.linked.20248
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $0)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $1)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $2)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $3)
+             )
+            )
+           )
+           (return
+            (local.get $7)
+           )
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$137.linked.20249 (result i32)
+        (block $label$138.linked.20250
+         (local.set $63
+          (local.get $36)
+         )
+         (block $label$139.linked.20251
+         )
+        )
+        (block $label$140.linked.20252
+         (local.set $64
+          (i32.add
+           (local.get $63)
+           (i32.const 1)
+          )
+         )
+         (block $label$141.linked.20253
+         )
+        )
+        (block $label$142.linked.20254 (result i32)
+         (local.set $36
+          (local.get $64)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$67.linked.20183)
+     )
+    )
+   )
+   (block $label$143.linked.20255
+   )
+  )
+  (block $label$144.linked.20256
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (return
+   (local.get $3)
+  )
+ )
+ (func $replaceLast_1661.linked.18555 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i64)
+  (local $69 f32)
+  (local $70 f64)
+  (block $label$1.linked.20257
+   (local.set $8
+    (local.get $1)
+   )
+   (block $label$2.linked.20258
+   )
+  )
+  (block $label$3.linked.20259
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$4.linked.20260
+   )
+  )
+  (block $label$5.linked.20261
+   (local.set $10
+    (local.get $3)
+   )
+   (block $label$6.linked.20262
+   )
+  )
+  (block $label$7.linked.20263
+   (local.set $11
+    (local.get $10)
+   )
+   (block $label$8.linked.20264
+   )
+  )
+  (block $label$9.linked.20265
+   (local.set $12
+    (local.get $2)
+   )
+   (block $label$10.linked.20266
+   )
+  )
+  (block $label$11.linked.20267
+   (local.set $13
+    (local.get $12)
+   )
+   (block $label$12.linked.20268
+   )
+  )
+  (block $label$13.linked.20269
+   (local.set $14
+    (local.get $9)
+   )
+   (block $label$14.linked.20270
+   )
+  )
+  (block $label$15.linked.20271
+   (local.set $15
+    (i32.load offset=4
+     (local.get $14)
+    )
+   )
+   (block $label$16.linked.20272
+   )
+  )
+  (block $label$17.linked.20273
+   (local.set $16
+    (local.get $11)
+   )
+   (block $label$18.linked.20274
+   )
+  )
+  (block $label$19.linked.20275
+   (local.set $17
+    (i32.load offset=4
+     (local.get $16)
+    )
+   )
+   (block $label$20.linked.20276
+   )
+  )
+  (block $label$21.linked.20277
+   (local.set $18
+    (local.get $13)
+   )
+   (block $label$22.linked.20278
+   )
+  )
+  (block $label$23.linked.20279
+   (local.set $19
+    (i32.load offset=4
+     (local.get $18)
+    )
+   )
+   (block $label$24.linked.20280
+   )
+  )
+  (block $label$25.linked.20281
+   (local.set $20
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $17)
+      (local.get $15)
+     )
+    )
+   )
+   (block $label$26.linked.20282
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $20)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$28.linked.20283
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+     )
+     (return
+      (local.get $3)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$30.linked.20284
+   (local.set $21
+    (local.get $9)
+   )
+   (block $label$31.linked.20285
+   )
+  )
+  (block $label$32.linked.20286
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (i32.const 8)
+    )
+   )
+   (block $label$33.linked.20287
+   )
+  )
+  (block $label$34.linked.20288
+   (local.set $23
+    (block $label$35.linked.20289 (result i32)
+     (local.set $9
+      (local.get $22)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$36.linked.20290
+   )
+  )
+  (block $label$37.linked.20291
+   (local.set $24
+    (local.get $11)
+   )
+   (block $label$38.linked.20292
+   )
+  )
+  (block $label$39.linked.20293
+   (local.set $25
+    (i32.add
+     (local.get $24)
+     (i32.const 8)
+    )
+   )
+   (block $label$40.linked.20294
+   )
+  )
+  (block $label$41.linked.20295
+   (local.set $26
+    (block $label$42.linked.20296 (result i32)
+     (local.set $11
+      (local.get $25)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$43.linked.20297
+   )
+  )
+  (block $label$44.linked.20298
+   (local.set $27
+    (local.get $13)
+   )
+   (block $label$45.linked.20299
+   )
+  )
+  (block $label$46.linked.20300
+   (local.set $28
+    (i32.add
+     (local.get $27)
+     (i32.const 8)
+    )
+   )
+   (block $label$47.linked.20301
+   )
+  )
+  (block $label$48.linked.20302
+   (local.set $29
+    (block $label$49.linked.20303 (result i32)
+     (local.set $13
+      (local.get $28)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$50.linked.20304
+   )
+  )
+  (block $label$51.linked.20305
+   (local.set $30
+    (local.get $11)
+   )
+   (block $label$52.linked.20306
+   )
+  )
+  (block $label$53.linked.20307
+   (local.set $31
+    (i32.add
+     (local.get $30)
+     (local.get $17)
+    )
+   )
+   (block $label$54.linked.20308
+   )
+  )
+  (block $label$55.linked.20309
+   (local.set $32
+    (i32.sub
+     (local.get $31)
+     (local.get $15)
+    )
+   )
+   (block $label$56.linked.20310
+   )
+  )
+  (block $label$57.linked.20311
+   (local.set $33
+    (i32.sub
+     (local.get $17)
+     (local.get $15)
+    )
+   )
+   (block $label$58.linked.20312
+   )
+  )
+  (block $label$59.linked.20313
+   (local.set $34
+    (i32.add
+     (local.get $33)
+     (i32.const 1)
+    )
+   )
+   (block $label$60.linked.20314
+   )
+  )
+  (block $label$61.linked.20315
+   (local.set $35
+    (local.get $34)
+   )
+   (block $label$62.linked.20316
+   )
+  )
+  (block $label$63.linked.20317
+   (local.set $36
+    (local.get $32)
+   )
+   (block $label$64.linked.20318
+   )
+  )
+  (block $label$65.linked.20319
+   (local.set $37
+    (block $label$66.linked.20320 (result i32)
+     (loop $label$67.linked.20321
+      (drop
+       (br_if $label$66.linked.20320
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$68.linked.20322 (result i32)
+           (block $label$69.linked.20323
+            (local.set $65
+             (local.get $36)
+            )
+            (block $label$70.linked.20324
+            )
+           )
+           (block $label$71.linked.20325
+            (local.set $66
+             (local.get $11)
+            )
+            (block $label$72.linked.20326
+            )
+           )
+           (block $label$73.linked.20327
+            (local.set $67
+             (i32.sub
+              (local.get $66)
+              (i32.const 1)
+             )
+            )
+            (block $label$74.linked.20328
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.gt_u
+             (local.get $65)
+             (local.get $67)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$75.linked.20329
+       (drop
+        (block $label$76.linked.20330 (result i32)
+         (block $label$77.linked.20331
+          (local.set $38
+           (local.get $35)
+          )
+          (block $label$78.linked.20332
+          )
+         )
+         (block $label$79.linked.20333
+          (local.set $39
+           (i32.sub
+            (local.get $38)
+            (i32.const 1)
+           )
+          )
+          (block $label$80.linked.20334
+          )
+         )
+         (block $label$81.linked.20335
+          (local.set $40
+           (block $label$82.linked.20336 (result i32)
+            (local.set $35
+             (local.get $39)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$83.linked.20337
+          )
+         )
+         (block $label$84.linked.20338
+          (local.set $41
+           (local.get $36)
+          )
+          (block $label$85.linked.20339
+          )
+         )
+         (block $label$86.linked.20340
+          (local.set $42
+           (local.get $9)
+          )
+          (block $label$87.linked.20341
+          )
+         )
+         (block $label$88.linked.20342
+          (local.set $43
+           (block $label$89.linked.20343 (result i32)
+            (local.set $4
+             (local.get $41)
+            )
+            (local.set $5
+             (local.get $42)
+            )
+            (local.set $6
+             (local.get $15)
+            )
+            (loop $label$90.linked.20344
+             (drop
+              (br_if $label$89.linked.20343
+               (i32.const 0)
+               (i32.eqz
+                (local.get $6)
+               )
+              )
+             )
+             (if
+              (i32.ne
+               (i32.load8_u
+                (local.get $4)
+               )
+               (i32.load8_u
+                (local.get $5)
+               )
+              )
+              (br $label$89.linked.20343
+               (select
+                (i32.const -1)
+                (i32.const 1)
+                (i32.lt_u
+                 (i32.load8_u
+                  (local.get $4)
+                 )
+                 (i32.load8_u
+                  (local.get $5)
+                 )
+                )
+               )
+              )
+              (block
+               (local.set $4
+                (i32.add
+                 (local.get $4)
+                 (i32.const 1)
+                )
+               )
+               (local.set $5
+                (i32.add
+                 (local.get $5)
+                 (i32.const 1)
+                )
+               )
+               (local.set $6
+                (i32.sub
+                 (local.get $6)
+                 (i32.const 1)
+                )
+               )
+               (br $label$90.linked.20344)
+              )
+             )
+            )
+           )
+          )
+          (block $label$93.linked.20345
+          )
+         )
+         (block $label$94.linked.20346
+          (local.set $44
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $43)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$95.linked.20347
+          )
+         )
+         (if (result i32)
+          (i32.shr_u
+           (local.get $44)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$97.linked.20348
+            (local.set $45
+             (i32.sub
+              (local.get $17)
+              (local.get $15)
+             )
+            )
+            (block $label$98.linked.20349
+            )
+           )
+           (block $label$99.linked.20350
+            (local.set $46
+             (i32.add
+              (local.get $45)
+              (local.get $19)
+             )
+            )
+            (block $label$100.linked.20351
+            )
+           )
+           (block $label$101.linked.20352
+            (local.set $47
+             (block $label$102.linked.20353 (result i32)
+              (i32.store
+               (local.tee $4
+                (call $malloc_1264.linked.1440
+                 (global.get $malloc_1264.linked.1430)
+                 (i32.add
+                  (local.get $46)
+                  (i32.const 8)
+                 )
+                )
+               )
+               (i32.const 1)
+              )
+              (i32.store offset=4
+               (local.get $4)
+               (local.get $46)
+              )
+              (local.get $4)
+             )
+            )
+            (block $label$103.linked.20354
+            )
+           )
+           (block $label$104.linked.20355
+            (local.set $48
+             (i32.add
+              (local.get $47)
+              (i32.const 8)
+             )
+            )
+            (block $label$105.linked.20356
+            )
+           )
+           (block $label$106.linked.20357
+            (local.set $49
+             (local.get $11)
+            )
+            (block $label$107.linked.20358
+            )
+           )
+           (block $label$108.linked.20359
+            (local.set $50
+             (local.get $35)
+            )
+            (block $label$109.linked.20360
+            )
+           )
+           (drop
+            (block $label$110.linked.20361 (result i32)
+             (memory.copy
+              (local.get $48)
+              (local.get $49)
+              (local.get $50)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$111.linked.20362
+            (local.set $51
+             (local.get $35)
+            )
+            (block $label$112.linked.20363
+            )
+           )
+           (block $label$113.linked.20364
+            (local.set $52
+             (i32.add
+              (local.get $48)
+              (local.get $51)
+             )
+            )
+            (block $label$114.linked.20365
+            )
+           )
+           (block $label$115.linked.20366
+            (local.set $53
+             (local.get $13)
+            )
+            (block $label$116.linked.20367
+            )
+           )
+           (drop
+            (block $label$117.linked.20368 (result i32)
+             (memory.copy
+              (local.get $52)
+              (local.get $53)
+              (local.get $19)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$118.linked.20369
+            (local.set $54
+             (local.get $35)
+            )
+            (block $label$119.linked.20370
+            )
+           )
+           (block $label$120.linked.20371
+            (local.set $55
+             (i32.add
+              (local.get $48)
+              (local.get $54)
+             )
+            )
+            (block $label$121.linked.20372
+            )
+           )
+           (block $label$122.linked.20373
+            (local.set $56
+             (i32.add
+              (local.get $55)
+              (local.get $19)
+             )
+            )
+            (block $label$123.linked.20374
+            )
+           )
+           (block $label$124.linked.20375
+            (local.set $57
+             (local.get $11)
+            )
+            (block $label$125.linked.20376
+            )
+           )
+           (block $label$126.linked.20377
+            (local.set $58
+             (local.get $35)
+            )
+            (block $label$127.linked.20378
+            )
+           )
+           (block $label$128.linked.20379
+            (local.set $59
+             (i32.add
+              (local.get $57)
+              (local.get $58)
+             )
+            )
+            (block $label$129.linked.20380
+            )
+           )
+           (block $label$130.linked.20381
+            (local.set $60
+             (i32.add
+              (local.get $59)
+              (local.get $15)
+             )
+            )
+            (block $label$131.linked.20382
+            )
+           )
+           (block $label$132.linked.20383
+            (local.set $61
+             (local.get $35)
+            )
+            (block $label$133.linked.20384
+            )
+           )
+           (block $label$134.linked.20385
+            (local.set $62
+             (i32.sub
+              (local.get $17)
+              (local.get $61)
+             )
+            )
+            (block $label$135.linked.20386
+            )
+           )
+           (drop
+            (block $label$136.linked.20387 (result i32)
+             (memory.copy
+              (local.get $56)
+              (local.get $60)
+              (local.get $62)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$137.linked.20388
+            (local.set $7
+             (local.get $47)
+            )
+            (block $label$138.linked.20389
+            )
+           )
+           (block $label$139.linked.20390
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $0)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $1)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $2)
+             )
+            )
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $3)
+             )
+            )
+           )
+           (return
+            (local.get $7)
+           )
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$141.linked.20391 (result i32)
+        (block $label$142.linked.20392
+         (local.set $63
+          (local.get $36)
+         )
+         (block $label$143.linked.20393
+         )
+        )
+        (block $label$144.linked.20394
+         (local.set $64
+          (i32.sub
+           (local.get $63)
+           (i32.const 1)
+          )
+         )
+         (block $label$145.linked.20395
+         )
+        )
+        (block $label$146.linked.20396 (result i32)
+         (local.set $36
+          (local.get $64)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$67.linked.20321)
+     )
+    )
+   )
+   (block $label$147.linked.20397
+   )
+  )
+  (block $label$148.linked.20398
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (return
+   (local.get $3)
+  )
+ )
+ (func $replaceAll_1677.linked.18556 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i32)
+  (local $102 i32)
+  (local $103 i32)
+  (local $104 i32)
+  (local $105 i32)
+  (local $106 i32)
+  (local $107 i32)
+  (local $108 i32)
+  (local $109 i32)
+  (local $110 i32)
+  (local $111 i32)
+  (local $112 i32)
+  (local $113 i64)
+  (local $114 f32)
+  (local $115 f64)
+  (local $116 i32)
+  (local $117 i32)
+  (local $118 i32)
+  (local $119 i32)
+  (local $120 i32)
+  (local $121 i32)
+  (local $122 i32)
+  (block $label$1.linked.20399
+   (local.set $17
+    (local.get $1)
+   )
+   (block $label$2.linked.20400
+   )
+  )
+  (block $label$3.linked.20401
+   (local.set $18
+    (local.get $17)
+   )
+   (block $label$4.linked.20402
+   )
+  )
+  (block $label$5.linked.20403
+   (local.set $19
+    (local.get $3)
+   )
+   (block $label$6.linked.20404
+   )
+  )
+  (block $label$7.linked.20405
+   (local.set $20
+    (local.get $19)
+   )
+   (block $label$8.linked.20406
+   )
+  )
+  (block $label$9.linked.20407
+   (local.set $21
+    (local.get $2)
+   )
+   (block $label$10.linked.20408
+   )
+  )
+  (block $label$11.linked.20409
+   (local.set $22
+    (local.get $21)
+   )
+   (block $label$12.linked.20410
+   )
+  )
+  (block $label$13.linked.20411
+   (local.set $23
+    (local.get $18)
+   )
+   (block $label$14.linked.20412
+   )
+  )
+  (block $label$15.linked.20413
+   (local.set $24
+    (i32.load offset=4
+     (local.get $23)
+    )
+   )
+   (block $label$16.linked.20414
+   )
+  )
+  (block $label$17.linked.20415
+   (local.set $25
+    (local.get $20)
+   )
+   (block $label$18.linked.20416
+   )
+  )
+  (block $label$19.linked.20417
+   (local.set $26
+    (i32.load offset=4
+     (local.get $25)
+    )
+   )
+   (block $label$20.linked.20418
+   )
+  )
+  (block $label$21.linked.20419
+   (local.set $27
+    (local.get $22)
+   )
+   (block $label$22.linked.20420
+   )
+  )
+  (block $label$23.linked.20421
+   (local.set $28
+    (i32.load offset=4
+     (local.get $27)
+    )
+   )
+   (block $label$24.linked.20422
+   )
+  )
+  (block $label$25.linked.20423
+   (local.set $29
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $26)
+      (local.get $24)
+     )
+    )
+   )
+   (block $label$26.linked.20424
+   )
+  )
+  (block (result i32)
+   (local.set $122
+    (if (result i32)
+     (i32.shr_u
+      (local.get $29)
+      (i32.const 31)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $3)
+     )
+     (block (result i32)
+      (block $label$29.linked.20425
+       (local.set $30
+        (local.get $18)
+       )
+       (block $label$30.linked.20426
+       )
+      )
+      (block $label$31.linked.20427
+       (local.set $31
+        (i32.add
+         (local.get $30)
+         (i32.const 8)
+        )
+       )
+       (block $label$32.linked.20428
+       )
+      )
+      (block $label$33.linked.20429
+       (local.set $32
+        (block $label$34.linked.20430 (result i32)
+         (local.set $18
+          (local.get $31)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$35.linked.20431
+       )
+      )
+      (block $label$36.linked.20432
+       (local.set $33
+        (local.get $20)
+       )
+       (block $label$37.linked.20433
+       )
+      )
+      (block $label$38.linked.20434
+       (local.set $34
+        (i32.add
+         (local.get $33)
+         (i32.const 8)
+        )
+       )
+       (block $label$39.linked.20435
+       )
+      )
+      (block $label$40.linked.20436
+       (local.set $35
+        (block $label$41.linked.20437 (result i32)
+         (local.set $20
+          (local.get $34)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$42.linked.20438
+       )
+      )
+      (block $label$43.linked.20439
+       (local.set $36
+        (local.get $22)
+       )
+       (block $label$44.linked.20440
+       )
+      )
+      (block $label$45.linked.20441
+       (local.set $37
+        (i32.add
+         (local.get $36)
+         (i32.const 8)
+        )
+       )
+       (block $label$46.linked.20442
+       )
+      )
+      (block $label$47.linked.20443
+       (local.set $38
+        (block $label$48.linked.20444 (result i32)
+         (local.set $22
+          (local.get $37)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$49.linked.20445
+       )
+      )
+      (block $label$50.linked.20446
+       (local.set $39
+        (i32.const 2147483646)
+       )
+       (block $label$51.linked.20447
+       )
+      )
+      (block $label$52.linked.20448
+       (local.set $40
+        (local.get $20)
+       )
+       (block $label$53.linked.20449
+       )
+      )
+      (block $label$54.linked.20450
+       (local.set $41
+        (i32.add
+         (local.get $40)
+         (local.get $26)
+        )
+       )
+       (block $label$55.linked.20451
+       )
+      )
+      (block $label$56.linked.20452
+       (local.set $42
+        (i32.sub
+         (local.get $41)
+         (local.get $24)
+        )
+       )
+       (block $label$57.linked.20453
+       )
+      )
+      (block $label$58.linked.20454
+       (local.set $43
+        (i32.sub
+         (local.get $26)
+         (local.get $24)
+        )
+       )
+       (block $label$59.linked.20455
+       )
+      )
+      (block $label$60.linked.20456
+       (local.set $44
+        (i32.add
+         (local.get $43)
+         (i32.const 1)
+        )
+       )
+       (block $label$61.linked.20457
+       )
+      )
+      (block $label$62.linked.20458
+       (local.set $45
+        (local.get $44)
+       )
+       (block $label$63.linked.20459
+       )
+      )
+      (block $label$64.linked.20460
+       (local.set $7
+        (block $label$65.linked.20461 (result i32)
+         (i32.store
+          (local.tee $4
+           (call $malloc_1264.linked.1440
+            (global.get $malloc_1264.linked.1430)
+            (i32.const 20)
+           )
+          )
+          (i32.const 2)
+         )
+         (i32.store offset=4
+          (local.get $4)
+          (i32.const 1638603609)
+         )
+         (i32.store offset=8
+          (local.get $4)
+          (i32.const 11)
+         )
+         (i32.store offset=12
+          (local.get $4)
+          (i32.const 3)
+         )
+         (i32.store offset=16
+          (local.get $4)
+          (i32.const 0)
+         )
+         (local.get $4)
+        )
+       )
+       (block $label$66.linked.20462
+       )
+      )
+      (block $label$67.linked.20463
+       (local.set $8
+        (local.get $7)
+       )
+       (block $label$68.linked.20464
+       )
+      )
+      (block $label$69.linked.20465
+       (local.set $46
+        (i32.const 0)
+       )
+       (block $label$70.linked.20466
+       )
+      )
+      (block $label$71.linked.20467
+       (local.set $47
+        (local.get $42)
+       )
+       (block $label$72.linked.20468
+       )
+      )
+      (block $label$73.linked.20469
+       (local.set $48
+        (block $label$74.linked.20470 (result i32)
+         (loop $label$75.linked.20471
+          (drop
+           (br_if $label$74.linked.20470
+            (i32.const 1879048190)
+            (i32.eqz
+             (i32.shr_u
+              (block $label$76.linked.20472 (result i32)
+               (block $label$77.linked.20473
+                (local.set $71
+                 (local.get $47)
+                )
+                (block $label$78.linked.20474
+                )
+               )
+               (block $label$79.linked.20475
+                (local.set $72
+                 (local.get $20)
+                )
+                (block $label$80.linked.20476
+                )
+               )
+               (block $label$81.linked.20477
+                (local.set $73
+                 (i32.sub
+                  (local.get $72)
+                  (i32.const 1)
+                 )
+                )
+                (block $label$82.linked.20478
+                )
+               )
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.gt_u
+                 (local.get $71)
+                 (local.get $73)
+                )
+               )
+              )
+              (i32.const 31)
+             )
+            )
+           )
+          )
+          (block $label$83.linked.20479
+           (drop
+            (block $label$84.linked.20480 (result i32)
+             (block $label$85.linked.20481
+              (local.set $49
+               (local.get $45)
+              )
+              (block $label$86.linked.20482
+              )
+             )
+             (block $label$87.linked.20483
+              (local.set $50
+               (i32.sub
+                (local.get $49)
+                (i32.const 1)
+               )
+              )
+              (block $label$88.linked.20484
+              )
+             )
+             (block $label$89.linked.20485
+              (local.set $51
+               (block $label$90.linked.20486 (result i32)
+                (local.set $45
+                 (local.get $50)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block $label$91.linked.20487
+              )
+             )
+             (block $label$92.linked.20488
+              (local.set $52
+               (local.get $47)
+              )
+              (block $label$93.linked.20489
+              )
+             )
+             (block $label$94.linked.20490
+              (local.set $53
+               (local.get $18)
+              )
+              (block $label$95.linked.20491
+              )
+             )
+             (block $label$96.linked.20492
+              (local.set $54
+               (block $label$97.linked.20493 (result i32)
+                (local.set $4
+                 (local.get $52)
+                )
+                (local.set $5
+                 (local.get $53)
+                )
+                (local.set $6
+                 (local.get $24)
+                )
+                (loop $label$98.linked.20494
+                 (drop
+                  (br_if $label$97.linked.20493
+                   (i32.const 0)
+                   (i32.eqz
+                    (local.get $6)
+                   )
+                  )
+                 )
+                 (if
+                  (i32.ne
+                   (i32.load8_u
+                    (local.get $4)
+                   )
+                   (i32.load8_u
+                    (local.get $5)
+                   )
+                  )
+                  (br $label$97.linked.20493
+                   (select
+                    (i32.const -1)
+                    (i32.const 1)
+                    (i32.lt_u
+                     (i32.load8_u
+                      (local.get $4)
+                     )
+                     (i32.load8_u
+                      (local.get $5)
+                     )
+                    )
+                   )
+                  )
+                  (block
+                   (local.set $4
+                    (i32.add
+                     (local.get $4)
+                     (i32.const 1)
+                    )
+                   )
+                   (local.set $5
+                    (i32.add
+                     (local.get $5)
+                     (i32.const 1)
+                    )
+                   )
+                   (local.set $6
+                    (i32.sub
+                     (local.get $6)
+                     (i32.const 1)
+                    )
+                   )
+                   (br $label$98.linked.20494)
+                  )
+                 )
+                )
+               )
+              )
+              (block $label$101.linked.20495
+              )
+             )
+             (block $label$102.linked.20496
+              (local.set $55
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $54)
+                 (i32.const 0)
+                )
+               )
+              )
+              (block $label$103.linked.20497
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $55)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$105.linked.20498
+                (local.set $56
+                 (block $label$106.linked.20499 (result i32)
+                  (local.set $39
+                   (i32.const -2)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$107.linked.20500
+                )
+               )
+               (block $label$108.linked.20501
+                (local.set $57
+                 (local.get $46)
+                )
+                (block $label$109.linked.20502
+                )
+               )
+               (block $label$110.linked.20503
+                (local.set $58
+                 (i32.add
+                  (local.get $57)
+                  (i32.const 1)
+                 )
+                )
+                (block $label$111.linked.20504
+                )
+               )
+               (block $label$112.linked.20505
+                (local.set $59
+                 (block $label$113.linked.20506 (result i32)
+                  (local.set $46
+                   (local.get $58)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$114.linked.20507
+                )
+               )
+               (block $label$115.linked.20508
+                (local.set $60
+                 (local.get $45)
+                )
+                (block $label$116.linked.20509
+                )
+               )
+               (block $label$117.linked.20510
+                (local.set $9
+                 (i32.xor
+                  (i32.shl
+                   (local.get $60)
+                   (i32.const 1)
+                  )
+                  (i32.const 1)
+                 )
+                )
+                (block $label$118.linked.20511
+                )
+               )
+               (block $label$119.linked.20512
+                (local.set $10
+                 (call $incRef_1273.linked.1442
+                  (global.get $incRef_1273.linked.1429)
+                  (local.get $8)
+                 )
+                )
+                (block $label$120.linked.20513
+                )
+               )
+               (block $label$121.linked.20514
+                (local.set $11
+                 (block $label$122.linked.20515 (result i32)
+                  (i32.store
+                   (local.tee $4
+                    (call $malloc_1264.linked.1440
+                     (global.get $malloc_1264.linked.1430)
+                     (i32.const 28)
+                    )
+                   )
+                   (i32.const 2)
+                  )
+                  (i32.store offset=4
+                   (local.get $4)
+                   (i32.const 1638603609)
+                  )
+                  (i32.store offset=8
+                   (local.get $4)
+                   (i32.const 11)
+                  )
+                  (i32.store offset=12
+                   (local.get $4)
+                   (i32.const 1)
+                  )
+                  (i32.store offset=16
+                   (local.get $4)
+                   (i32.const 2)
+                  )
+                  (i32.store offset=20
+                   (local.get $4)
+                   (local.get $9)
+                  )
+                  (i32.store offset=24
+                   (local.get $4)
+                   (local.get $10)
+                  )
+                  (local.get $4)
+                 )
+                )
+                (block $label$123.linked.20516
+                )
+               )
+               (block $label$124.linked.20517
+                (local.set $61
+                 (block $label$125.linked.20518 (result i32)
+                  (local.set $8
+                   (block (result i32)
+                    (local.set $116
+                     (call $incRef_1273.linked.1442
+                      (global.get $incRef_1273.linked.1429)
+                      (local.get $11)
+                     )
+                    )
+                    (drop
+                     (call $decRef_1332.linked.1445
+                      (global.get $decRef_1332.linked.1425)
+                      (local.get $8)
+                     )
+                    )
+                    (local.get $116)
+                   )
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$126.linked.20519
+                )
+               )
+               (block $label$127.linked.20520
+                (local.set $62
+                 (local.get $45)
+                )
+                (block $label$128.linked.20521
+                )
+               )
+               (block $label$129.linked.20522
+                (local.set $63
+                 (i32.sub
+                  (local.get $24)
+                  (i32.const 1)
+                 )
+                )
+                (block $label$130.linked.20523
+                )
+               )
+               (block $label$131.linked.20524
+                (local.set $64
+                 (i32.sub
+                  (local.get $62)
+                  (local.get $63)
+                 )
+                )
+                (block $label$132.linked.20525
+                )
+               )
+               (block $label$133.linked.20526
+                (local.set $65
+                 (block $label$134.linked.20527 (result i32)
+                  (local.set $45
+                   (local.get $64)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$135.linked.20528
+                )
+               )
+               (block $label$136.linked.20529
+                (local.set $66
+                 (local.get $47)
+                )
+                (block $label$137.linked.20530
+                )
+               )
+               (block $label$138.linked.20531
+                (local.set $67
+                 (i32.sub
+                  (local.get $24)
+                  (i32.const 1)
+                 )
+                )
+                (block $label$139.linked.20532
+                )
+               )
+               (block $label$140.linked.20533
+                (local.set $68
+                 (i32.sub
+                  (local.get $66)
+                  (local.get $67)
+                 )
+                )
+                (block $label$141.linked.20534
+                )
+               )
+               (block $label$142.linked.20535 (result i32)
+                (local.set $47
+                 (local.get $68)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (i32.const 1879048190)
+             )
+            )
+           )
+          )
+          (drop
+           (block $label$144.linked.20536 (result i32)
+            (block $label$145.linked.20537
+             (local.set $69
+              (local.get $47)
+             )
+             (block $label$146.linked.20538
+             )
+            )
+            (block $label$147.linked.20539
+             (local.set $70
+              (i32.sub
+               (local.get $69)
+               (i32.const 1)
+              )
+             )
+             (block $label$148.linked.20540
+             )
+            )
+            (block $label$149.linked.20541 (result i32)
+             (local.set $47
+              (local.get $70)
+             )
+             (i32.const 1879048190)
+            )
+           )
+          )
+          (br $label$75.linked.20471)
+         )
+        )
+       )
+       (block $label$150.linked.20542
+       )
+      )
+      (block $label$151.linked.20543
+       (local.set $74
+        (local.get $39)
+       )
+       (block $label$152.linked.20544
+       )
+      )
+      (block (result i32)
+       (local.set $121
+        (if (result i32)
+         (i32.shr_u
+          (local.get $74)
+          (i32.const 31)
+         )
+         (block (result i32)
+          (block $label$154.linked.20545
+           (local.set $75
+            (i32.sub
+             (local.get $24)
+             (local.get $28)
+            )
+           )
+           (block $label$155.linked.20546
+           )
+          )
+          (block $label$156.linked.20547
+           (local.set $76
+            (local.get $46)
+           )
+           (block $label$157.linked.20548
+           )
+          )
+          (block $label$158.linked.20549
+           (local.set $77
+            (i32.mul
+             (local.get $75)
+             (local.get $76)
+            )
+           )
+           (block $label$159.linked.20550
+           )
+          )
+          (block $label$160.linked.20551
+           (local.set $78
+            (i32.sub
+             (local.get $26)
+             (local.get $77)
+            )
+           )
+           (block $label$161.linked.20552
+           )
+          )
+          (block $label$162.linked.20553
+           (local.set $79
+            (block $label$163.linked.20554 (result i32)
+             (i32.store
+              (local.tee $4
+               (call $malloc_1264.linked.1440
+                (global.get $malloc_1264.linked.1430)
+                (i32.add
+                 (local.get $78)
+                 (i32.const 8)
+                )
+               )
+              )
+              (i32.const 1)
+             )
+             (i32.store offset=4
+              (local.get $4)
+              (local.get $78)
+             )
+             (local.get $4)
+            )
+           )
+           (block $label$164.linked.20555
+           )
+          )
+          (block $label$165.linked.20556
+           (local.set $80
+            (i32.add
+             (local.get $79)
+             (i32.const 8)
+            )
+           )
+           (block $label$166.linked.20557
+           )
+          )
+          (block $label$167.linked.20558
+           (local.set $81
+            (local.get $80)
+           )
+           (block $label$168.linked.20559
+           )
+          )
+          (block $label$169.linked.20560
+           (local.set $82
+            (i32.const 0)
+           )
+           (block $label$170.linked.20561
+           )
+          )
+          (block $label$171.linked.20562
+           (local.set $83
+            (block $label$172.linked.20563 (result i32)
+             (loop $label$173.linked.20564
+              (drop
+               (br_if $label$172.linked.20563
+                (i32.const 1879048190)
+                (i32.eqz
+                 (i32.shr_u
+                  (block $label$174.linked.20565 (result i32)
+                   (i32.const -2)
+                  )
+                  (i32.const 31)
+                 )
+                )
+               )
+              )
+              (block $label$175.linked.20566
+               (drop
+                (block $label$176.linked.20567 (result i32)
+                 (block $label$177.linked.20568
+                  (local.set $12
+                   (call $incRef_1273.linked.1442
+                    (global.get $incRef_1273.linked.1429)
+                    (local.get $8)
+                   )
+                  )
+                  (block $label$178.linked.20569
+                  )
+                 )
+                 (block $label$179.linked.20570
+                  (local.set $13
+                   (i32.const 0)
+                  )
+                  (block $label$180.linked.20571
+                  )
+                 )
+                 (block $label$181.linked.20572
+                  (local.set $14
+                   (i32.const 0)
+                  )
+                  (block $label$182.linked.20573
+                  )
+                 )
+                 (block $label$183.linked.20574
+                  (local.set $84
+                   (i32.load offset=12
+                    (local.get $12)
+                   )
+                  )
+                  (block $label$184.linked.20575
+                  )
+                 )
+                 (block $label$185.linked.20576
+                  (local.set $85
+                   (i32.or
+                    (i32.shl
+                     (i32.eq
+                      (local.get $84)
+                      (i32.const 1)
+                     )
+                     (i32.const 31)
+                    )
+                    (i32.const 2147483646)
+                   )
+                  )
+                  (block $label$186.linked.20577
+                  )
+                 )
+                 (block $label$187.linked.20578
+                  (local.set $86
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $85)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$189.linked.20579
+                      (local.set $15
+                       (call $incRef_1273.linked.1442
+                        (global.get $incRef_1273.linked.1429)
+                        (i32.load offset=20
+                         (local.get $12)
+                        )
+                       )
+                      )
+                      (block $label$190.linked.20580
+                      )
+                     )
+                     (block $label$191.linked.20581
+                      (local.set $16
+                       (call $incRef_1273.linked.1442
+                        (global.get $incRef_1273.linked.1429)
+                        (i32.load offset=24
+                         (local.get $12)
+                        )
+                       )
+                      )
+                      (block $label$192.linked.20582
+                      )
+                     )
+                     (drop
+                      (block $label$193.linked.20583 (result i32)
+                       (local.set $14
+                        (block (result i32)
+                         (local.set $117
+                          (call $incRef_1273.linked.1442
+                           (global.get $incRef_1273.linked.1429)
+                           (local.get $16)
+                          )
+                         )
+                         (drop
+                          (call $decRef_1332.linked.1445
+                           (global.get $decRef_1332.linked.1425)
+                           (local.get $14)
+                          )
+                         )
+                         (local.get $117)
+                        )
+                       )
+                       (i32.const 1879048190)
+                      )
+                     )
+                     (drop
+                      (block $label$194.linked.20584 (result i32)
+                       (local.set $13
+                        (block (result i32)
+                         (local.set $118
+                          (call $incRef_1273.linked.1442
+                           (global.get $incRef_1273.linked.1429)
+                           (local.get $15)
+                          )
+                         )
+                         (drop
+                          (call $decRef_1332.linked.1445
+                           (global.get $decRef_1332.linked.1425)
+                           (local.get $13)
+                          )
+                         )
+                         (local.get $118)
+                        )
+                       )
+                       (i32.const 1879048190)
+                      )
+                     )
+                     (i32.const 1)
+                    )
+                    (block (result i32)
+                     (block $label$196.linked.20585
+                      (local.set $87
+                       (i32.or
+                        (i32.shl
+                         (i32.eq
+                          (local.get $84)
+                          (i32.const 3)
+                         )
+                         (i32.const 31)
+                        )
+                        (i32.const 2147483646)
+                       )
+                      )
+                      (block $label$197.linked.20586
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $87)
+                       (i32.const 31)
+                      )
+                      (i32.const 3)
+                      (unreachable)
+                     )
+                    )
+                   )
+                  )
+                  (block $label$200.linked.20587
+                  )
+                 )
+                 (block $label$201.linked.20588
+                  (drop
+                   (call $decRef_1332.linked.1445
+                    (global.get $decRef_1332.linked.1425)
+                    (local.get $12)
+                   )
+                  )
+                 )
+                 (block (result i32)
+                  (local.set $120
+                   (block $label$202.linked.20589 (result i32)
+                    (block $label$203.linked.20590 (result i32)
+                     (drop
+                      (block $label$204.linked.20591 (result i32)
+                       (drop
+                        (block $label$205.linked.20592 (result i32)
+                         (drop
+                          (block $label$206.linked.20593 (result i32)
+                           (br_table $label$204.linked.20591 $label$205.linked.20592 $label$206.linked.20593 $label$206.linked.20593
+                            (i32.const 0)
+                            (i32.shr_s
+                             (local.get $86)
+                             (i32.const 1)
+                            )
+                           )
+                          )
+                         )
+                         (br $label$202.linked.20589
+                          (block $label$207.linked.20594 (result i32)
+                           (unreachable)
+                          )
+                         )
+                        )
+                       )
+                       (br $label$202.linked.20589
+                        (block $label$208.linked.20595 (result i32)
+                         (block $label$209.linked.20596
+                          (drop
+                           (call $decRef_1332.linked.1445
+                            (global.get $decRef_1332.linked.1425)
+                            (local.get $13)
+                           )
+                          )
+                          (drop
+                           (call $decRef_1332.linked.1445
+                            (global.get $decRef_1332.linked.1425)
+                            (local.get $14)
+                           )
+                          )
+                         )
+                         (br $label$172.linked.20563
+                          (i32.const 1879048190)
+                         )
+                        )
+                       )
+                      )
+                     )
+                     (br $label$202.linked.20589
+                      (block $label$210.linked.20597 (result i32)
+                       (block $label$211.linked.20598
+                        (local.set $88
+                         (i32.shr_s
+                          (local.get $13)
+                          (i32.const 1)
+                         )
+                        )
+                        (block $label$212.linked.20599
+                        )
+                       )
+                       (block $label$213.linked.20600
+                        (local.set $89
+                         (local.get $81)
+                        )
+                        (block $label$214.linked.20601
+                        )
+                       )
+                       (block $label$215.linked.20602
+                        (local.set $90
+                         (local.get $20)
+                        )
+                        (block $label$216.linked.20603
+                        )
+                       )
+                       (block $label$217.linked.20604
+                        (local.set $91
+                         (local.get $82)
+                        )
+                        (block $label$218.linked.20605
+                        )
+                       )
+                       (block $label$219.linked.20606
+                        (local.set $92
+                         (i32.add
+                          (local.get $90)
+                          (local.get $91)
+                         )
+                        )
+                        (block $label$220.linked.20607
+                        )
+                       )
+                       (block $label$221.linked.20608
+                        (local.set $93
+                         (local.get $82)
+                        )
+                        (block $label$222.linked.20609
+                        )
+                       )
+                       (block $label$223.linked.20610
+                        (local.set $94
+                         (i32.sub
+                          (local.get $88)
+                          (local.get $93)
+                         )
+                        )
+                        (block $label$224.linked.20611
+                        )
+                       )
+                       (drop
+                        (block $label$225.linked.20612 (result i32)
+                         (memory.copy
+                          (local.get $89)
+                          (local.get $92)
+                          (local.get $94)
+                         )
+                         (i32.const 1879048190)
+                        )
+                       )
+                       (block $label$226.linked.20613
+                        (local.set $95
+                         (local.get $81)
+                        )
+                        (block $label$227.linked.20614
+                        )
+                       )
+                       (block $label$228.linked.20615
+                        (local.set $96
+                         (local.get $82)
+                        )
+                        (block $label$229.linked.20616
+                        )
+                       )
+                       (block $label$230.linked.20617
+                        (local.set $97
+                         (i32.sub
+                          (local.get $88)
+                          (local.get $96)
+                         )
+                        )
+                        (block $label$231.linked.20618
+                        )
+                       )
+                       (block $label$232.linked.20619
+                        (local.set $98
+                         (i32.add
+                          (local.get $95)
+                          (local.get $97)
+                         )
+                        )
+                        (block $label$233.linked.20620
+                        )
+                       )
+                       (block $label$234.linked.20621
+                        (local.set $99
+                         (block $label$235.linked.20622 (result i32)
+                          (local.set $81
+                           (local.get $98)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$236.linked.20623
+                        )
+                       )
+                       (block $label$237.linked.20624
+                        (local.set $100
+                         (local.get $81)
+                        )
+                        (block $label$238.linked.20625
+                        )
+                       )
+                       (block $label$239.linked.20626
+                        (local.set $101
+                         (local.get $22)
+                        )
+                        (block $label$240.linked.20627
+                        )
+                       )
+                       (drop
+                        (block $label$241.linked.20628 (result i32)
+                         (memory.copy
+                          (local.get $100)
+                          (local.get $101)
+                          (local.get $28)
+                         )
+                         (i32.const 1879048190)
+                        )
+                       )
+                       (block $label$242.linked.20629
+                        (local.set $102
+                         (local.get $81)
+                        )
+                        (block $label$243.linked.20630
+                        )
+                       )
+                       (block $label$244.linked.20631
+                        (local.set $103
+                         (i32.add
+                          (local.get $102)
+                          (local.get $28)
+                         )
+                        )
+                        (block $label$245.linked.20632
+                        )
+                       )
+                       (block $label$246.linked.20633
+                        (local.set $104
+                         (block $label$247.linked.20634 (result i32)
+                          (local.set $81
+                           (local.get $103)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$248.linked.20635
+                        )
+                       )
+                       (block $label$249.linked.20636
+                        (local.set $105
+                         (i32.add
+                          (local.get $88)
+                          (local.get $24)
+                         )
+                        )
+                        (block $label$250.linked.20637
+                        )
+                       )
+                       (block $label$251.linked.20638
+                        (local.set $106
+                         (block $label$252.linked.20639 (result i32)
+                          (local.set $82
+                           (local.get $105)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$253.linked.20640
+                        )
+                       )
+                       (block $label$254.linked.20641 (result i32)
+                        (local.set $8
+                         (block (result i32)
+                          (local.set $119
+                           (call $incRef_1273.linked.1442
+                            (global.get $incRef_1273.linked.1429)
+                            (call $incRef_1273.linked.1442
+                             (global.get $incRef_1273.linked.1429)
+                             (local.get $14)
+                            )
+                           )
+                          )
+                          (drop
+                           (call $decRef_1332.linked.1445
+                            (global.get $decRef_1332.linked.1425)
+                            (local.get $8)
+                           )
+                          )
+                          (local.get $119)
+                         )
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                  (drop
+                   (block $label$255.linked.20642 (result i32)
+                    (drop
+                     (call $decRef_1332.linked.1445
+                      (global.get $decRef_1332.linked.1425)
+                      (local.get $13)
+                     )
+                    )
+                    (drop
+                     (call $decRef_1332.linked.1445
+                      (global.get $decRef_1332.linked.1425)
+                      (local.get $14)
+                     )
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (local.get $120)
+                 )
+                )
+               )
+              )
+              (br $label$173.linked.20564)
+             )
+            )
+           )
+           (block $label$256.linked.20643
+           )
+          )
+          (block $label$257.linked.20644
+           (local.set $107
+            (local.get $81)
+           )
+           (block $label$258.linked.20645
+           )
+          )
+          (block $label$259.linked.20646
+           (local.set $108
+            (local.get $20)
+           )
+           (block $label$260.linked.20647
+           )
+          )
+          (block $label$261.linked.20648
+           (local.set $109
+            (local.get $82)
+           )
+           (block $label$262.linked.20649
+           )
+          )
+          (block $label$263.linked.20650
+           (local.set $110
+            (i32.add
+             (local.get $108)
+             (local.get $109)
+            )
+           )
+           (block $label$264.linked.20651
+           )
+          )
+          (block $label$265.linked.20652
+           (local.set $111
+            (local.get $82)
+           )
+           (block $label$266.linked.20653
+           )
+          )
+          (block $label$267.linked.20654
+           (local.set $112
+            (i32.sub
+             (local.get $26)
+             (local.get $111)
+            )
+           )
+           (block $label$268.linked.20655
+           )
+          )
+          (drop
+           (block $label$269.linked.20656 (result i32)
+            (memory.copy
+             (local.get $107)
+             (local.get $110)
+             (local.get $112)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (local.get $79)
+         )
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (local.get $3)
+         )
+        )
+       )
+       (drop
+        (block $label$271.linked.20657 (result i32)
+         (drop
+          (call $decRef_1332.linked.1445
+           (global.get $decRef_1332.linked.1425)
+           (local.get $8)
+          )
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (local.get $121)
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$272.linked.20658 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $3)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $122)
+  )
+ )
+ (func $grainToWasmNumber_1702.linked.18557 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i64)
+  (local $18 f32)
+  (local $19 f64)
+  (local $20 i32)
+  (block $label$1.linked.20659
+   (local.set $12
+    (local.get $1)
+   )
+   (block $label$2.linked.20660
+   )
+  )
+  (block $label$3.linked.20661
+   (local.set $13
+    (i32.and
+     (local.get $12)
+     (i32.const 1)
+    )
+   )
+   (block $label$4.linked.20662
+   )
+  )
+  (block $label$5.linked.20663
+   (local.set $14
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eqz
+      (local.get $13)
+     )
+    )
+   )
+   (block $label$6.linked.20664
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $14)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$8.linked.20665
+      (local.set $9
+       (block $label$9.linked.20666 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 40)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 28)
+        )
+        (i64.store offset=8
+         (local.get $3)
+         (i64.const 7954884667833999648)
+        )
+        (i64.store offset=16
+         (local.get $3)
+         (i64.const 7070779454211825780)
+        )
+        (i64.store offset=24
+         (local.get $3)
+         (i64.const 8389758743849541733)
+        )
+        (i64.store offset=32
+         (local.get $3)
+         (i64.const 1919248229)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$10.linked.20667
+      )
+     )
+     (block $label$11.linked.20668
+      (local.set $10
+       (call $concat_4017.linked.15804
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $concat_4017.linked.15753)
+        )
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (local.get $2)
+        )
+        (local.get $9)
+       )
+      )
+      (block $label$12.linked.20669
+      )
+     )
+     (block $label$13.linked.20670
+      (local.set $11
+       (block $label$14.linked.20671 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $3)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $3)
+         (i32.const 2353)
+        )
+        (i32.store offset=16
+         (local.get $3)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $3)
+         (local.get $10)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$15.linked.20672
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $11)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$17.linked.20673
+   (local.set $15
+    (i32.shr_s
+     (local.get $12)
+     (i32.const 1)
+    )
+   )
+   (block $label$18.linked.20674
+   )
+  )
+  (block $label$19.linked.20675
+   (local.set $16
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_s
+      (local.get $15)
+      (i32.const 0)
+     )
+    )
+   )
+   (block $label$20.linked.20676
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $16)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$22.linked.20677
+      (local.set $6
+       (block $label$23.linked.20678 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 40)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 30)
+        )
+        (i64.store offset=8
+         (local.get $3)
+         (i64.const 7954884667833999648)
+        )
+        (i64.store offset=16
+         (local.get $3)
+         (i64.const 7070779454211825780)
+        )
+        (i64.store offset=24
+         (local.get $3)
+         (i64.const 7308829197608034405)
+        )
+        (i64.store offset=32
+         (local.get $3)
+         (i64.const 111559249781095)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$24.linked.20679
+      )
+     )
+     (block $label$25.linked.20680
+      (local.set $7
+       (call $concat_4017.linked.15804
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (global.get $concat_4017.linked.15753)
+        )
+        (call $incRef_1273.linked.1442
+         (global.get $incRef_1273.linked.1429)
+         (local.get $2)
+        )
+        (local.get $6)
+       )
+      )
+      (block $label$26.linked.20681
+      )
+     )
+     (block $label$27.linked.20682
+      (local.set $8
+       (block $label$28.linked.20683 (result i32)
+        (i32.store
+         (local.tee $3
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 24)
+          )
+         )
+         (i32.const 2)
+        )
+        (i32.store offset=4
+         (local.get $3)
+         (i32.const 1)
+        )
+        (i32.store offset=8
+         (local.get $3)
+         (i32.const 5)
+        )
+        (i32.store offset=12
+         (local.get $3)
+         (i32.const 2353)
+        )
+        (i32.store offset=16
+         (local.get $3)
+         (i32.const 1)
+        )
+        (i32.store offset=20
+         (local.get $3)
+         (local.get $7)
+        )
+        (local.get $3)
+       )
+      )
+      (block $label$29.linked.20684
+      )
+     )
+     (drop
+      (call $throw_4472.linked.17966
+       (call $incRef_1273.linked.1442
+        (global.get $incRef_1273.linked.1429)
+        (global.get $throw_4472.linked.17955)
+       )
+       (local.get $8)
+      )
+     )
+     (unreachable)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$31.linked.20685
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (block (result i32)
+   (local.set $20
+    (local.get $15)
+   )
+   (drop
+    (block $label$32.linked.20686 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $20)
+  )
+ )
+ (func $utf16Length_1714.linked.18558 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i64)
+  (local $36 f32)
+  (local $37 f64)
+  (local $38 i32)
+  (block $label$1.linked.20687
+   (local.set $5
+    (call $byteLength_1471.linked.18537
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $byteLength_1471.linked.18495)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$2.linked.20688
+   )
+  )
+  (block $label$3.linked.20689
+   (local.set $7
+    (local.get $5)
+   )
+   (block $label$4.linked.20690
+   )
+  )
+  (block $label$5.linked.20691
+   (local.set $8
+    (i32.shr_u
+     (local.get $7)
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.20692
+   )
+  )
+  (block $label$7.linked.20693
+   (local.set $6
+    (call $length_1403.linked.18536
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $length_1403.linked.18522)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+    )
+   )
+   (block $label$8.linked.20694
+   )
+  )
+  (block $label$9.linked.20695
+   (local.set $9
+    (local.get $1)
+   )
+   (block $label$10.linked.20696
+   )
+  )
+  (block $label$11.linked.20697
+   (local.set $10
+    (i32.add
+     (local.get $9)
+     (i32.const 8)
+    )
+   )
+   (block $label$12.linked.20698
+   )
+  )
+  (block $label$13.linked.20699
+   (local.set $11
+    (local.get $10)
+   )
+   (block $label$14.linked.20700
+   )
+  )
+  (block $label$15.linked.20701
+   (local.set $12
+    (local.get $11)
+   )
+   (block $label$16.linked.20702
+   )
+  )
+  (block $label$17.linked.20703
+   (local.set $13
+    (i32.add
+     (local.get $12)
+     (local.get $8)
+    )
+   )
+   (block $label$18.linked.20704
+   )
+  )
+  (block $label$19.linked.20705
+   (local.set $14
+    (i32.const 0)
+   )
+   (block $label$20.linked.20706
+   )
+  )
+  (block $label$21.linked.20707
+   (local.set $15
+    (block $label$22.linked.20708 (result i32)
+     (loop $label$23.linked.20709
+      (drop
+       (br_if $label$22.linked.20708
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$24.linked.20710 (result i32)
+           (block $label$25.linked.20711
+            (local.set $32
+             (local.get $11)
+            )
+            (block $label$26.linked.20712
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $32)
+             (local.get $13)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$27.linked.20713
+       (drop
+        (block $label$28.linked.20714 (result i32)
+         (block $label$29.linked.20715
+          (local.set $16
+           (local.get $11)
+          )
+          (block $label$30.linked.20716
+          )
+         )
+         (block $label$31.linked.20717
+          (local.set $17
+           (i32.load8_u
+            (local.get $16)
+           )
+          )
+          (block $label$32.linked.20718
+          )
+         )
+         (block $label$33.linked.20719
+          (local.set $18
+           (i32.and
+            (local.get $17)
+            (i32.const 128)
+           )
+          )
+          (block $label$34.linked.20720
+          )
+         )
+         (block $label$35.linked.20721
+          (local.set $19
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $18)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$36.linked.20722
+          )
+         )
+         (block $label$37.linked.20723
+          (local.set $20
+           (if (result i32)
+            (i32.shr_u
+             (local.get $19)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$40.linked.20724
+              (local.set $21
+               (i32.and
+                (local.get $17)
+                (i32.const 240)
+               )
+              )
+              (block $label$41.linked.20725
+              )
+             )
+             (block $label$42.linked.20726
+              (local.set $22
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $21)
+                 (i32.const 240)
+                )
+               )
+              )
+              (block $label$43.linked.20727
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $22)
+               (i32.const 31)
+              )
+              (i32.const 4)
+              (block (result i32)
+               (block $label$46.linked.20728
+                (local.set $23
+                 (i32.and
+                  (local.get $17)
+                  (i32.const 224)
+                 )
+                )
+                (block $label$47.linked.20729
+                )
+               )
+               (block $label$48.linked.20730
+                (local.set $24
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $23)
+                   (i32.const 224)
+                  )
+                 )
+                )
+                (block $label$49.linked.20731
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $24)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$52.linked.20732
+          )
+         )
+         (block $label$53.linked.20733
+          (local.set $25
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $20)
+             (i32.const 4)
+            )
+           )
+          )
+          (block $label$54.linked.20734
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $25)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$56.linked.20735
+             (local.set $30
+              (local.get $14)
+             )
+             (block $label$57.linked.20736
+             )
+            )
+            (block $label$58.linked.20737
+             (local.set $31
+              (i32.add
+               (local.get $30)
+               (i32.const 2)
+              )
+             )
+             (block $label$59.linked.20738
+             )
+            )
+            (block $label$60.linked.20739 (result i32)
+             (local.set $14
+              (local.get $31)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block (result i32)
+            (block $label$62.linked.20740
+             (local.set $28
+              (local.get $14)
+             )
+             (block $label$63.linked.20741
+             )
+            )
+            (block $label$64.linked.20742
+             (local.set $29
+              (i32.add
+               (local.get $28)
+               (i32.const 1)
+              )
+             )
+             (block $label$65.linked.20743
+             )
+            )
+            (block $label$66.linked.20744 (result i32)
+             (local.set $14
+              (local.get $29)
+             )
+             (i32.const 1879048190)
+            )
+           )
+          )
+         )
+         (block $label$67.linked.20745
+          (local.set $26
+           (local.get $11)
+          )
+          (block $label$68.linked.20746
+          )
+         )
+         (block $label$69.linked.20747
+          (local.set $27
+           (i32.add
+            (local.get $26)
+            (local.get $20)
+           )
+          )
+          (block $label$70.linked.20748
+          )
+         )
+         (block $label$71.linked.20749 (result i32)
+          (local.set $11
+           (local.get $27)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$23.linked.20709)
+     )
+    )
+   )
+   (block $label$72.linked.20750
+   )
+  )
+  (block $label$73.linked.20751
+   (local.set $33
+    (local.get $14)
+   )
+   (block $label$74.linked.20752
+   )
+  )
+  (block $label$75.linked.20753
+   (local.set $34
+    (i32.shl
+     (local.get $33)
+     (i32.const 1)
+    )
+   )
+   (block $label$76.linked.20754
+   )
+  )
+  (block (result i32)
+   (local.set $38
+    (i32.xor
+     (i32.shl
+      (local.get $34)
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (drop
+    (block $label$77.linked.20755 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $5)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $6)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $38)
+  )
+ )
+ (func $encodedLength_1724.linked.18559 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i64)
+  (local $16 f32)
+  (local $17 f64)
+  (local $18 i32)
+  (block $label$1.linked.20756
+   (local.set $8
+    (i32.load offset=12
+     (local.get $2)
+    )
+   )
+   (block $label$2.linked.20757
+   )
+  )
+  (block $label$3.linked.20758
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (block $label$4.linked.20759
+   (local.set $9
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $8)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$5.linked.20760
+   )
+  )
+  (block $label$6.linked.20761
+   (local.set $10
+    (if (result i32)
+     (i32.shr_u
+      (local.get $9)
+      (i32.const 31)
+     )
+     (i32.const 5)
+     (block (result i32)
+      (block $label$9.linked.20762
+       (local.set $11
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $8)
+           (i32.const 5)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$10.linked.20763
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $11)
+        (i32.const 31)
+       )
+       (i32.const 7)
+       (block (result i32)
+        (block $label$13.linked.20764
+         (local.set $12
+          (i32.or
+           (i32.shl
+            (i32.eq
+             (local.get $8)
+             (i32.const 7)
+            )
+            (i32.const 31)
+           )
+           (i32.const 2147483646)
+          )
+         )
+         (block $label$14.linked.20765
+         )
+        )
+        (if (result i32)
+         (i32.shr_u
+          (local.get $12)
+          (i32.const 31)
+         )
+         (i32.const 1)
+         (block (result i32)
+          (block $label$17.linked.20766
+           (local.set $13
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $8)
+               (i32.const 9)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$18.linked.20767
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $13)
+            (i32.const 31)
+           )
+           (i32.const 3)
+           (block (result i32)
+            (block $label$21.linked.20768
+             (local.set $14
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $8)
+                 (i32.const 1)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$22.linked.20769
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $14)
+              (i32.const 31)
+             )
+             (i32.const 9)
+             (unreachable)
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+   (block $label$25.linked.20770
+   )
+  )
+  (block (result i32)
+   (local.set $18
+    (block $label$26.linked.20771 (result i32)
+     (block $label$27.linked.20772 (result i32)
+      (drop
+       (block $label$28.linked.20773 (result i32)
+        (drop
+         (block $label$29.linked.20774 (result i32)
+          (drop
+           (block $label$30.linked.20775 (result i32)
+            (drop
+             (block $label$31.linked.20776 (result i32)
+              (drop
+               (block $label$32.linked.20777 (result i32)
+                (drop
+                 (block $label$33.linked.20778 (result i32)
+                  (br_table $label$28.linked.20773 $label$29.linked.20774 $label$30.linked.20775 $label$31.linked.20776 $label$32.linked.20777 $label$33.linked.20778 $label$33.linked.20778
+                   (i32.const 0)
+                   (i32.shr_s
+                    (local.get $10)
+                    (i32.const 1)
+                   )
+                  )
+                 )
+                )
+                (br $label$26.linked.20771
+                 (block $label$34.linked.20779 (result i32)
+                  (unreachable)
+                 )
+                )
+               )
+              )
+              (block $label$35.linked.20780
+               (block $label$36.linked.20781
+                (drop
+                 (call $decRef_1332.linked.1445
+                  (global.get $decRef_1332.linked.1425)
+                  (local.get $0)
+                 )
+                )
+               )
+               (return
+                (call $byteLength_1471.linked.18537
+                 (call $incRef_1273.linked.1442
+                  (global.get $incRef_1273.linked.1429)
+                  (global.get $byteLength_1471.linked.18495)
+                 )
+                 (local.get $1)
+                )
+               )
+              )
+             )
+            )
+            (block $label$37.linked.20782
+             (block $label$38.linked.20783
+              (drop
+               (call $decRef_1332.linked.1445
+                (global.get $decRef_1332.linked.1425)
+                (local.get $0)
+               )
+              )
+             )
+             (return
+              (call $utf16Length_1714.linked.18558
+               (call $incRef_1273.linked.1442
+                (global.get $incRef_1273.linked.1429)
+                (global.get $utf16Length_1714.linked.18530)
+               )
+               (local.get $1)
+              )
+             )
+            )
+           )
+          )
+          (block $label$39.linked.20784
+           (block $label$40.linked.20785
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $0)
+             )
+            )
+           )
+           (return
+            (call $utf16Length_1714.linked.18558
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (global.get $utf16Length_1714.linked.18530)
+             )
+             (local.get $1)
+            )
+           )
+          )
+         )
+        )
+        (block $label$41.linked.20786
+         (block $label$42.linked.20787
+          (local.set $7
+           (call $length_1403.linked.18536
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $length_1403.linked.18522)
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $1)
+            )
+           )
+          )
+          (block $label$43.linked.20788
+          )
+         )
+         (block $label$44.linked.20789
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $0)
+           )
+          )
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $1)
+           )
+          )
+         )
+         (return
+          (call $*_3515.linked.9871
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (global.get $*_3515.linked.9643)
+           )
+           (local.get $7)
+           (i32.const 9)
+          )
+         )
+        )
+       )
+      )
+      (block $label$45.linked.20790
+       (block $label$46.linked.20791
+        (local.set $6
+         (call $length_1403.linked.18536
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (global.get $length_1403.linked.18522)
+          )
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (local.get $1)
+          )
+         )
+        )
+        (block $label$47.linked.20792
+        )
+       )
+       (block $label$48.linked.20793
+        (drop
+         (call $decRef_1332.linked.1445
+          (global.get $decRef_1332.linked.1425)
+          (local.get $0)
+         )
+        )
+        (drop
+         (call $decRef_1332.linked.1445
+          (global.get $decRef_1332.linked.1425)
+          (local.get $1)
+         )
+        )
+       )
+       (return
+        (call $*_3515.linked.9871
+         (call $incRef_1273.linked.1442
+          (global.get $incRef_1273.linked.1429)
+          (global.get $*_3515.linked.9643)
+         )
+         (local.get $6)
+         (i32.const 9)
+        )
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$49.linked.20794 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $18)
+  )
+ )
+ (func $encodeAtHelp_1729.linked.18560 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (param $4 i32) (param $5 i32) (result i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i32)
+  (local $102 i32)
+  (local $103 i32)
+  (local $104 i32)
+  (local $105 i32)
+  (local $106 i32)
+  (local $107 i32)
+  (local $108 i32)
+  (local $109 i32)
+  (local $110 i32)
+  (local $111 i32)
+  (local $112 i32)
+  (local $113 i32)
+  (local $114 i32)
+  (local $115 i32)
+  (local $116 i32)
+  (local $117 i32)
+  (local $118 i32)
+  (local $119 i32)
+  (local $120 i32)
+  (local $121 i32)
+  (local $122 i32)
+  (local $123 i32)
+  (local $124 i32)
+  (local $125 i32)
+  (local $126 i32)
+  (local $127 i32)
+  (local $128 i32)
+  (local $129 i32)
+  (local $130 i32)
+  (local $131 i32)
+  (local $132 i32)
+  (local $133 i32)
+  (local $134 i32)
+  (local $135 i32)
+  (local $136 i32)
+  (local $137 i32)
+  (local $138 i32)
+  (local $139 i32)
+  (local $140 i32)
+  (local $141 i32)
+  (local $142 i32)
+  (local $143 i32)
+  (local $144 i32)
+  (local $145 i32)
+  (local $146 i32)
+  (local $147 i32)
+  (local $148 i32)
+  (local $149 i32)
+  (local $150 i32)
+  (local $151 i32)
+  (local $152 i32)
+  (local $153 i32)
+  (local $154 i32)
+  (local $155 i32)
+  (local $156 i32)
+  (local $157 i32)
+  (local $158 i32)
+  (local $159 i32)
+  (local $160 i32)
+  (local $161 i32)
+  (local $162 i32)
+  (local $163 i32)
+  (local $164 i32)
+  (local $165 i32)
+  (local $166 i32)
+  (local $167 i32)
+  (local $168 i32)
+  (local $169 i32)
+  (local $170 i32)
+  (local $171 i32)
+  (local $172 i32)
+  (local $173 i32)
+  (local $174 i32)
+  (local $175 i32)
+  (local $176 i32)
+  (local $177 i32)
+  (local $178 i32)
+  (local $179 i32)
+  (local $180 i32)
+  (local $181 i32)
+  (local $182 i32)
+  (local $183 i32)
+  (local $184 i32)
+  (local $185 i32)
+  (local $186 i32)
+  (local $187 i32)
+  (local $188 i32)
+  (local $189 i32)
+  (local $190 i32)
+  (local $191 i32)
+  (local $192 i32)
+  (local $193 i32)
+  (local $194 i32)
+  (local $195 i32)
+  (local $196 i32)
+  (local $197 i32)
+  (local $198 i32)
+  (local $199 i32)
+  (local $200 i32)
+  (local $201 i32)
+  (local $202 i32)
+  (local $203 i32)
+  (local $204 i32)
+  (local $205 i32)
+  (local $206 i32)
+  (local $207 i32)
+  (local $208 i32)
+  (local $209 i32)
+  (local $210 i32)
+  (local $211 i32)
+  (local $212 i32)
+  (local $213 i32)
+  (local $214 i32)
+  (local $215 i32)
+  (local $216 i32)
+  (local $217 i32)
+  (local $218 i32)
+  (local $219 i32)
+  (local $220 i32)
+  (local $221 i32)
+  (local $222 i32)
+  (local $223 i32)
+  (local $224 i32)
+  (local $225 i32)
+  (local $226 i32)
+  (local $227 i32)
+  (local $228 i32)
+  (local $229 i32)
+  (local $230 i32)
+  (local $231 i32)
+  (local $232 i32)
+  (local $233 i32)
+  (local $234 i32)
+  (local $235 i32)
+  (local $236 i32)
+  (local $237 i32)
+  (local $238 i32)
+  (local $239 i32)
+  (local $240 i32)
+  (local $241 i32)
+  (local $242 i32)
+  (local $243 i32)
+  (local $244 i32)
+  (local $245 i32)
+  (local $246 i32)
+  (local $247 i32)
+  (local $248 i32)
+  (local $249 i32)
+  (local $250 i32)
+  (local $251 i32)
+  (local $252 i32)
+  (local $253 i32)
+  (local $254 i32)
+  (local $255 i32)
+  (local $256 i32)
+  (local $257 i32)
+  (local $258 i32)
+  (local $259 i32)
+  (local $260 i32)
+  (local $261 i32)
+  (local $262 i32)
+  (local $263 i32)
+  (local $264 i32)
+  (local $265 i32)
+  (local $266 i32)
+  (local $267 i32)
+  (local $268 i32)
+  (local $269 i32)
+  (local $270 i32)
+  (local $271 i32)
+  (local $272 i32)
+  (local $273 i32)
+  (local $274 i32)
+  (local $275 i32)
+  (local $276 i32)
+  (local $277 i32)
+  (local $278 i32)
+  (local $279 i32)
+  (local $280 i32)
+  (local $281 i32)
+  (local $282 i32)
+  (local $283 i32)
+  (local $284 i32)
+  (local $285 i32)
+  (local $286 i32)
+  (local $287 i32)
+  (local $288 i32)
+  (local $289 i32)
+  (local $290 i32)
+  (local $291 i32)
+  (local $292 i32)
+  (local $293 i32)
+  (local $294 i32)
+  (local $295 i32)
+  (local $296 i32)
+  (local $297 i32)
+  (local $298 i32)
+  (local $299 i32)
+  (local $300 i32)
+  (local $301 i32)
+  (local $302 i32)
+  (local $303 i32)
+  (local $304 i32)
+  (local $305 i32)
+  (local $306 i32)
+  (local $307 i32)
+  (local $308 i32)
+  (local $309 i32)
+  (local $310 i32)
+  (local $311 i32)
+  (local $312 i32)
+  (local $313 i32)
+  (local $314 i32)
+  (local $315 i32)
+  (local $316 i32)
+  (local $317 i32)
+  (local $318 i32)
+  (local $319 i64)
+  (local $320 f32)
+  (local $321 f64)
+  (local $322 i32)
+  (local.set $6
+   (call $incRef_1273.linked.1442
+    (global.get $incRef_1273.linked.1429)
+    (i32.load offset=16
+     (local.get $0)
+    )
+   )
+  )
+  (block $label$1.linked.20795 (result i32)
+   (block $label$2.linked.20796
+    (local.set $10
+     (call $byteLength_1471.linked.18537
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $byteLength_1471.linked.18495)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+     )
+    )
+    (block $label$3.linked.20797
+    )
+   )
+   (block $label$4.linked.20798
+    (local.set $25
+     (local.get $10)
+    )
+    (block $label$5.linked.20799
+    )
+   )
+   (block $label$6.linked.20800
+    (local.set $26
+     (i32.shr_u
+      (local.get $25)
+      (i32.const 1)
+     )
+    )
+    (block $label$7.linked.20801
+    )
+   )
+   (block $label$8.linked.20802
+    (local.set $11
+     (call $length_1403.linked.18536
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $length_1403.linked.18522)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+     )
+    )
+    (block $label$9.linked.20803
+    )
+   )
+   (block $label$10.linked.20804
+    (local.set $27
+     (local.get $1)
+    )
+    (block $label$11.linked.20805
+    )
+   )
+   (block $label$12.linked.20806
+    (local.set $28
+     (i32.add
+      (local.get $27)
+      (i32.const 8)
+     )
+    )
+    (block $label$13.linked.20807
+    )
+   )
+   (block $label$14.linked.20808
+    (local.set $29
+     (local.get $28)
+    )
+    (block $label$15.linked.20809
+    )
+   )
+   (block $label$16.linked.20810
+    (local.set $30
+     (local.get $29)
+    )
+    (block $label$17.linked.20811
+    )
+   )
+   (block $label$18.linked.20812
+    (local.set $31
+     (i32.add
+      (local.get $30)
+      (local.get $26)
+     )
+    )
+    (block $label$19.linked.20813
+    )
+   )
+   (block $label$20.linked.20814
+    (local.set $32
+     (local.get $4)
+    )
+    (block $label$21.linked.20815
+    )
+   )
+   (block $label$22.linked.20816
+    (local.set $33
+     (call $grainToWasmNumber_1702.linked.18557
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $grainToWasmNumber_1702.linked.18513)
+      )
+      (local.get $5)
+      (local.get $6)
+     )
+    )
+    (block $label$23.linked.20817
+    )
+   )
+   (block $label$24.linked.20818
+    (local.set $34
+     (local.get $33)
+    )
+    (block $label$25.linked.20819
+    )
+   )
+   (block $label$26.linked.20820
+    (local.set $35
+     (i32.load
+      (i32.add
+       (local.get $32)
+       (global.get $_BYTES_SIZE_OFFSET_1727.linked.18490)
+      )
+     )
+    )
+    (block $label$27.linked.20821
+    )
+   )
+   (drop
+    (if (result i32)
+     (i32.shr_u
+      (local.get $3)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$29.linked.20822
+       (local.set $232
+        (i32.load offset=12
+         (local.get $2)
+        )
+       )
+       (block $label$30.linked.20823
+       )
+      )
+      (block $label$31.linked.20824
+       (local.set $233
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $232)
+           (i32.const 3)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$32.linked.20825
+       )
+      )
+      (block $label$33.linked.20826
+       (local.set $234
+        (if (result i32)
+         (i32.shr_u
+          (local.get $233)
+          (i32.const 31)
+         )
+         (i32.const 3)
+         (block (result i32)
+          (block $label$36.linked.20827
+           (local.set $235
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $232)
+               (i32.const 5)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$37.linked.20828
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $235)
+            (i32.const 31)
+           )
+           (i32.const 5)
+           (block (result i32)
+            (block $label$40.linked.20829
+             (local.set $236
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $232)
+                 (i32.const 7)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$41.linked.20830
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $236)
+              (i32.const 31)
+             )
+             (i32.const 7)
+             (block (result i32)
+              (block $label$44.linked.20831
+               (local.set $237
+                (i32.or
+                 (i32.shl
+                  (i32.eq
+                   (local.get $232)
+                   (i32.const 9)
+                  )
+                  (i32.const 31)
+                 )
+                 (i32.const 2147483646)
+                )
+               )
+               (block $label$45.linked.20832
+               )
+              )
+              (if (result i32)
+               (i32.shr_u
+                (local.get $237)
+                (i32.const 31)
+               )
+               (i32.const 9)
+               (block (result i32)
+                (block $label$48.linked.20833
+                 (local.set $238
+                  (i32.or
+                   (i32.shl
+                    (i32.eq
+                     (local.get $232)
+                     (i32.const 1)
+                    )
+                    (i32.const 31)
+                   )
+                   (i32.const 2147483646)
+                  )
+                 )
+                 (block $label$49.linked.20834
+                 )
+                )
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $238)
+                  (i32.const 31)
+                 )
+                 (i32.const 1)
+                 (unreachable)
+                )
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+       )
+       (block $label$52.linked.20835
+       )
+      )
+      (block $label$53.linked.20836 (result i32)
+       (block $label$54.linked.20837 (result i32)
+        (drop
+         (block $label$55.linked.20838 (result i32)
+          (drop
+           (block $label$56.linked.20839 (result i32)
+            (drop
+             (block $label$57.linked.20840 (result i32)
+              (drop
+               (block $label$58.linked.20841 (result i32)
+                (drop
+                 (block $label$59.linked.20842 (result i32)
+                  (drop
+                   (block $label$60.linked.20843 (result i32)
+                    (br_table $label$55.linked.20838 $label$56.linked.20839 $label$57.linked.20840 $label$58.linked.20841 $label$59.linked.20842 $label$60.linked.20843 $label$60.linked.20843
+                     (i32.const 0)
+                     (i32.shr_s
+                      (local.get $234)
+                      (i32.const 1)
+                     )
+                    )
+                   )
+                  )
+                  (br $label$53.linked.20836
+                   (block $label$61.linked.20844 (result i32)
+                    (unreachable)
+                   )
+                  )
+                 )
+                )
+                (br $label$53.linked.20836
+                 (block $label$62.linked.20845 (result i32)
+                  (block $label$63.linked.20846
+                   (local.set $299
+                    (local.get $34)
+                   )
+                   (block $label$64.linked.20847
+                   )
+                  )
+                  (block $label$65.linked.20848
+                   (local.set $300
+                    (i32.add
+                     (local.get $299)
+                     (i32.const 4)
+                    )
+                   )
+                   (block $label$66.linked.20849
+                   )
+                  )
+                  (block $label$67.linked.20850
+                   (local.set $301
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.gt_s
+                      (local.get $300)
+                      (local.get $35)
+                     )
+                    )
+                   )
+                   (block $label$68.linked.20851
+                   )
+                  )
+                  (drop
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $301)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$70.linked.20852
+                      (local.set $24
+                       (block $label$71.linked.20853 (result i32)
+                        (i32.store
+                         (local.tee $7
+                          (call $malloc_1264.linked.1440
+                           (global.get $malloc_1264.linked.1430)
+                           (i32.const 20)
+                          )
+                         )
+                         (i32.const 2)
+                        )
+                        (i32.store offset=4
+                         (local.get $7)
+                         (i32.const 1)
+                        )
+                        (i32.store offset=8
+                         (local.get $7)
+                         (i32.const 5)
+                        )
+                        (i32.store offset=12
+                         (local.get $7)
+                         (i32.const 67)
+                        )
+                        (i32.store offset=16
+                         (local.get $7)
+                         (i32.const 0)
+                        )
+                        (local.get $7)
+                       )
+                      )
+                      (block $label$72.linked.20854
+                      )
+                     )
+                     (drop
+                      (call $throw_4472.linked.17966
+                       (call $incRef_1273.linked.1442
+                        (global.get $incRef_1273.linked.1429)
+                        (global.get $throw_4472.linked.17955)
+                       )
+                       (local.get $24)
+                      )
+                     )
+                     (unreachable)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block $label$74.linked.20855
+                   (local.set $302
+                    (local.get $34)
+                   )
+                   (block $label$75.linked.20856
+                   )
+                  )
+                  (block $label$76.linked.20857
+                   (local.set $303
+                    (i32.add
+                     (local.get $32)
+                     (local.get $302)
+                    )
+                   )
+                   (block $label$77.linked.20858
+                   )
+                  )
+                  (block $label$78.linked.20859
+                   (local.set $304
+                    (block $label$79.linked.20860 (result i32)
+                     (i32.store8
+                      (i32.add
+                       (local.get $303)
+                       (global.get $_BYTES_OFFSET_1728.linked.18489)
+                      )
+                      (i32.const 255)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$80.linked.20861
+                   )
+                  )
+                  (block $label$81.linked.20862
+                   (local.set $305
+                    (local.get $34)
+                   )
+                   (block $label$82.linked.20863
+                   )
+                  )
+                  (block $label$83.linked.20864
+                   (local.set $306
+                    (i32.add
+                     (local.get $32)
+                     (local.get $305)
+                    )
+                   )
+                   (block $label$84.linked.20865
+                   )
+                  )
+                  (block $label$85.linked.20866
+                   (local.set $307
+                    (i32.add
+                     (local.get $306)
+                     (i32.const 1)
+                    )
+                   )
+                   (block $label$86.linked.20867
+                   )
+                  )
+                  (block $label$87.linked.20868
+                   (local.set $308
+                    (block $label$88.linked.20869 (result i32)
+                     (i32.store8
+                      (i32.add
+                       (local.get $307)
+                       (global.get $_BYTES_OFFSET_1728.linked.18489)
+                      )
+                      (i32.const 254)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$89.linked.20870
+                   )
+                  )
+                  (block $label$90.linked.20871
+                   (local.set $309
+                    (local.get $34)
+                   )
+                   (block $label$91.linked.20872
+                   )
+                  )
+                  (block $label$92.linked.20873
+                   (local.set $310
+                    (i32.add
+                     (local.get $32)
+                     (local.get $309)
+                    )
+                   )
+                   (block $label$93.linked.20874
+                   )
+                  )
+                  (block $label$94.linked.20875
+                   (local.set $311
+                    (i32.add
+                     (local.get $310)
+                     (i32.const 2)
+                    )
+                   )
+                   (block $label$95.linked.20876
+                   )
+                  )
+                  (block $label$96.linked.20877
+                   (local.set $312
+                    (block $label$97.linked.20878 (result i32)
+                     (i32.store8
+                      (i32.add
+                       (local.get $311)
+                       (global.get $_BYTES_OFFSET_1728.linked.18489)
+                      )
+                      (i32.const 0)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$98.linked.20879
+                   )
+                  )
+                  (block $label$99.linked.20880
+                   (local.set $313
+                    (local.get $34)
+                   )
+                   (block $label$100.linked.20881
+                   )
+                  )
+                  (block $label$101.linked.20882
+                   (local.set $314
+                    (i32.add
+                     (local.get $32)
+                     (local.get $313)
+                    )
+                   )
+                   (block $label$102.linked.20883
+                   )
+                  )
+                  (block $label$103.linked.20884
+                   (local.set $315
+                    (i32.add
+                     (local.get $314)
+                     (i32.const 3)
+                    )
+                   )
+                   (block $label$104.linked.20885
+                   )
+                  )
+                  (block $label$105.linked.20886
+                   (local.set $316
+                    (block $label$106.linked.20887 (result i32)
+                     (i32.store8
+                      (i32.add
+                       (local.get $315)
+                       (global.get $_BYTES_OFFSET_1728.linked.18489)
+                      )
+                      (i32.const 0)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                   (block $label$107.linked.20888
+                   )
+                  )
+                  (block $label$108.linked.20889
+                   (local.set $317
+                    (local.get $34)
+                   )
+                   (block $label$109.linked.20890
+                   )
+                  )
+                  (block $label$110.linked.20891
+                   (local.set $318
+                    (i32.add
+                     (local.get $317)
+                     (i32.const 4)
+                    )
+                   )
+                   (block $label$111.linked.20892
+                   )
+                  )
+                  (block $label$112.linked.20893 (result i32)
+                   (local.set $34
+                    (local.get $318)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                )
+               )
+              )
+              (br $label$53.linked.20836
+               (block $label$113.linked.20894 (result i32)
+                (block $label$114.linked.20895
+                 (local.set $279
+                  (local.get $34)
+                 )
+                 (block $label$115.linked.20896
+                 )
+                )
+                (block $label$116.linked.20897
+                 (local.set $280
+                  (i32.add
+                   (local.get $279)
+                   (i32.const 4)
+                  )
+                 )
+                 (block $label$117.linked.20898
+                 )
+                )
+                (block $label$118.linked.20899
+                 (local.set $281
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.gt_s
+                    (local.get $280)
+                    (local.get $35)
+                   )
+                  )
+                 )
+                 (block $label$119.linked.20900
+                 )
+                )
+                (drop
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $281)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$121.linked.20901
+                    (local.set $23
+                     (block $label$122.linked.20902 (result i32)
+                      (i32.store
+                       (local.tee $7
+                        (call $malloc_1264.linked.1440
+                         (global.get $malloc_1264.linked.1430)
+                         (i32.const 20)
+                        )
+                       )
+                       (i32.const 2)
+                      )
+                      (i32.store offset=4
+                       (local.get $7)
+                       (i32.const 1)
+                      )
+                      (i32.store offset=8
+                       (local.get $7)
+                       (i32.const 5)
+                      )
+                      (i32.store offset=12
+                       (local.get $7)
+                       (i32.const 67)
+                      )
+                      (i32.store offset=16
+                       (local.get $7)
+                       (i32.const 0)
+                      )
+                      (local.get $7)
+                     )
+                    )
+                    (block $label$123.linked.20903
+                    )
+                   )
+                   (drop
+                    (call $throw_4472.linked.17966
+                     (call $incRef_1273.linked.1442
+                      (global.get $incRef_1273.linked.1429)
+                      (global.get $throw_4472.linked.17955)
+                     )
+                     (local.get $23)
+                    )
+                   )
+                   (unreachable)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$125.linked.20904
+                 (local.set $282
+                  (local.get $34)
+                 )
+                 (block $label$126.linked.20905
+                 )
+                )
+                (block $label$127.linked.20906
+                 (local.set $283
+                  (i32.add
+                   (local.get $32)
+                   (local.get $282)
+                  )
+                 )
+                 (block $label$128.linked.20907
+                 )
+                )
+                (block $label$129.linked.20908
+                 (local.set $284
+                  (block $label$130.linked.20909 (result i32)
+                   (i32.store8
+                    (i32.add
+                     (local.get $283)
+                     (global.get $_BYTES_OFFSET_1728.linked.18489)
+                    )
+                    (i32.const 0)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$131.linked.20910
+                 )
+                )
+                (block $label$132.linked.20911
+                 (local.set $285
+                  (local.get $34)
+                 )
+                 (block $label$133.linked.20912
+                 )
+                )
+                (block $label$134.linked.20913
+                 (local.set $286
+                  (i32.add
+                   (local.get $32)
+                   (local.get $285)
+                  )
+                 )
+                 (block $label$135.linked.20914
+                 )
+                )
+                (block $label$136.linked.20915
+                 (local.set $287
+                  (i32.add
+                   (local.get $286)
+                   (i32.const 1)
+                  )
+                 )
+                 (block $label$137.linked.20916
+                 )
+                )
+                (block $label$138.linked.20917
+                 (local.set $288
+                  (block $label$139.linked.20918 (result i32)
+                   (i32.store8
+                    (i32.add
+                     (local.get $287)
+                     (global.get $_BYTES_OFFSET_1728.linked.18489)
+                    )
+                    (i32.const 0)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$140.linked.20919
+                 )
+                )
+                (block $label$141.linked.20920
+                 (local.set $289
+                  (local.get $34)
+                 )
+                 (block $label$142.linked.20921
+                 )
+                )
+                (block $label$143.linked.20922
+                 (local.set $290
+                  (i32.add
+                   (local.get $32)
+                   (local.get $289)
+                  )
+                 )
+                 (block $label$144.linked.20923
+                 )
+                )
+                (block $label$145.linked.20924
+                 (local.set $291
+                  (i32.add
+                   (local.get $290)
+                   (i32.const 2)
+                  )
+                 )
+                 (block $label$146.linked.20925
+                 )
+                )
+                (block $label$147.linked.20926
+                 (local.set $292
+                  (block $label$148.linked.20927 (result i32)
+                   (i32.store8
+                    (i32.add
+                     (local.get $291)
+                     (global.get $_BYTES_OFFSET_1728.linked.18489)
+                    )
+                    (i32.const 254)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$149.linked.20928
+                 )
+                )
+                (block $label$150.linked.20929
+                 (local.set $293
+                  (local.get $34)
+                 )
+                 (block $label$151.linked.20930
+                 )
+                )
+                (block $label$152.linked.20931
+                 (local.set $294
+                  (i32.add
+                   (local.get $32)
+                   (local.get $293)
+                  )
+                 )
+                 (block $label$153.linked.20932
+                 )
+                )
+                (block $label$154.linked.20933
+                 (local.set $295
+                  (i32.add
+                   (local.get $294)
+                   (i32.const 3)
+                  )
+                 )
+                 (block $label$155.linked.20934
+                 )
+                )
+                (block $label$156.linked.20935
+                 (local.set $296
+                  (block $label$157.linked.20936 (result i32)
+                   (i32.store8
+                    (i32.add
+                     (local.get $295)
+                     (global.get $_BYTES_OFFSET_1728.linked.18489)
+                    )
+                    (i32.const 255)
+                   )
+                   (i32.const 1879048190)
+                  )
+                 )
+                 (block $label$158.linked.20937
+                 )
+                )
+                (block $label$159.linked.20938
+                 (local.set $297
+                  (local.get $34)
+                 )
+                 (block $label$160.linked.20939
+                 )
+                )
+                (block $label$161.linked.20940
+                 (local.set $298
+                  (i32.add
+                   (local.get $297)
+                   (i32.const 4)
+                  )
+                 )
+                 (block $label$162.linked.20941
+                 )
+                )
+                (block $label$163.linked.20942 (result i32)
+                 (local.set $34
+                  (local.get $298)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+              )
+             )
+            )
+            (br $label$53.linked.20836
+             (block $label$164.linked.20943 (result i32)
+              (block $label$165.linked.20944
+               (local.set $267
+                (local.get $34)
+               )
+               (block $label$166.linked.20945
+               )
+              )
+              (block $label$167.linked.20946
+               (local.set $268
+                (i32.add
+                 (local.get $267)
+                 (i32.const 2)
+                )
+               )
+               (block $label$168.linked.20947
+               )
+              )
+              (block $label$169.linked.20948
+               (local.set $269
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.gt_s
+                  (local.get $268)
+                  (local.get $35)
+                 )
+                )
+               )
+               (block $label$170.linked.20949
+               )
+              )
+              (drop
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $269)
+                 (i32.const 31)
+                )
+                (block (result i32)
+                 (block $label$172.linked.20950
+                  (local.set $22
+                   (block $label$173.linked.20951 (result i32)
+                    (i32.store
+                     (local.tee $7
+                      (call $malloc_1264.linked.1440
+                       (global.get $malloc_1264.linked.1430)
+                       (i32.const 20)
+                      )
+                     )
+                     (i32.const 2)
+                    )
+                    (i32.store offset=4
+                     (local.get $7)
+                     (i32.const 1)
+                    )
+                    (i32.store offset=8
+                     (local.get $7)
+                     (i32.const 5)
+                    )
+                    (i32.store offset=12
+                     (local.get $7)
+                     (i32.const 67)
+                    )
+                    (i32.store offset=16
+                     (local.get $7)
+                     (i32.const 0)
+                    )
+                    (local.get $7)
+                   )
+                  )
+                  (block $label$174.linked.20952
+                  )
+                 )
+                 (drop
+                  (call $throw_4472.linked.17966
+                   (call $incRef_1273.linked.1442
+                    (global.get $incRef_1273.linked.1429)
+                    (global.get $throw_4472.linked.17955)
+                   )
+                   (local.get $22)
+                  )
+                 )
+                 (unreachable)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block $label$176.linked.20953
+               (local.set $270
+                (local.get $34)
+               )
+               (block $label$177.linked.20954
+               )
+              )
+              (block $label$178.linked.20955
+               (local.set $271
+                (i32.add
+                 (local.get $32)
+                 (local.get $270)
+                )
+               )
+               (block $label$179.linked.20956
+               )
+              )
+              (block $label$180.linked.20957
+               (local.set $272
+                (block $label$181.linked.20958 (result i32)
+                 (i32.store8
+                  (i32.add
+                   (local.get $271)
+                   (global.get $_BYTES_OFFSET_1728.linked.18489)
+                  )
+                  (i32.const 255)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$182.linked.20959
+               )
+              )
+              (block $label$183.linked.20960
+               (local.set $273
+                (local.get $34)
+               )
+               (block $label$184.linked.20961
+               )
+              )
+              (block $label$185.linked.20962
+               (local.set $274
+                (i32.add
+                 (local.get $32)
+                 (local.get $273)
+                )
+               )
+               (block $label$186.linked.20963
+               )
+              )
+              (block $label$187.linked.20964
+               (local.set $275
+                (i32.add
+                 (local.get $274)
+                 (i32.const 1)
+                )
+               )
+               (block $label$188.linked.20965
+               )
+              )
+              (block $label$189.linked.20966
+               (local.set $276
+                (block $label$190.linked.20967 (result i32)
+                 (i32.store8
+                  (i32.add
+                   (local.get $275)
+                   (global.get $_BYTES_OFFSET_1728.linked.18489)
+                  )
+                  (i32.const 254)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$191.linked.20968
+               )
+              )
+              (block $label$192.linked.20969
+               (local.set $277
+                (local.get $34)
+               )
+               (block $label$193.linked.20970
+               )
+              )
+              (block $label$194.linked.20971
+               (local.set $278
+                (i32.add
+                 (local.get $277)
+                 (i32.const 2)
+                )
+               )
+               (block $label$195.linked.20972
+               )
+              )
+              (block $label$196.linked.20973 (result i32)
+               (local.set $34
+                (local.get $278)
+               )
+               (i32.const 1879048190)
+              )
+             )
+            )
+           )
+          )
+          (br $label$53.linked.20836
+           (block $label$197.linked.20974 (result i32)
+            (block $label$198.linked.20975
+             (local.set $255
+              (local.get $34)
+             )
+             (block $label$199.linked.20976
+             )
+            )
+            (block $label$200.linked.20977
+             (local.set $256
+              (i32.add
+               (local.get $255)
+               (i32.const 2)
+              )
+             )
+             (block $label$201.linked.20978
+             )
+            )
+            (block $label$202.linked.20979
+             (local.set $257
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.gt_s
+                (local.get $256)
+                (local.get $35)
+               )
+              )
+             )
+             (block $label$203.linked.20980
+             )
+            )
+            (drop
+             (if (result i32)
+              (i32.shr_u
+               (local.get $257)
+               (i32.const 31)
+              )
+              (block (result i32)
+               (block $label$205.linked.20981
+                (local.set $21
+                 (block $label$206.linked.20982 (result i32)
+                  (i32.store
+                   (local.tee $7
+                    (call $malloc_1264.linked.1440
+                     (global.get $malloc_1264.linked.1430)
+                     (i32.const 20)
+                    )
+                   )
+                   (i32.const 2)
+                  )
+                  (i32.store offset=4
+                   (local.get $7)
+                   (i32.const 1)
+                  )
+                  (i32.store offset=8
+                   (local.get $7)
+                   (i32.const 5)
+                  )
+                  (i32.store offset=12
+                   (local.get $7)
+                   (i32.const 67)
+                  )
+                  (i32.store offset=16
+                   (local.get $7)
+                   (i32.const 0)
+                  )
+                  (local.get $7)
+                 )
+                )
+                (block $label$207.linked.20983
+                )
+               )
+               (drop
+                (call $throw_4472.linked.17966
+                 (call $incRef_1273.linked.1442
+                  (global.get $incRef_1273.linked.1429)
+                  (global.get $throw_4472.linked.17955)
+                 )
+                 (local.get $21)
+                )
+               )
+               (unreachable)
+              )
+              (i32.const 1879048190)
+             )
+            )
+            (block $label$209.linked.20984
+             (local.set $258
+              (local.get $34)
+             )
+             (block $label$210.linked.20985
+             )
+            )
+            (block $label$211.linked.20986
+             (local.set $259
+              (i32.add
+               (local.get $32)
+               (local.get $258)
+              )
+             )
+             (block $label$212.linked.20987
+             )
+            )
+            (block $label$213.linked.20988
+             (local.set $260
+              (block $label$214.linked.20989 (result i32)
+               (i32.store8
+                (i32.add
+                 (local.get $259)
+                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                )
+                (i32.const 254)
+               )
+               (i32.const 1879048190)
+              )
+             )
+             (block $label$215.linked.20990
+             )
+            )
+            (block $label$216.linked.20991
+             (local.set $261
+              (local.get $34)
+             )
+             (block $label$217.linked.20992
+             )
+            )
+            (block $label$218.linked.20993
+             (local.set $262
+              (i32.add
+               (local.get $32)
+               (local.get $261)
+              )
+             )
+             (block $label$219.linked.20994
+             )
+            )
+            (block $label$220.linked.20995
+             (local.set $263
+              (i32.add
+               (local.get $262)
+               (i32.const 1)
+              )
+             )
+             (block $label$221.linked.20996
+             )
+            )
+            (block $label$222.linked.20997
+             (local.set $264
+              (block $label$223.linked.20998 (result i32)
+               (i32.store8
+                (i32.add
+                 (local.get $263)
+                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                )
+                (i32.const 255)
+               )
+               (i32.const 1879048190)
+              )
+             )
+             (block $label$224.linked.20999
+             )
+            )
+            (block $label$225.linked.21000
+             (local.set $265
+              (local.get $34)
+             )
+             (block $label$226.linked.21001
+             )
+            )
+            (block $label$227.linked.21002
+             (local.set $266
+              (i32.add
+               (local.get $265)
+               (i32.const 2)
+              )
+             )
+             (block $label$228.linked.21003
+             )
+            )
+            (block $label$229.linked.21004 (result i32)
+             (local.set $34
+              (local.get $266)
+             )
+             (i32.const 1879048190)
+            )
+           )
+          )
+         )
+        )
+        (br $label$53.linked.20836
+         (block $label$230.linked.21005 (result i32)
+          (block $label$231.linked.21006
+           (local.set $239
+            (local.get $34)
+           )
+           (block $label$232.linked.21007
+           )
+          )
+          (block $label$233.linked.21008
+           (local.set $240
+            (i32.add
+             (local.get $239)
+             (i32.const 3)
+            )
+           )
+           (block $label$234.linked.21009
+           )
+          )
+          (block $label$235.linked.21010
+           (local.set $241
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.gt_s
+              (local.get $240)
+              (local.get $35)
+             )
+            )
+           )
+           (block $label$236.linked.21011
+           )
+          )
+          (drop
+           (if (result i32)
+            (i32.shr_u
+             (local.get $241)
+             (i32.const 31)
+            )
+            (block (result i32)
+             (block $label$238.linked.21012
+              (local.set $20
+               (block $label$239.linked.21013 (result i32)
+                (i32.store
+                 (local.tee $7
+                  (call $malloc_1264.linked.1440
+                   (global.get $malloc_1264.linked.1430)
+                   (i32.const 20)
+                  )
+                 )
+                 (i32.const 2)
+                )
+                (i32.store offset=4
+                 (local.get $7)
+                 (i32.const 1)
+                )
+                (i32.store offset=8
+                 (local.get $7)
+                 (i32.const 5)
+                )
+                (i32.store offset=12
+                 (local.get $7)
+                 (i32.const 67)
+                )
+                (i32.store offset=16
+                 (local.get $7)
+                 (i32.const 0)
+                )
+                (local.get $7)
+               )
+              )
+              (block $label$240.linked.21014
+              )
+             )
+             (drop
+              (call $throw_4472.linked.17966
+               (call $incRef_1273.linked.1442
+                (global.get $incRef_1273.linked.1429)
+                (global.get $throw_4472.linked.17955)
+               )
+               (local.get $20)
+              )
+             )
+             (unreachable)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$242.linked.21015
+           (local.set $242
+            (local.get $34)
+           )
+           (block $label$243.linked.21016
+           )
+          )
+          (block $label$244.linked.21017
+           (local.set $243
+            (i32.add
+             (local.get $32)
+             (local.get $242)
+            )
+           )
+           (block $label$245.linked.21018
+           )
+          )
+          (block $label$246.linked.21019
+           (local.set $244
+            (block $label$247.linked.21020 (result i32)
+             (i32.store8
+              (i32.add
+               (local.get $243)
+               (global.get $_BYTES_OFFSET_1728.linked.18489)
+              )
+              (i32.const 239)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$248.linked.21021
+           )
+          )
+          (block $label$249.linked.21022
+           (local.set $245
+            (local.get $34)
+           )
+           (block $label$250.linked.21023
+           )
+          )
+          (block $label$251.linked.21024
+           (local.set $246
+            (i32.add
+             (local.get $32)
+             (local.get $245)
+            )
+           )
+           (block $label$252.linked.21025
+           )
+          )
+          (block $label$253.linked.21026
+           (local.set $247
+            (i32.add
+             (local.get $246)
+             (i32.const 1)
+            )
+           )
+           (block $label$254.linked.21027
+           )
+          )
+          (block $label$255.linked.21028
+           (local.set $248
+            (block $label$256.linked.21029 (result i32)
+             (i32.store8
+              (i32.add
+               (local.get $247)
+               (global.get $_BYTES_OFFSET_1728.linked.18489)
+              )
+              (i32.const 187)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$257.linked.21030
+           )
+          )
+          (block $label$258.linked.21031
+           (local.set $249
+            (local.get $34)
+           )
+           (block $label$259.linked.21032
+           )
+          )
+          (block $label$260.linked.21033
+           (local.set $250
+            (i32.add
+             (local.get $32)
+             (local.get $249)
+            )
+           )
+           (block $label$261.linked.21034
+           )
+          )
+          (block $label$262.linked.21035
+           (local.set $251
+            (i32.add
+             (local.get $250)
+             (i32.const 2)
+            )
+           )
+           (block $label$263.linked.21036
+           )
+          )
+          (block $label$264.linked.21037
+           (local.set $252
+            (block $label$265.linked.21038 (result i32)
+             (i32.store8
+              (i32.add
+               (local.get $251)
+               (global.get $_BYTES_OFFSET_1728.linked.18489)
+              )
+              (i32.const 191)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$266.linked.21039
+           )
+          )
+          (block $label$267.linked.21040
+           (local.set $253
+            (local.get $34)
+           )
+           (block $label$268.linked.21041
+           )
+          )
+          (block $label$269.linked.21042
+           (local.set $254
+            (i32.add
+             (local.get $253)
+             (i32.const 3)
+            )
+           )
+           (block $label$270.linked.21043
+           )
+          )
+          (block $label$271.linked.21044 (result i32)
+           (local.set $34
+            (local.get $254)
+           )
+           (i32.const 1879048190)
+          )
+         )
+        )
+       )
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$273.linked.21045
+    (local.set $36
+     (i32.load offset=12
+      (local.get $2)
+     )
+    )
+    (block $label$274.linked.21046
+    )
+   )
+   (block $label$275.linked.21047
+    (local.set $37
+     (i32.or
+      (i32.shl
+       (i32.eq
+        (local.get $36)
+        (i32.const 1)
+       )
+       (i32.const 31)
+      )
+      (i32.const 2147483646)
+     )
+    )
+    (block $label$276.linked.21048
+    )
+   )
+   (block $label$277.linked.21049
+    (local.set $38
+     (if (result i32)
+      (i32.shr_u
+       (local.get $37)
+       (i32.const 31)
+      )
+      (i32.const 1)
+      (i32.const 3)
+     )
+    )
+    (block $label$280.linked.21050
+    )
+   )
+   (drop
+    (block $label$281.linked.21051 (result i32)
+     (block $label$282.linked.21052 (result i32)
+      (drop
+       (block $label$283.linked.21053 (result i32)
+        (drop
+         (block $label$284.linked.21054 (result i32)
+          (drop
+           (block $label$285.linked.21055 (result i32)
+            (br_table $label$283.linked.21053 $label$284.linked.21054 $label$285.linked.21055 $label$285.linked.21055
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $38)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$281.linked.21051
+           (block $label$286.linked.21056 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$281.linked.21051
+         (block $label$287.linked.21057 (result i32)
+          (block $label$288.linked.21058 (result i32)
+           (loop $label$289.linked.21059
+            (drop
+             (br_if $label$288.linked.21058
+              (i32.const 1879048190)
+              (i32.eqz
+               (i32.shr_u
+                (block $label$290.linked.21060 (result i32)
+                 (block $label$291.linked.21061
+                  (local.set $231
+                   (local.get $29)
+                  )
+                  (block $label$292.linked.21062
+                  )
+                 )
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.lt_u
+                   (local.get $231)
+                   (local.get $31)
+                  )
+                 )
+                )
+                (i32.const 31)
+               )
+              )
+             )
+            )
+            (block $label$293.linked.21063
+             (drop
+              (block $label$294.linked.21064 (result i32)
+               (block $label$295.linked.21065
+                (local.set $46
+                 (local.get $29)
+                )
+                (block $label$296.linked.21066
+                )
+               )
+               (block $label$297.linked.21067
+                (local.set $47
+                 (i32.load8_u
+                  (local.get $46)
+                 )
+                )
+                (block $label$298.linked.21068
+                )
+               )
+               (block $label$299.linked.21069
+                (local.set $48
+                 (i32.and
+                  (local.get $47)
+                  (i32.const 128)
+                 )
+                )
+                (block $label$300.linked.21070
+                )
+               )
+               (block $label$301.linked.21071
+                (local.set $49
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $48)
+                   (i32.const 0)
+                  )
+                 )
+                )
+                (block $label$302.linked.21072
+                )
+               )
+               (block $label$303.linked.21073
+                (local.set $50
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $49)
+                   (i32.const 31)
+                  )
+                  (i32.const 1)
+                  (block (result i32)
+                   (block $label$306.linked.21074
+                    (local.set $51
+                     (i32.and
+                      (local.get $47)
+                      (i32.const 240)
+                     )
+                    )
+                    (block $label$307.linked.21075
+                    )
+                   )
+                   (block $label$308.linked.21076
+                    (local.set $52
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.eq
+                       (local.get $51)
+                       (i32.const 240)
+                      )
+                     )
+                    )
+                    (block $label$309.linked.21077
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $52)
+                     (i32.const 31)
+                    )
+                    (i32.const 4)
+                    (block (result i32)
+                     (block $label$312.linked.21078
+                      (local.set $53
+                       (i32.and
+                        (local.get $47)
+                        (i32.const 224)
+                       )
+                      )
+                      (block $label$313.linked.21079
+                      )
+                     )
+                     (block $label$314.linked.21080
+                      (local.set $54
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.eq
+                         (local.get $53)
+                         (i32.const 224)
+                        )
+                       )
+                      )
+                      (block $label$315.linked.21081
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $54)
+                       (i32.const 31)
+                      )
+                      (i32.const 3)
+                      (i32.const 2)
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+                (block $label$318.linked.21082
+                )
+               )
+               (block $label$319.linked.21083
+                (local.set $55
+                 (i32.load offset=12
+                  (local.get $2)
+                 )
+                )
+                (block $label$320.linked.21084
+                )
+               )
+               (block $label$321.linked.21085
+                (local.set $56
+                 (i32.or
+                  (i32.shl
+                   (i32.eq
+                    (local.get $55)
+                    (i32.const 3)
+                   )
+                   (i32.const 31)
+                  )
+                  (i32.const 2147483646)
+                 )
+                )
+                (block $label$322.linked.21086
+                )
+               )
+               (block $label$323.linked.21087
+                (local.set $57
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $56)
+                   (i32.const 31)
+                  )
+                  (i32.const 3)
+                  (block (result i32)
+                   (block $label$326.linked.21088
+                    (local.set $58
+                     (i32.or
+                      (i32.shl
+                       (i32.eq
+                        (local.get $55)
+                        (i32.const 5)
+                       )
+                       (i32.const 31)
+                      )
+                      (i32.const 2147483646)
+                     )
+                    )
+                    (block $label$327.linked.21089
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $58)
+                     (i32.const 31)
+                    )
+                    (i32.const 5)
+                    (block (result i32)
+                     (block $label$330.linked.21090
+                      (local.set $59
+                       (i32.or
+                        (i32.shl
+                         (i32.eq
+                          (local.get $55)
+                          (i32.const 7)
+                         )
+                         (i32.const 31)
+                        )
+                        (i32.const 2147483646)
+                       )
+                      )
+                      (block $label$331.linked.21091
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $59)
+                       (i32.const 31)
+                      )
+                      (i32.const 7)
+                      (block (result i32)
+                       (block $label$334.linked.21092
+                        (local.set $60
+                         (i32.or
+                          (i32.shl
+                           (i32.eq
+                            (local.get $55)
+                            (i32.const 9)
+                           )
+                           (i32.const 31)
+                          )
+                          (i32.const 2147483646)
+                         )
+                        )
+                        (block $label$335.linked.21093
+                        )
+                       )
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $60)
+                         (i32.const 31)
+                        )
+                        (i32.const 9)
+                        (block (result i32)
+                         (block $label$338.linked.21094
+                          (local.set $61
+                           (i32.or
+                            (i32.shl
+                             (i32.eq
+                              (local.get $55)
+                              (i32.const 1)
+                             )
+                             (i32.const 31)
+                            )
+                            (i32.const 2147483646)
+                           )
+                          )
+                          (block $label$339.linked.21095
+                          )
+                         )
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $61)
+                           (i32.const 31)
+                          )
+                          (i32.const 1)
+                          (unreachable)
+                         )
+                        )
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+                (block $label$342.linked.21096
+                )
+               )
+               (drop
+                (block $label$343.linked.21097 (result i32)
+                 (block $label$344.linked.21098 (result i32)
+                  (drop
+                   (block $label$345.linked.21099 (result i32)
+                    (drop
+                     (block $label$346.linked.21100 (result i32)
+                      (drop
+                       (block $label$347.linked.21101 (result i32)
+                        (drop
+                         (block $label$348.linked.21102 (result i32)
+                          (drop
+                           (block $label$349.linked.21103 (result i32)
+                            (drop
+                             (block $label$350.linked.21104 (result i32)
+                              (br_table $label$345.linked.21099 $label$346.linked.21100 $label$347.linked.21101 $label$348.linked.21102 $label$349.linked.21103 $label$350.linked.21104 $label$350.linked.21104
+                               (i32.const 0)
+                               (i32.shr_s
+                                (local.get $57)
+                                (i32.const 1)
+                               )
+                              )
+                             )
+                            )
+                            (br $label$343.linked.21097
+                             (block $label$351.linked.21105 (result i32)
+                              (unreachable)
+                             )
+                            )
+                           )
+                          )
+                          (br $label$343.linked.21097
+                           (block $label$352.linked.21106 (result i32)
+                            (block $label$353.linked.21107
+                             (local.set $202
+                              (local.get $34)
+                             )
+                             (block $label$354.linked.21108
+                             )
+                            )
+                            (block $label$355.linked.21109
+                             (local.set $203
+                              (i32.add
+                               (local.get $202)
+                               (i32.const 4)
+                              )
+                             )
+                             (block $label$356.linked.21110
+                             )
+                            )
+                            (block $label$357.linked.21111
+                             (local.set $204
+                              (select
+                               (i32.const -2)
+                               (i32.const 2147483646)
+                               (i32.gt_s
+                                (local.get $203)
+                                (local.get $35)
+                               )
+                              )
+                             )
+                             (block $label$358.linked.21112
+                             )
+                            )
+                            (drop
+                             (if (result i32)
+                              (i32.shr_u
+                               (local.get $204)
+                               (i32.const 31)
+                              )
+                              (block (result i32)
+                               (block $label$360.linked.21113
+                                (local.set $19
+                                 (block $label$361.linked.21114 (result i32)
+                                  (i32.store
+                                   (local.tee $7
+                                    (call $malloc_1264.linked.1440
+                                     (global.get $malloc_1264.linked.1430)
+                                     (i32.const 20)
+                                    )
+                                   )
+                                   (i32.const 2)
+                                  )
+                                  (i32.store offset=4
+                                   (local.get $7)
+                                   (i32.const 1)
+                                  )
+                                  (i32.store offset=8
+                                   (local.get $7)
+                                   (i32.const 5)
+                                  )
+                                  (i32.store offset=12
+                                   (local.get $7)
+                                   (i32.const 67)
+                                  )
+                                  (i32.store offset=16
+                                   (local.get $7)
+                                   (i32.const 0)
+                                  )
+                                  (local.get $7)
+                                 )
+                                )
+                                (block $label$362.linked.21115
+                                )
+                               )
+                               (drop
+                                (call $throw_4472.linked.17966
+                                 (call $incRef_1273.linked.1442
+                                  (global.get $incRef_1273.linked.1429)
+                                  (global.get $throw_4472.linked.17955)
+                                 )
+                                 (local.get $19)
+                                )
+                               )
+                               (unreachable)
+                              )
+                              (i32.const 1879048190)
+                             )
+                            )
+                            (block $label$364.linked.21116
+                             (local.set $205
+                              (local.get $29)
+                             )
+                             (block $label$365.linked.21117
+                             )
+                            )
+                            (block $label$366.linked.21118
+                             (local.set $206
+                              (call $getCodePoint_1509.linked.18541
+                               (call $incRef_1273.linked.1442
+                                (global.get $incRef_1273.linked.1429)
+                                (global.get $getCodePoint_1509.linked.18534)
+                               )
+                               (local.get $205)
+                              )
+                             )
+                             (block $label$367.linked.21119
+                             )
+                            )
+                            (block $label$368.linked.21120
+                             (local.set $207
+                              (local.get $34)
+                             )
+                             (block $label$369.linked.21121
+                             )
+                            )
+                            (block $label$370.linked.21122
+                             (local.set $208
+                              (i32.add
+                               (local.get $32)
+                               (local.get $207)
+                              )
+                             )
+                             (block $label$371.linked.21123
+                             )
+                            )
+                            (block $label$372.linked.21124
+                             (local.set $209
+                              (i32.and
+                               (local.get $206)
+                               (i32.const 255)
+                              )
+                             )
+                             (block $label$373.linked.21125
+                             )
+                            )
+                            (block $label$374.linked.21126
+                             (local.set $210
+                              (block $label$375.linked.21127 (result i32)
+                               (i32.store8
+                                (i32.add
+                                 (local.get $208)
+                                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                                )
+                                (local.get $209)
+                               )
+                               (i32.const 1879048190)
+                              )
+                             )
+                             (block $label$376.linked.21128
+                             )
+                            )
+                            (block $label$377.linked.21129
+                             (local.set $211
+                              (local.get $34)
+                             )
+                             (block $label$378.linked.21130
+                             )
+                            )
+                            (block $label$379.linked.21131
+                             (local.set $212
+                              (i32.add
+                               (local.get $32)
+                               (local.get $211)
+                              )
+                             )
+                             (block $label$380.linked.21132
+                             )
+                            )
+                            (block $label$381.linked.21133
+                             (local.set $213
+                              (i32.add
+                               (local.get $212)
+                               (i32.const 1)
+                              )
+                             )
+                             (block $label$382.linked.21134
+                             )
+                            )
+                            (block $label$383.linked.21135
+                             (local.set $214
+                              (i32.and
+                               (local.get $206)
+                               (i32.const 65280)
+                              )
+                             )
+                             (block $label$384.linked.21136
+                             )
+                            )
+                            (block $label$385.linked.21137
+                             (local.set $215
+                              (i32.shr_u
+                               (local.get $214)
+                               (i32.const 8)
+                              )
+                             )
+                             (block $label$386.linked.21138
+                             )
+                            )
+                            (block $label$387.linked.21139
+                             (local.set $216
+                              (block $label$388.linked.21140 (result i32)
+                               (i32.store8
+                                (i32.add
+                                 (local.get $213)
+                                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                                )
+                                (local.get $215)
+                               )
+                               (i32.const 1879048190)
+                              )
+                             )
+                             (block $label$389.linked.21141
+                             )
+                            )
+                            (block $label$390.linked.21142
+                             (local.set $217
+                              (local.get $34)
+                             )
+                             (block $label$391.linked.21143
+                             )
+                            )
+                            (block $label$392.linked.21144
+                             (local.set $218
+                              (i32.add
+                               (local.get $32)
+                               (local.get $217)
+                              )
+                             )
+                             (block $label$393.linked.21145
+                             )
+                            )
+                            (block $label$394.linked.21146
+                             (local.set $219
+                              (i32.add
+                               (local.get $218)
+                               (i32.const 2)
+                              )
+                             )
+                             (block $label$395.linked.21147
+                             )
+                            )
+                            (block $label$396.linked.21148
+                             (local.set $220
+                              (i32.and
+                               (local.get $206)
+                               (i32.const 16711680)
+                              )
+                             )
+                             (block $label$397.linked.21149
+                             )
+                            )
+                            (block $label$398.linked.21150
+                             (local.set $221
+                              (i32.shr_u
+                               (local.get $220)
+                               (i32.const 16)
+                              )
+                             )
+                             (block $label$399.linked.21151
+                             )
+                            )
+                            (block $label$400.linked.21152
+                             (local.set $222
+                              (block $label$401.linked.21153 (result i32)
+                               (i32.store8
+                                (i32.add
+                                 (local.get $219)
+                                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                                )
+                                (local.get $221)
+                               )
+                               (i32.const 1879048190)
+                              )
+                             )
+                             (block $label$402.linked.21154
+                             )
+                            )
+                            (block $label$403.linked.21155
+                             (local.set $223
+                              (local.get $34)
+                             )
+                             (block $label$404.linked.21156
+                             )
+                            )
+                            (block $label$405.linked.21157
+                             (local.set $224
+                              (i32.add
+                               (local.get $32)
+                               (local.get $223)
+                              )
+                             )
+                             (block $label$406.linked.21158
+                             )
+                            )
+                            (block $label$407.linked.21159
+                             (local.set $225
+                              (i32.add
+                               (local.get $224)
+                               (i32.const 3)
+                              )
+                             )
+                             (block $label$408.linked.21160
+                             )
+                            )
+                            (block $label$409.linked.21161
+                             (local.set $226
+                              (i32.and
+                               (local.get $206)
+                               (i32.const -16777216)
+                              )
+                             )
+                             (block $label$410.linked.21162
+                             )
+                            )
+                            (block $label$411.linked.21163
+                             (local.set $227
+                              (i32.shr_u
+                               (local.get $226)
+                               (i32.const 24)
+                              )
+                             )
+                             (block $label$412.linked.21164
+                             )
+                            )
+                            (block $label$413.linked.21165
+                             (local.set $228
+                              (block $label$414.linked.21166 (result i32)
+                               (i32.store8
+                                (i32.add
+                                 (local.get $225)
+                                 (global.get $_BYTES_OFFSET_1728.linked.18489)
+                                )
+                                (local.get $227)
+                               )
+                               (i32.const 1879048190)
+                              )
+                             )
+                             (block $label$415.linked.21167
+                             )
+                            )
+                            (block $label$416.linked.21168
+                             (local.set $229
+                              (local.get $34)
+                             )
+                             (block $label$417.linked.21169
+                             )
+                            )
+                            (block $label$418.linked.21170
+                             (local.set $230
+                              (i32.add
+                               (local.get $229)
+                               (i32.const 4)
+                              )
+                             )
+                             (block $label$419.linked.21171
+                             )
+                            )
+                            (block $label$420.linked.21172 (result i32)
+                             (local.set $34
+                              (local.get $230)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                          )
+                         )
+                        )
+                        (br $label$343.linked.21097
+                         (block $label$421.linked.21173 (result i32)
+                          (block $label$422.linked.21174
+                           (local.set $173
+                            (local.get $34)
+                           )
+                           (block $label$423.linked.21175
+                           )
+                          )
+                          (block $label$424.linked.21176
+                           (local.set $174
+                            (i32.add
+                             (local.get $173)
+                             (i32.const 4)
+                            )
+                           )
+                           (block $label$425.linked.21177
+                           )
+                          )
+                          (block $label$426.linked.21178
+                           (local.set $175
+                            (select
+                             (i32.const -2)
+                             (i32.const 2147483646)
+                             (i32.gt_s
+                              (local.get $174)
+                              (local.get $35)
+                             )
+                            )
+                           )
+                           (block $label$427.linked.21179
+                           )
+                          )
+                          (drop
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $175)
+                             (i32.const 31)
+                            )
+                            (block (result i32)
+                             (block $label$429.linked.21180
+                              (local.set $18
+                               (block $label$430.linked.21181 (result i32)
+                                (i32.store
+                                 (local.tee $7
+                                  (call $malloc_1264.linked.1440
+                                   (global.get $malloc_1264.linked.1430)
+                                   (i32.const 20)
+                                  )
+                                 )
+                                 (i32.const 2)
+                                )
+                                (i32.store offset=4
+                                 (local.get $7)
+                                 (i32.const 1)
+                                )
+                                (i32.store offset=8
+                                 (local.get $7)
+                                 (i32.const 5)
+                                )
+                                (i32.store offset=12
+                                 (local.get $7)
+                                 (i32.const 67)
+                                )
+                                (i32.store offset=16
+                                 (local.get $7)
+                                 (i32.const 0)
+                                )
+                                (local.get $7)
+                               )
+                              )
+                              (block $label$431.linked.21182
+                              )
+                             )
+                             (drop
+                              (call $throw_4472.linked.17966
+                               (call $incRef_1273.linked.1442
+                                (global.get $incRef_1273.linked.1429)
+                                (global.get $throw_4472.linked.17955)
+                               )
+                               (local.get $18)
+                              )
+                             )
+                             (unreachable)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$433.linked.21183
+                           (local.set $176
+                            (local.get $29)
+                           )
+                           (block $label$434.linked.21184
+                           )
+                          )
+                          (block $label$435.linked.21185
+                           (local.set $177
+                            (call $getCodePoint_1509.linked.18541
+                             (call $incRef_1273.linked.1442
+                              (global.get $incRef_1273.linked.1429)
+                              (global.get $getCodePoint_1509.linked.18534)
+                             )
+                             (local.get $176)
+                            )
+                           )
+                           (block $label$436.linked.21186
+                           )
+                          )
+                          (block $label$437.linked.21187
+                           (local.set $178
+                            (local.get $34)
+                           )
+                           (block $label$438.linked.21188
+                           )
+                          )
+                          (block $label$439.linked.21189
+                           (local.set $179
+                            (i32.add
+                             (local.get $32)
+                             (local.get $178)
+                            )
+                           )
+                           (block $label$440.linked.21190
+                           )
+                          )
+                          (block $label$441.linked.21191
+                           (local.set $180
+                            (i32.and
+                             (local.get $177)
+                             (i32.const -16777216)
+                            )
+                           )
+                           (block $label$442.linked.21192
+                           )
+                          )
+                          (block $label$443.linked.21193
+                           (local.set $181
+                            (i32.shr_u
+                             (local.get $180)
+                             (i32.const 24)
+                            )
+                           )
+                           (block $label$444.linked.21194
+                           )
+                          )
+                          (block $label$445.linked.21195
+                           (local.set $182
+                            (block $label$446.linked.21196 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $179)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $181)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$447.linked.21197
+                           )
+                          )
+                          (block $label$448.linked.21198
+                           (local.set $183
+                            (local.get $34)
+                           )
+                           (block $label$449.linked.21199
+                           )
+                          )
+                          (block $label$450.linked.21200
+                           (local.set $184
+                            (i32.add
+                             (local.get $32)
+                             (local.get $183)
+                            )
+                           )
+                           (block $label$451.linked.21201
+                           )
+                          )
+                          (block $label$452.linked.21202
+                           (local.set $185
+                            (i32.add
+                             (local.get $184)
+                             (i32.const 1)
+                            )
+                           )
+                           (block $label$453.linked.21203
+                           )
+                          )
+                          (block $label$454.linked.21204
+                           (local.set $186
+                            (i32.and
+                             (local.get $177)
+                             (i32.const 16711680)
+                            )
+                           )
+                           (block $label$455.linked.21205
+                           )
+                          )
+                          (block $label$456.linked.21206
+                           (local.set $187
+                            (i32.shr_u
+                             (local.get $186)
+                             (i32.const 16)
+                            )
+                           )
+                           (block $label$457.linked.21207
+                           )
+                          )
+                          (block $label$458.linked.21208
+                           (local.set $188
+                            (block $label$459.linked.21209 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $185)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $187)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$460.linked.21210
+                           )
+                          )
+                          (block $label$461.linked.21211
+                           (local.set $189
+                            (local.get $34)
+                           )
+                           (block $label$462.linked.21212
+                           )
+                          )
+                          (block $label$463.linked.21213
+                           (local.set $190
+                            (i32.add
+                             (local.get $32)
+                             (local.get $189)
+                            )
+                           )
+                           (block $label$464.linked.21214
+                           )
+                          )
+                          (block $label$465.linked.21215
+                           (local.set $191
+                            (i32.add
+                             (local.get $190)
+                             (i32.const 2)
+                            )
+                           )
+                           (block $label$466.linked.21216
+                           )
+                          )
+                          (block $label$467.linked.21217
+                           (local.set $192
+                            (i32.and
+                             (local.get $177)
+                             (i32.const 65280)
+                            )
+                           )
+                           (block $label$468.linked.21218
+                           )
+                          )
+                          (block $label$469.linked.21219
+                           (local.set $193
+                            (i32.shr_u
+                             (local.get $192)
+                             (i32.const 8)
+                            )
+                           )
+                           (block $label$470.linked.21220
+                           )
+                          )
+                          (block $label$471.linked.21221
+                           (local.set $194
+                            (block $label$472.linked.21222 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $191)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $193)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$473.linked.21223
+                           )
+                          )
+                          (block $label$474.linked.21224
+                           (local.set $195
+                            (local.get $34)
+                           )
+                           (block $label$475.linked.21225
+                           )
+                          )
+                          (block $label$476.linked.21226
+                           (local.set $196
+                            (i32.add
+                             (local.get $32)
+                             (local.get $195)
+                            )
+                           )
+                           (block $label$477.linked.21227
+                           )
+                          )
+                          (block $label$478.linked.21228
+                           (local.set $197
+                            (i32.add
+                             (local.get $196)
+                             (i32.const 3)
+                            )
+                           )
+                           (block $label$479.linked.21229
+                           )
+                          )
+                          (block $label$480.linked.21230
+                           (local.set $198
+                            (i32.and
+                             (local.get $177)
+                             (i32.const 255)
+                            )
+                           )
+                           (block $label$481.linked.21231
+                           )
+                          )
+                          (block $label$482.linked.21232
+                           (local.set $199
+                            (block $label$483.linked.21233 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $197)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $198)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$484.linked.21234
+                           )
+                          )
+                          (block $label$485.linked.21235
+                           (local.set $200
+                            (local.get $34)
+                           )
+                           (block $label$486.linked.21236
+                           )
+                          )
+                          (block $label$487.linked.21237
+                           (local.set $201
+                            (i32.add
+                             (local.get $200)
+                             (i32.const 4)
+                            )
+                           )
+                           (block $label$488.linked.21238
+                           )
+                          )
+                          (block $label$489.linked.21239 (result i32)
+                           (local.set $34
+                            (local.get $201)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                        )
+                       )
+                      )
+                      (br $label$343.linked.21097
+                       (block $label$490.linked.21240 (result i32)
+                        (block $label$491.linked.21241
+                         (local.set $123
+                          (local.get $29)
+                         )
+                         (block $label$492.linked.21242
+                         )
+                        )
+                        (block $label$493.linked.21243
+                         (local.set $124
+                          (call $getCodePoint_1509.linked.18541
+                           (call $incRef_1273.linked.1442
+                            (global.get $incRef_1273.linked.1429)
+                            (global.get $getCodePoint_1509.linked.18534)
+                           )
+                           (local.get $123)
+                          )
+                         )
+                         (block $label$494.linked.21244
+                         )
+                        )
+                        (block $label$495.linked.21245
+                         (local.set $125
+                          (select
+                           (i32.const -2)
+                           (i32.const 2147483646)
+                           (i32.le_u
+                            (local.get $124)
+                            (i32.const 65535)
+                           )
+                          )
+                         )
+                         (block $label$496.linked.21246
+                         )
+                        )
+                        (if (result i32)
+                         (i32.shr_u
+                          (local.get $125)
+                          (i32.const 31)
+                         )
+                         (block (result i32)
+                          (block $label$498.linked.21247
+                           (local.set $158
+                            (local.get $34)
+                           )
+                           (block $label$499.linked.21248
+                           )
+                          )
+                          (block $label$500.linked.21249
+                           (local.set $159
+                            (i32.add
+                             (local.get $158)
+                             (i32.const 2)
+                            )
+                           )
+                           (block $label$501.linked.21250
+                           )
+                          )
+                          (block $label$502.linked.21251
+                           (local.set $160
+                            (select
+                             (i32.const -2)
+                             (i32.const 2147483646)
+                             (i32.gt_s
+                              (local.get $159)
+                              (local.get $35)
+                             )
+                            )
+                           )
+                           (block $label$503.linked.21252
+                           )
+                          )
+                          (drop
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $160)
+                             (i32.const 31)
+                            )
+                            (block (result i32)
+                             (block $label$505.linked.21253
+                              (local.set $17
+                               (block $label$506.linked.21254 (result i32)
+                                (i32.store
+                                 (local.tee $7
+                                  (call $malloc_1264.linked.1440
+                                   (global.get $malloc_1264.linked.1430)
+                                   (i32.const 20)
+                                  )
+                                 )
+                                 (i32.const 2)
+                                )
+                                (i32.store offset=4
+                                 (local.get $7)
+                                 (i32.const 1)
+                                )
+                                (i32.store offset=8
+                                 (local.get $7)
+                                 (i32.const 5)
+                                )
+                                (i32.store offset=12
+                                 (local.get $7)
+                                 (i32.const 67)
+                                )
+                                (i32.store offset=16
+                                 (local.get $7)
+                                 (i32.const 0)
+                                )
+                                (local.get $7)
+                               )
+                              )
+                              (block $label$507.linked.21255
+                              )
+                             )
+                             (drop
+                              (call $throw_4472.linked.17966
+                               (call $incRef_1273.linked.1442
+                                (global.get $incRef_1273.linked.1429)
+                                (global.get $throw_4472.linked.17955)
+                               )
+                               (local.get $17)
+                              )
+                             )
+                             (unreachable)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$509.linked.21256
+                           (local.set $161
+                            (local.get $34)
+                           )
+                           (block $label$510.linked.21257
+                           )
+                          )
+                          (block $label$511.linked.21258
+                           (local.set $162
+                            (i32.add
+                             (local.get $32)
+                             (local.get $161)
+                            )
+                           )
+                           (block $label$512.linked.21259
+                           )
+                          )
+                          (block $label$513.linked.21260
+                           (local.set $163
+                            (i32.and
+                             (local.get $124)
+                             (i32.const 255)
+                            )
+                           )
+                           (block $label$514.linked.21261
+                           )
+                          )
+                          (block $label$515.linked.21262
+                           (local.set $164
+                            (block $label$516.linked.21263 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $162)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $163)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$517.linked.21264
+                           )
+                          )
+                          (block $label$518.linked.21265
+                           (local.set $165
+                            (local.get $34)
+                           )
+                           (block $label$519.linked.21266
+                           )
+                          )
+                          (block $label$520.linked.21267
+                           (local.set $166
+                            (i32.add
+                             (local.get $32)
+                             (local.get $165)
+                            )
+                           )
+                           (block $label$521.linked.21268
+                           )
+                          )
+                          (block $label$522.linked.21269
+                           (local.set $167
+                            (i32.add
+                             (local.get $166)
+                             (i32.const 1)
+                            )
+                           )
+                           (block $label$523.linked.21270
+                           )
+                          )
+                          (block $label$524.linked.21271
+                           (local.set $168
+                            (i32.and
+                             (local.get $124)
+                             (i32.const 65280)
+                            )
+                           )
+                           (block $label$525.linked.21272
+                           )
+                          )
+                          (block $label$526.linked.21273
+                           (local.set $169
+                            (i32.shr_u
+                             (local.get $168)
+                             (i32.const 8)
+                            )
+                           )
+                           (block $label$527.linked.21274
+                           )
+                          )
+                          (block $label$528.linked.21275
+                           (local.set $170
+                            (block $label$529.linked.21276 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $167)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $169)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$530.linked.21277
+                           )
+                          )
+                          (block $label$531.linked.21278
+                           (local.set $171
+                            (local.get $34)
+                           )
+                           (block $label$532.linked.21279
+                           )
+                          )
+                          (block $label$533.linked.21280
+                           (local.set $172
+                            (i32.add
+                             (local.get $171)
+                             (i32.const 2)
+                            )
+                           )
+                           (block $label$534.linked.21281
+                           )
+                          )
+                          (block $label$535.linked.21282 (result i32)
+                           (local.set $34
+                            (local.get $172)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block (result i32)
+                          (block $label$537.linked.21283
+                           (local.set $126
+                            (local.get $34)
+                           )
+                           (block $label$538.linked.21284
+                           )
+                          )
+                          (block $label$539.linked.21285
+                           (local.set $127
+                            (i32.add
+                             (local.get $126)
+                             (i32.const 4)
+                            )
+                           )
+                           (block $label$540.linked.21286
+                           )
+                          )
+                          (block $label$541.linked.21287
+                           (local.set $128
+                            (select
+                             (i32.const -2)
+                             (i32.const 2147483646)
+                             (i32.gt_s
+                              (local.get $127)
+                              (local.get $35)
+                             )
+                            )
+                           )
+                           (block $label$542.linked.21288
+                           )
+                          )
+                          (drop
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $128)
+                             (i32.const 31)
+                            )
+                            (block (result i32)
+                             (block $label$544.linked.21289
+                              (local.set $16
+                               (block $label$545.linked.21290 (result i32)
+                                (i32.store
+                                 (local.tee $7
+                                  (call $malloc_1264.linked.1440
+                                   (global.get $malloc_1264.linked.1430)
+                                   (i32.const 20)
+                                  )
+                                 )
+                                 (i32.const 2)
+                                )
+                                (i32.store offset=4
+                                 (local.get $7)
+                                 (i32.const 1)
+                                )
+                                (i32.store offset=8
+                                 (local.get $7)
+                                 (i32.const 5)
+                                )
+                                (i32.store offset=12
+                                 (local.get $7)
+                                 (i32.const 67)
+                                )
+                                (i32.store offset=16
+                                 (local.get $7)
+                                 (i32.const 0)
+                                )
+                                (local.get $7)
+                               )
+                              )
+                              (block $label$546.linked.21291
+                              )
+                             )
+                             (drop
+                              (call $throw_4472.linked.17966
+                               (call $incRef_1273.linked.1442
+                                (global.get $incRef_1273.linked.1429)
+                                (global.get $throw_4472.linked.17955)
+                               )
+                               (local.get $16)
+                              )
+                             )
+                             (unreachable)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$548.linked.21292
+                           (local.set $129
+                            (i32.sub
+                             (local.get $124)
+                             (i32.const 65536)
+                            )
+                           )
+                           (block $label$549.linked.21293
+                           )
+                          )
+                          (block $label$550.linked.21294
+                           (local.set $130
+                            (i32.and
+                             (local.get $129)
+                             (i32.const 1047552)
+                            )
+                           )
+                           (block $label$551.linked.21295
+                           )
+                          )
+                          (block $label$552.linked.21296
+                           (local.set $131
+                            (i32.shr_u
+                             (local.get $130)
+                             (i32.const 10)
+                            )
+                           )
+                           (block $label$553.linked.21297
+                           )
+                          )
+                          (block $label$554.linked.21298
+                           (local.set $132
+                            (i32.add
+                             (local.get $131)
+                             (i32.const 55296)
+                            )
+                           )
+                           (block $label$555.linked.21299
+                           )
+                          )
+                          (block $label$556.linked.21300
+                           (local.set $133
+                            (i32.and
+                             (local.get $129)
+                             (i32.const 1023)
+                            )
+                           )
+                           (block $label$557.linked.21301
+                           )
+                          )
+                          (block $label$558.linked.21302
+                           (local.set $134
+                            (i32.add
+                             (local.get $133)
+                             (i32.const 56320)
+                            )
+                           )
+                           (block $label$559.linked.21303
+                           )
+                          )
+                          (block $label$560.linked.21304
+                           (local.set $135
+                            (local.get $34)
+                           )
+                           (block $label$561.linked.21305
+                           )
+                          )
+                          (block $label$562.linked.21306
+                           (local.set $136
+                            (i32.add
+                             (local.get $32)
+                             (local.get $135)
+                            )
+                           )
+                           (block $label$563.linked.21307
+                           )
+                          )
+                          (block $label$564.linked.21308
+                           (local.set $137
+                            (i32.and
+                             (local.get $132)
+                             (i32.const 255)
+                            )
+                           )
+                           (block $label$565.linked.21309
+                           )
+                          )
+                          (block $label$566.linked.21310
+                           (local.set $138
+                            (block $label$567.linked.21311 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $136)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $137)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$568.linked.21312
+                           )
+                          )
+                          (block $label$569.linked.21313
+                           (local.set $139
+                            (local.get $34)
+                           )
+                           (block $label$570.linked.21314
+                           )
+                          )
+                          (block $label$571.linked.21315
+                           (local.set $140
+                            (i32.add
+                             (local.get $32)
+                             (local.get $139)
+                            )
+                           )
+                           (block $label$572.linked.21316
+                           )
+                          )
+                          (block $label$573.linked.21317
+                           (local.set $141
+                            (i32.add
+                             (local.get $140)
+                             (i32.const 1)
+                            )
+                           )
+                           (block $label$574.linked.21318
+                           )
+                          )
+                          (block $label$575.linked.21319
+                           (local.set $142
+                            (i32.and
+                             (local.get $132)
+                             (i32.const 65280)
+                            )
+                           )
+                           (block $label$576.linked.21320
+                           )
+                          )
+                          (block $label$577.linked.21321
+                           (local.set $143
+                            (i32.shr_u
+                             (local.get $142)
+                             (i32.const 8)
+                            )
+                           )
+                           (block $label$578.linked.21322
+                           )
+                          )
+                          (block $label$579.linked.21323
+                           (local.set $144
+                            (block $label$580.linked.21324 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $141)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $143)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$581.linked.21325
+                           )
+                          )
+                          (block $label$582.linked.21326
+                           (local.set $145
+                            (local.get $34)
+                           )
+                           (block $label$583.linked.21327
+                           )
+                          )
+                          (block $label$584.linked.21328
+                           (local.set $146
+                            (i32.add
+                             (local.get $32)
+                             (local.get $145)
+                            )
+                           )
+                           (block $label$585.linked.21329
+                           )
+                          )
+                          (block $label$586.linked.21330
+                           (local.set $147
+                            (i32.add
+                             (local.get $146)
+                             (i32.const 2)
+                            )
+                           )
+                           (block $label$587.linked.21331
+                           )
+                          )
+                          (block $label$588.linked.21332
+                           (local.set $148
+                            (i32.and
+                             (local.get $134)
+                             (i32.const 255)
+                            )
+                           )
+                           (block $label$589.linked.21333
+                           )
+                          )
+                          (block $label$590.linked.21334
+                           (local.set $149
+                            (block $label$591.linked.21335 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $147)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $148)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$592.linked.21336
+                           )
+                          )
+                          (block $label$593.linked.21337
+                           (local.set $150
+                            (local.get $34)
+                           )
+                           (block $label$594.linked.21338
+                           )
+                          )
+                          (block $label$595.linked.21339
+                           (local.set $151
+                            (i32.add
+                             (local.get $32)
+                             (local.get $150)
+                            )
+                           )
+                           (block $label$596.linked.21340
+                           )
+                          )
+                          (block $label$597.linked.21341
+                           (local.set $152
+                            (i32.add
+                             (local.get $151)
+                             (i32.const 3)
+                            )
+                           )
+                           (block $label$598.linked.21342
+                           )
+                          )
+                          (block $label$599.linked.21343
+                           (local.set $153
+                            (i32.and
+                             (local.get $134)
+                             (i32.const 65280)
+                            )
+                           )
+                           (block $label$600.linked.21344
+                           )
+                          )
+                          (block $label$601.linked.21345
+                           (local.set $154
+                            (i32.shr_u
+                             (local.get $153)
+                             (i32.const 8)
+                            )
+                           )
+                           (block $label$602.linked.21346
+                           )
+                          )
+                          (block $label$603.linked.21347
+                           (local.set $155
+                            (block $label$604.linked.21348 (result i32)
+                             (i32.store8
+                              (i32.add
+                               (local.get $152)
+                               (global.get $_BYTES_OFFSET_1728.linked.18489)
+                              )
+                              (local.get $154)
+                             )
+                             (i32.const 1879048190)
+                            )
+                           )
+                           (block $label$605.linked.21349
+                           )
+                          )
+                          (block $label$606.linked.21350
+                           (local.set $156
+                            (local.get $34)
+                           )
+                           (block $label$607.linked.21351
+                           )
+                          )
+                          (block $label$608.linked.21352
+                           (local.set $157
+                            (i32.add
+                             (local.get $156)
+                             (i32.const 4)
+                            )
+                           )
+                           (block $label$609.linked.21353
+                           )
+                          )
+                          (block $label$610.linked.21354 (result i32)
+                           (local.set $34
+                            (local.get $157)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                        )
+                       )
+                      )
+                     )
+                    )
+                    (br $label$343.linked.21097
+                     (block $label$611.linked.21355 (result i32)
+                      (block $label$612.linked.21356
+                       (local.set $73
+                        (local.get $29)
+                       )
+                       (block $label$613.linked.21357
+                       )
+                      )
+                      (block $label$614.linked.21358
+                       (local.set $74
+                        (call $getCodePoint_1509.linked.18541
+                         (call $incRef_1273.linked.1442
+                          (global.get $incRef_1273.linked.1429)
+                          (global.get $getCodePoint_1509.linked.18534)
+                         )
+                         (local.get $73)
+                        )
+                       )
+                       (block $label$615.linked.21359
+                       )
+                      )
+                      (block $label$616.linked.21360
+                       (local.set $75
+                        (select
+                         (i32.const -2)
+                         (i32.const 2147483646)
+                         (i32.le_u
+                          (local.get $74)
+                          (i32.const 65535)
+                         )
+                        )
+                       )
+                       (block $label$617.linked.21361
+                       )
+                      )
+                      (if (result i32)
+                       (i32.shr_u
+                        (local.get $75)
+                        (i32.const 31)
+                       )
+                       (block (result i32)
+                        (block $label$619.linked.21362
+                         (local.set $108
+                          (local.get $34)
+                         )
+                         (block $label$620.linked.21363
+                         )
+                        )
+                        (block $label$621.linked.21364
+                         (local.set $109
+                          (i32.add
+                           (local.get $108)
+                           (i32.const 2)
+                          )
+                         )
+                         (block $label$622.linked.21365
+                         )
+                        )
+                        (block $label$623.linked.21366
+                         (local.set $110
+                          (select
+                           (i32.const -2)
+                           (i32.const 2147483646)
+                           (i32.gt_s
+                            (local.get $109)
+                            (local.get $35)
+                           )
+                          )
+                         )
+                         (block $label$624.linked.21367
+                         )
+                        )
+                        (drop
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $110)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$626.linked.21368
+                            (local.set $15
+                             (block $label$627.linked.21369 (result i32)
+                              (i32.store
+                               (local.tee $7
+                                (call $malloc_1264.linked.1440
+                                 (global.get $malloc_1264.linked.1430)
+                                 (i32.const 20)
+                                )
+                               )
+                               (i32.const 2)
+                              )
+                              (i32.store offset=4
+                               (local.get $7)
+                               (i32.const 1)
+                              )
+                              (i32.store offset=8
+                               (local.get $7)
+                               (i32.const 5)
+                              )
+                              (i32.store offset=12
+                               (local.get $7)
+                               (i32.const 67)
+                              )
+                              (i32.store offset=16
+                               (local.get $7)
+                               (i32.const 0)
+                              )
+                              (local.get $7)
+                             )
+                            )
+                            (block $label$628.linked.21370
+                            )
+                           )
+                           (drop
+                            (call $throw_4472.linked.17966
+                             (call $incRef_1273.linked.1442
+                              (global.get $incRef_1273.linked.1429)
+                              (global.get $throw_4472.linked.17955)
+                             )
+                             (local.get $15)
+                            )
+                           )
+                           (unreachable)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$630.linked.21371
+                         (local.set $111
+                          (local.get $34)
+                         )
+                         (block $label$631.linked.21372
+                         )
+                        )
+                        (block $label$632.linked.21373
+                         (local.set $112
+                          (i32.add
+                           (local.get $32)
+                           (local.get $111)
+                          )
+                         )
+                         (block $label$633.linked.21374
+                         )
+                        )
+                        (block $label$634.linked.21375
+                         (local.set $113
+                          (i32.and
+                           (local.get $74)
+                           (i32.const 65280)
+                          )
+                         )
+                         (block $label$635.linked.21376
+                         )
+                        )
+                        (block $label$636.linked.21377
+                         (local.set $114
+                          (i32.shr_u
+                           (local.get $113)
+                           (i32.const 8)
+                          )
+                         )
+                         (block $label$637.linked.21378
+                         )
+                        )
+                        (block $label$638.linked.21379
+                         (local.set $115
+                          (block $label$639.linked.21380 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $112)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $114)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$640.linked.21381
+                         )
+                        )
+                        (block $label$641.linked.21382
+                         (local.set $116
+                          (local.get $34)
+                         )
+                         (block $label$642.linked.21383
+                         )
+                        )
+                        (block $label$643.linked.21384
+                         (local.set $117
+                          (i32.add
+                           (local.get $32)
+                           (local.get $116)
+                          )
+                         )
+                         (block $label$644.linked.21385
+                         )
+                        )
+                        (block $label$645.linked.21386
+                         (local.set $118
+                          (i32.add
+                           (local.get $117)
+                           (i32.const 1)
+                          )
+                         )
+                         (block $label$646.linked.21387
+                         )
+                        )
+                        (block $label$647.linked.21388
+                         (local.set $119
+                          (i32.and
+                           (local.get $74)
+                           (i32.const 255)
+                          )
+                         )
+                         (block $label$648.linked.21389
+                         )
+                        )
+                        (block $label$649.linked.21390
+                         (local.set $120
+                          (block $label$650.linked.21391 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $118)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $119)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$651.linked.21392
+                         )
+                        )
+                        (block $label$652.linked.21393
+                         (local.set $121
+                          (local.get $34)
+                         )
+                         (block $label$653.linked.21394
+                         )
+                        )
+                        (block $label$654.linked.21395
+                         (local.set $122
+                          (i32.add
+                           (local.get $121)
+                           (i32.const 2)
+                          )
+                         )
+                         (block $label$655.linked.21396
+                         )
+                        )
+                        (block $label$656.linked.21397 (result i32)
+                         (local.set $34
+                          (local.get $122)
+                         )
+                         (i32.const 1879048190)
+                        )
+                       )
+                       (block (result i32)
+                        (block $label$658.linked.21398
+                         (local.set $76
+                          (local.get $34)
+                         )
+                         (block $label$659.linked.21399
+                         )
+                        )
+                        (block $label$660.linked.21400
+                         (local.set $77
+                          (i32.add
+                           (local.get $76)
+                           (i32.const 4)
+                          )
+                         )
+                         (block $label$661.linked.21401
+                         )
+                        )
+                        (block $label$662.linked.21402
+                         (local.set $78
+                          (select
+                           (i32.const -2)
+                           (i32.const 2147483646)
+                           (i32.gt_s
+                            (local.get $77)
+                            (local.get $35)
+                           )
+                          )
+                         )
+                         (block $label$663.linked.21403
+                         )
+                        )
+                        (drop
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $78)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$665.linked.21404
+                            (local.set $14
+                             (block $label$666.linked.21405 (result i32)
+                              (i32.store
+                               (local.tee $7
+                                (call $malloc_1264.linked.1440
+                                 (global.get $malloc_1264.linked.1430)
+                                 (i32.const 20)
+                                )
+                               )
+                               (i32.const 2)
+                              )
+                              (i32.store offset=4
+                               (local.get $7)
+                               (i32.const 1)
+                              )
+                              (i32.store offset=8
+                               (local.get $7)
+                               (i32.const 5)
+                              )
+                              (i32.store offset=12
+                               (local.get $7)
+                               (i32.const 67)
+                              )
+                              (i32.store offset=16
+                               (local.get $7)
+                               (i32.const 0)
+                              )
+                              (local.get $7)
+                             )
+                            )
+                            (block $label$667.linked.21406
+                            )
+                           )
+                           (drop
+                            (call $throw_4472.linked.17966
+                             (call $incRef_1273.linked.1442
+                              (global.get $incRef_1273.linked.1429)
+                              (global.get $throw_4472.linked.17955)
+                             )
+                             (local.get $14)
+                            )
+                           )
+                           (unreachable)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$669.linked.21407
+                         (local.set $79
+                          (i32.sub
+                           (local.get $74)
+                           (i32.const 65536)
+                          )
+                         )
+                         (block $label$670.linked.21408
+                         )
+                        )
+                        (block $label$671.linked.21409
+                         (local.set $80
+                          (i32.and
+                           (local.get $79)
+                           (i32.const 1047552)
+                          )
+                         )
+                         (block $label$672.linked.21410
+                         )
+                        )
+                        (block $label$673.linked.21411
+                         (local.set $81
+                          (i32.shr_u
+                           (local.get $80)
+                           (i32.const 10)
+                          )
+                         )
+                         (block $label$674.linked.21412
+                         )
+                        )
+                        (block $label$675.linked.21413
+                         (local.set $82
+                          (i32.add
+                           (local.get $81)
+                           (i32.const 55296)
+                          )
+                         )
+                         (block $label$676.linked.21414
+                         )
+                        )
+                        (block $label$677.linked.21415
+                         (local.set $83
+                          (i32.and
+                           (local.get $79)
+                           (i32.const 1023)
+                          )
+                         )
+                         (block $label$678.linked.21416
+                         )
+                        )
+                        (block $label$679.linked.21417
+                         (local.set $84
+                          (i32.add
+                           (local.get $83)
+                           (i32.const 56320)
+                          )
+                         )
+                         (block $label$680.linked.21418
+                         )
+                        )
+                        (block $label$681.linked.21419
+                         (local.set $85
+                          (local.get $34)
+                         )
+                         (block $label$682.linked.21420
+                         )
+                        )
+                        (block $label$683.linked.21421
+                         (local.set $86
+                          (i32.add
+                           (local.get $32)
+                           (local.get $85)
+                          )
+                         )
+                         (block $label$684.linked.21422
+                         )
+                        )
+                        (block $label$685.linked.21423
+                         (local.set $87
+                          (i32.and
+                           (local.get $82)
+                           (i32.const 65280)
+                          )
+                         )
+                         (block $label$686.linked.21424
+                         )
+                        )
+                        (block $label$687.linked.21425
+                         (local.set $88
+                          (i32.shr_u
+                           (local.get $87)
+                           (i32.const 8)
+                          )
+                         )
+                         (block $label$688.linked.21426
+                         )
+                        )
+                        (block $label$689.linked.21427
+                         (local.set $89
+                          (block $label$690.linked.21428 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $86)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $88)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$691.linked.21429
+                         )
+                        )
+                        (block $label$692.linked.21430
+                         (local.set $90
+                          (local.get $34)
+                         )
+                         (block $label$693.linked.21431
+                         )
+                        )
+                        (block $label$694.linked.21432
+                         (local.set $91
+                          (i32.add
+                           (local.get $32)
+                           (local.get $90)
+                          )
+                         )
+                         (block $label$695.linked.21433
+                         )
+                        )
+                        (block $label$696.linked.21434
+                         (local.set $92
+                          (i32.add
+                           (local.get $91)
+                           (i32.const 1)
+                          )
+                         )
+                         (block $label$697.linked.21435
+                         )
+                        )
+                        (block $label$698.linked.21436
+                         (local.set $93
+                          (i32.and
+                           (local.get $82)
+                           (i32.const 255)
+                          )
+                         )
+                         (block $label$699.linked.21437
+                         )
+                        )
+                        (block $label$700.linked.21438
+                         (local.set $94
+                          (block $label$701.linked.21439 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $92)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $93)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$702.linked.21440
+                         )
+                        )
+                        (block $label$703.linked.21441
+                         (local.set $95
+                          (local.get $34)
+                         )
+                         (block $label$704.linked.21442
+                         )
+                        )
+                        (block $label$705.linked.21443
+                         (local.set $96
+                          (i32.add
+                           (local.get $32)
+                           (local.get $95)
+                          )
+                         )
+                         (block $label$706.linked.21444
+                         )
+                        )
+                        (block $label$707.linked.21445
+                         (local.set $97
+                          (i32.add
+                           (local.get $96)
+                           (i32.const 2)
+                          )
+                         )
+                         (block $label$708.linked.21446
+                         )
+                        )
+                        (block $label$709.linked.21447
+                         (local.set $98
+                          (i32.and
+                           (local.get $84)
+                           (i32.const 65280)
+                          )
+                         )
+                         (block $label$710.linked.21448
+                         )
+                        )
+                        (block $label$711.linked.21449
+                         (local.set $99
+                          (i32.shr_u
+                           (local.get $98)
+                           (i32.const 8)
+                          )
+                         )
+                         (block $label$712.linked.21450
+                         )
+                        )
+                        (block $label$713.linked.21451
+                         (local.set $100
+                          (block $label$714.linked.21452 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $97)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $99)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$715.linked.21453
+                         )
+                        )
+                        (block $label$716.linked.21454
+                         (local.set $101
+                          (local.get $34)
+                         )
+                         (block $label$717.linked.21455
+                         )
+                        )
+                        (block $label$718.linked.21456
+                         (local.set $102
+                          (i32.add
+                           (local.get $32)
+                           (local.get $101)
+                          )
+                         )
+                         (block $label$719.linked.21457
+                         )
+                        )
+                        (block $label$720.linked.21458
+                         (local.set $103
+                          (i32.add
+                           (local.get $102)
+                           (i32.const 3)
+                          )
+                         )
+                         (block $label$721.linked.21459
+                         )
+                        )
+                        (block $label$722.linked.21460
+                         (local.set $104
+                          (i32.and
+                           (local.get $84)
+                           (i32.const 255)
+                          )
+                         )
+                         (block $label$723.linked.21461
+                         )
+                        )
+                        (block $label$724.linked.21462
+                         (local.set $105
+                          (block $label$725.linked.21463 (result i32)
+                           (i32.store8
+                            (i32.add
+                             (local.get $103)
+                             (global.get $_BYTES_OFFSET_1728.linked.18489)
+                            )
+                            (local.get $104)
+                           )
+                           (i32.const 1879048190)
+                          )
+                         )
+                         (block $label$726.linked.21464
+                         )
+                        )
+                        (block $label$727.linked.21465
+                         (local.set $106
+                          (local.get $34)
+                         )
+                         (block $label$728.linked.21466
+                         )
+                        )
+                        (block $label$729.linked.21467
+                         (local.set $107
+                          (i32.add
+                           (local.get $106)
+                           (i32.const 4)
+                          )
+                         )
+                         (block $label$730.linked.21468
+                         )
+                        )
+                        (block $label$731.linked.21469 (result i32)
+                         (local.set $34
+                          (local.get $107)
+                         )
+                         (i32.const 1879048190)
+                        )
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                  (br $label$343.linked.21097
+                   (block $label$732.linked.21470 (result i32)
+                    (block $label$733.linked.21471
+                     (local.set $64
+                      (local.get $34)
+                     )
+                     (block $label$734.linked.21472
+                     )
+                    )
+                    (block $label$735.linked.21473
+                     (local.set $65
+                      (i32.add
+                       (local.get $64)
+                       (local.get $50)
+                      )
+                     )
+                     (block $label$736.linked.21474
+                     )
+                    )
+                    (block $label$737.linked.21475
+                     (local.set $66
+                      (select
+                       (i32.const -2)
+                       (i32.const 2147483646)
+                       (i32.gt_s
+                        (local.get $65)
+                        (local.get $35)
+                       )
+                      )
+                     )
+                     (block $label$738.linked.21476
+                     )
+                    )
+                    (drop
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $66)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$740.linked.21477
+                        (local.set $13
+                         (block $label$741.linked.21478 (result i32)
+                          (i32.store
+                           (local.tee $7
+                            (call $malloc_1264.linked.1440
+                             (global.get $malloc_1264.linked.1430)
+                             (i32.const 20)
+                            )
+                           )
+                           (i32.const 2)
+                          )
+                          (i32.store offset=4
+                           (local.get $7)
+                           (i32.const 1)
+                          )
+                          (i32.store offset=8
+                           (local.get $7)
+                           (i32.const 5)
+                          )
+                          (i32.store offset=12
+                           (local.get $7)
+                           (i32.const 67)
+                          )
+                          (i32.store offset=16
+                           (local.get $7)
+                           (i32.const 0)
+                          )
+                          (local.get $7)
+                         )
+                        )
+                        (block $label$742.linked.21479
+                        )
+                       )
+                       (drop
+                        (call $throw_4472.linked.17966
+                         (call $incRef_1273.linked.1442
+                          (global.get $incRef_1273.linked.1429)
+                          (global.get $throw_4472.linked.17955)
+                         )
+                         (local.get $13)
+                        )
+                       )
+                       (unreachable)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block $label$744.linked.21480
+                     (local.set $67
+                      (local.get $34)
+                     )
+                     (block $label$745.linked.21481
+                     )
+                    )
+                    (block $label$746.linked.21482
+                     (local.set $68
+                      (i32.add
+                       (local.get $32)
+                       (local.get $67)
+                      )
+                     )
+                     (block $label$747.linked.21483
+                     )
+                    )
+                    (block $label$748.linked.21484
+                     (local.set $69
+                      (i32.add
+                       (local.get $68)
+                       (global.get $_BYTES_OFFSET_1728.linked.18489)
+                      )
+                     )
+                     (block $label$749.linked.21485
+                     )
+                    )
+                    (block $label$750.linked.21486
+                     (local.set $70
+                      (local.get $29)
+                     )
+                     (block $label$751.linked.21487
+                     )
+                    )
+                    (drop
+                     (block $label$752.linked.21488 (result i32)
+                      (memory.copy
+                       (local.get $69)
+                       (local.get $70)
+                       (local.get $50)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block $label$753.linked.21489
+                     (local.set $71
+                      (local.get $34)
+                     )
+                     (block $label$754.linked.21490
+                     )
+                    )
+                    (block $label$755.linked.21491
+                     (local.set $72
+                      (i32.add
+                       (local.get $71)
+                       (local.get $50)
+                      )
+                     )
+                     (block $label$756.linked.21492
+                     )
+                    )
+                    (block $label$757.linked.21493 (result i32)
+                     (local.set $34
+                      (local.get $72)
+                     )
+                     (i32.const 1879048190)
+                    )
+                   )
+                  )
+                 )
+                )
+               )
+               (block $label$758.linked.21494
+                (local.set $62
+                 (local.get $29)
+                )
+                (block $label$759.linked.21495
+                )
+               )
+               (block $label$760.linked.21496
+                (local.set $63
+                 (i32.add
+                  (local.get $62)
+                  (local.get $50)
+                 )
+                )
+                (block $label$761.linked.21497
+                )
+               )
+               (block $label$762.linked.21498 (result i32)
+                (local.set $29
+                 (local.get $63)
+                )
+                (i32.const 1879048190)
+               )
+              )
+             )
+            )
+            (br $label$289.linked.21059)
+           )
+          )
+         )
+        )
+       )
+      )
+      (br $label$281.linked.21051
+       (block $label$763.linked.21499 (result i32)
+        (block $label$764.linked.21500
+         (local.set $39
+          (local.get $34)
+         )
+         (block $label$765.linked.21501
+         )
+        )
+        (block $label$766.linked.21502
+         (local.set $40
+          (i32.add
+           (local.get $39)
+           (local.get $26)
+          )
+         )
+         (block $label$767.linked.21503
+         )
+        )
+        (block $label$768.linked.21504
+         (local.set $41
+          (select
+           (i32.const -2)
+           (i32.const 2147483646)
+           (i32.gt_s
+            (local.get $40)
+            (local.get $35)
+           )
+          )
+         )
+         (block $label$769.linked.21505
+         )
+        )
+        (drop
+         (if (result i32)
+          (i32.shr_u
+           (local.get $41)
+           (i32.const 31)
+          )
+          (block (result i32)
+           (block $label$771.linked.21506
+            (local.set $12
+             (block $label$772.linked.21507 (result i32)
+              (i32.store
+               (local.tee $7
+                (call $malloc_1264.linked.1440
+                 (global.get $malloc_1264.linked.1430)
+                 (i32.const 20)
+                )
+               )
+               (i32.const 2)
+              )
+              (i32.store offset=4
+               (local.get $7)
+               (i32.const 1)
+              )
+              (i32.store offset=8
+               (local.get $7)
+               (i32.const 5)
+              )
+              (i32.store offset=12
+               (local.get $7)
+               (i32.const 67)
+              )
+              (i32.store offset=16
+               (local.get $7)
+               (i32.const 0)
+              )
+              (local.get $7)
+             )
+            )
+            (block $label$773.linked.21508
+            )
+           )
+           (drop
+            (call $throw_4472.linked.17966
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (global.get $throw_4472.linked.17955)
+             )
+             (local.get $12)
+            )
+           )
+           (unreachable)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (block $label$775.linked.21509
+         (local.set $42
+          (local.get $34)
+         )
+         (block $label$776.linked.21510
+         )
+        )
+        (block $label$777.linked.21511
+         (local.set $43
+          (i32.add
+           (local.get $32)
+           (local.get $42)
+          )
+         )
+         (block $label$778.linked.21512
+         )
+        )
+        (block $label$779.linked.21513
+         (local.set $44
+          (i32.add
+           (local.get $43)
+           (global.get $_BYTES_OFFSET_1728.linked.18489)
+          )
+         )
+         (block $label$780.linked.21514
+         )
+        )
+        (block $label$781.linked.21515
+         (local.set $45
+          (local.get $29)
+         )
+         (block $label$782.linked.21516
+         )
+        )
+        (block $label$783.linked.21517 (result i32)
+         (memory.copy
+          (local.get $44)
+          (local.get $45)
+          (local.get $26)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+     )
+    )
+   )
+   (block $label$784.linked.21518
+    (drop
+     (call $decRef_1332.linked.1445
+      (global.get $decRef_1332.linked.1425)
+      (local.get $2)
+     )
+    )
+   )
+   (block (result i32)
+    (local.set $322
+     (local.get $4)
+    )
+    (drop
+     (block $label$785.linked.21519 (result i32)
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $10)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $11)
+       )
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (local.get $322)
+   )
+  )
+ )
+ (func $encodeAt_1755.linked.18561 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (param $4 i32) (param $5 i32) (result i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i64)
+  (local $17 f32)
+  (local $18 f64)
+  (block $label$1.linked.21520
+   (local.set $10
+    (i32.const 0)
+   )
+   (block $label$2.linked.21521
+   )
+  )
+  (block $label$3.linked.21522
+   (local.set $11
+    (i32.load offset=12
+     (local.get $5)
+    )
+   )
+   (block $label$4.linked.21523
+   )
+  )
+  (block $label$5.linked.21524
+   (local.set $12
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $11)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$6.linked.21525
+   )
+  )
+  (block $label$7.linked.21526
+   (local.set $13
+    (if (result i32)
+     (i32.shr_u
+      (local.get $12)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$10.linked.21527
+       (local.set $14
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $11)
+           (i32.const 1)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$11.linked.21528
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $14)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$13.linked.21529
+         (local.set $9
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (i32.load offset=20
+            (local.get $5)
+           )
+          )
+         )
+         (block $label$14.linked.21530
+         )
+        )
+        (drop
+         (block $label$15.linked.21531 (result i32)
+          (local.set $10
+           (local.get $9)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (i32.const 1)
+       )
+       (unreachable)
+      )
+     )
+    )
+   )
+   (block $label$17.linked.21532
+   )
+  )
+  (block $label$18.linked.21533
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $5)
+    )
+   )
+  )
+  (block $label$19.linked.21534
+   (local.set $15
+    (block $label$20.linked.21535 (result i32)
+     (block $label$21.linked.21536 (result i32)
+      (drop
+       (block $label$22.linked.21537 (result i32)
+        (drop
+         (block $label$23.linked.21538 (result i32)
+          (drop
+           (block $label$24.linked.21539 (result i32)
+            (br_table $label$22.linked.21537 $label$23.linked.21538 $label$24.linked.21539 $label$24.linked.21539
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $13)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$20.linked.21535
+           (block $label$25.linked.21540 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$20.linked.21535
+         (block $label$26.linked.21541 (result i32)
+          (i32.const 2147483646)
+         )
+        )
+       )
+      )
+      (br $label$20.linked.21535
+       (block $label$27.linked.21542 (result i32)
+        (local.get $10)
+       )
+      )
+     )
+    )
+   )
+   (block $label$28.linked.21543
+   )
+  )
+  (block $label$29.linked.21544
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $encodeAtHelp_1729.linked.18560
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $encodeAtHelp_1729.linked.18504)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $15)
+    (local.get $3)
+    (local.get $4)
+   )
+  )
+ )
+ (func $encodeHelp_1763.linked.18562 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i64)
+  (local $22 f32)
+  (local $23 f64)
+  (block $label$1.linked.21545
+   (local.set $7
+    (call $encodedLength_1724.linked.18559
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $encodedLength_1724.linked.18510)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $1)
+     )
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (local.get $2)
+     )
+    )
+   )
+   (block $label$2.linked.21546
+   )
+  )
+  (block $label$3.linked.21547
+   (local.set $8
+    (if (result i32)
+     (i32.shr_u
+      (local.get $3)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$5.linked.21548
+       (local.set $11
+        (i32.load offset=12
+         (local.get $2)
+        )
+       )
+       (block $label$6.linked.21549
+       )
+      )
+      (block $label$7.linked.21550
+       (local.set $12
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $11)
+           (i32.const 3)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$8.linked.21551
+       )
+      )
+      (block $label$9.linked.21552
+       (local.set $13
+        (if (result i32)
+         (i32.shr_u
+          (local.get $12)
+          (i32.const 31)
+         )
+         (i32.const 5)
+         (block (result i32)
+          (block $label$12.linked.21553
+           (local.set $14
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $11)
+               (i32.const 5)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$13.linked.21554
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $14)
+            (i32.const 31)
+           )
+           (i32.const 3)
+           (block (result i32)
+            (block $label$16.linked.21555
+             (local.set $15
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $11)
+                 (i32.const 7)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$17.linked.21556
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $15)
+              (i32.const 31)
+             )
+             (i32.const 9)
+             (block (result i32)
+              (block $label$20.linked.21557
+               (local.set $16
+                (i32.or
+                 (i32.shl
+                  (i32.eq
+                   (local.get $11)
+                   (i32.const 9)
+                  )
+                  (i32.const 31)
+                 )
+                 (i32.const 2147483646)
+                )
+               )
+               (block $label$21.linked.21558
+               )
+              )
+              (if (result i32)
+               (i32.shr_u
+                (local.get $16)
+                (i32.const 31)
+               )
+               (i32.const 7)
+               (block (result i32)
+                (block $label$24.linked.21559
+                 (local.set $17
+                  (i32.or
+                   (i32.shl
+                    (i32.eq
+                     (local.get $11)
+                     (i32.const 1)
+                    )
+                    (i32.const 31)
+                   )
+                   (i32.const 2147483646)
+                  )
+                 )
+                 (block $label$25.linked.21560
+                 )
+                )
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $17)
+                  (i32.const 31)
+                 )
+                 (i32.const 1)
+                 (unreachable)
+                )
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+       )
+       (block $label$28.linked.21561
+       )
+      )
+      (block $label$29.linked.21562 (result i32)
+       (block $label$30.linked.21563 (result i32)
+        (drop
+         (block $label$31.linked.21564 (result i32)
+          (drop
+           (block $label$32.linked.21565 (result i32)
+            (drop
+             (block $label$33.linked.21566 (result i32)
+              (drop
+               (block $label$34.linked.21567 (result i32)
+                (drop
+                 (block $label$35.linked.21568 (result i32)
+                  (drop
+                   (block $label$36.linked.21569 (result i32)
+                    (br_table $label$31.linked.21564 $label$32.linked.21565 $label$33.linked.21566 $label$34.linked.21567 $label$35.linked.21568 $label$36.linked.21569 $label$36.linked.21569
+                     (i32.const 0)
+                     (i32.shr_s
+                      (local.get $13)
+                      (i32.const 1)
+                     )
+                    )
+                   )
+                  )
+                  (br $label$29.linked.21562
+                   (block $label$37.linked.21570 (result i32)
+                    (unreachable)
+                   )
+                  )
+                 )
+                )
+                (br $label$29.linked.21562
+                 (block $label$38.linked.21571 (result i32)
+                  (i32.const 9)
+                 )
+                )
+               )
+              )
+              (br $label$29.linked.21562
+               (block $label$39.linked.21572 (result i32)
+                (i32.const 9)
+               )
+              )
+             )
+            )
+            (br $label$29.linked.21562
+             (block $label$40.linked.21573 (result i32)
+              (i32.const 5)
+             )
+            )
+           )
+          )
+          (br $label$29.linked.21562
+           (block $label$41.linked.21574 (result i32)
+            (i32.const 5)
+           )
+          )
+         )
+        )
+        (br $label$29.linked.21562
+         (block $label$42.linked.21575 (result i32)
+          (i32.const 7)
+         )
+        )
+       )
+      )
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$44.linked.21576
+   )
+  )
+  (block $label$45.linked.21577
+   (local.set $9
+    (call $+_3507.linked.9869
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $+_3507.linked.9651)
+     )
+     (local.get $7)
+     (local.get $8)
+    )
+   )
+   (block $label$46.linked.21578
+   )
+  )
+  (block $label$47.linked.21579
+   (local.set $18
+    (local.get $9)
+   )
+   (block $label$48.linked.21580
+   )
+  )
+  (block $label$49.linked.21581
+   (local.set $19
+    (i32.shr_u
+     (local.get $18)
+     (i32.const 1)
+    )
+   )
+   (block $label$50.linked.21582
+   )
+  )
+  (block $label$51.linked.21583
+   (local.set $20
+    (block $label$52.linked.21584 (result i32)
+     (i32.store
+      (local.tee $4
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $19)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 8)
+     )
+     (i32.store offset=4
+      (local.get $4)
+      (local.get $19)
+     )
+     (local.get $4)
+    )
+   )
+   (block $label$53.linked.21585
+   )
+  )
+  (block $label$54.linked.21586
+   (local.set $10
+    (local.get $20)
+   )
+   (block $label$55.linked.21587
+   )
+  )
+  (block $label$56.linked.21588
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $9)
+    )
+   )
+  )
+  (return
+   (call $encodeAtHelp_1729.linked.18560
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $encodeAtHelp_1729.linked.18504)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $3)
+    (local.get $10)
+    (i32.const 1)
+   )
+  )
+ )
+ (func $encode_1769.linked.18563 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i64)
+  (local $15 f32)
+  (local $16 f64)
+  (block $label$1.linked.21589
+   (local.set $8
+    (i32.const 0)
+   )
+   (block $label$2.linked.21590
+   )
+  )
+  (block $label$3.linked.21591
+   (local.set $9
+    (i32.load offset=12
+     (local.get $3)
+    )
+   )
+   (block $label$4.linked.21592
+   )
+  )
+  (block $label$5.linked.21593
+   (local.set $10
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $9)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$6.linked.21594
+   )
+  )
+  (block $label$7.linked.21595
+   (local.set $11
+    (if (result i32)
+     (i32.shr_u
+      (local.get $10)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$10.linked.21596
+       (local.set $12
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $9)
+           (i32.const 1)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$11.linked.21597
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $12)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$13.linked.21598
+         (local.set $7
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (i32.load offset=20
+            (local.get $3)
+           )
+          )
+         )
+         (block $label$14.linked.21599
+         )
+        )
+        (drop
+         (block $label$15.linked.21600 (result i32)
+          (local.set $8
+           (local.get $7)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (i32.const 1)
+       )
+       (unreachable)
+      )
+     )
+    )
+   )
+   (block $label$17.linked.21601
+   )
+  )
+  (block $label$18.linked.21602
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $3)
+    )
+   )
+  )
+  (block $label$19.linked.21603
+   (local.set $13
+    (block $label$20.linked.21604 (result i32)
+     (block $label$21.linked.21605 (result i32)
+      (drop
+       (block $label$22.linked.21606 (result i32)
+        (drop
+         (block $label$23.linked.21607 (result i32)
+          (drop
+           (block $label$24.linked.21608 (result i32)
+            (br_table $label$22.linked.21606 $label$23.linked.21607 $label$24.linked.21608 $label$24.linked.21608
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $11)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$20.linked.21604
+           (block $label$25.linked.21609 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$20.linked.21604
+         (block $label$26.linked.21610 (result i32)
+          (i32.const 2147483646)
+         )
+        )
+       )
+      )
+      (br $label$20.linked.21604
+       (block $label$27.linked.21611 (result i32)
+        (local.get $8)
+       )
+      )
+     )
+    )
+   )
+   (block $label$28.linked.21612
+   )
+  )
+  (block $label$29.linked.21613
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $encodeHelp_1763.linked.18562
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $encodeHelp_1763.linked.18503)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $13)
+   )
+  )
+ )
+ (func $writeUtf8CodePoint_1775.linked.18564 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i64)
+  (local $50 f32)
+  (local $51 f64)
+  (local $52 i32)
+  (block $label$1.linked.21614
+   (local.set $6
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.le_u
+      (local.get $2)
+      (i32.const 127)
+     )
+    )
+   )
+   (block $label$2.linked.21615
+   )
+  )
+  (block (result i32)
+   (local.set $52
+    (if (result i32)
+     (i32.shr_u
+      (local.get $6)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$4.linked.21616
+       (local.set $48
+        (block $label$5.linked.21617 (result i32)
+         (i32.store8
+          (local.get $1)
+          (local.get $2)
+         )
+         (i32.const 1879048190)
+        )
+       )
+       (block $label$6.linked.21618
+       )
+      )
+      (i32.const 1)
+     )
+     (block (result i32)
+      (block $label$8.linked.21619
+       (local.set $7
+        (select
+         (i32.const -2)
+         (i32.const 2147483646)
+         (i32.le_u
+          (local.get $2)
+          (i32.const 2047)
+         )
+        )
+       )
+       (block $label$9.linked.21620
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $7)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$11.linked.21621
+         (local.set $40
+          (i32.shr_u
+           (local.get $2)
+           (i32.const 6)
+          )
+         )
+         (block $label$12.linked.21622
+         )
+        )
+        (block $label$13.linked.21623
+         (local.set $41
+          (i32.and
+           (local.get $40)
+           (i32.const 31)
+          )
+         )
+         (block $label$14.linked.21624
+         )
+        )
+        (block $label$15.linked.21625
+         (local.set $42
+          (i32.or
+           (local.get $41)
+           (i32.const 192)
+          )
+         )
+         (block $label$16.linked.21626
+         )
+        )
+        (block $label$17.linked.21627
+         (local.set $43
+          (i32.and
+           (local.get $2)
+           (i32.const 63)
+          )
+         )
+         (block $label$18.linked.21628
+         )
+        )
+        (block $label$19.linked.21629
+         (local.set $44
+          (i32.or
+           (local.get $43)
+           (i32.const 128)
+          )
+         )
+         (block $label$20.linked.21630
+         )
+        )
+        (block $label$21.linked.21631
+         (local.set $45
+          (block $label$22.linked.21632 (result i32)
+           (i32.store8
+            (local.get $1)
+            (local.get $42)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$23.linked.21633
+         )
+        )
+        (block $label$24.linked.21634
+         (local.set $46
+          (i32.add
+           (local.get $1)
+           (i32.const 1)
+          )
+         )
+         (block $label$25.linked.21635
+         )
+        )
+        (block $label$26.linked.21636
+         (local.set $47
+          (block $label$27.linked.21637 (result i32)
+           (i32.store8
+            (local.get $46)
+            (local.get $44)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$28.linked.21638
+         )
+        )
+        (i32.const 2)
+       )
+       (block (result i32)
+        (block $label$30.linked.21639
+         (local.set $8
+          (select
+           (i32.const -2)
+           (i32.const 2147483646)
+           (i32.le_u
+            (local.get $2)
+            (i32.const 65535)
+           )
+          )
+         )
+         (block $label$31.linked.21640
+         )
+        )
+        (if (result i32)
+         (i32.shr_u
+          (local.get $8)
+          (i32.const 31)
+         )
+         (block (result i32)
+          (block $label$33.linked.21641
+           (local.set $27
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 12)
+            )
+           )
+           (block $label$34.linked.21642
+           )
+          )
+          (block $label$35.linked.21643
+           (local.set $28
+            (i32.and
+             (local.get $27)
+             (i32.const 15)
+            )
+           )
+           (block $label$36.linked.21644
+           )
+          )
+          (block $label$37.linked.21645
+           (local.set $29
+            (i32.or
+             (local.get $28)
+             (i32.const 224)
+            )
+           )
+           (block $label$38.linked.21646
+           )
+          )
+          (block $label$39.linked.21647
+           (local.set $30
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 6)
+            )
+           )
+           (block $label$40.linked.21648
+           )
+          )
+          (block $label$41.linked.21649
+           (local.set $31
+            (i32.and
+             (local.get $30)
+             (i32.const 63)
+            )
+           )
+           (block $label$42.linked.21650
+           )
+          )
+          (block $label$43.linked.21651
+           (local.set $32
+            (i32.or
+             (local.get $31)
+             (i32.const 128)
+            )
+           )
+           (block $label$44.linked.21652
+           )
+          )
+          (block $label$45.linked.21653
+           (local.set $33
+            (i32.and
+             (local.get $2)
+             (i32.const 63)
+            )
+           )
+           (block $label$46.linked.21654
+           )
+          )
+          (block $label$47.linked.21655
+           (local.set $34
+            (i32.or
+             (local.get $33)
+             (i32.const 128)
+            )
+           )
+           (block $label$48.linked.21656
+           )
+          )
+          (block $label$49.linked.21657
+           (local.set $35
+            (block $label$50.linked.21658 (result i32)
+             (i32.store8
+              (local.get $1)
+              (local.get $29)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$51.linked.21659
+           )
+          )
+          (block $label$52.linked.21660
+           (local.set $36
+            (i32.add
+             (local.get $1)
+             (i32.const 1)
+            )
+           )
+           (block $label$53.linked.21661
+           )
+          )
+          (block $label$54.linked.21662
+           (local.set $37
+            (block $label$55.linked.21663 (result i32)
+             (i32.store8
+              (local.get $36)
+              (local.get $32)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$56.linked.21664
+           )
+          )
+          (block $label$57.linked.21665
+           (local.set $38
+            (i32.add
+             (local.get $1)
+             (i32.const 2)
+            )
+           )
+           (block $label$58.linked.21666
+           )
+          )
+          (block $label$59.linked.21667
+           (local.set $39
+            (block $label$60.linked.21668 (result i32)
+             (i32.store8
+              (local.get $38)
+              (local.get $34)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$61.linked.21669
+           )
+          )
+          (i32.const 3)
+         )
+         (block (result i32)
+          (block $label$63.linked.21670
+           (local.set $9
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 18)
+            )
+           )
+           (block $label$64.linked.21671
+           )
+          )
+          (block $label$65.linked.21672
+           (local.set $10
+            (i32.and
+             (local.get $9)
+             (i32.const 7)
+            )
+           )
+           (block $label$66.linked.21673
+           )
+          )
+          (block $label$67.linked.21674
+           (local.set $11
+            (i32.or
+             (local.get $10)
+             (i32.const 240)
+            )
+           )
+           (block $label$68.linked.21675
+           )
+          )
+          (block $label$69.linked.21676
+           (local.set $12
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 12)
+            )
+           )
+           (block $label$70.linked.21677
+           )
+          )
+          (block $label$71.linked.21678
+           (local.set $13
+            (i32.and
+             (local.get $12)
+             (i32.const 63)
+            )
+           )
+           (block $label$72.linked.21679
+           )
+          )
+          (block $label$73.linked.21680
+           (local.set $14
+            (i32.or
+             (local.get $13)
+             (i32.const 128)
+            )
+           )
+           (block $label$74.linked.21681
+           )
+          )
+          (block $label$75.linked.21682
+           (local.set $15
+            (i32.shr_u
+             (local.get $2)
+             (i32.const 6)
+            )
+           )
+           (block $label$76.linked.21683
+           )
+          )
+          (block $label$77.linked.21684
+           (local.set $16
+            (i32.and
+             (local.get $15)
+             (i32.const 63)
+            )
+           )
+           (block $label$78.linked.21685
+           )
+          )
+          (block $label$79.linked.21686
+           (local.set $17
+            (i32.or
+             (local.get $16)
+             (i32.const 128)
+            )
+           )
+           (block $label$80.linked.21687
+           )
+          )
+          (block $label$81.linked.21688
+           (local.set $18
+            (i32.and
+             (local.get $2)
+             (i32.const 63)
+            )
+           )
+           (block $label$82.linked.21689
+           )
+          )
+          (block $label$83.linked.21690
+           (local.set $19
+            (i32.or
+             (local.get $18)
+             (i32.const 128)
+            )
+           )
+           (block $label$84.linked.21691
+           )
+          )
+          (block $label$85.linked.21692
+           (local.set $20
+            (block $label$86.linked.21693 (result i32)
+             (i32.store8
+              (local.get $1)
+              (local.get $11)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$87.linked.21694
+           )
+          )
+          (block $label$88.linked.21695
+           (local.set $21
+            (i32.add
+             (local.get $1)
+             (i32.const 1)
+            )
+           )
+           (block $label$89.linked.21696
+           )
+          )
+          (block $label$90.linked.21697
+           (local.set $22
+            (block $label$91.linked.21698 (result i32)
+             (i32.store8
+              (local.get $21)
+              (local.get $14)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$92.linked.21699
+           )
+          )
+          (block $label$93.linked.21700
+           (local.set $23
+            (i32.add
+             (local.get $1)
+             (i32.const 2)
+            )
+           )
+           (block $label$94.linked.21701
+           )
+          )
+          (block $label$95.linked.21702
+           (local.set $24
+            (block $label$96.linked.21703 (result i32)
+             (i32.store8
+              (local.get $23)
+              (local.get $17)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$97.linked.21704
+           )
+          )
+          (block $label$98.linked.21705
+           (local.set $25
+            (i32.add
+             (local.get $1)
+             (i32.const 3)
+            )
+           )
+           (block $label$99.linked.21706
+           )
+          )
+          (block $label$100.linked.21707
+           (local.set $26
+            (block $label$101.linked.21708 (result i32)
+             (i32.store8
+              (local.get $25)
+              (local.get $19)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block $label$102.linked.21709
+           )
+          )
+          (i32.const 4)
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$103.linked.21710 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $52)
+  )
+ )
+ (func $bytesHaveBom_1787.linked.18565 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i64)
+  (local $58 f32)
+  (local $59 f64)
+  (local $60 i32)
+  (block $label$1.linked.21711
+   (local.set $7
+    (local.get $1)
+   )
+   (block $label$2.linked.21712
+   )
+  )
+  (block $label$3.linked.21713
+   (local.set $8
+    (i32.load offset=4
+     (local.get $7)
+    )
+   )
+   (block $label$4.linked.21714
+   )
+  )
+  (block $label$5.linked.21715
+   (local.set $9
+    (i32.add
+     (local.get $7)
+     (local.get $3)
+    )
+   )
+   (block $label$6.linked.21716
+   )
+  )
+  (block $label$7.linked.21717
+   (local.set $10
+    (i32.load offset=12
+     (local.get $2)
+    )
+   )
+   (block $label$8.linked.21718
+   )
+  )
+  (block $label$9.linked.21719
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (block $label$10.linked.21720
+   (local.set $11
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $10)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$11.linked.21721
+   )
+  )
+  (block $label$12.linked.21722
+   (local.set $12
+    (if (result i32)
+     (i32.shr_u
+      (local.get $11)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$15.linked.21723
+       (local.set $13
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $10)
+           (i32.const 5)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$16.linked.21724
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $13)
+        (i32.const 31)
+       )
+       (i32.const 5)
+       (block (result i32)
+        (block $label$19.linked.21725
+         (local.set $14
+          (i32.or
+           (i32.shl
+            (i32.eq
+             (local.get $10)
+             (i32.const 7)
+            )
+            (i32.const 31)
+           )
+           (i32.const 2147483646)
+          )
+         )
+         (block $label$20.linked.21726
+         )
+        )
+        (if (result i32)
+         (i32.shr_u
+          (local.get $14)
+          (i32.const 31)
+         )
+         (i32.const 7)
+         (block (result i32)
+          (block $label$23.linked.21727
+           (local.set $15
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $10)
+               (i32.const 9)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$24.linked.21728
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $15)
+            (i32.const 31)
+           )
+           (i32.const 9)
+           (block (result i32)
+            (block $label$27.linked.21729
+             (local.set $16
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $10)
+                 (i32.const 1)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$28.linked.21730
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $16)
+              (i32.const 31)
+             )
+             (i32.const 1)
+             (unreachable)
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+   (block $label$31.linked.21731
+   )
+  )
+  (block (result i32)
+   (local.set $60
+    (block $label$32.linked.21732 (result i32)
+     (block $label$33.linked.21733 (result i32)
+      (drop
+       (block $label$34.linked.21734 (result i32)
+        (drop
+         (block $label$35.linked.21735 (result i32)
+          (drop
+           (block $label$36.linked.21736 (result i32)
+            (drop
+             (block $label$37.linked.21737 (result i32)
+              (drop
+               (block $label$38.linked.21738 (result i32)
+                (drop
+                 (block $label$39.linked.21739 (result i32)
+                  (br_table $label$34.linked.21734 $label$35.linked.21735 $label$36.linked.21736 $label$37.linked.21737 $label$38.linked.21738 $label$39.linked.21739 $label$39.linked.21739
+                   (i32.const 0)
+                   (i32.shr_s
+                    (local.get $12)
+                    (i32.const 1)
+                   )
+                  )
+                 )
+                )
+                (br $label$32.linked.21732
+                 (block $label$40.linked.21740 (result i32)
+                  (unreachable)
+                 )
+                )
+               )
+              )
+              (br $label$32.linked.21732
+               (block $label$41.linked.21741 (result i32)
+                (block $label$42.linked.21742
+                 (local.set $46
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.ge_u
+                    (local.get $8)
+                    (i32.const 4)
+                   )
+                  )
+                 )
+                 (block $label$43.linked.21743
+                 )
+                )
+                (block $label$44.linked.21744
+                 (local.set $47
+                  (if (result i32)
+                   (i32.shr_u
+                    (local.get $46)
+                    (i32.const 31)
+                   )
+                   (block (result i32)
+                    (block $label$46.linked.21745
+                     (local.set $48
+                      (i32.load8_u
+                       (i32.add
+                        (local.get $9)
+                        (global.get $_BYTES_OFFSET_1728.linked.18489)
+                       )
+                      )
+                     )
+                     (block $label$47.linked.21746
+                     )
+                    )
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.eq
+                      (local.get $48)
+                      (i32.const 255)
+                     )
+                    )
+                   )
+                   (local.get $46)
+                  )
+                 )
+                 (block $label$49.linked.21747
+                 )
+                )
+                (block $label$50.linked.21748
+                 (local.set $49
+                  (if (result i32)
+                   (i32.shr_u
+                    (local.get $47)
+                    (i32.const 31)
+                   )
+                   (block (result i32)
+                    (block $label$52.linked.21749
+                     (local.set $50
+                      (i32.add
+                       (local.get $9)
+                       (i32.const 1)
+                      )
+                     )
+                     (block $label$53.linked.21750
+                     )
+                    )
+                    (block $label$54.linked.21751
+                     (local.set $51
+                      (i32.load8_u
+                       (i32.add
+                        (local.get $50)
+                        (global.get $_BYTES_OFFSET_1728.linked.18489)
+                       )
+                      )
+                     )
+                     (block $label$55.linked.21752
+                     )
+                    )
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.eq
+                      (local.get $51)
+                      (i32.const 254)
+                     )
+                    )
+                   )
+                   (local.get $47)
+                  )
+                 )
+                 (block $label$57.linked.21753
+                 )
+                )
+                (block $label$58.linked.21754
+                 (local.set $52
+                  (if (result i32)
+                   (i32.shr_u
+                    (local.get $49)
+                    (i32.const 31)
+                   )
+                   (block (result i32)
+                    (block $label$60.linked.21755
+                     (local.set $53
+                      (i32.add
+                       (local.get $9)
+                       (i32.const 2)
+                      )
+                     )
+                     (block $label$61.linked.21756
+                     )
+                    )
+                    (block $label$62.linked.21757
+                     (local.set $54
+                      (i32.load8_u
+                       (i32.add
+                        (local.get $53)
+                        (global.get $_BYTES_OFFSET_1728.linked.18489)
+                       )
+                      )
+                     )
+                     (block $label$63.linked.21758
+                     )
+                    )
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.eq
+                      (local.get $54)
+                      (i32.const 0)
+                     )
+                    )
+                   )
+                   (local.get $49)
+                  )
+                 )
+                 (block $label$65.linked.21759
+                 )
+                )
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $52)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$67.linked.21760
+                   (local.set $55
+                    (i32.add
+                     (local.get $9)
+                     (i32.const 3)
+                    )
+                   )
+                   (block $label$68.linked.21761
+                   )
+                  )
+                  (block $label$69.linked.21762
+                   (local.set $56
+                    (i32.load8_u
+                     (i32.add
+                      (local.get $55)
+                      (global.get $_BYTES_OFFSET_1728.linked.18489)
+                     )
+                    )
+                   )
+                   (block $label$70.linked.21763
+                   )
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.eq
+                    (local.get $56)
+                    (i32.const 0)
+                   )
+                  )
+                 )
+                 (local.get $52)
+                )
+               )
+              )
+             )
+            )
+            (br $label$32.linked.21732
+             (block $label$72.linked.21764 (result i32)
+              (block $label$73.linked.21765
+               (local.set $35
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.ge_u
+                  (local.get $8)
+                  (i32.const 4)
+                 )
+                )
+               )
+               (block $label$74.linked.21766
+               )
+              )
+              (block $label$75.linked.21767
+               (local.set $36
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $35)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$77.linked.21768
+                   (local.set $37
+                    (i32.load8_u
+                     (i32.add
+                      (local.get $9)
+                      (global.get $_BYTES_OFFSET_1728.linked.18489)
+                     )
+                    )
+                   )
+                   (block $label$78.linked.21769
+                   )
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.eq
+                    (local.get $37)
+                    (i32.const 0)
+                   )
+                  )
+                 )
+                 (local.get $35)
+                )
+               )
+               (block $label$80.linked.21770
+               )
+              )
+              (block $label$81.linked.21771
+               (local.set $38
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $36)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$83.linked.21772
+                   (local.set $39
+                    (i32.add
+                     (local.get $9)
+                     (i32.const 1)
+                    )
+                   )
+                   (block $label$84.linked.21773
+                   )
+                  )
+                  (block $label$85.linked.21774
+                   (local.set $40
+                    (i32.load8_u
+                     (i32.add
+                      (local.get $39)
+                      (global.get $_BYTES_OFFSET_1728.linked.18489)
+                     )
+                    )
+                   )
+                   (block $label$86.linked.21775
+                   )
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.eq
+                    (local.get $40)
+                    (i32.const 0)
+                   )
+                  )
+                 )
+                 (local.get $36)
+                )
+               )
+               (block $label$88.linked.21776
+               )
+              )
+              (block $label$89.linked.21777
+               (local.set $41
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $38)
+                  (i32.const 31)
+                 )
+                 (block (result i32)
+                  (block $label$91.linked.21778
+                   (local.set $42
+                    (i32.add
+                     (local.get $9)
+                     (i32.const 2)
+                    )
+                   )
+                   (block $label$92.linked.21779
+                   )
+                  )
+                  (block $label$93.linked.21780
+                   (local.set $43
+                    (i32.load8_u
+                     (i32.add
+                      (local.get $42)
+                      (global.get $_BYTES_OFFSET_1728.linked.18489)
+                     )
+                    )
+                   )
+                   (block $label$94.linked.21781
+                   )
+                  )
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.eq
+                    (local.get $43)
+                    (i32.const 254)
+                   )
+                  )
+                 )
+                 (local.get $38)
+                )
+               )
+               (block $label$96.linked.21782
+               )
+              )
+              (if (result i32)
+               (i32.shr_u
+                (local.get $41)
+                (i32.const 31)
+               )
+               (block (result i32)
+                (block $label$98.linked.21783
+                 (local.set $44
+                  (i32.add
+                   (local.get $9)
+                   (i32.const 3)
+                  )
+                 )
+                 (block $label$99.linked.21784
+                 )
+                )
+                (block $label$100.linked.21785
+                 (local.set $45
+                  (i32.load8_u
+                   (i32.add
+                    (local.get $44)
+                    (global.get $_BYTES_OFFSET_1728.linked.18489)
+                   )
+                  )
+                 )
+                 (block $label$101.linked.21786
+                 )
+                )
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.eq
+                  (local.get $45)
+                  (i32.const 255)
+                 )
+                )
+               )
+               (local.get $41)
+              )
+             )
+            )
+           )
+          )
+          (br $label$32.linked.21732
+           (block $label$103.linked.21787 (result i32)
+            (block $label$104.linked.21788
+             (local.set $30
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.ge_u
+                (local.get $8)
+                (i32.const 2)
+               )
+              )
+             )
+             (block $label$105.linked.21789
+             )
+            )
+            (block $label$106.linked.21790
+             (local.set $31
+              (if (result i32)
+               (i32.shr_u
+                (local.get $30)
+                (i32.const 31)
+               )
+               (block (result i32)
+                (block $label$108.linked.21791
+                 (local.set $32
+                  (i32.load8_u
+                   (i32.add
+                    (local.get $9)
+                    (global.get $_BYTES_OFFSET_1728.linked.18489)
+                   )
+                  )
+                 )
+                 (block $label$109.linked.21792
+                 )
+                )
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.eq
+                  (local.get $32)
+                  (i32.const 255)
+                 )
+                )
+               )
+               (local.get $30)
+              )
+             )
+             (block $label$111.linked.21793
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $31)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$113.linked.21794
+               (local.set $33
+                (i32.add
+                 (local.get $9)
+                 (i32.const 1)
+                )
+               )
+               (block $label$114.linked.21795
+               )
+              )
+              (block $label$115.linked.21796
+               (local.set $34
+                (i32.load8_u
+                 (i32.add
+                  (local.get $33)
+                  (global.get $_BYTES_OFFSET_1728.linked.18489)
+                 )
+                )
+               )
+               (block $label$116.linked.21797
+               )
+              )
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $34)
+                (i32.const 254)
+               )
+              )
+             )
+             (local.get $31)
+            )
+           )
+          )
+         )
+        )
+        (br $label$32.linked.21732
+         (block $label$118.linked.21798 (result i32)
+          (block $label$119.linked.21799
+           (local.set $25
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ge_u
+              (local.get $8)
+              (i32.const 2)
+             )
+            )
+           )
+           (block $label$120.linked.21800
+           )
+          )
+          (block $label$121.linked.21801
+           (local.set $26
+            (if (result i32)
+             (i32.shr_u
+              (local.get $25)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$123.linked.21802
+               (local.set $27
+                (i32.load8_u
+                 (i32.add
+                  (local.get $9)
+                  (global.get $_BYTES_OFFSET_1728.linked.18489)
+                 )
+                )
+               )
+               (block $label$124.linked.21803
+               )
+              )
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $27)
+                (i32.const 254)
+               )
+              )
+             )
+             (local.get $25)
+            )
+           )
+           (block $label$126.linked.21804
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $26)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$128.linked.21805
+             (local.set $28
+              (i32.add
+               (local.get $9)
+               (i32.const 1)
+              )
+             )
+             (block $label$129.linked.21806
+             )
+            )
+            (block $label$130.linked.21807
+             (local.set $29
+              (i32.load8_u
+               (i32.add
+                (local.get $28)
+                (global.get $_BYTES_OFFSET_1728.linked.18489)
+               )
+              )
+             )
+             (block $label$131.linked.21808
+             )
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.eq
+              (local.get $29)
+              (i32.const 255)
+             )
+            )
+           )
+           (local.get $26)
+          )
+         )
+        )
+       )
+      )
+      (br $label$32.linked.21732
+       (block $label$133.linked.21809 (result i32)
+        (block $label$134.linked.21810
+         (local.set $17
+          (select
+           (i32.const -2)
+           (i32.const 2147483646)
+           (i32.ge_u
+            (local.get $8)
+            (i32.const 3)
+           )
+          )
+         )
+         (block $label$135.linked.21811
+         )
+        )
+        (block $label$136.linked.21812
+         (local.set $18
+          (if (result i32)
+           (i32.shr_u
+            (local.get $17)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$138.linked.21813
+             (local.set $19
+              (i32.load8_u
+               (i32.add
+                (local.get $9)
+                (global.get $_BYTES_OFFSET_1728.linked.18489)
+               )
+              )
+             )
+             (block $label$139.linked.21814
+             )
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.eq
+              (local.get $19)
+              (i32.const 239)
+             )
+            )
+           )
+           (local.get $17)
+          )
+         )
+         (block $label$141.linked.21815
+         )
+        )
+        (block $label$142.linked.21816
+         (local.set $20
+          (if (result i32)
+           (i32.shr_u
+            (local.get $18)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$144.linked.21817
+             (local.set $21
+              (i32.add
+               (local.get $9)
+               (i32.const 1)
+              )
+             )
+             (block $label$145.linked.21818
+             )
+            )
+            (block $label$146.linked.21819
+             (local.set $22
+              (i32.load8_u
+               (i32.add
+                (local.get $21)
+                (global.get $_BYTES_OFFSET_1728.linked.18489)
+               )
+              )
+             )
+             (block $label$147.linked.21820
+             )
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.eq
+              (local.get $22)
+              (i32.const 187)
+             )
+            )
+           )
+           (local.get $18)
+          )
+         )
+         (block $label$149.linked.21821
+         )
+        )
+        (if (result i32)
+         (i32.shr_u
+          (local.get $20)
+          (i32.const 31)
+         )
+         (block (result i32)
+          (block $label$151.linked.21822
+           (local.set $23
+            (i32.add
+             (local.get $9)
+             (i32.const 2)
+            )
+           )
+           (block $label$152.linked.21823
+           )
+          )
+          (block $label$153.linked.21824
+           (local.set $24
+            (i32.load8_u
+             (i32.add
+              (local.get $23)
+              (global.get $_BYTES_OFFSET_1728.linked.18489)
+             )
+            )
+           )
+           (block $label$154.linked.21825
+           )
+          )
+          (select
+           (i32.const -2)
+           (i32.const 2147483646)
+           (i32.eq
+            (local.get $24)
+            (i32.const 191)
+           )
+          )
+         )
+         (local.get $20)
+        )
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$156.linked.21826 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $60)
+  )
+ )
+ (func $decodedLength_1794.linked.18566 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (param $4 i32) (result i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i32)
+  (local $102 i32)
+  (local $103 i32)
+  (local $104 i32)
+  (local $105 i32)
+  (local $106 i32)
+  (local $107 i32)
+  (local $108 i32)
+  (local $109 i32)
+  (local $110 i32)
+  (local $111 i32)
+  (local $112 i32)
+  (local $113 i32)
+  (local $114 i32)
+  (local $115 i32)
+  (local $116 i32)
+  (local $117 i32)
+  (local $118 i32)
+  (local $119 i32)
+  (local $120 i32)
+  (local $121 i32)
+  (local $122 i32)
+  (local $123 i32)
+  (local $124 i32)
+  (local $125 i32)
+  (local $126 i32)
+  (local $127 i32)
+  (local $128 i32)
+  (local $129 i32)
+  (local $130 i32)
+  (local $131 i32)
+  (local $132 i32)
+  (local $133 i32)
+  (local $134 i32)
+  (local $135 i32)
+  (local $136 i32)
+  (local $137 i32)
+  (local $138 i32)
+  (local $139 i32)
+  (local $140 i32)
+  (local $141 i32)
+  (local $142 i32)
+  (local $143 i32)
+  (local $144 i32)
+  (local $145 i32)
+  (local $146 i32)
+  (local $147 i32)
+  (local $148 i32)
+  (local $149 i32)
+  (local $150 i32)
+  (local $151 i32)
+  (local $152 i32)
+  (local $153 i32)
+  (local $154 i32)
+  (local $155 i32)
+  (local $156 i32)
+  (local $157 i32)
+  (local $158 i32)
+  (local $159 i32)
+  (local $160 i32)
+  (local $161 i32)
+  (local $162 i32)
+  (local $163 i32)
+  (local $164 i32)
+  (local $165 i32)
+  (local $166 i32)
+  (local $167 i32)
+  (local $168 i32)
+  (local $169 i32)
+  (local $170 i32)
+  (local $171 i32)
+  (local $172 i32)
+  (local $173 i32)
+  (local $174 i32)
+  (local $175 i32)
+  (local $176 i32)
+  (local $177 i32)
+  (local $178 i32)
+  (local $179 i32)
+  (local $180 i32)
+  (local $181 i32)
+  (local $182 i32)
+  (local $183 i32)
+  (local $184 i32)
+  (local $185 i32)
+  (local $186 i32)
+  (local $187 i32)
+  (local $188 i32)
+  (local $189 i32)
+  (local $190 i32)
+  (local $191 i32)
+  (local $192 i64)
+  (local $193 f32)
+  (local $194 f64)
+  (local $195 i32)
+  (block $label$1.linked.21827
+   (local.set $14
+    (local.get $1)
+   )
+   (block $label$2.linked.21828
+   )
+  )
+  (block $label$3.linked.21829
+   (local.set $15
+    (i32.load offset=4
+     (local.get $14)
+    )
+   )
+   (block $label$4.linked.21830
+   )
+  )
+  (block $label$5.linked.21831
+   (local.set $16
+    (i32.sub
+     (local.get $15)
+     (local.get $3)
+    )
+   )
+   (block $label$6.linked.21832
+   )
+  )
+  (block $label$7.linked.21833
+   (local.set $17
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.lt_u
+      (local.get $4)
+      (local.get $16)
+     )
+    )
+   )
+   (block $label$8.linked.21834
+   )
+  )
+  (block $label$9.linked.21835
+   (local.set $18
+    (if (result i32)
+     (i32.shr_u
+      (local.get $17)
+      (i32.const 31)
+     )
+     (local.get $4)
+     (local.get $16)
+    )
+   )
+   (block $label$12.linked.21836
+   )
+  )
+  (block $label$13.linked.21837
+   (local.set $19
+    (i32.add
+     (local.get $14)
+     (global.get $_BYTES_OFFSET_1728.linked.18489)
+    )
+   )
+   (block $label$14.linked.21838
+   )
+  )
+  (block $label$15.linked.21839
+   (local.set $20
+    (i32.add
+     (local.get $19)
+     (local.get $3)
+    )
+   )
+   (block $label$16.linked.21840
+   )
+  )
+  (block $label$17.linked.21841
+   (local.set $21
+    (i32.load offset=12
+     (local.get $2)
+    )
+   )
+   (block $label$18.linked.21842
+   )
+  )
+  (block $label$19.linked.21843
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $2)
+    )
+   )
+  )
+  (block $label$20.linked.21844
+   (local.set $22
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $21)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$21.linked.21845
+   )
+  )
+  (block $label$22.linked.21846
+   (local.set $23
+    (if (result i32)
+     (i32.shr_u
+      (local.get $22)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$25.linked.21847
+       (local.set $24
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $21)
+           (i32.const 5)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$26.linked.21848
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $24)
+        (i32.const 31)
+       )
+       (i32.const 5)
+       (block (result i32)
+        (block $label$29.linked.21849
+         (local.set $25
+          (i32.or
+           (i32.shl
+            (i32.eq
+             (local.get $21)
+             (i32.const 7)
+            )
+            (i32.const 31)
+           )
+           (i32.const 2147483646)
+          )
+         )
+         (block $label$30.linked.21850
+         )
+        )
+        (if (result i32)
+         (i32.shr_u
+          (local.get $25)
+          (i32.const 31)
+         )
+         (i32.const 7)
+         (block (result i32)
+          (block $label$33.linked.21851
+           (local.set $26
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $21)
+               (i32.const 9)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$34.linked.21852
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $26)
+            (i32.const 31)
+           )
+           (i32.const 9)
+           (block (result i32)
+            (block $label$37.linked.21853
+             (local.set $27
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $21)
+                 (i32.const 1)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$38.linked.21854
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $27)
+              (i32.const 31)
+             )
+             (i32.const 1)
+             (unreachable)
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+   (block $label$41.linked.21855
+   )
+  )
+  (block (result i32)
+   (local.set $195
+    (block $label$42.linked.21856 (result i32)
+     (block $label$43.linked.21857 (result i32)
+      (drop
+       (block $label$44.linked.21858 (result i32)
+        (drop
+         (block $label$45.linked.21859 (result i32)
+          (drop
+           (block $label$46.linked.21860 (result i32)
+            (drop
+             (block $label$47.linked.21861 (result i32)
+              (drop
+               (block $label$48.linked.21862 (result i32)
+                (drop
+                 (block $label$49.linked.21863 (result i32)
+                  (br_table $label$44.linked.21858 $label$45.linked.21859 $label$46.linked.21860 $label$47.linked.21861 $label$48.linked.21862 $label$49.linked.21863 $label$49.linked.21863
+                   (i32.const 0)
+                   (i32.shr_s
+                    (local.get $23)
+                    (i32.const 1)
+                   )
+                  )
+                 )
+                )
+                (br $label$42.linked.21856
+                 (block $label$50.linked.21864 (result i32)
+                  (unreachable)
+                 )
+                )
+               )
+              )
+              (br $label$42.linked.21856
+               (block $label$51.linked.21865 (result i32)
+                (block $label$52.linked.21866
+                 (local.set $157
+                  (i32.and
+                   (local.get $18)
+                   (i32.const 3)
+                  )
+                 )
+                 (block $label$53.linked.21867
+                 )
+                )
+                (block $label$54.linked.21868
+                 (local.set $158
+                  (select
+                   (i32.const -2)
+                   (i32.const 2147483646)
+                   (i32.ne
+                    (local.get $157)
+                    (i32.const 0)
+                   )
+                  )
+                 )
+                 (block $label$55.linked.21869
+                 )
+                )
+                (drop
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $158)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$57.linked.21870
+                    (local.set $13
+                     (block $label$58.linked.21871 (result i32)
+                      (i32.store
+                       (local.tee $5
+                        (call $malloc_1264.linked.1440
+                         (global.get $malloc_1264.linked.1430)
+                         (i32.const 20)
+                        )
+                       )
+                       (i32.const 2)
+                      )
+                      (i32.store offset=4
+                       (local.get $5)
+                       (i32.const 1)
+                      )
+                      (i32.store offset=8
+                       (local.get $5)
+                       (i32.const 5)
+                      )
+                      (i32.store offset=12
+                       (local.get $5)
+                       (i32.const 2803)
+                      )
+                      (i32.store offset=16
+                       (local.get $5)
+                       (i32.const 0)
+                      )
+                      (local.get $5)
+                     )
+                    )
+                    (block $label$59.linked.21872
+                    )
+                   )
+                   (drop
+                    (call $throw_4472.linked.17966
+                     (call $incRef_1273.linked.1442
+                      (global.get $incRef_1273.linked.1429)
+                      (global.get $throw_4472.linked.17955)
+                     )
+                     (local.get $13)
+                    )
+                   )
+                   (unreachable)
+                  )
+                  (i32.const 1879048190)
+                 )
+                )
+                (block $label$61.linked.21873
+                 (local.set $159
+                  (i32.add
+                   (local.get $20)
+                   (local.get $18)
+                  )
+                 )
+                 (block $label$62.linked.21874
+                 )
+                )
+                (block $label$63.linked.21875
+                 (local.set $160
+                  (local.get $20)
+                 )
+                 (block $label$64.linked.21876
+                 )
+                )
+                (block $label$65.linked.21877
+                 (local.set $161
+                  (i32.const 0)
+                 )
+                 (block $label$66.linked.21878
+                 )
+                )
+                (block $label$67.linked.21879
+                 (local.set $162
+                  (block $label$68.linked.21880 (result i32)
+                   (loop $label$69.linked.21881
+                    (drop
+                     (br_if $label$68.linked.21880
+                      (i32.const 1879048190)
+                      (i32.eqz
+                       (i32.shr_u
+                        (block $label$70.linked.21882 (result i32)
+                         (block $label$71.linked.21883
+                          (local.set $191
+                           (local.get $160)
+                          )
+                          (block $label$72.linked.21884
+                          )
+                         )
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.lt_u
+                           (local.get $191)
+                           (local.get $159)
+                          )
+                         )
+                        )
+                        (i32.const 31)
+                       )
+                      )
+                     )
+                    )
+                    (block $label$73.linked.21885
+                     (drop
+                      (block $label$74.linked.21886 (result i32)
+                       (block $label$75.linked.21887
+                        (local.set $163
+                         (local.get $160)
+                        )
+                        (block $label$76.linked.21888
+                        )
+                       )
+                       (block $label$77.linked.21889
+                        (local.set $164
+                         (i32.load8_u offset=3
+                          (local.get $163)
+                         )
+                        )
+                        (block $label$78.linked.21890
+                        )
+                       )
+                       (block $label$79.linked.21891
+                        (local.set $165
+                         (i32.shl
+                          (local.get $164)
+                          (i32.const 24)
+                         )
+                        )
+                        (block $label$80.linked.21892
+                        )
+                       )
+                       (block $label$81.linked.21893
+                        (local.set $166
+                         (local.get $160)
+                        )
+                        (block $label$82.linked.21894
+                        )
+                       )
+                       (block $label$83.linked.21895
+                        (local.set $167
+                         (i32.load8_u offset=2
+                          (local.get $166)
+                         )
+                        )
+                        (block $label$84.linked.21896
+                        )
+                       )
+                       (block $label$85.linked.21897
+                        (local.set $168
+                         (i32.shl
+                          (local.get $167)
+                          (i32.const 16)
+                         )
+                        )
+                        (block $label$86.linked.21898
+                        )
+                       )
+                       (block $label$87.linked.21899
+                        (local.set $169
+                         (i32.or
+                          (local.get $165)
+                          (local.get $168)
+                         )
+                        )
+                        (block $label$88.linked.21900
+                        )
+                       )
+                       (block $label$89.linked.21901
+                        (local.set $170
+                         (local.get $160)
+                        )
+                        (block $label$90.linked.21902
+                        )
+                       )
+                       (block $label$91.linked.21903
+                        (local.set $171
+                         (i32.load8_u offset=1
+                          (local.get $170)
+                         )
+                        )
+                        (block $label$92.linked.21904
+                        )
+                       )
+                       (block $label$93.linked.21905
+                        (local.set $172
+                         (i32.shl
+                          (local.get $171)
+                          (i32.const 8)
+                         )
+                        )
+                        (block $label$94.linked.21906
+                        )
+                       )
+                       (block $label$95.linked.21907
+                        (local.set $173
+                         (i32.or
+                          (local.get $169)
+                          (local.get $172)
+                         )
+                        )
+                        (block $label$96.linked.21908
+                        )
+                       )
+                       (block $label$97.linked.21909
+                        (local.set $174
+                         (local.get $160)
+                        )
+                        (block $label$98.linked.21910
+                        )
+                       )
+                       (block $label$99.linked.21911
+                        (local.set $175
+                         (i32.load8_u
+                          (local.get $174)
+                         )
+                        )
+                        (block $label$100.linked.21912
+                        )
+                       )
+                       (block $label$101.linked.21913
+                        (local.set $176
+                         (i32.or
+                          (local.get $173)
+                          (local.get $175)
+                         )
+                        )
+                        (block $label$102.linked.21914
+                        )
+                       )
+                       (block $label$103.linked.21915
+                        (local.set $177
+                         (local.get $160)
+                        )
+                        (block $label$104.linked.21916
+                        )
+                       )
+                       (block $label$105.linked.21917
+                        (local.set $178
+                         (i32.add
+                          (local.get $177)
+                          (i32.const 4)
+                         )
+                        )
+                        (block $label$106.linked.21918
+                        )
+                       )
+                       (block $label$107.linked.21919
+                        (local.set $179
+                         (block $label$108.linked.21920 (result i32)
+                          (local.set $160
+                           (local.get $178)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$109.linked.21921
+                        )
+                       )
+                       (block $label$110.linked.21922
+                        (local.set $180
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.le_u
+                           (local.get $176)
+                           (i32.const 127)
+                          )
+                         )
+                        )
+                        (block $label$111.linked.21923
+                        )
+                       )
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $180)
+                         (i32.const 31)
+                        )
+                        (block (result i32)
+                         (block $label$113.linked.21924
+                          (local.set $189
+                           (local.get $161)
+                          )
+                          (block $label$114.linked.21925
+                          )
+                         )
+                         (block $label$115.linked.21926
+                          (local.set $190
+                           (i32.add
+                            (local.get $189)
+                            (i32.const 1)
+                           )
+                          )
+                          (block $label$116.linked.21927
+                          )
+                         )
+                         (block $label$117.linked.21928 (result i32)
+                          (local.set $161
+                           (local.get $190)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block (result i32)
+                         (block $label$119.linked.21929
+                          (local.set $181
+                           (select
+                            (i32.const -2)
+                            (i32.const 2147483646)
+                            (i32.le_u
+                             (local.get $176)
+                             (i32.const 2047)
+                            )
+                           )
+                          )
+                          (block $label$120.linked.21930
+                          )
+                         )
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $181)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$122.linked.21931
+                            (local.set $187
+                             (local.get $161)
+                            )
+                            (block $label$123.linked.21932
+                            )
+                           )
+                           (block $label$124.linked.21933
+                            (local.set $188
+                             (i32.add
+                              (local.get $187)
+                              (i32.const 2)
+                             )
+                            )
+                            (block $label$125.linked.21934
+                            )
+                           )
+                           (block $label$126.linked.21935 (result i32)
+                            (local.set $161
+                             (local.get $188)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block (result i32)
+                           (block $label$128.linked.21936
+                            (local.set $182
+                             (select
+                              (i32.const -2)
+                              (i32.const 2147483646)
+                              (i32.le_u
+                               (local.get $176)
+                               (i32.const 65535)
+                              )
+                             )
+                            )
+                            (block $label$129.linked.21937
+                            )
+                           )
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $182)
+                             (i32.const 31)
+                            )
+                            (block (result i32)
+                             (block $label$131.linked.21938
+                              (local.set $185
+                               (local.get $161)
+                              )
+                              (block $label$132.linked.21939
+                              )
+                             )
+                             (block $label$133.linked.21940
+                              (local.set $186
+                               (i32.add
+                                (local.get $185)
+                                (i32.const 3)
+                               )
+                              )
+                              (block $label$134.linked.21941
+                              )
+                             )
+                             (block $label$135.linked.21942 (result i32)
+                              (local.set $161
+                               (local.get $186)
+                              )
+                              (i32.const 1879048190)
+                             )
+                            )
+                            (block (result i32)
+                             (block $label$137.linked.21943
+                              (local.set $183
+                               (local.get $161)
+                              )
+                              (block $label$138.linked.21944
+                              )
+                             )
+                             (block $label$139.linked.21945
+                              (local.set $184
+                               (i32.add
+                                (local.get $183)
+                                (i32.const 4)
+                               )
+                              )
+                              (block $label$140.linked.21946
+                              )
+                             )
+                             (block $label$141.linked.21947 (result i32)
+                              (local.set $161
+                               (local.get $184)
+                              )
+                              (i32.const 1879048190)
+                             )
+                            )
+                           )
+                          )
+                         )
+                        )
+                       )
+                      )
+                     )
+                    )
+                    (br $label$69.linked.21881)
+                   )
+                  )
+                 )
+                 (block $label$142.linked.21948
+                 )
+                )
+                (local.get $161)
+               )
+              )
+             )
+            )
+            (br $label$42.linked.21856
+             (block $label$143.linked.21949 (result i32)
+              (block $label$144.linked.21950
+               (local.set $122
+                (i32.and
+                 (local.get $18)
+                 (i32.const 3)
+                )
+               )
+               (block $label$145.linked.21951
+               )
+              )
+              (block $label$146.linked.21952
+               (local.set $123
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.ne
+                  (local.get $122)
+                  (i32.const 0)
+                 )
+                )
+               )
+               (block $label$147.linked.21953
+               )
+              )
+              (drop
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $123)
+                 (i32.const 31)
+                )
+                (block (result i32)
+                 (block $label$149.linked.21954
+                  (local.set $12
+                   (block $label$150.linked.21955 (result i32)
+                    (i32.store
+                     (local.tee $5
+                      (call $malloc_1264.linked.1440
+                       (global.get $malloc_1264.linked.1430)
+                       (i32.const 20)
+                      )
+                     )
+                     (i32.const 2)
+                    )
+                    (i32.store offset=4
+                     (local.get $5)
+                     (i32.const 1)
+                    )
+                    (i32.store offset=8
+                     (local.get $5)
+                     (i32.const 5)
+                    )
+                    (i32.store offset=12
+                     (local.get $5)
+                     (i32.const 2803)
+                    )
+                    (i32.store offset=16
+                     (local.get $5)
+                     (i32.const 0)
+                    )
+                    (local.get $5)
+                   )
+                  )
+                  (block $label$151.linked.21956
+                  )
+                 )
+                 (drop
+                  (call $throw_4472.linked.17966
+                   (call $incRef_1273.linked.1442
+                    (global.get $incRef_1273.linked.1429)
+                    (global.get $throw_4472.linked.17955)
+                   )
+                   (local.get $12)
+                  )
+                 )
+                 (unreachable)
+                )
+                (i32.const 1879048190)
+               )
+              )
+              (block $label$153.linked.21957
+               (local.set $124
+                (i32.add
+                 (local.get $20)
+                 (local.get $18)
+                )
+               )
+               (block $label$154.linked.21958
+               )
+              )
+              (block $label$155.linked.21959
+               (local.set $125
+                (local.get $20)
+               )
+               (block $label$156.linked.21960
+               )
+              )
+              (block $label$157.linked.21961
+               (local.set $126
+                (i32.const 0)
+               )
+               (block $label$158.linked.21962
+               )
+              )
+              (block $label$159.linked.21963
+               (local.set $127
+                (block $label$160.linked.21964 (result i32)
+                 (loop $label$161.linked.21965
+                  (drop
+                   (br_if $label$160.linked.21964
+                    (i32.const 1879048190)
+                    (i32.eqz
+                     (i32.shr_u
+                      (block $label$162.linked.21966 (result i32)
+                       (block $label$163.linked.21967
+                        (local.set $156
+                         (local.get $125)
+                        )
+                        (block $label$164.linked.21968
+                        )
+                       )
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.lt_u
+                         (local.get $156)
+                         (local.get $124)
+                        )
+                       )
+                      )
+                      (i32.const 31)
+                     )
+                    )
+                   )
+                  )
+                  (block $label$165.linked.21969
+                   (drop
+                    (block $label$166.linked.21970 (result i32)
+                     (block $label$167.linked.21971
+                      (local.set $128
+                       (local.get $125)
+                      )
+                      (block $label$168.linked.21972
+                      )
+                     )
+                     (block $label$169.linked.21973
+                      (local.set $129
+                       (i32.load8_u
+                        (local.get $128)
+                       )
+                      )
+                      (block $label$170.linked.21974
+                      )
+                     )
+                     (block $label$171.linked.21975
+                      (local.set $130
+                       (i32.shl
+                        (local.get $129)
+                        (i32.const 24)
+                       )
+                      )
+                      (block $label$172.linked.21976
+                      )
+                     )
+                     (block $label$173.linked.21977
+                      (local.set $131
+                       (local.get $125)
+                      )
+                      (block $label$174.linked.21978
+                      )
+                     )
+                     (block $label$175.linked.21979
+                      (local.set $132
+                       (i32.load8_u offset=1
+                        (local.get $131)
+                       )
+                      )
+                      (block $label$176.linked.21980
+                      )
+                     )
+                     (block $label$177.linked.21981
+                      (local.set $133
+                       (i32.shl
+                        (local.get $132)
+                        (i32.const 16)
+                       )
+                      )
+                      (block $label$178.linked.21982
+                      )
+                     )
+                     (block $label$179.linked.21983
+                      (local.set $134
+                       (i32.or
+                        (local.get $130)
+                        (local.get $133)
+                       )
+                      )
+                      (block $label$180.linked.21984
+                      )
+                     )
+                     (block $label$181.linked.21985
+                      (local.set $135
+                       (local.get $125)
+                      )
+                      (block $label$182.linked.21986
+                      )
+                     )
+                     (block $label$183.linked.21987
+                      (local.set $136
+                       (i32.load8_u offset=2
+                        (local.get $135)
+                       )
+                      )
+                      (block $label$184.linked.21988
+                      )
+                     )
+                     (block $label$185.linked.21989
+                      (local.set $137
+                       (i32.shl
+                        (local.get $136)
+                        (i32.const 8)
+                       )
+                      )
+                      (block $label$186.linked.21990
+                      )
+                     )
+                     (block $label$187.linked.21991
+                      (local.set $138
+                       (i32.or
+                        (local.get $134)
+                        (local.get $137)
+                       )
+                      )
+                      (block $label$188.linked.21992
+                      )
+                     )
+                     (block $label$189.linked.21993
+                      (local.set $139
+                       (local.get $125)
+                      )
+                      (block $label$190.linked.21994
+                      )
+                     )
+                     (block $label$191.linked.21995
+                      (local.set $140
+                       (i32.load8_u offset=3
+                        (local.get $139)
+                       )
+                      )
+                      (block $label$192.linked.21996
+                      )
+                     )
+                     (block $label$193.linked.21997
+                      (local.set $141
+                       (i32.or
+                        (local.get $138)
+                        (local.get $140)
+                       )
+                      )
+                      (block $label$194.linked.21998
+                      )
+                     )
+                     (block $label$195.linked.21999
+                      (local.set $142
+                       (local.get $125)
+                      )
+                      (block $label$196.linked.22000
+                      )
+                     )
+                     (block $label$197.linked.22001
+                      (local.set $143
+                       (i32.add
+                        (local.get $142)
+                        (i32.const 4)
+                       )
+                      )
+                      (block $label$198.linked.22002
+                      )
+                     )
+                     (block $label$199.linked.22003
+                      (local.set $144
+                       (block $label$200.linked.22004 (result i32)
+                        (local.set $125
+                         (local.get $143)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block $label$201.linked.22005
+                      )
+                     )
+                     (block $label$202.linked.22006
+                      (local.set $145
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.le_u
+                         (local.get $141)
+                         (i32.const 127)
+                        )
+                       )
+                      )
+                      (block $label$203.linked.22007
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $145)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$205.linked.22008
+                        (local.set $154
+                         (local.get $126)
+                        )
+                        (block $label$206.linked.22009
+                        )
+                       )
+                       (block $label$207.linked.22010
+                        (local.set $155
+                         (i32.add
+                          (local.get $154)
+                          (i32.const 1)
+                         )
+                        )
+                        (block $label$208.linked.22011
+                        )
+                       )
+                       (block $label$209.linked.22012 (result i32)
+                        (local.set $126
+                         (local.get $155)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block (result i32)
+                       (block $label$211.linked.22013
+                        (local.set $146
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.le_u
+                           (local.get $141)
+                           (i32.const 2047)
+                          )
+                         )
+                        )
+                        (block $label$212.linked.22014
+                        )
+                       )
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $146)
+                         (i32.const 31)
+                        )
+                        (block (result i32)
+                         (block $label$214.linked.22015
+                          (local.set $152
+                           (local.get $126)
+                          )
+                          (block $label$215.linked.22016
+                          )
+                         )
+                         (block $label$216.linked.22017
+                          (local.set $153
+                           (i32.add
+                            (local.get $152)
+                            (i32.const 2)
+                           )
+                          )
+                          (block $label$217.linked.22018
+                          )
+                         )
+                         (block $label$218.linked.22019 (result i32)
+                          (local.set $126
+                           (local.get $153)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block (result i32)
+                         (block $label$220.linked.22020
+                          (local.set $147
+                           (select
+                            (i32.const -2)
+                            (i32.const 2147483646)
+                            (i32.le_u
+                             (local.get $141)
+                             (i32.const 65535)
+                            )
+                           )
+                          )
+                          (block $label$221.linked.22021
+                          )
+                         )
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $147)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$223.linked.22022
+                            (local.set $150
+                             (local.get $126)
+                            )
+                            (block $label$224.linked.22023
+                            )
+                           )
+                           (block $label$225.linked.22024
+                            (local.set $151
+                             (i32.add
+                              (local.get $150)
+                              (i32.const 3)
+                             )
+                            )
+                            (block $label$226.linked.22025
+                            )
+                           )
+                           (block $label$227.linked.22026 (result i32)
+                            (local.set $126
+                             (local.get $151)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block (result i32)
+                           (block $label$229.linked.22027
+                            (local.set $148
+                             (local.get $126)
+                            )
+                            (block $label$230.linked.22028
+                            )
+                           )
+                           (block $label$231.linked.22029
+                            (local.set $149
+                             (i32.add
+                              (local.get $148)
+                              (i32.const 4)
+                             )
+                            )
+                            (block $label$232.linked.22030
+                            )
+                           )
+                           (block $label$233.linked.22031 (result i32)
+                            (local.set $126
+                             (local.get $149)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                         )
+                        )
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                  (br $label$161.linked.21965)
+                 )
+                )
+               )
+               (block $label$234.linked.22032
+               )
+              )
+              (local.get $126)
+             )
+            )
+           )
+          )
+          (br $label$42.linked.21856
+           (block $label$235.linked.22033 (result i32)
+            (block $label$236.linked.22034
+             (local.set $75
+              (i32.add
+               (local.get $20)
+               (local.get $18)
+              )
+             )
+             (block $label$237.linked.22035
+             )
+            )
+            (block $label$238.linked.22036
+             (local.set $76
+              (local.get $20)
+             )
+             (block $label$239.linked.22037
+             )
+            )
+            (block $label$240.linked.22038
+             (local.set $77
+              (i32.const 0)
+             )
+             (block $label$241.linked.22039
+             )
+            )
+            (block $label$242.linked.22040
+             (local.set $78
+              (block $label$243.linked.22041 (result i32)
+               (loop $label$244.linked.22042
+                (drop
+                 (br_if $label$243.linked.22041
+                  (i32.const 1879048190)
+                  (i32.eqz
+                   (i32.shr_u
+                    (block $label$245.linked.22043 (result i32)
+                     (block $label$246.linked.22044
+                      (local.set $121
+                       (local.get $76)
+                      )
+                      (block $label$247.linked.22045
+                      )
+                     )
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.lt_u
+                       (local.get $121)
+                       (local.get $75)
+                      )
+                     )
+                    )
+                    (i32.const 31)
+                   )
+                  )
+                 )
+                )
+                (block $label$248.linked.22046
+                 (drop
+                  (block $label$249.linked.22047 (result i32)
+                   (block $label$250.linked.22048
+                    (local.set $79
+                     (local.get $76)
+                    )
+                    (block $label$251.linked.22049
+                    )
+                   )
+                   (block $label$252.linked.22050
+                    (local.set $80
+                     (i32.load8_u offset=1
+                      (local.get $79)
+                     )
+                    )
+                    (block $label$253.linked.22051
+                    )
+                   )
+                   (block $label$254.linked.22052
+                    (local.set $81
+                     (i32.shl
+                      (local.get $80)
+                      (i32.const 8)
+                     )
+                    )
+                    (block $label$255.linked.22053
+                    )
+                   )
+                   (block $label$256.linked.22054
+                    (local.set $82
+                     (local.get $76)
+                    )
+                    (block $label$257.linked.22055
+                    )
+                   )
+                   (block $label$258.linked.22056
+                    (local.set $83
+                     (i32.load8_u
+                      (local.get $82)
+                     )
+                    )
+                    (block $label$259.linked.22057
+                    )
+                   )
+                   (block $label$260.linked.22058
+                    (local.set $84
+                     (i32.or
+                      (local.get $81)
+                      (local.get $83)
+                     )
+                    )
+                    (block $label$261.linked.22059
+                    )
+                   )
+                   (block $label$262.linked.22060
+                    (local.set $85
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.ge_u
+                       (local.get $84)
+                       (i32.const 55296)
+                      )
+                     )
+                    )
+                    (block $label$263.linked.22061
+                    )
+                   )
+                   (block $label$264.linked.22062
+                    (local.set $86
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $85)
+                       (i32.const 31)
+                      )
+                      (select
+                       (i32.const -2)
+                       (i32.const 2147483646)
+                       (i32.le_u
+                        (local.get $84)
+                        (i32.const 56319)
+                       )
+                      )
+                      (local.get $85)
+                     )
+                    )
+                    (block $label$267.linked.22063
+                    )
+                   )
+                   (block $label$268.linked.22064
+                    (local.set $87
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $86)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$270.linked.22065
+                        (local.set $91
+                         (local.get $76)
+                        )
+                        (block $label$271.linked.22066
+                        )
+                       )
+                       (block $label$272.linked.22067
+                        (local.set $92
+                         (i32.add
+                          (local.get $91)
+                          (i32.const 2)
+                         )
+                        )
+                        (block $label$273.linked.22068
+                        )
+                       )
+                       (block $label$274.linked.22069
+                        (local.set $93
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.ge_u
+                           (local.get $92)
+                           (local.get $75)
+                          )
+                         )
+                        )
+                        (block $label$275.linked.22070
+                        )
+                       )
+                       (block $label$276.linked.22071
+                        (local.set $94
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $93)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$278.linked.22072
+                            (local.set $11
+                             (block $label$279.linked.22073 (result i32)
+                              (i32.store
+                               (local.tee $5
+                                (call $malloc_1264.linked.1440
+                                 (global.get $malloc_1264.linked.1430)
+                                 (i32.const 20)
+                                )
+                               )
+                               (i32.const 2)
+                              )
+                              (i32.store offset=4
+                               (local.get $5)
+                               (i32.const 1)
+                              )
+                              (i32.store offset=8
+                               (local.get $5)
+                               (i32.const 5)
+                              )
+                              (i32.store offset=12
+                               (local.get $5)
+                               (i32.const 2803)
+                              )
+                              (i32.store offset=16
+                               (local.get $5)
+                               (i32.const 0)
+                              )
+                              (local.get $5)
+                             )
+                            )
+                            (block $label$280.linked.22074
+                            )
+                           )
+                           (drop
+                            (call $throw_4472.linked.17966
+                             (call $incRef_1273.linked.1442
+                              (global.get $incRef_1273.linked.1429)
+                              (global.get $throw_4472.linked.17955)
+                             )
+                             (local.get $11)
+                            )
+                           )
+                           (unreachable)
+                          )
+                          (block (result i32)
+                           (block $label$282.linked.22075
+                            (local.set $95
+                             (local.get $76)
+                            )
+                            (block $label$283.linked.22076
+                            )
+                           )
+                           (block $label$284.linked.22077
+                            (local.set $96
+                             (i32.load8_u offset=3
+                              (local.get $95)
+                             )
+                            )
+                            (block $label$285.linked.22078
+                            )
+                           )
+                           (block $label$286.linked.22079
+                            (local.set $97
+                             (i32.shl
+                              (local.get $96)
+                              (i32.const 8)
+                             )
+                            )
+                            (block $label$287.linked.22080
+                            )
+                           )
+                           (block $label$288.linked.22081
+                            (local.set $98
+                             (local.get $76)
+                            )
+                            (block $label$289.linked.22082
+                            )
+                           )
+                           (block $label$290.linked.22083
+                            (local.set $99
+                             (i32.load8_u offset=2
+                              (local.get $98)
+                             )
+                            )
+                            (block $label$291.linked.22084
+                            )
+                           )
+                           (block $label$292.linked.22085
+                            (local.set $100
+                             (i32.or
+                              (local.get $97)
+                              (local.get $99)
+                             )
+                            )
+                            (block $label$293.linked.22086
+                            )
+                           )
+                           (block $label$294.linked.22087
+                            (local.set $101
+                             (select
+                              (i32.const -2)
+                              (i32.const 2147483646)
+                              (i32.lt_u
+                               (local.get $100)
+                               (i32.const 56320)
+                              )
+                             )
+                            )
+                            (block $label$295.linked.22088
+                            )
+                           )
+                           (block $label$296.linked.22089
+                            (local.set $102
+                             (if (result i32)
+                              (i32.shr_u
+                               (local.get $101)
+                               (i32.const 31)
+                              )
+                              (local.get $101)
+                              (select
+                               (i32.const -2)
+                               (i32.const 2147483646)
+                               (i32.gt_u
+                                (local.get $100)
+                                (i32.const 57343)
+                               )
+                              )
+                             )
+                            )
+                            (block $label$299.linked.22090
+                            )
+                           )
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $102)
+                             (i32.const 31)
+                            )
+                            (block (result i32)
+                             (block $label$301.linked.22091
+                              (local.set $10
+                               (block $label$302.linked.22092 (result i32)
+                                (i32.store
+                                 (local.tee $5
+                                  (call $malloc_1264.linked.1440
+                                   (global.get $malloc_1264.linked.1430)
+                                   (i32.const 20)
+                                  )
+                                 )
+                                 (i32.const 2)
+                                )
+                                (i32.store offset=4
+                                 (local.get $5)
+                                 (i32.const 1)
+                                )
+                                (i32.store offset=8
+                                 (local.get $5)
+                                 (i32.const 5)
+                                )
+                                (i32.store offset=12
+                                 (local.get $5)
+                                 (i32.const 2803)
+                                )
+                                (i32.store offset=16
+                                 (local.get $5)
+                                 (i32.const 0)
+                                )
+                                (local.get $5)
+                               )
+                              )
+                              (block $label$303.linked.22093
+                              )
+                             )
+                             (drop
+                              (call $throw_4472.linked.17966
+                               (call $incRef_1273.linked.1442
+                                (global.get $incRef_1273.linked.1429)
+                                (global.get $throw_4472.linked.17955)
+                               )
+                               (local.get $10)
+                              )
+                             )
+                             (unreachable)
+                            )
+                            (block (result i32)
+                             (block $label$305.linked.22094
+                              (local.set $103
+                               (i32.and
+                                (local.get $84)
+                                (i32.const 1023)
+                               )
+                              )
+                              (block $label$306.linked.22095
+                              )
+                             )
+                             (block $label$307.linked.22096
+                              (local.set $104
+                               (i32.shl
+                                (local.get $103)
+                                (i32.const 10)
+                               )
+                              )
+                              (block $label$308.linked.22097
+                              )
+                             )
+                             (block $label$309.linked.22098
+                              (local.set $105
+                               (i32.and
+                                (local.get $100)
+                                (i32.const 1023)
+                               )
+                              )
+                              (block $label$310.linked.22099
+                              )
+                             )
+                             (block $label$311.linked.22100
+                              (local.set $106
+                               (i32.add
+                                (local.get $104)
+                                (local.get $105)
+                               )
+                              )
+                              (block $label$312.linked.22101
+                              )
+                             )
+                             (i32.add
+                              (local.get $106)
+                              (i32.const 65536)
+                             )
+                            )
+                           )
+                          )
+                         )
+                        )
+                        (block $label$313.linked.22102
+                        )
+                       )
+                       (block $label$314.linked.22103
+                        (local.set $107
+                         (local.get $76)
+                        )
+                        (block $label$315.linked.22104
+                        )
+                       )
+                       (block $label$316.linked.22105
+                        (local.set $108
+                         (i32.add
+                          (local.get $107)
+                          (i32.const 4)
+                         )
+                        )
+                        (block $label$317.linked.22106
+                        )
+                       )
+                       (block $label$318.linked.22107
+                        (local.set $109
+                         (block $label$319.linked.22108 (result i32)
+                          (local.set $76
+                           (local.get $108)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$320.linked.22109
+                        )
+                       )
+                       (local.get $94)
+                      )
+                      (block (result i32)
+                       (block $label$322.linked.22110
+                        (local.set $88
+                         (local.get $76)
+                        )
+                        (block $label$323.linked.22111
+                        )
+                       )
+                       (block $label$324.linked.22112
+                        (local.set $89
+                         (i32.add
+                          (local.get $88)
+                          (i32.const 2)
+                         )
+                        )
+                        (block $label$325.linked.22113
+                        )
+                       )
+                       (block $label$326.linked.22114
+                        (local.set $90
+                         (block $label$327.linked.22115 (result i32)
+                          (local.set $76
+                           (local.get $89)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$328.linked.22116
+                        )
+                       )
+                       (local.get $84)
+                      )
+                     )
+                    )
+                    (block $label$329.linked.22117
+                    )
+                   )
+                   (block $label$330.linked.22118
+                    (local.set $110
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.le_u
+                       (local.get $87)
+                       (i32.const 127)
+                      )
+                     )
+                    )
+                    (block $label$331.linked.22119
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $110)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$333.linked.22120
+                      (local.set $119
+                       (local.get $77)
+                      )
+                      (block $label$334.linked.22121
+                      )
+                     )
+                     (block $label$335.linked.22122
+                      (local.set $120
+                       (i32.add
+                        (local.get $119)
+                        (i32.const 1)
+                       )
+                      )
+                      (block $label$336.linked.22123
+                      )
+                     )
+                     (block $label$337.linked.22124 (result i32)
+                      (local.set $77
+                       (local.get $120)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block (result i32)
+                     (block $label$339.linked.22125
+                      (local.set $111
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.le_u
+                         (local.get $87)
+                         (i32.const 2047)
+                        )
+                       )
+                      )
+                      (block $label$340.linked.22126
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $111)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$342.linked.22127
+                        (local.set $117
+                         (local.get $77)
+                        )
+                        (block $label$343.linked.22128
+                        )
+                       )
+                       (block $label$344.linked.22129
+                        (local.set $118
+                         (i32.add
+                          (local.get $117)
+                          (i32.const 2)
+                         )
+                        )
+                        (block $label$345.linked.22130
+                        )
+                       )
+                       (block $label$346.linked.22131 (result i32)
+                        (local.set $77
+                         (local.get $118)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block (result i32)
+                       (block $label$348.linked.22132
+                        (local.set $112
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.le_u
+                           (local.get $87)
+                           (i32.const 65535)
+                          )
+                         )
+                        )
+                        (block $label$349.linked.22133
+                        )
+                       )
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $112)
+                         (i32.const 31)
+                        )
+                        (block (result i32)
+                         (block $label$351.linked.22134
+                          (local.set $115
+                           (local.get $77)
+                          )
+                          (block $label$352.linked.22135
+                          )
+                         )
+                         (block $label$353.linked.22136
+                          (local.set $116
+                           (i32.add
+                            (local.get $115)
+                            (i32.const 3)
+                           )
+                          )
+                          (block $label$354.linked.22137
+                          )
+                         )
+                         (block $label$355.linked.22138 (result i32)
+                          (local.set $77
+                           (local.get $116)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block (result i32)
+                         (block $label$357.linked.22139
+                          (local.set $113
+                           (local.get $77)
+                          )
+                          (block $label$358.linked.22140
+                          )
+                         )
+                         (block $label$359.linked.22141
+                          (local.set $114
+                           (i32.add
+                            (local.get $113)
+                            (i32.const 4)
+                           )
+                          )
+                          (block $label$360.linked.22142
+                          )
+                         )
+                         (block $label$361.linked.22143 (result i32)
+                          (local.set $77
+                           (local.get $114)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+                (br $label$244.linked.22042)
+               )
+              )
+             )
+             (block $label$362.linked.22144
+             )
+            )
+            (local.get $77)
+           )
+          )
+         )
+        )
+        (br $label$42.linked.21856
+         (block $label$363.linked.22145 (result i32)
+          (block $label$364.linked.22146
+           (local.set $28
+            (i32.add
+             (local.get $20)
+             (local.get $18)
+            )
+           )
+           (block $label$365.linked.22147
+           )
+          )
+          (block $label$366.linked.22148
+           (local.set $29
+            (local.get $20)
+           )
+           (block $label$367.linked.22149
+           )
+          )
+          (block $label$368.linked.22150
+           (local.set $30
+            (i32.const 0)
+           )
+           (block $label$369.linked.22151
+           )
+          )
+          (block $label$370.linked.22152
+           (local.set $31
+            (block $label$371.linked.22153 (result i32)
+             (loop $label$372.linked.22154
+              (drop
+               (br_if $label$371.linked.22153
+                (i32.const 1879048190)
+                (i32.eqz
+                 (i32.shr_u
+                  (block $label$373.linked.22155 (result i32)
+                   (block $label$374.linked.22156
+                    (local.set $74
+                     (local.get $29)
+                    )
+                    (block $label$375.linked.22157
+                    )
+                   )
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.lt_u
+                     (local.get $74)
+                     (local.get $28)
+                    )
+                   )
+                  )
+                  (i32.const 31)
+                 )
+                )
+               )
+              )
+              (block $label$376.linked.22158
+               (drop
+                (block $label$377.linked.22159 (result i32)
+                 (block $label$378.linked.22160
+                  (local.set $32
+                   (local.get $29)
+                  )
+                  (block $label$379.linked.22161
+                  )
+                 )
+                 (block $label$380.linked.22162
+                  (local.set $33
+                   (i32.load8_u
+                    (local.get $32)
+                   )
+                  )
+                  (block $label$381.linked.22163
+                  )
+                 )
+                 (block $label$382.linked.22164
+                  (local.set $34
+                   (i32.shl
+                    (local.get $33)
+                    (i32.const 8)
+                   )
+                  )
+                  (block $label$383.linked.22165
+                  )
+                 )
+                 (block $label$384.linked.22166
+                  (local.set $35
+                   (local.get $29)
+                  )
+                  (block $label$385.linked.22167
+                  )
+                 )
+                 (block $label$386.linked.22168
+                  (local.set $36
+                   (i32.load8_u offset=1
+                    (local.get $35)
+                   )
+                  )
+                  (block $label$387.linked.22169
+                  )
+                 )
+                 (block $label$388.linked.22170
+                  (local.set $37
+                   (i32.or
+                    (local.get $34)
+                    (local.get $36)
+                   )
+                  )
+                  (block $label$389.linked.22171
+                  )
+                 )
+                 (block $label$390.linked.22172
+                  (local.set $38
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.ge_u
+                     (local.get $37)
+                     (i32.const 55296)
+                    )
+                   )
+                  )
+                  (block $label$391.linked.22173
+                  )
+                 )
+                 (block $label$392.linked.22174
+                  (local.set $39
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $38)
+                     (i32.const 31)
+                    )
+                    (select
+                     (i32.const -2)
+                     (i32.const 2147483646)
+                     (i32.le_u
+                      (local.get $37)
+                      (i32.const 56319)
+                     )
+                    )
+                    (local.get $38)
+                   )
+                  )
+                  (block $label$395.linked.22175
+                  )
+                 )
+                 (block $label$396.linked.22176
+                  (local.set $40
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $39)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$398.linked.22177
+                      (local.set $44
+                       (local.get $29)
+                      )
+                      (block $label$399.linked.22178
+                      )
+                     )
+                     (block $label$400.linked.22179
+                      (local.set $45
+                       (i32.add
+                        (local.get $44)
+                        (i32.const 2)
+                       )
+                      )
+                      (block $label$401.linked.22180
+                      )
+                     )
+                     (block $label$402.linked.22181
+                      (local.set $46
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.ge_u
+                         (local.get $45)
+                         (local.get $28)
+                        )
+                       )
+                      )
+                      (block $label$403.linked.22182
+                      )
+                     )
+                     (block $label$404.linked.22183
+                      (local.set $47
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $46)
+                         (i32.const 31)
+                        )
+                        (block (result i32)
+                         (block $label$406.linked.22184
+                          (local.set $9
+                           (block $label$407.linked.22185 (result i32)
+                            (i32.store
+                             (local.tee $5
+                              (call $malloc_1264.linked.1440
+                               (global.get $malloc_1264.linked.1430)
+                               (i32.const 20)
+                              )
+                             )
+                             (i32.const 2)
+                            )
+                            (i32.store offset=4
+                             (local.get $5)
+                             (i32.const 1)
+                            )
+                            (i32.store offset=8
+                             (local.get $5)
+                             (i32.const 5)
+                            )
+                            (i32.store offset=12
+                             (local.get $5)
+                             (i32.const 2803)
+                            )
+                            (i32.store offset=16
+                             (local.get $5)
+                             (i32.const 0)
+                            )
+                            (local.get $5)
+                           )
+                          )
+                          (block $label$408.linked.22186
+                          )
+                         )
+                         (drop
+                          (call $throw_4472.linked.17966
+                           (call $incRef_1273.linked.1442
+                            (global.get $incRef_1273.linked.1429)
+                            (global.get $throw_4472.linked.17955)
+                           )
+                           (local.get $9)
+                          )
+                         )
+                         (unreachable)
+                        )
+                        (block (result i32)
+                         (block $label$410.linked.22187
+                          (local.set $48
+                           (local.get $29)
+                          )
+                          (block $label$411.linked.22188
+                          )
+                         )
+                         (block $label$412.linked.22189
+                          (local.set $49
+                           (i32.load8_u offset=2
+                            (local.get $48)
+                           )
+                          )
+                          (block $label$413.linked.22190
+                          )
+                         )
+                         (block $label$414.linked.22191
+                          (local.set $50
+                           (i32.shl
+                            (local.get $49)
+                            (i32.const 8)
+                           )
+                          )
+                          (block $label$415.linked.22192
+                          )
+                         )
+                         (block $label$416.linked.22193
+                          (local.set $51
+                           (local.get $29)
+                          )
+                          (block $label$417.linked.22194
+                          )
+                         )
+                         (block $label$418.linked.22195
+                          (local.set $52
+                           (i32.load8_u offset=3
+                            (local.get $51)
+                           )
+                          )
+                          (block $label$419.linked.22196
+                          )
+                         )
+                         (block $label$420.linked.22197
+                          (local.set $53
+                           (i32.or
+                            (local.get $50)
+                            (local.get $52)
+                           )
+                          )
+                          (block $label$421.linked.22198
+                          )
+                         )
+                         (block $label$422.linked.22199
+                          (local.set $54
+                           (select
+                            (i32.const -2)
+                            (i32.const 2147483646)
+                            (i32.lt_u
+                             (local.get $53)
+                             (i32.const 56320)
+                            )
+                           )
+                          )
+                          (block $label$423.linked.22200
+                          )
+                         )
+                         (block $label$424.linked.22201
+                          (local.set $55
+                           (if (result i32)
+                            (i32.shr_u
+                             (local.get $54)
+                             (i32.const 31)
+                            )
+                            (local.get $54)
+                            (select
+                             (i32.const -2)
+                             (i32.const 2147483646)
+                             (i32.gt_u
+                              (local.get $53)
+                              (i32.const 57343)
+                             )
+                            )
+                           )
+                          )
+                          (block $label$427.linked.22202
+                          )
+                         )
+                         (if (result i32)
+                          (i32.shr_u
+                           (local.get $55)
+                           (i32.const 31)
+                          )
+                          (block (result i32)
+                           (block $label$429.linked.22203
+                            (local.set $8
+                             (block $label$430.linked.22204 (result i32)
+                              (i32.store
+                               (local.tee $5
+                                (call $malloc_1264.linked.1440
+                                 (global.get $malloc_1264.linked.1430)
+                                 (i32.const 20)
+                                )
+                               )
+                               (i32.const 2)
+                              )
+                              (i32.store offset=4
+                               (local.get $5)
+                               (i32.const 1)
+                              )
+                              (i32.store offset=8
+                               (local.get $5)
+                               (i32.const 5)
+                              )
+                              (i32.store offset=12
+                               (local.get $5)
+                               (i32.const 2803)
+                              )
+                              (i32.store offset=16
+                               (local.get $5)
+                               (i32.const 0)
+                              )
+                              (local.get $5)
+                             )
+                            )
+                            (block $label$431.linked.22205
+                            )
+                           )
+                           (drop
+                            (call $throw_4472.linked.17966
+                             (call $incRef_1273.linked.1442
+                              (global.get $incRef_1273.linked.1429)
+                              (global.get $throw_4472.linked.17955)
+                             )
+                             (local.get $8)
+                            )
+                           )
+                           (unreachable)
+                          )
+                          (block (result i32)
+                           (block $label$433.linked.22206
+                            (local.set $56
+                             (i32.and
+                              (local.get $37)
+                              (i32.const 1023)
+                             )
+                            )
+                            (block $label$434.linked.22207
+                            )
+                           )
+                           (block $label$435.linked.22208
+                            (local.set $57
+                             (i32.shl
+                              (local.get $56)
+                              (i32.const 10)
+                             )
+                            )
+                            (block $label$436.linked.22209
+                            )
+                           )
+                           (block $label$437.linked.22210
+                            (local.set $58
+                             (i32.and
+                              (local.get $53)
+                              (i32.const 1023)
+                             )
+                            )
+                            (block $label$438.linked.22211
+                            )
+                           )
+                           (block $label$439.linked.22212
+                            (local.set $59
+                             (i32.add
+                              (local.get $57)
+                              (local.get $58)
+                             )
+                            )
+                            (block $label$440.linked.22213
+                            )
+                           )
+                           (i32.add
+                            (local.get $59)
+                            (i32.const 65536)
+                           )
+                          )
+                         )
+                        )
+                       )
+                      )
+                      (block $label$441.linked.22214
+                      )
+                     )
+                     (block $label$442.linked.22215
+                      (local.set $60
+                       (local.get $29)
+                      )
+                      (block $label$443.linked.22216
+                      )
+                     )
+                     (block $label$444.linked.22217
+                      (local.set $61
+                       (i32.add
+                        (local.get $60)
+                        (i32.const 4)
+                       )
+                      )
+                      (block $label$445.linked.22218
+                      )
+                     )
+                     (block $label$446.linked.22219
+                      (local.set $62
+                       (block $label$447.linked.22220 (result i32)
+                        (local.set $29
+                         (local.get $61)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block $label$448.linked.22221
+                      )
+                     )
+                     (local.get $47)
+                    )
+                    (block (result i32)
+                     (block $label$450.linked.22222
+                      (local.set $41
+                       (local.get $29)
+                      )
+                      (block $label$451.linked.22223
+                      )
+                     )
+                     (block $label$452.linked.22224
+                      (local.set $42
+                       (i32.add
+                        (local.get $41)
+                        (i32.const 2)
+                       )
+                      )
+                      (block $label$453.linked.22225
+                      )
+                     )
+                     (block $label$454.linked.22226
+                      (local.set $43
+                       (block $label$455.linked.22227 (result i32)
+                        (local.set $29
+                         (local.get $42)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block $label$456.linked.22228
+                      )
+                     )
+                     (local.get $37)
+                    )
+                   )
+                  )
+                  (block $label$457.linked.22229
+                  )
+                 )
+                 (block $label$458.linked.22230
+                  (local.set $63
+                   (select
+                    (i32.const -2)
+                    (i32.const 2147483646)
+                    (i32.le_u
+                     (local.get $40)
+                     (i32.const 127)
+                    )
+                   )
+                  )
+                  (block $label$459.linked.22231
+                  )
+                 )
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $63)
+                   (i32.const 31)
+                  )
+                  (block (result i32)
+                   (block $label$461.linked.22232
+                    (local.set $72
+                     (local.get $30)
+                    )
+                    (block $label$462.linked.22233
+                    )
+                   )
+                   (block $label$463.linked.22234
+                    (local.set $73
+                     (i32.add
+                      (local.get $72)
+                      (i32.const 1)
+                     )
+                    )
+                    (block $label$464.linked.22235
+                    )
+                   )
+                   (block $label$465.linked.22236 (result i32)
+                    (local.set $30
+                     (local.get $73)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                  (block (result i32)
+                   (block $label$467.linked.22237
+                    (local.set $64
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.le_u
+                       (local.get $40)
+                       (i32.const 2047)
+                      )
+                     )
+                    )
+                    (block $label$468.linked.22238
+                    )
+                   )
+                   (if (result i32)
+                    (i32.shr_u
+                     (local.get $64)
+                     (i32.const 31)
+                    )
+                    (block (result i32)
+                     (block $label$470.linked.22239
+                      (local.set $70
+                       (local.get $30)
+                      )
+                      (block $label$471.linked.22240
+                      )
+                     )
+                     (block $label$472.linked.22241
+                      (local.set $71
+                       (i32.add
+                        (local.get $70)
+                        (i32.const 2)
+                       )
+                      )
+                      (block $label$473.linked.22242
+                      )
+                     )
+                     (block $label$474.linked.22243 (result i32)
+                      (local.set $30
+                       (local.get $71)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                    (block (result i32)
+                     (block $label$476.linked.22244
+                      (local.set $65
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.le_u
+                         (local.get $40)
+                         (i32.const 65535)
+                        )
+                       )
+                      )
+                      (block $label$477.linked.22245
+                      )
+                     )
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $65)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$479.linked.22246
+                        (local.set $68
+                         (local.get $30)
+                        )
+                        (block $label$480.linked.22247
+                        )
+                       )
+                       (block $label$481.linked.22248
+                        (local.set $69
+                         (i32.add
+                          (local.get $68)
+                          (i32.const 3)
+                         )
+                        )
+                        (block $label$482.linked.22249
+                        )
+                       )
+                       (block $label$483.linked.22250 (result i32)
+                        (local.set $30
+                         (local.get $69)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                      (block (result i32)
+                       (block $label$485.linked.22251
+                        (local.set $66
+                         (local.get $30)
+                        )
+                        (block $label$486.linked.22252
+                        )
+                       )
+                       (block $label$487.linked.22253
+                        (local.set $67
+                         (i32.add
+                          (local.get $66)
+                          (i32.const 4)
+                         )
+                        )
+                        (block $label$488.linked.22254
+                        )
+                       )
+                       (block $label$489.linked.22255 (result i32)
+                        (local.set $30
+                         (local.get $67)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+               )
+              )
+              (br $label$372.linked.22154)
+             )
+            )
+           )
+           (block $label$490.linked.22256
+           )
+          )
+          (local.get $30)
+         )
+        )
+       )
+      )
+      (br $label$42.linked.21856
+       (block $label$491.linked.22257 (result i32)
+        (local.get $18)
+       )
+      )
+     )
+    )
+   )
+   (drop
+    (block $label$492.linked.22258 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $195)
+  )
+ )
+ (func $decodeRangeHelp_1829.linked.18567 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (param $4 i32) (param $5 i32) (result i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i32)
+  (local $54 i32)
+  (local $55 i32)
+  (local $56 i32)
+  (local $57 i32)
+  (local $58 i32)
+  (local $59 i32)
+  (local $60 i32)
+  (local $61 i32)
+  (local $62 i32)
+  (local $63 i32)
+  (local $64 i32)
+  (local $65 i32)
+  (local $66 i32)
+  (local $67 i32)
+  (local $68 i32)
+  (local $69 i32)
+  (local $70 i32)
+  (local $71 i32)
+  (local $72 i32)
+  (local $73 i32)
+  (local $74 i32)
+  (local $75 i32)
+  (local $76 i32)
+  (local $77 i32)
+  (local $78 i32)
+  (local $79 i32)
+  (local $80 i32)
+  (local $81 i32)
+  (local $82 i32)
+  (local $83 i32)
+  (local $84 i32)
+  (local $85 i32)
+  (local $86 i32)
+  (local $87 i32)
+  (local $88 i32)
+  (local $89 i32)
+  (local $90 i32)
+  (local $91 i32)
+  (local $92 i32)
+  (local $93 i32)
+  (local $94 i32)
+  (local $95 i32)
+  (local $96 i32)
+  (local $97 i32)
+  (local $98 i32)
+  (local $99 i32)
+  (local $100 i32)
+  (local $101 i32)
+  (local $102 i32)
+  (local $103 i32)
+  (local $104 i32)
+  (local $105 i32)
+  (local $106 i32)
+  (local $107 i32)
+  (local $108 i32)
+  (local $109 i32)
+  (local $110 i32)
+  (local $111 i32)
+  (local $112 i32)
+  (local $113 i32)
+  (local $114 i32)
+  (local $115 i32)
+  (local $116 i32)
+  (local $117 i32)
+  (local $118 i32)
+  (local $119 i32)
+  (local $120 i32)
+  (local $121 i32)
+  (local $122 i32)
+  (local $123 i32)
+  (local $124 i32)
+  (local $125 i32)
+  (local $126 i32)
+  (local $127 i32)
+  (local $128 i32)
+  (local $129 i32)
+  (local $130 i32)
+  (local $131 i32)
+  (local $132 i32)
+  (local $133 i32)
+  (local $134 i32)
+  (local $135 i32)
+  (local $136 i32)
+  (local $137 i32)
+  (local $138 i32)
+  (local $139 i32)
+  (local $140 i32)
+  (local $141 i32)
+  (local $142 i32)
+  (local $143 i32)
+  (local $144 i32)
+  (local $145 i32)
+  (local $146 i32)
+  (local $147 i32)
+  (local $148 i32)
+  (local $149 i32)
+  (local $150 i32)
+  (local $151 i32)
+  (local $152 i32)
+  (local $153 i32)
+  (local $154 i32)
+  (local $155 i32)
+  (local $156 i32)
+  (local $157 i32)
+  (local $158 i32)
+  (local $159 i32)
+  (local $160 i32)
+  (local $161 i32)
+  (local $162 i32)
+  (local $163 i32)
+  (local $164 i32)
+  (local $165 i32)
+  (local $166 i64)
+  (local $167 f32)
+  (local $168 f64)
+  (local $169 i32)
+  (local.set $7
+   (call $incRef_1273.linked.1442
+    (global.get $incRef_1273.linked.1429)
+    (i32.load offset=20
+     (local.get $0)
+    )
+   )
+  )
+  (local.set $6
+   (call $incRef_1273.linked.1442
+    (global.get $incRef_1273.linked.1429)
+    (i32.load offset=16
+     (local.get $0)
+    )
+   )
+  )
+  (block $label$1.linked.22259 (result i32)
+   (block $label$2.linked.22260
+    (local.set $11
+     (call $grainToWasmNumber_1702.linked.18557
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $grainToWasmNumber_1702.linked.18513)
+      )
+      (local.get $4)
+      (local.get $6)
+     )
+    )
+    (block $label$3.linked.22261
+    )
+   )
+   (block $label$4.linked.22262
+    (local.set $12
+     (call $grainToWasmNumber_1702.linked.18557
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $grainToWasmNumber_1702.linked.18513)
+      )
+      (local.get $5)
+      (local.get $7)
+     )
+    )
+    (block $label$5.linked.22263
+    )
+   )
+   (block $label$6.linked.22264
+    (local.set $13
+     (call $bytesHaveBom_1787.linked.18565
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $bytesHaveBom_1787.linked.18491)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $2)
+      )
+      (local.get $11)
+     )
+    )
+    (block $label$7.linked.22265
+    )
+   )
+   (block $label$8.linked.22266
+    (local.set $14
+     (call $decodedLength_1794.linked.18566
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $decodedLength_1794.linked.18501)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $2)
+      )
+      (local.get $11)
+      (local.get $12)
+     )
+    )
+    (block $label$9.linked.22267
+    )
+   )
+   (block $label$10.linked.22268
+    (local.set $15
+     (if (result i32)
+      (i32.shr_u
+       (local.get $3)
+       (i32.const 31)
+      )
+      (local.get $13)
+      (local.get $3)
+     )
+    )
+    (block $label$13.linked.22269
+    )
+   )
+   (block $label$14.linked.22270
+    (local.set $16
+     (if (result i32)
+      (i32.shr_u
+       (local.get $15)
+       (i32.const 31)
+      )
+      (i32.sub
+       (local.get $14)
+       (i32.const 3)
+      )
+      (local.get $14)
+     )
+    )
+    (block $label$17.linked.22271
+    )
+   )
+   (block $label$18.linked.22272
+    (local.set $17
+     (block $label$19.linked.22273 (result i32)
+      (i32.store
+       (local.tee $8
+        (call $malloc_1264.linked.1440
+         (global.get $malloc_1264.linked.1430)
+         (i32.add
+          (local.get $16)
+          (i32.const 8)
+         )
+        )
+       )
+       (i32.const 1)
+      )
+      (i32.store offset=4
+       (local.get $8)
+       (local.get $16)
+      )
+      (local.get $8)
+     )
+    )
+    (block $label$20.linked.22274
+    )
+   )
+   (block $label$21.linked.22275
+    (local.set $18
+     (local.get $1)
+    )
+    (block $label$22.linked.22276
+    )
+   )
+   (block $label$23.linked.22277
+    (local.set $19
+     (local.get $18)
+    )
+    (block $label$24.linked.22278
+    )
+   )
+   (block $label$25.linked.22279
+    (local.set $20
+     (local.get $19)
+    )
+    (block $label$26.linked.22280
+    )
+   )
+   (block $label$27.linked.22281
+    (local.set $21
+     (i32.load offset=4
+      (local.get $20)
+     )
+    )
+    (block $label$28.linked.22282
+    )
+   )
+   (block $label$29.linked.22283
+    (local.set $22
+     (i32.sub
+      (local.get $21)
+      (local.get $11)
+     )
+    )
+    (block $label$30.linked.22284
+    )
+   )
+   (block $label$31.linked.22285
+    (local.set $23
+     (select
+      (i32.const -2)
+      (i32.const 2147483646)
+      (i32.lt_u
+       (local.get $12)
+       (local.get $22)
+      )
+     )
+    )
+    (block $label$32.linked.22286
+    )
+   )
+   (block $label$33.linked.22287
+    (local.set $24
+     (if (result i32)
+      (i32.shr_u
+       (local.get $23)
+       (i32.const 31)
+      )
+      (local.get $12)
+      (local.get $22)
+     )
+    )
+    (block $label$36.linked.22288
+    )
+   )
+   (block $label$37.linked.22289
+    (local.set $25
+     (local.get $19)
+    )
+    (block $label$38.linked.22290
+    )
+   )
+   (block $label$39.linked.22291
+    (local.set $26
+     (i32.add
+      (global.get $_BYTES_OFFSET_1728.linked.18489)
+      (local.get $11)
+     )
+    )
+    (block $label$40.linked.22292
+    )
+   )
+   (block $label$41.linked.22293
+    (local.set $27
+     (i32.add
+      (local.get $25)
+      (local.get $26)
+     )
+    )
+    (block $label$42.linked.22294
+    )
+   )
+   (block $label$43.linked.22295
+    (local.set $28
+     (block $label$44.linked.22296 (result i32)
+      (local.set $19
+       (local.get $27)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (block $label$45.linked.22297
+    )
+   )
+   (block $label$46.linked.22298
+    (local.set $29
+     (i32.add
+      (local.get $17)
+      (i32.const 8)
+     )
+    )
+    (block $label$47.linked.22299
+    )
+   )
+   (block $label$48.linked.22300
+    (local.set $30
+     (local.get $29)
+    )
+    (block $label$49.linked.22301
+    )
+   )
+   (block $label$50.linked.22302
+    (local.set $31
+     (if (result i32)
+      (i32.shr_u
+       (local.get $3)
+       (i32.const 31)
+      )
+      (local.get $13)
+      (local.get $3)
+     )
+    )
+    (block $label$53.linked.22303
+    )
+   )
+   (drop
+    (if (result i32)
+     (i32.shr_u
+      (local.get $31)
+      (i32.const 31)
+     )
+     (block (result i32)
+      (block $label$55.linked.22304
+       (local.set $156
+        (local.get $19)
+       )
+       (block $label$56.linked.22305
+       )
+      )
+      (block $label$57.linked.22306
+       (local.set $157
+        (i32.load offset=12
+         (local.get $2)
+        )
+       )
+       (block $label$58.linked.22307
+       )
+      )
+      (block $label$59.linked.22308
+       (local.set $158
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $157)
+           (i32.const 3)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$60.linked.22309
+       )
+      )
+      (block $label$61.linked.22310
+       (local.set $159
+        (if (result i32)
+         (i32.shr_u
+          (local.get $158)
+          (i32.const 31)
+         )
+         (i32.const 5)
+         (block (result i32)
+          (block $label$64.linked.22311
+           (local.set $160
+            (i32.or
+             (i32.shl
+              (i32.eq
+               (local.get $157)
+               (i32.const 5)
+              )
+              (i32.const 31)
+             )
+             (i32.const 2147483646)
+            )
+           )
+           (block $label$65.linked.22312
+           )
+          )
+          (if (result i32)
+           (i32.shr_u
+            (local.get $160)
+            (i32.const 31)
+           )
+           (i32.const 3)
+           (block (result i32)
+            (block $label$68.linked.22313
+             (local.set $161
+              (i32.or
+               (i32.shl
+                (i32.eq
+                 (local.get $157)
+                 (i32.const 7)
+                )
+                (i32.const 31)
+               )
+               (i32.const 2147483646)
+              )
+             )
+             (block $label$69.linked.22314
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $161)
+              (i32.const 31)
+             )
+             (i32.const 9)
+             (block (result i32)
+              (block $label$72.linked.22315
+               (local.set $162
+                (i32.or
+                 (i32.shl
+                  (i32.eq
+                   (local.get $157)
+                   (i32.const 9)
+                  )
+                  (i32.const 31)
+                 )
+                 (i32.const 2147483646)
+                )
+               )
+               (block $label$73.linked.22316
+               )
+              )
+              (if (result i32)
+               (i32.shr_u
+                (local.get $162)
+                (i32.const 31)
+               )
+               (i32.const 7)
+               (block (result i32)
+                (block $label$76.linked.22317
+                 (local.set $163
+                  (i32.or
+                   (i32.shl
+                    (i32.eq
+                     (local.get $157)
+                     (i32.const 1)
+                    )
+                    (i32.const 31)
+                   )
+                   (i32.const 2147483646)
+                  )
+                 )
+                 (block $label$77.linked.22318
+                 )
+                )
+                (if (result i32)
+                 (i32.shr_u
+                  (local.get $163)
+                  (i32.const 31)
+                 )
+                 (i32.const 1)
+                 (unreachable)
+                )
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+       )
+       (block $label$80.linked.22319
+       )
+      )
+      (block $label$81.linked.22320
+       (local.set $164
+        (block $label$82.linked.22321 (result i32)
+         (block $label$83.linked.22322 (result i32)
+          (drop
+           (block $label$84.linked.22323 (result i32)
+            (drop
+             (block $label$85.linked.22324 (result i32)
+              (drop
+               (block $label$86.linked.22325 (result i32)
+                (drop
+                 (block $label$87.linked.22326 (result i32)
+                  (drop
+                   (block $label$88.linked.22327 (result i32)
+                    (drop
+                     (block $label$89.linked.22328 (result i32)
+                      (br_table $label$84.linked.22323 $label$85.linked.22324 $label$86.linked.22325 $label$87.linked.22326 $label$88.linked.22327 $label$89.linked.22328 $label$89.linked.22328
+                       (i32.const 0)
+                       (i32.shr_s
+                        (local.get $159)
+                        (i32.const 1)
+                       )
+                      )
+                     )
+                    )
+                    (br $label$82.linked.22321
+                     (block $label$90.linked.22329 (result i32)
+                      (unreachable)
+                     )
+                    )
+                   )
+                  )
+                  (br $label$82.linked.22321
+                   (block $label$91.linked.22330 (result i32)
+                    (i32.const 4)
+                   )
+                  )
+                 )
+                )
+                (br $label$82.linked.22321
+                 (block $label$92.linked.22331 (result i32)
+                  (i32.const 4)
+                 )
+                )
+               )
+              )
+              (br $label$82.linked.22321
+               (block $label$93.linked.22332 (result i32)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+            (br $label$82.linked.22321
+             (block $label$94.linked.22333 (result i32)
+              (i32.const 2)
+             )
+            )
+           )
+          )
+          (br $label$82.linked.22321
+           (block $label$95.linked.22334 (result i32)
+            (i32.const 3)
+           )
+          )
+         )
+        )
+       )
+       (block $label$96.linked.22335
+       )
+      )
+      (block $label$97.linked.22336
+       (local.set $165
+        (i32.add
+         (local.get $156)
+         (local.get $164)
+        )
+       )
+       (block $label$98.linked.22337
+       )
+      )
+      (block $label$99.linked.22338 (result i32)
+       (local.set $19
+        (local.get $165)
+       )
+       (i32.const 1879048190)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$101.linked.22339
+    (local.set $32
+     (select
+      (i32.const -2)
+      (i32.const 2147483646)
+      (i32.eq
+       (local.get $16)
+       (i32.const 0)
+      )
+     )
+    )
+    (block $label$102.linked.22340
+    )
+   )
+   (block (result i32)
+    (local.set $169
+     (if (result i32)
+      (i32.shr_u
+       (local.get $32)
+       (i32.const 31)
+      )
+      (local.get $17)
+      (block (result i32)
+       (block $label$105.linked.22341
+        (local.set $33
+         (i32.load offset=12
+          (local.get $2)
+         )
+        )
+        (block $label$106.linked.22342
+        )
+       )
+       (block $label$107.linked.22343
+        (local.set $34
+         (i32.or
+          (i32.shl
+           (i32.eq
+            (local.get $33)
+            (i32.const 3)
+           )
+           (i32.const 31)
+          )
+          (i32.const 2147483646)
+         )
+        )
+        (block $label$108.linked.22344
+        )
+       )
+       (block $label$109.linked.22345
+        (local.set $35
+         (if (result i32)
+          (i32.shr_u
+           (local.get $34)
+           (i32.const 31)
+          )
+          (i32.const 3)
+          (block (result i32)
+           (block $label$112.linked.22346
+            (local.set $36
+             (i32.or
+              (i32.shl
+               (i32.eq
+                (local.get $33)
+                (i32.const 5)
+               )
+               (i32.const 31)
+              )
+              (i32.const 2147483646)
+             )
+            )
+            (block $label$113.linked.22347
+            )
+           )
+           (if (result i32)
+            (i32.shr_u
+             (local.get $36)
+             (i32.const 31)
+            )
+            (i32.const 5)
+            (block (result i32)
+             (block $label$116.linked.22348
+              (local.set $37
+               (i32.or
+                (i32.shl
+                 (i32.eq
+                  (local.get $33)
+                  (i32.const 7)
+                 )
+                 (i32.const 31)
+                )
+                (i32.const 2147483646)
+               )
+              )
+              (block $label$117.linked.22349
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $37)
+               (i32.const 31)
+              )
+              (i32.const 7)
+              (block (result i32)
+               (block $label$120.linked.22350
+                (local.set $38
+                 (i32.or
+                  (i32.shl
+                   (i32.eq
+                    (local.get $33)
+                    (i32.const 9)
+                   )
+                   (i32.const 31)
+                  )
+                  (i32.const 2147483646)
+                 )
+                )
+                (block $label$121.linked.22351
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $38)
+                 (i32.const 31)
+                )
+                (i32.const 9)
+                (block (result i32)
+                 (block $label$124.linked.22352
+                  (local.set $39
+                   (i32.or
+                    (i32.shl
+                     (i32.eq
+                      (local.get $33)
+                      (i32.const 1)
+                     )
+                     (i32.const 31)
+                    )
+                    (i32.const 2147483646)
+                   )
+                  )
+                  (block $label$125.linked.22353
+                  )
+                 )
+                 (if (result i32)
+                  (i32.shr_u
+                   (local.get $39)
+                   (i32.const 31)
+                  )
+                  (i32.const 1)
+                  (unreachable)
+                 )
+                )
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+        (block $label$128.linked.22354
+        )
+       )
+       (drop
+        (block $label$129.linked.22355 (result i32)
+         (block $label$130.linked.22356 (result i32)
+          (drop
+           (block $label$131.linked.22357 (result i32)
+            (drop
+             (block $label$132.linked.22358 (result i32)
+              (drop
+               (block $label$133.linked.22359 (result i32)
+                (drop
+                 (block $label$134.linked.22360 (result i32)
+                  (drop
+                   (block $label$135.linked.22361 (result i32)
+                    (drop
+                     (block $label$136.linked.22362 (result i32)
+                      (br_table $label$131.linked.22357 $label$132.linked.22358 $label$133.linked.22359 $label$134.linked.22360 $label$135.linked.22361 $label$136.linked.22362 $label$136.linked.22362
+                       (i32.const 0)
+                       (i32.shr_s
+                        (local.get $35)
+                        (i32.const 1)
+                       )
+                      )
+                     )
+                    )
+                    (br $label$129.linked.22355
+                     (block $label$137.linked.22363 (result i32)
+                      (unreachable)
+                     )
+                    )
+                   )
+                  )
+                  (br $label$129.linked.22355
+                   (block $label$138.linked.22364 (result i32)
+                    (block $label$139.linked.22365
+                     (local.set $132
+                      (local.get $19)
+                     )
+                     (block $label$140.linked.22366
+                     )
+                    )
+                    (block $label$141.linked.22367
+                     (local.set $133
+                      (i32.add
+                       (local.get $132)
+                       (local.get $24)
+                      )
+                     )
+                     (block $label$142.linked.22368
+                     )
+                    )
+                    (block $label$143.linked.22369 (result i32)
+                     (loop $label$144.linked.22370
+                      (drop
+                       (br_if $label$143.linked.22369
+                        (i32.const 1879048190)
+                        (i32.eqz
+                         (i32.shr_u
+                          (block $label$145.linked.22371 (result i32)
+                           (block $label$146.linked.22372
+                            (local.set $155
+                             (local.get $19)
+                            )
+                            (block $label$147.linked.22373
+                            )
+                           )
+                           (select
+                            (i32.const -2)
+                            (i32.const 2147483646)
+                            (i32.lt_u
+                             (local.get $155)
+                             (local.get $133)
+                            )
+                           )
+                          )
+                          (i32.const 31)
+                         )
+                        )
+                       )
+                      )
+                      (block $label$148.linked.22374
+                       (drop
+                        (block $label$149.linked.22375 (result i32)
+                         (block $label$150.linked.22376
+                          (local.set $134
+                           (local.get $19)
+                          )
+                          (block $label$151.linked.22377
+                          )
+                         )
+                         (block $label$152.linked.22378
+                          (local.set $135
+                           (i32.load8_u offset=3
+                            (local.get $134)
+                           )
+                          )
+                          (block $label$153.linked.22379
+                          )
+                         )
+                         (block $label$154.linked.22380
+                          (local.set $136
+                           (i32.shl
+                            (local.get $135)
+                            (i32.const 24)
+                           )
+                          )
+                          (block $label$155.linked.22381
+                          )
+                         )
+                         (block $label$156.linked.22382
+                          (local.set $137
+                           (local.get $19)
+                          )
+                          (block $label$157.linked.22383
+                          )
+                         )
+                         (block $label$158.linked.22384
+                          (local.set $138
+                           (i32.load8_u offset=2
+                            (local.get $137)
+                           )
+                          )
+                          (block $label$159.linked.22385
+                          )
+                         )
+                         (block $label$160.linked.22386
+                          (local.set $139
+                           (i32.shl
+                            (local.get $138)
+                            (i32.const 16)
+                           )
+                          )
+                          (block $label$161.linked.22387
+                          )
+                         )
+                         (block $label$162.linked.22388
+                          (local.set $140
+                           (i32.or
+                            (local.get $136)
+                            (local.get $139)
+                           )
+                          )
+                          (block $label$163.linked.22389
+                          )
+                         )
+                         (block $label$164.linked.22390
+                          (local.set $141
+                           (local.get $19)
+                          )
+                          (block $label$165.linked.22391
+                          )
+                         )
+                         (block $label$166.linked.22392
+                          (local.set $142
+                           (i32.load8_u offset=1
+                            (local.get $141)
+                           )
+                          )
+                          (block $label$167.linked.22393
+                          )
+                         )
+                         (block $label$168.linked.22394
+                          (local.set $143
+                           (i32.shl
+                            (local.get $142)
+                            (i32.const 8)
+                           )
+                          )
+                          (block $label$169.linked.22395
+                          )
+                         )
+                         (block $label$170.linked.22396
+                          (local.set $144
+                           (i32.or
+                            (local.get $140)
+                            (local.get $143)
+                           )
+                          )
+                          (block $label$171.linked.22397
+                          )
+                         )
+                         (block $label$172.linked.22398
+                          (local.set $145
+                           (local.get $19)
+                          )
+                          (block $label$173.linked.22399
+                          )
+                         )
+                         (block $label$174.linked.22400
+                          (local.set $146
+                           (i32.load8_u
+                            (local.get $145)
+                           )
+                          )
+                          (block $label$175.linked.22401
+                          )
+                         )
+                         (block $label$176.linked.22402
+                          (local.set $147
+                           (i32.or
+                            (local.get $144)
+                            (local.get $146)
+                           )
+                          )
+                          (block $label$177.linked.22403
+                          )
+                         )
+                         (block $label$178.linked.22404
+                          (local.set $148
+                           (local.get $19)
+                          )
+                          (block $label$179.linked.22405
+                          )
+                         )
+                         (block $label$180.linked.22406
+                          (local.set $149
+                           (i32.add
+                            (local.get $148)
+                            (i32.const 4)
+                           )
+                          )
+                          (block $label$181.linked.22407
+                          )
+                         )
+                         (block $label$182.linked.22408
+                          (local.set $150
+                           (block $label$183.linked.22409 (result i32)
+                            (local.set $19
+                             (local.get $149)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$184.linked.22410
+                          )
+                         )
+                         (block $label$185.linked.22411
+                          (local.set $151
+                           (local.get $30)
+                          )
+                          (block $label$186.linked.22412
+                          )
+                         )
+                         (block $label$187.linked.22413
+                          (local.set $152
+                           (local.get $30)
+                          )
+                          (block $label$188.linked.22414
+                          )
+                         )
+                         (block $label$189.linked.22415
+                          (local.set $153
+                           (call $writeUtf8CodePoint_1775.linked.18564
+                            (call $incRef_1273.linked.1442
+                             (global.get $incRef_1273.linked.1429)
+                             (global.get $writeUtf8CodePoint_1775.linked.18529)
+                            )
+                            (local.get $152)
+                            (local.get $147)
+                           )
+                          )
+                          (block $label$190.linked.22416
+                          )
+                         )
+                         (block $label$191.linked.22417
+                          (local.set $154
+                           (i32.add
+                            (local.get $151)
+                            (local.get $153)
+                           )
+                          )
+                          (block $label$192.linked.22418
+                          )
+                         )
+                         (block $label$193.linked.22419 (result i32)
+                          (local.set $30
+                           (local.get $154)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                       )
+                      )
+                      (br $label$144.linked.22370)
+                     )
+                    )
+                   )
+                  )
+                 )
+                )
+                (br $label$129.linked.22355
+                 (block $label$194.linked.22420 (result i32)
+                  (block $label$195.linked.22421
+                   (local.set $108
+                    (local.get $19)
+                   )
+                   (block $label$196.linked.22422
+                   )
+                  )
+                  (block $label$197.linked.22423
+                   (local.set $109
+                    (i32.add
+                     (local.get $108)
+                     (local.get $24)
+                    )
+                   )
+                   (block $label$198.linked.22424
+                   )
+                  )
+                  (block $label$199.linked.22425 (result i32)
+                   (loop $label$200.linked.22426
+                    (drop
+                     (br_if $label$199.linked.22425
+                      (i32.const 1879048190)
+                      (i32.eqz
+                       (i32.shr_u
+                        (block $label$201.linked.22427 (result i32)
+                         (block $label$202.linked.22428
+                          (local.set $131
+                           (local.get $19)
+                          )
+                          (block $label$203.linked.22429
+                          )
+                         )
+                         (select
+                          (i32.const -2)
+                          (i32.const 2147483646)
+                          (i32.lt_u
+                           (local.get $131)
+                           (local.get $109)
+                          )
+                         )
+                        )
+                        (i32.const 31)
+                       )
+                      )
+                     )
+                    )
+                    (block $label$204.linked.22430
+                     (drop
+                      (block $label$205.linked.22431 (result i32)
+                       (block $label$206.linked.22432
+                        (local.set $110
+                         (local.get $19)
+                        )
+                        (block $label$207.linked.22433
+                        )
+                       )
+                       (block $label$208.linked.22434
+                        (local.set $111
+                         (i32.load8_u
+                          (local.get $110)
+                         )
+                        )
+                        (block $label$209.linked.22435
+                        )
+                       )
+                       (block $label$210.linked.22436
+                        (local.set $112
+                         (i32.shl
+                          (local.get $111)
+                          (i32.const 24)
+                         )
+                        )
+                        (block $label$211.linked.22437
+                        )
+                       )
+                       (block $label$212.linked.22438
+                        (local.set $113
+                         (local.get $19)
+                        )
+                        (block $label$213.linked.22439
+                        )
+                       )
+                       (block $label$214.linked.22440
+                        (local.set $114
+                         (i32.load8_u offset=1
+                          (local.get $113)
+                         )
+                        )
+                        (block $label$215.linked.22441
+                        )
+                       )
+                       (block $label$216.linked.22442
+                        (local.set $115
+                         (i32.shl
+                          (local.get $114)
+                          (i32.const 16)
+                         )
+                        )
+                        (block $label$217.linked.22443
+                        )
+                       )
+                       (block $label$218.linked.22444
+                        (local.set $116
+                         (i32.or
+                          (local.get $112)
+                          (local.get $115)
+                         )
+                        )
+                        (block $label$219.linked.22445
+                        )
+                       )
+                       (block $label$220.linked.22446
+                        (local.set $117
+                         (local.get $19)
+                        )
+                        (block $label$221.linked.22447
+                        )
+                       )
+                       (block $label$222.linked.22448
+                        (local.set $118
+                         (i32.load8_u offset=2
+                          (local.get $117)
+                         )
+                        )
+                        (block $label$223.linked.22449
+                        )
+                       )
+                       (block $label$224.linked.22450
+                        (local.set $119
+                         (i32.shl
+                          (local.get $118)
+                          (i32.const 8)
+                         )
+                        )
+                        (block $label$225.linked.22451
+                        )
+                       )
+                       (block $label$226.linked.22452
+                        (local.set $120
+                         (i32.or
+                          (local.get $116)
+                          (local.get $119)
+                         )
+                        )
+                        (block $label$227.linked.22453
+                        )
+                       )
+                       (block $label$228.linked.22454
+                        (local.set $121
+                         (local.get $19)
+                        )
+                        (block $label$229.linked.22455
+                        )
+                       )
+                       (block $label$230.linked.22456
+                        (local.set $122
+                         (i32.load8_u offset=3
+                          (local.get $121)
+                         )
+                        )
+                        (block $label$231.linked.22457
+                        )
+                       )
+                       (block $label$232.linked.22458
+                        (local.set $123
+                         (i32.or
+                          (local.get $120)
+                          (local.get $122)
+                         )
+                        )
+                        (block $label$233.linked.22459
+                        )
+                       )
+                       (block $label$234.linked.22460
+                        (local.set $124
+                         (local.get $19)
+                        )
+                        (block $label$235.linked.22461
+                        )
+                       )
+                       (block $label$236.linked.22462
+                        (local.set $125
+                         (i32.add
+                          (local.get $124)
+                          (i32.const 4)
+                         )
+                        )
+                        (block $label$237.linked.22463
+                        )
+                       )
+                       (block $label$238.linked.22464
+                        (local.set $126
+                         (block $label$239.linked.22465 (result i32)
+                          (local.set $19
+                           (local.get $125)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$240.linked.22466
+                        )
+                       )
+                       (block $label$241.linked.22467
+                        (local.set $127
+                         (local.get $30)
+                        )
+                        (block $label$242.linked.22468
+                        )
+                       )
+                       (block $label$243.linked.22469
+                        (local.set $128
+                         (local.get $30)
+                        )
+                        (block $label$244.linked.22470
+                        )
+                       )
+                       (block $label$245.linked.22471
+                        (local.set $129
+                         (call $writeUtf8CodePoint_1775.linked.18564
+                          (call $incRef_1273.linked.1442
+                           (global.get $incRef_1273.linked.1429)
+                           (global.get $writeUtf8CodePoint_1775.linked.18529)
+                          )
+                          (local.get $128)
+                          (local.get $123)
+                         )
+                        )
+                        (block $label$246.linked.22472
+                        )
+                       )
+                       (block $label$247.linked.22473
+                        (local.set $130
+                         (i32.add
+                          (local.get $127)
+                          (local.get $129)
+                         )
+                        )
+                        (block $label$248.linked.22474
+                        )
+                       )
+                       (block $label$249.linked.22475 (result i32)
+                        (local.set $30
+                         (local.get $130)
+                        )
+                        (i32.const 1879048190)
+                       )
+                      )
+                     )
+                    )
+                    (br $label$200.linked.22426)
+                   )
+                  )
+                 )
+                )
+               )
+              )
+              (br $label$129.linked.22355
+               (block $label$250.linked.22476 (result i32)
+                (block $label$251.linked.22477
+                 (local.set $75
+                  (local.get $19)
+                 )
+                 (block $label$252.linked.22478
+                 )
+                )
+                (block $label$253.linked.22479
+                 (local.set $76
+                  (i32.add
+                   (local.get $75)
+                   (local.get $24)
+                  )
+                 )
+                 (block $label$254.linked.22480
+                 )
+                )
+                (block $label$255.linked.22481 (result i32)
+                 (loop $label$256.linked.22482
+                  (drop
+                   (br_if $label$255.linked.22481
+                    (i32.const 1879048190)
+                    (i32.eqz
+                     (i32.shr_u
+                      (block $label$257.linked.22483 (result i32)
+                       (block $label$258.linked.22484
+                        (local.set $107
+                         (local.get $19)
+                        )
+                        (block $label$259.linked.22485
+                        )
+                       )
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.lt_u
+                         (local.get $107)
+                         (local.get $76)
+                        )
+                       )
+                      )
+                      (i32.const 31)
+                     )
+                    )
+                   )
+                  )
+                  (block $label$260.linked.22486
+                   (drop
+                    (block $label$261.linked.22487 (result i32)
+                     (block $label$262.linked.22488
+                      (local.set $77
+                       (local.get $19)
+                      )
+                      (block $label$263.linked.22489
+                      )
+                     )
+                     (block $label$264.linked.22490
+                      (local.set $78
+                       (i32.load8_u offset=1
+                        (local.get $77)
+                       )
+                      )
+                      (block $label$265.linked.22491
+                      )
+                     )
+                     (block $label$266.linked.22492
+                      (local.set $79
+                       (i32.shl
+                        (local.get $78)
+                        (i32.const 8)
+                       )
+                      )
+                      (block $label$267.linked.22493
+                      )
+                     )
+                     (block $label$268.linked.22494
+                      (local.set $80
+                       (local.get $19)
+                      )
+                      (block $label$269.linked.22495
+                      )
+                     )
+                     (block $label$270.linked.22496
+                      (local.set $81
+                       (i32.load8_u
+                        (local.get $80)
+                       )
+                      )
+                      (block $label$271.linked.22497
+                      )
+                     )
+                     (block $label$272.linked.22498
+                      (local.set $82
+                       (i32.or
+                        (local.get $79)
+                        (local.get $81)
+                       )
+                      )
+                      (block $label$273.linked.22499
+                      )
+                     )
+                     (block $label$274.linked.22500
+                      (local.set $83
+                       (select
+                        (i32.const -2)
+                        (i32.const 2147483646)
+                        (i32.ge_u
+                         (local.get $82)
+                         (i32.const 55296)
+                        )
+                       )
+                      )
+                      (block $label$275.linked.22501
+                      )
+                     )
+                     (block $label$276.linked.22502
+                      (local.set $84
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $83)
+                         (i32.const 31)
+                        )
+                        (select
+                         (i32.const -2)
+                         (i32.const 2147483646)
+                         (i32.le_u
+                          (local.get $82)
+                          (i32.const 56319)
+                         )
+                        )
+                        (local.get $83)
+                       )
+                      )
+                      (block $label$279.linked.22503
+                      )
+                     )
+                     (block $label$280.linked.22504
+                      (local.set $85
+                       (if (result i32)
+                        (i32.shr_u
+                         (local.get $84)
+                         (i32.const 31)
+                        )
+                        (block (result i32)
+                         (block $label$282.linked.22505
+                          (local.set $89
+                           (i32.and
+                            (local.get $82)
+                            (i32.const 1023)
+                           )
+                          )
+                          (block $label$283.linked.22506
+                          )
+                         )
+                         (block $label$284.linked.22507
+                          (local.set $90
+                           (i32.shl
+                            (local.get $89)
+                            (i32.const 10)
+                           )
+                          )
+                          (block $label$285.linked.22508
+                          )
+                         )
+                         (block $label$286.linked.22509
+                          (local.set $91
+                           (local.get $19)
+                          )
+                          (block $label$287.linked.22510
+                          )
+                         )
+                         (block $label$288.linked.22511
+                          (local.set $92
+                           (i32.load8_u offset=3
+                            (local.get $91)
+                           )
+                          )
+                          (block $label$289.linked.22512
+                          )
+                         )
+                         (block $label$290.linked.22513
+                          (local.set $93
+                           (i32.shl
+                            (local.get $92)
+                            (i32.const 8)
+                           )
+                          )
+                          (block $label$291.linked.22514
+                          )
+                         )
+                         (block $label$292.linked.22515
+                          (local.set $94
+                           (local.get $19)
+                          )
+                          (block $label$293.linked.22516
+                          )
+                         )
+                         (block $label$294.linked.22517
+                          (local.set $95
+                           (i32.load8_u offset=2
+                            (local.get $94)
+                           )
+                          )
+                          (block $label$295.linked.22518
+                          )
+                         )
+                         (block $label$296.linked.22519
+                          (local.set $96
+                           (i32.or
+                            (local.get $93)
+                            (local.get $95)
+                           )
+                          )
+                          (block $label$297.linked.22520
+                          )
+                         )
+                         (block $label$298.linked.22521
+                          (local.set $97
+                           (i32.and
+                            (local.get $96)
+                            (i32.const 1023)
+                           )
+                          )
+                          (block $label$299.linked.22522
+                          )
+                         )
+                         (block $label$300.linked.22523
+                          (local.set $98
+                           (i32.add
+                            (local.get $90)
+                            (local.get $97)
+                           )
+                          )
+                          (block $label$301.linked.22524
+                          )
+                         )
+                         (block $label$302.linked.22525
+                          (local.set $99
+                           (i32.add
+                            (local.get $98)
+                            (i32.const 65536)
+                           )
+                          )
+                          (block $label$303.linked.22526
+                          )
+                         )
+                         (block $label$304.linked.22527
+                          (local.set $100
+                           (local.get $19)
+                          )
+                          (block $label$305.linked.22528
+                          )
+                         )
+                         (block $label$306.linked.22529
+                          (local.set $101
+                           (i32.add
+                            (local.get $100)
+                            (i32.const 4)
+                           )
+                          )
+                          (block $label$307.linked.22530
+                          )
+                         )
+                         (block $label$308.linked.22531
+                          (local.set $102
+                           (block $label$309.linked.22532 (result i32)
+                            (local.set $19
+                             (local.get $101)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$310.linked.22533
+                          )
+                         )
+                         (local.get $99)
+                        )
+                        (block (result i32)
+                         (block $label$312.linked.22534
+                          (local.set $86
+                           (local.get $19)
+                          )
+                          (block $label$313.linked.22535
+                          )
+                         )
+                         (block $label$314.linked.22536
+                          (local.set $87
+                           (i32.add
+                            (local.get $86)
+                            (i32.const 2)
+                           )
+                          )
+                          (block $label$315.linked.22537
+                          )
+                         )
+                         (block $label$316.linked.22538
+                          (local.set $88
+                           (block $label$317.linked.22539 (result i32)
+                            (local.set $19
+                             (local.get $87)
+                            )
+                            (i32.const 1879048190)
+                           )
+                          )
+                          (block $label$318.linked.22540
+                          )
+                         )
+                         (local.get $82)
+                        )
+                       )
+                      )
+                      (block $label$319.linked.22541
+                      )
+                     )
+                     (block $label$320.linked.22542
+                      (local.set $103
+                       (local.get $30)
+                      )
+                      (block $label$321.linked.22543
+                      )
+                     )
+                     (block $label$322.linked.22544
+                      (local.set $104
+                       (local.get $30)
+                      )
+                      (block $label$323.linked.22545
+                      )
+                     )
+                     (block $label$324.linked.22546
+                      (local.set $105
+                       (call $writeUtf8CodePoint_1775.linked.18564
+                        (call $incRef_1273.linked.1442
+                         (global.get $incRef_1273.linked.1429)
+                         (global.get $writeUtf8CodePoint_1775.linked.18529)
+                        )
+                        (local.get $104)
+                        (local.get $85)
+                       )
+                      )
+                      (block $label$325.linked.22547
+                      )
+                     )
+                     (block $label$326.linked.22548
+                      (local.set $106
+                       (i32.add
+                        (local.get $103)
+                        (local.get $105)
+                       )
+                      )
+                      (block $label$327.linked.22549
+                      )
+                     )
+                     (block $label$328.linked.22550 (result i32)
+                      (local.set $30
+                       (local.get $106)
+                      )
+                      (i32.const 1879048190)
+                     )
+                    )
+                   )
+                  )
+                  (br $label$256.linked.22482)
+                 )
+                )
+               )
+              )
+             )
+            )
+            (br $label$129.linked.22355
+             (block $label$329.linked.22551 (result i32)
+              (block $label$330.linked.22552
+               (local.set $42
+                (local.get $19)
+               )
+               (block $label$331.linked.22553
+               )
+              )
+              (block $label$332.linked.22554
+               (local.set $43
+                (i32.add
+                 (local.get $42)
+                 (local.get $24)
+                )
+               )
+               (block $label$333.linked.22555
+               )
+              )
+              (block $label$334.linked.22556 (result i32)
+               (loop $label$335.linked.22557
+                (drop
+                 (br_if $label$334.linked.22556
+                  (i32.const 1879048190)
+                  (i32.eqz
+                   (i32.shr_u
+                    (block $label$336.linked.22558 (result i32)
+                     (block $label$337.linked.22559
+                      (local.set $74
+                       (local.get $19)
+                      )
+                      (block $label$338.linked.22560
+                      )
+                     )
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.lt_u
+                       (local.get $74)
+                       (local.get $43)
+                      )
+                     )
+                    )
+                    (i32.const 31)
+                   )
+                  )
+                 )
+                )
+                (block $label$339.linked.22561
+                 (drop
+                  (block $label$340.linked.22562 (result i32)
+                   (block $label$341.linked.22563
+                    (local.set $44
+                     (local.get $19)
+                    )
+                    (block $label$342.linked.22564
+                    )
+                   )
+                   (block $label$343.linked.22565
+                    (local.set $45
+                     (i32.load8_u
+                      (local.get $44)
+                     )
+                    )
+                    (block $label$344.linked.22566
+                    )
+                   )
+                   (block $label$345.linked.22567
+                    (local.set $46
+                     (i32.shl
+                      (local.get $45)
+                      (i32.const 8)
+                     )
+                    )
+                    (block $label$346.linked.22568
+                    )
+                   )
+                   (block $label$347.linked.22569
+                    (local.set $47
+                     (local.get $19)
+                    )
+                    (block $label$348.linked.22570
+                    )
+                   )
+                   (block $label$349.linked.22571
+                    (local.set $48
+                     (i32.load8_u offset=1
+                      (local.get $47)
+                     )
+                    )
+                    (block $label$350.linked.22572
+                    )
+                   )
+                   (block $label$351.linked.22573
+                    (local.set $49
+                     (i32.or
+                      (local.get $46)
+                      (local.get $48)
+                     )
+                    )
+                    (block $label$352.linked.22574
+                    )
+                   )
+                   (block $label$353.linked.22575
+                    (local.set $50
+                     (select
+                      (i32.const -2)
+                      (i32.const 2147483646)
+                      (i32.ge_u
+                       (local.get $49)
+                       (i32.const 55296)
+                      )
+                     )
+                    )
+                    (block $label$354.linked.22576
+                    )
+                   )
+                   (block $label$355.linked.22577
+                    (local.set $51
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $50)
+                       (i32.const 31)
+                      )
+                      (select
+                       (i32.const -2)
+                       (i32.const 2147483646)
+                       (i32.le_u
+                        (local.get $49)
+                        (i32.const 56319)
+                       )
+                      )
+                      (local.get $50)
+                     )
+                    )
+                    (block $label$358.linked.22578
+                    )
+                   )
+                   (block $label$359.linked.22579
+                    (local.set $52
+                     (if (result i32)
+                      (i32.shr_u
+                       (local.get $51)
+                       (i32.const 31)
+                      )
+                      (block (result i32)
+                       (block $label$361.linked.22580
+                        (local.set $56
+                         (i32.and
+                          (local.get $49)
+                          (i32.const 1023)
+                         )
+                        )
+                        (block $label$362.linked.22581
+                        )
+                       )
+                       (block $label$363.linked.22582
+                        (local.set $57
+                         (i32.shl
+                          (local.get $56)
+                          (i32.const 10)
+                         )
+                        )
+                        (block $label$364.linked.22583
+                        )
+                       )
+                       (block $label$365.linked.22584
+                        (local.set $58
+                         (local.get $19)
+                        )
+                        (block $label$366.linked.22585
+                        )
+                       )
+                       (block $label$367.linked.22586
+                        (local.set $59
+                         (i32.load8_u offset=2
+                          (local.get $58)
+                         )
+                        )
+                        (block $label$368.linked.22587
+                        )
+                       )
+                       (block $label$369.linked.22588
+                        (local.set $60
+                         (i32.shl
+                          (local.get $59)
+                          (i32.const 8)
+                         )
+                        )
+                        (block $label$370.linked.22589
+                        )
+                       )
+                       (block $label$371.linked.22590
+                        (local.set $61
+                         (local.get $19)
+                        )
+                        (block $label$372.linked.22591
+                        )
+                       )
+                       (block $label$373.linked.22592
+                        (local.set $62
+                         (i32.load8_u offset=3
+                          (local.get $61)
+                         )
+                        )
+                        (block $label$374.linked.22593
+                        )
+                       )
+                       (block $label$375.linked.22594
+                        (local.set $63
+                         (i32.or
+                          (local.get $60)
+                          (local.get $62)
+                         )
+                        )
+                        (block $label$376.linked.22595
+                        )
+                       )
+                       (block $label$377.linked.22596
+                        (local.set $64
+                         (i32.and
+                          (local.get $63)
+                          (i32.const 1023)
+                         )
+                        )
+                        (block $label$378.linked.22597
+                        )
+                       )
+                       (block $label$379.linked.22598
+                        (local.set $65
+                         (i32.add
+                          (local.get $57)
+                          (local.get $64)
+                         )
+                        )
+                        (block $label$380.linked.22599
+                        )
+                       )
+                       (block $label$381.linked.22600
+                        (local.set $66
+                         (i32.add
+                          (local.get $65)
+                          (i32.const 65536)
+                         )
+                        )
+                        (block $label$382.linked.22601
+                        )
+                       )
+                       (block $label$383.linked.22602
+                        (local.set $67
+                         (local.get $19)
+                        )
+                        (block $label$384.linked.22603
+                        )
+                       )
+                       (block $label$385.linked.22604
+                        (local.set $68
+                         (i32.add
+                          (local.get $67)
+                          (i32.const 4)
+                         )
+                        )
+                        (block $label$386.linked.22605
+                        )
+                       )
+                       (block $label$387.linked.22606
+                        (local.set $69
+                         (block $label$388.linked.22607 (result i32)
+                          (local.set $19
+                           (local.get $68)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$389.linked.22608
+                        )
+                       )
+                       (local.get $66)
+                      )
+                      (block (result i32)
+                       (block $label$391.linked.22609
+                        (local.set $53
+                         (local.get $19)
+                        )
+                        (block $label$392.linked.22610
+                        )
+                       )
+                       (block $label$393.linked.22611
+                        (local.set $54
+                         (i32.add
+                          (local.get $53)
+                          (i32.const 2)
+                         )
+                        )
+                        (block $label$394.linked.22612
+                        )
+                       )
+                       (block $label$395.linked.22613
+                        (local.set $55
+                         (block $label$396.linked.22614 (result i32)
+                          (local.set $19
+                           (local.get $54)
+                          )
+                          (i32.const 1879048190)
+                         )
+                        )
+                        (block $label$397.linked.22615
+                        )
+                       )
+                       (local.get $49)
+                      )
+                     )
+                    )
+                    (block $label$398.linked.22616
+                    )
+                   )
+                   (block $label$399.linked.22617
+                    (local.set $70
+                     (local.get $30)
+                    )
+                    (block $label$400.linked.22618
+                    )
+                   )
+                   (block $label$401.linked.22619
+                    (local.set $71
+                     (local.get $30)
+                    )
+                    (block $label$402.linked.22620
+                    )
+                   )
+                   (block $label$403.linked.22621
+                    (local.set $72
+                     (call $writeUtf8CodePoint_1775.linked.18564
+                      (call $incRef_1273.linked.1442
+                       (global.get $incRef_1273.linked.1429)
+                       (global.get $writeUtf8CodePoint_1775.linked.18529)
+                      )
+                      (local.get $71)
+                      (local.get $52)
+                     )
+                    )
+                    (block $label$404.linked.22622
+                    )
+                   )
+                   (block $label$405.linked.22623
+                    (local.set $73
+                     (i32.add
+                      (local.get $70)
+                      (local.get $72)
+                     )
+                    )
+                    (block $label$406.linked.22624
+                    )
+                   )
+                   (block $label$407.linked.22625 (result i32)
+                    (local.set $30
+                     (local.get $73)
+                    )
+                    (i32.const 1879048190)
+                   )
+                  )
+                 )
+                )
+                (br $label$335.linked.22557)
+               )
+              )
+             )
+            )
+           )
+          )
+          (br $label$129.linked.22355
+           (block $label$408.linked.22626 (result i32)
+            (block $label$409.linked.22627
+             (local.set $40
+              (local.get $30)
+             )
+             (block $label$410.linked.22628
+             )
+            )
+            (block $label$411.linked.22629
+             (local.set $41
+              (local.get $19)
+             )
+             (block $label$412.linked.22630
+             )
+            )
+            (block $label$413.linked.22631 (result i32)
+             (memory.copy
+              (local.get $40)
+              (local.get $41)
+              (local.get $16)
+             )
+             (i32.const 1879048190)
+            )
+           )
+          )
+         )
+        )
+       )
+       (local.get $17)
+      )
+     )
+    )
+    (drop
+     (block $label$414.linked.22632 (result i32)
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $2)
+       )
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (local.get $169)
+   )
+  )
+ )
+ (func $decodeRange_1862.linked.18568 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (param $4 i32) (param $5 i32) (result i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i64)
+  (local $18 f32)
+  (local $19 f64)
+  (block $label$1.linked.22633
+   (local.set $10
+    (i32.const 0)
+   )
+   (block $label$2.linked.22634
+   )
+  )
+  (block $label$3.linked.22635
+   (local.set $11
+    (i32.load offset=12
+     (local.get $5)
+    )
+   )
+   (block $label$4.linked.22636
+   )
+  )
+  (block $label$5.linked.22637
+   (local.set $12
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $11)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$6.linked.22638
+   )
+  )
+  (block $label$7.linked.22639
+   (local.set $13
+    (if (result i32)
+     (i32.shr_u
+      (local.get $12)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$10.linked.22640
+       (local.set $14
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $11)
+           (i32.const 1)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$11.linked.22641
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $14)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$13.linked.22642
+         (local.set $9
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (i32.load offset=20
+            (local.get $5)
+           )
+          )
+         )
+         (block $label$14.linked.22643
+         )
+        )
+        (drop
+         (block $label$15.linked.22644 (result i32)
+          (local.set $10
+           (local.get $9)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (i32.const 1)
+       )
+       (unreachable)
+      )
+     )
+    )
+   )
+   (block $label$17.linked.22645
+   )
+  )
+  (block $label$18.linked.22646
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $5)
+    )
+   )
+  )
+  (block $label$19.linked.22647
+   (local.set $15
+    (block $label$20.linked.22648 (result i32)
+     (block $label$21.linked.22649 (result i32)
+      (drop
+       (block $label$22.linked.22650 (result i32)
+        (drop
+         (block $label$23.linked.22651 (result i32)
+          (drop
+           (block $label$24.linked.22652 (result i32)
+            (br_table $label$22.linked.22650 $label$23.linked.22651 $label$24.linked.22652 $label$24.linked.22652
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $13)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$20.linked.22648
+           (block $label$25.linked.22653 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$20.linked.22648
+         (block $label$26.linked.22654 (result i32)
+          (i32.const 2147483646)
+         )
+        )
+       )
+      )
+      (br $label$20.linked.22648
+       (block $label$27.linked.22655 (result i32)
+        (local.get $10)
+       )
+      )
+     )
+    )
+   )
+   (block $label$28.linked.22656
+   )
+  )
+  (block $label$29.linked.22657
+   (local.set $16
+    (i32.xor
+     (local.get $15)
+     (i32.const -2147483648)
+    )
+   )
+   (block $label$30.linked.22658
+   )
+  )
+  (block $label$31.linked.22659
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $decodeRangeHelp_1829.linked.18567
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $decodeRangeHelp_1829.linked.18499)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $16)
+    (local.get $3)
+    (local.get $4)
+   )
+  )
+ )
+ (func $decodeHelp_1870.linked.18569 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i64)
+  (local $11 f32)
+  (local $12 f64)
+  (block $label$1.linked.22660
+   (local.set $8
+    (local.get $1)
+   )
+   (block $label$2.linked.22661
+   )
+  )
+  (block $label$3.linked.22662
+   (local.set $9
+    (i32.load offset=4
+     (local.get $8)
+    )
+   )
+   (block $label$4.linked.22663
+   )
+  )
+  (block $label$5.linked.22664
+   (local.set $7
+    (i32.xor
+     (i32.shl
+      (local.get $9)
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$6.linked.22665
+   )
+  )
+  (block $label$7.linked.22666
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $decodeRangeHelp_1829.linked.18567
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $decodeRangeHelp_1829.linked.18499)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $3)
+    (i32.const 1)
+    (local.get $7)
+   )
+  )
+ )
+ (func $decode_1876.linked.18570 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i64)
+  (local $16 f32)
+  (local $17 f64)
+  (block $label$1.linked.22667
+   (local.set $8
+    (i32.const 0)
+   )
+   (block $label$2.linked.22668
+   )
+  )
+  (block $label$3.linked.22669
+   (local.set $9
+    (i32.load offset=12
+     (local.get $3)
+    )
+   )
+   (block $label$4.linked.22670
+   )
+  )
+  (block $label$5.linked.22671
+   (local.set $10
+    (i32.or
+     (i32.shl
+      (i32.eq
+       (local.get $9)
+       (i32.const 3)
+      )
+      (i32.const 31)
+     )
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$6.linked.22672
+   )
+  )
+  (block $label$7.linked.22673
+   (local.set $11
+    (if (result i32)
+     (i32.shr_u
+      (local.get $10)
+      (i32.const 31)
+     )
+     (i32.const 3)
+     (block (result i32)
+      (block $label$10.linked.22674
+       (local.set $12
+        (i32.or
+         (i32.shl
+          (i32.eq
+           (local.get $9)
+           (i32.const 1)
+          )
+          (i32.const 31)
+         )
+         (i32.const 2147483646)
+        )
+       )
+       (block $label$11.linked.22675
+       )
+      )
+      (if (result i32)
+       (i32.shr_u
+        (local.get $12)
+        (i32.const 31)
+       )
+       (block (result i32)
+        (block $label$13.linked.22676
+         (local.set $7
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (i32.load offset=20
+            (local.get $3)
+           )
+          )
+         )
+         (block $label$14.linked.22677
+         )
+        )
+        (drop
+         (block $label$15.linked.22678 (result i32)
+          (local.set $8
+           (local.get $7)
+          )
+          (i32.const 1879048190)
+         )
+        )
+        (i32.const 1)
+       )
+       (unreachable)
+      )
+     )
+    )
+   )
+   (block $label$17.linked.22679
+   )
+  )
+  (block $label$18.linked.22680
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $3)
+    )
+   )
+  )
+  (block $label$19.linked.22681
+   (local.set $13
+    (block $label$20.linked.22682 (result i32)
+     (block $label$21.linked.22683 (result i32)
+      (drop
+       (block $label$22.linked.22684 (result i32)
+        (drop
+         (block $label$23.linked.22685 (result i32)
+          (drop
+           (block $label$24.linked.22686 (result i32)
+            (br_table $label$22.linked.22684 $label$23.linked.22685 $label$24.linked.22686 $label$24.linked.22686
+             (i32.const 0)
+             (i32.shr_s
+              (local.get $11)
+              (i32.const 1)
+             )
+            )
+           )
+          )
+          (br $label$20.linked.22682
+           (block $label$25.linked.22687 (result i32)
+            (unreachable)
+           )
+          )
+         )
+        )
+        (br $label$20.linked.22682
+         (block $label$26.linked.22688 (result i32)
+          (i32.const 2147483646)
+         )
+        )
+       )
+      )
+      (br $label$20.linked.22682
+       (block $label$27.linked.22689 (result i32)
+        (local.get $8)
+       )
+      )
+     )
+    )
+   )
+   (block $label$28.linked.22690
+   )
+  )
+  (block $label$29.linked.22691
+   (local.set $14
+    (i32.xor
+     (local.get $13)
+     (i32.const -2147483648)
+    )
+   )
+   (block $label$30.linked.22692
+   )
+  )
+  (block $label$31.linked.22693
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $decodeHelp_1870.linked.18569
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $decodeHelp_1870.linked.18497)
+    )
+    (local.get $1)
+    (local.get $2)
+    (local.get $14)
+   )
+  )
+ )
+ (func $forEachCodePoint_1882.linked.18571 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i64)
+  (local $33 f32)
+  (local $34 f64)
+  (local $35 i32)
+  (block $label$1.linked.22694
+   (local.set $7
+    (local.get $2)
+   )
+   (block $label$2.linked.22695
+   )
+  )
+  (block $label$3.linked.22696
+   (local.set $8
+    (i32.load offset=4
+     (local.get $7)
+    )
+   )
+   (block $label$4.linked.22697
+   )
+  )
+  (block $label$5.linked.22698
+   (local.set $9
+    (i32.add
+     (local.get $7)
+     (i32.const 8)
+    )
+   )
+   (block $label$6.linked.22699
+   )
+  )
+  (block $label$7.linked.22700
+   (local.set $10
+    (local.get $9)
+   )
+   (block $label$8.linked.22701
+   )
+  )
+  (block $label$9.linked.22702
+   (local.set $11
+    (local.get $10)
+   )
+   (block $label$10.linked.22703
+   )
+  )
+  (block $label$11.linked.22704
+   (local.set $12
+    (i32.add
+     (local.get $11)
+     (local.get $8)
+    )
+   )
+   (block $label$12.linked.22705
+   )
+  )
+  (block $label$13.linked.22706
+   (local.set $13
+    (i32.const 0)
+   )
+   (block $label$14.linked.22707
+   )
+  )
+  (block $label$15.linked.22708
+   (local.set $14
+    (block $label$16.linked.22709 (result i32)
+     (loop $label$17.linked.22710
+      (drop
+       (br_if $label$16.linked.22709
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$18.linked.22711 (result i32)
+           (block $label$19.linked.22712
+            (local.set $31
+             (local.get $10)
+            )
+            (block $label$20.linked.22713
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $31)
+             (local.get $12)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$21.linked.22714
+       (drop
+        (block $label$22.linked.22715 (result i32)
+         (block $label$23.linked.22716
+          (local.set $15
+           (local.get $10)
+          )
+          (block $label$24.linked.22717
+          )
+         )
+         (block $label$25.linked.22718
+          (local.set $16
+           (i32.load8_u
+            (local.get $15)
+           )
+          )
+          (block $label$26.linked.22719
+          )
+         )
+         (block $label$27.linked.22720
+          (local.set $17
+           (i32.and
+            (local.get $16)
+            (i32.const 128)
+           )
+          )
+          (block $label$28.linked.22721
+          )
+         )
+         (block $label$29.linked.22722
+          (local.set $18
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $17)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$30.linked.22723
+          )
+         )
+         (block $label$31.linked.22724
+          (local.set $19
+           (if (result i32)
+            (i32.shr_u
+             (local.get $18)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$34.linked.22725
+              (local.set $20
+               (i32.and
+                (local.get $16)
+                (i32.const 240)
+               )
+              )
+              (block $label$35.linked.22726
+              )
+             )
+             (block $label$36.linked.22727
+              (local.set $21
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $20)
+                 (i32.const 240)
+                )
+               )
+              )
+              (block $label$37.linked.22728
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $21)
+               (i32.const 31)
+              )
+              (i32.const 4)
+              (block (result i32)
+               (block $label$40.linked.22729
+                (local.set $22
+                 (i32.and
+                  (local.get $16)
+                  (i32.const 224)
+                 )
+                )
+                (block $label$41.linked.22730
+                )
+               )
+               (block $label$42.linked.22731
+                (local.set $23
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $22)
+                   (i32.const 224)
+                  )
+                 )
+                )
+                (block $label$43.linked.22732
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $23)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$46.linked.22733
+          )
+         )
+         (block $label$47.linked.22734
+          (local.set $24
+           (local.get $10)
+          )
+          (block $label$48.linked.22735
+          )
+         )
+         (block $label$49.linked.22736
+          (local.set $25
+           (call $getCodePoint_1509.linked.18541
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $getCodePoint_1509.linked.18534)
+            )
+            (local.get $24)
+           )
+          )
+          (block $label$50.linked.22737
+          )
+         )
+         (block $label$51.linked.22738
+          (local.set $6
+           (i32.xor
+            (i32.shl
+             (local.get $25)
+             (i32.const 1)
+            )
+            (i32.const 1)
+           )
+          )
+          (block $label$52.linked.22739
+          )
+         )
+         (drop
+          (block $label$53.linked.22740 (result i32)
+           (local.set $3
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $1)
+            )
+           )
+           (call_indirect (type $i32_i32_=>_i32)
+            (local.get $3)
+            (local.get $6)
+            (i32.load offset=8
+             (local.get $3)
+            )
+           )
+          )
+         )
+         (block $label$54.linked.22741
+          (local.set $26
+           (local.get $10)
+          )
+          (block $label$55.linked.22742
+          )
+         )
+         (block $label$56.linked.22743
+          (local.set $27
+           (i32.add
+            (local.get $26)
+            (local.get $19)
+           )
+          )
+          (block $label$57.linked.22744
+          )
+         )
+         (block $label$58.linked.22745
+          (local.set $28
+           (block $label$59.linked.22746 (result i32)
+            (local.set $10
+             (local.get $27)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$60.linked.22747
+          )
+         )
+         (block $label$61.linked.22748
+          (local.set $29
+           (local.get $13)
+          )
+          (block $label$62.linked.22749
+          )
+         )
+         (block $label$63.linked.22750
+          (local.set $30
+           (i32.add
+            (local.get $29)
+            (i32.const 1)
+           )
+          )
+          (block $label$64.linked.22751
+          )
+         )
+         (block $label$65.linked.22752 (result i32)
+          (local.set $13
+           (local.get $30)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$17.linked.22710)
+     )
+    )
+   )
+   (block $label$66.linked.22753
+   )
+  )
+  (block $label$67.linked.22754
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+  )
+  (block (result i32)
+   (local.set $35
+    (i32.const 1879048190)
+   )
+   (drop
+    (block $label$68.linked.22755 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $35)
+  )
+ )
+ (func $forEachCodePointi_1893.linked.18572 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i64)
+  (local $35 f32)
+  (local $36 f64)
+  (local $37 i32)
+  (block $label$1.linked.22756
+   (local.set $8
+    (local.get $2)
+   )
+   (block $label$2.linked.22757
+   )
+  )
+  (block $label$3.linked.22758
+   (local.set $9
+    (i32.load offset=4
+     (local.get $8)
+    )
+   )
+   (block $label$4.linked.22759
+   )
+  )
+  (block $label$5.linked.22760
+   (local.set $10
+    (i32.add
+     (local.get $8)
+     (i32.const 8)
+    )
+   )
+   (block $label$6.linked.22761
+   )
+  )
+  (block $label$7.linked.22762
+   (local.set $11
+    (local.get $10)
+   )
+   (block $label$8.linked.22763
+   )
+  )
+  (block $label$9.linked.22764
+   (local.set $12
+    (local.get $11)
+   )
+   (block $label$10.linked.22765
+   )
+  )
+  (block $label$11.linked.22766
+   (local.set $13
+    (i32.add
+     (local.get $12)
+     (local.get $9)
+    )
+   )
+   (block $label$12.linked.22767
+   )
+  )
+  (block $label$13.linked.22768
+   (local.set $14
+    (i32.const 0)
+   )
+   (block $label$14.linked.22769
+   )
+  )
+  (block $label$15.linked.22770
+   (local.set $15
+    (block $label$16.linked.22771 (result i32)
+     (loop $label$17.linked.22772
+      (drop
+       (br_if $label$16.linked.22771
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$18.linked.22773 (result i32)
+           (block $label$19.linked.22774
+            (local.set $33
+             (local.get $11)
+            )
+            (block $label$20.linked.22775
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $33)
+             (local.get $13)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$21.linked.22776
+       (drop
+        (block $label$22.linked.22777 (result i32)
+         (block $label$23.linked.22778
+          (local.set $16
+           (local.get $11)
+          )
+          (block $label$24.linked.22779
+          )
+         )
+         (block $label$25.linked.22780
+          (local.set $17
+           (i32.load8_u
+            (local.get $16)
+           )
+          )
+          (block $label$26.linked.22781
+          )
+         )
+         (block $label$27.linked.22782
+          (local.set $18
+           (i32.and
+            (local.get $17)
+            (i32.const 128)
+           )
+          )
+          (block $label$28.linked.22783
+          )
+         )
+         (block $label$29.linked.22784
+          (local.set $19
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.eq
+             (local.get $18)
+             (i32.const 0)
+            )
+           )
+          )
+          (block $label$30.linked.22785
+          )
+         )
+         (block $label$31.linked.22786
+          (local.set $20
+           (if (result i32)
+            (i32.shr_u
+             (local.get $19)
+             (i32.const 31)
+            )
+            (i32.const 1)
+            (block (result i32)
+             (block $label$34.linked.22787
+              (local.set $21
+               (i32.and
+                (local.get $17)
+                (i32.const 240)
+               )
+              )
+              (block $label$35.linked.22788
+              )
+             )
+             (block $label$36.linked.22789
+              (local.set $22
+               (select
+                (i32.const -2)
+                (i32.const 2147483646)
+                (i32.eq
+                 (local.get $21)
+                 (i32.const 240)
+                )
+               )
+              )
+              (block $label$37.linked.22790
+              )
+             )
+             (if (result i32)
+              (i32.shr_u
+               (local.get $22)
+               (i32.const 31)
+              )
+              (i32.const 4)
+              (block (result i32)
+               (block $label$40.linked.22791
+                (local.set $23
+                 (i32.and
+                  (local.get $17)
+                  (i32.const 224)
+                 )
+                )
+                (block $label$41.linked.22792
+                )
+               )
+               (block $label$42.linked.22793
+                (local.set $24
+                 (select
+                  (i32.const -2)
+                  (i32.const 2147483646)
+                  (i32.eq
+                   (local.get $23)
+                   (i32.const 224)
+                  )
+                 )
+                )
+                (block $label$43.linked.22794
+                )
+               )
+               (if (result i32)
+                (i32.shr_u
+                 (local.get $24)
+                 (i32.const 31)
+                )
+                (i32.const 3)
+                (i32.const 2)
+               )
+              )
+             )
+            )
+           )
+          )
+          (block $label$46.linked.22795
+          )
+         )
+         (block $label$47.linked.22796
+          (local.set $25
+           (local.get $11)
+          )
+          (block $label$48.linked.22797
+          )
+         )
+         (block $label$49.linked.22798
+          (local.set $26
+           (call $getCodePoint_1509.linked.18541
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $getCodePoint_1509.linked.18534)
+            )
+            (local.get $25)
+           )
+          )
+          (block $label$50.linked.22799
+          )
+         )
+         (block $label$51.linked.22800
+          (local.set $6
+           (i32.xor
+            (i32.shl
+             (local.get $26)
+             (i32.const 1)
+            )
+            (i32.const 1)
+           )
+          )
+          (block $label$52.linked.22801
+          )
+         )
+         (block $label$53.linked.22802
+          (local.set $27
+           (local.get $14)
+          )
+          (block $label$54.linked.22803
+          )
+         )
+         (block $label$55.linked.22804
+          (local.set $7
+           (i32.xor
+            (i32.shl
+             (local.get $27)
+             (i32.const 1)
+            )
+            (i32.const 1)
+           )
+          )
+          (block $label$56.linked.22805
+          )
+         )
+         (drop
+          (block $label$57.linked.22806 (result i32)
+           (local.set $3
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $1)
+            )
+           )
+           (call_indirect (type $i32_i32_i32_=>_i32)
+            (local.get $3)
+            (local.get $6)
+            (local.get $7)
+            (i32.load offset=8
+             (local.get $3)
+            )
+           )
+          )
+         )
+         (block $label$58.linked.22807
+          (local.set $28
+           (local.get $11)
+          )
+          (block $label$59.linked.22808
+          )
+         )
+         (block $label$60.linked.22809
+          (local.set $29
+           (i32.add
+            (local.get $28)
+            (local.get $20)
+           )
+          )
+          (block $label$61.linked.22810
+          )
+         )
+         (block $label$62.linked.22811
+          (local.set $30
+           (block $label$63.linked.22812 (result i32)
+            (local.set $11
+             (local.get $29)
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (block $label$64.linked.22813
+          )
+         )
+         (block $label$65.linked.22814
+          (local.set $31
+           (local.get $14)
+          )
+          (block $label$66.linked.22815
+          )
+         )
+         (block $label$67.linked.22816
+          (local.set $32
+           (i32.add
+            (local.get $31)
+            (i32.const 1)
+           )
+          )
+          (block $label$68.linked.22817
+          )
+         )
+         (block $label$69.linked.22818 (result i32)
+          (local.set $14
+           (local.get $32)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (br $label$17.linked.22772)
+     )
+    )
+   )
+   (block $label$70.linked.22819
+   )
+  )
+  (block $label$71.linked.22820
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+  )
+  (block (result i32)
+   (local.set $37
+    (i32.const 1879048190)
+   )
+   (drop
+    (block $label$72.linked.22821 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $2)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $37)
+  )
+ )
+ (func $trimString_1904.linked.18573 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i32)
+  (local $28 i32)
+  (local $29 i32)
+  (local $30 i32)
+  (local $31 i32)
+  (local $32 i32)
+  (local $33 i32)
+  (local $34 i32)
+  (local $35 i32)
+  (local $36 i32)
+  (local $37 i32)
+  (local $38 i32)
+  (local $39 i32)
+  (local $40 i32)
+  (local $41 i32)
+  (local $42 i32)
+  (local $43 i32)
+  (local $44 i32)
+  (local $45 i32)
+  (local $46 i32)
+  (local $47 i32)
+  (local $48 i32)
+  (local $49 i32)
+  (local $50 i32)
+  (local $51 i32)
+  (local $52 i32)
+  (local $53 i64)
+  (local $54 f32)
+  (local $55 f64)
+  (local $56 i32)
+  (block $label$1.linked.22822
+   (local.set $7
+    (i32.const 0)
+   )
+   (block $label$2.linked.22823
+   )
+  )
+  (block $label$3.linked.22824
+   (local.set $8
+    (i32.const 1)
+   )
+   (block $label$4.linked.22825
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $3)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$6.linked.22826
+      (local.set $51
+       (i32.sub
+        (local.get $2)
+        (i32.const 1)
+       )
+      )
+      (block $label$7.linked.22827
+      )
+     )
+     (block $label$8.linked.22828
+      (local.set $52
+       (block $label$9.linked.22829 (result i32)
+        (local.set $7
+         (local.get $51)
+        )
+        (i32.const 1879048190)
+       )
+      )
+      (block $label$10.linked.22830
+      )
+     )
+     (block $label$11.linked.22831 (result i32)
+      (local.set $8
+       (i32.const -1)
+      )
+      (i32.const 1879048190)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$13.linked.22832
+   (local.set $9
+    (i32.const 0)
+   )
+   (block $label$14.linked.22833
+   )
+  )
+  (block $label$15.linked.22834
+   (local.set $10
+    (block $label$16.linked.22835 (result i32)
+     (loop $label$17.linked.22836
+      (drop
+       (br_if $label$16.linked.22835
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$18.linked.22837 (result i32)
+           (block $label$19.linked.22838
+            (local.set $50
+             (local.get $7)
+            )
+            (block $label$20.linked.22839
+            )
+           )
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.lt_u
+             (local.get $50)
+             (local.get $2)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$21.linked.22840
+       (drop
+        (block $label$22.linked.22841 (result i32)
+         (block $label$23.linked.22842
+          (local.set $11
+           (local.get $7)
+          )
+          (block $label$24.linked.22843
+          )
+         )
+         (block $label$25.linked.22844
+          (local.set $12
+           (i32.load8_u
+            (i32.add
+             (local.get $1)
+             (local.get $11)
+            )
+           )
+          )
+          (block $label$26.linked.22845
+          )
+         )
+         (block $label$27.linked.22846
+          (local.set $13
+           (i32.xor
+            (local.get $3)
+            (i32.const -2147483648)
+           )
+          )
+          (block $label$28.linked.22847
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $13)
+            (i32.const 31)
+           )
+           (block (result i32)
+            (block $label$30.linked.22848
+             (local.set $35
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $12)
+                (i32.const 239)
+               )
+              )
+             )
+             (block $label$31.linked.22849
+             )
+            )
+            (block $label$32.linked.22850
+             (local.set $36
+              (if (result i32)
+               (i32.shr_u
+                (local.get $35)
+                (i32.const 31)
+               )
+               (block (result i32)
+                (block $label$34.linked.22851
+                 (local.set $37
+                  (local.get $7)
+                 )
+                 (block $label$35.linked.22852
+                 )
+                )
+                (block $label$36.linked.22853
+                 (local.set $38
+                  (i32.sub
+                   (local.get $37)
+                   (i32.const 1)
+                  )
+                 )
+                 (block $label$37.linked.22854
+                 )
+                )
+                (block $label$38.linked.22855
+                 (local.set $39
+                  (i32.load
+                   (i32.add
+                    (local.get $1)
+                    (local.get $38)
+                   )
+                  )
+                 )
+                 (block $label$39.linked.22856
+                 )
+                )
+                (block $label$40.linked.22857
+                 (local.set $40
+                  (i32.shr_u
+                   (local.get $39)
+                   (i32.const 8)
+                  )
+                 )
+                 (block $label$41.linked.22858
+                 )
+                )
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.eq
+                  (local.get $40)
+                  (i32.const 12565487)
+                 )
+                )
+               )
+               (local.get $35)
+              )
+             )
+             (block $label$43.linked.22859
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $36)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$45.linked.22860
+               (local.set $41
+                (local.get $7)
+               )
+               (block $label$46.linked.22861
+               )
+              )
+              (block $label$47.linked.22862
+               (local.set $42
+                (i32.add
+                 (local.get $41)
+                 (i32.const 2)
+                )
+               )
+               (block $label$48.linked.22863
+               )
+              )
+              (block $label$49.linked.22864
+               (local.set $43
+                (block $label$50.linked.22865 (result i32)
+                 (local.set $7
+                  (local.get $42)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$51.linked.22866
+               )
+              )
+              (block $label$52.linked.22867
+               (local.set $44
+                (local.get $9)
+               )
+               (block $label$53.linked.22868
+               )
+              )
+              (block $label$54.linked.22869
+               (local.set $45
+                (i32.add
+                 (local.get $44)
+                 (i32.const 3)
+                )
+               )
+               (block $label$55.linked.22870
+               )
+              )
+              (block $label$56.linked.22871
+               (local.set $46
+                (block $label$57.linked.22872 (result i32)
+                 (local.set $9
+                  (local.get $45)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$58.linked.22873
+               )
+              )
+              (br $label$21.linked.22840)
+             )
+             (i32.const 1879048190)
+            )
+           )
+           (block (result i32)
+            (block $label$61.linked.22874
+             (local.set $23
+              (select
+               (i32.const -2)
+               (i32.const 2147483646)
+               (i32.eq
+                (local.get $12)
+                (i32.const 191)
+               )
+              )
+             )
+             (block $label$62.linked.22875
+             )
+            )
+            (block $label$63.linked.22876
+             (local.set $24
+              (if (result i32)
+               (i32.shr_u
+                (local.get $23)
+                (i32.const 31)
+               )
+               (block (result i32)
+                (block $label$65.linked.22877
+                 (local.set $25
+                  (local.get $7)
+                 )
+                 (block $label$66.linked.22878
+                 )
+                )
+                (block $label$67.linked.22879
+                 (local.set $26
+                  (i32.sub
+                   (local.get $25)
+                   (i32.const 3)
+                  )
+                 )
+                 (block $label$68.linked.22880
+                 )
+                )
+                (block $label$69.linked.22881
+                 (local.set $27
+                  (i32.load
+                   (i32.add
+                    (local.get $1)
+                    (local.get $26)
+                   )
+                  )
+                 )
+                 (block $label$70.linked.22882
+                 )
+                )
+                (block $label$71.linked.22883
+                 (local.set $28
+                  (i32.shr_u
+                   (local.get $27)
+                   (i32.const 8)
+                  )
+                 )
+                 (block $label$72.linked.22884
+                 )
+                )
+                (select
+                 (i32.const -2)
+                 (i32.const 2147483646)
+                 (i32.eq
+                  (local.get $28)
+                  (i32.const 12565487)
+                 )
+                )
+               )
+               (local.get $23)
+              )
+             )
+             (block $label$74.linked.22885
+             )
+            )
+            (if (result i32)
+             (i32.shr_u
+              (local.get $24)
+              (i32.const 31)
+             )
+             (block (result i32)
+              (block $label$76.linked.22886
+               (local.set $29
+                (local.get $7)
+               )
+               (block $label$77.linked.22887
+               )
+              )
+              (block $label$78.linked.22888
+               (local.set $30
+                (i32.sub
+                 (local.get $29)
+                 (i32.const 2)
+                )
+               )
+               (block $label$79.linked.22889
+               )
+              )
+              (block $label$80.linked.22890
+               (local.set $31
+                (block $label$81.linked.22891 (result i32)
+                 (local.set $7
+                  (local.get $30)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$82.linked.22892
+               )
+              )
+              (block $label$83.linked.22893
+               (local.set $32
+                (local.get $9)
+               )
+               (block $label$84.linked.22894
+               )
+              )
+              (block $label$85.linked.22895
+               (local.set $33
+                (i32.add
+                 (local.get $32)
+                 (i32.const 3)
+                )
+               )
+               (block $label$86.linked.22896
+               )
+              )
+              (block $label$87.linked.22897
+               (local.set $34
+                (block $label$88.linked.22898 (result i32)
+                 (local.set $9
+                  (local.get $33)
+                 )
+                 (i32.const 1879048190)
+                )
+               )
+               (block $label$89.linked.22899
+               )
+              )
+              (br $label$21.linked.22840)
+             )
+             (i32.const 1879048190)
+            )
+           )
+          )
+         )
+         (block $label$91.linked.22900
+          (local.set $14
+           (select
+            (i32.const -2)
+            (i32.const 2147483646)
+            (i32.ne
+             (local.get $12)
+             (i32.const 32)
+            )
+           )
+          )
+          (block $label$92.linked.22901
+          )
+         )
+         (block $label$93.linked.22902
+          (local.set $15
+           (if (result i32)
+            (i32.shr_u
+             (local.get $14)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 13)
+             )
+            )
+            (local.get $14)
+           )
+          )
+          (block $label$96.linked.22903
+          )
+         )
+         (block $label$97.linked.22904
+          (local.set $16
+           (if (result i32)
+            (i32.shr_u
+             (local.get $15)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 10)
+             )
+            )
+            (local.get $15)
+           )
+          )
+          (block $label$100.linked.22905
+          )
+         )
+         (block $label$101.linked.22906
+          (local.set $17
+           (if (result i32)
+            (i32.shr_u
+             (local.get $16)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 9)
+             )
+            )
+            (local.get $16)
+           )
+          )
+          (block $label$104.linked.22907
+          )
+         )
+         (block $label$105.linked.22908
+          (local.set $18
+           (if (result i32)
+            (i32.shr_u
+             (local.get $17)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 11)
+             )
+            )
+            (local.get $17)
+           )
+          )
+          (block $label$108.linked.22909
+          )
+         )
+         (block $label$109.linked.22910
+          (local.set $19
+           (if (result i32)
+            (i32.shr_u
+             (local.get $18)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 12)
+             )
+            )
+            (local.get $18)
+           )
+          )
+          (block $label$112.linked.22911
+          )
+         )
+         (block $label$113.linked.22912
+          (local.set $20
+           (if (result i32)
+            (i32.shr_u
+             (local.get $19)
+             (i32.const 31)
+            )
+            (select
+             (i32.const -2)
+             (i32.const 2147483646)
+             (i32.ne
+              (local.get $12)
+              (i32.const 160)
+             )
+            )
+            (local.get $19)
+           )
+          )
+          (block $label$116.linked.22913
+          )
+         )
+         (drop
+          (if (result i32)
+           (i32.shr_u
+            (local.get $20)
+            (i32.const 31)
+           )
+           (br $label$16.linked.22835
+            (i32.const 1879048190)
+           )
+           (i32.const 1879048190)
+          )
+         )
+         (block $label$119.linked.22914
+          (local.set $21
+           (local.get $9)
+          )
+          (block $label$120.linked.22915
+          )
+         )
+         (block $label$121.linked.22916
+          (local.set $22
+           (i32.add
+            (local.get $21)
+            (i32.const 1)
+           )
+          )
+          (block $label$122.linked.22917
+          )
+         )
+         (block $label$123.linked.22918 (result i32)
+          (local.set $9
+           (local.get $22)
+          )
+          (i32.const 1879048190)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$124.linked.22919 (result i32)
+        (block $label$125.linked.22920
+         (local.set $47
+          (local.get $7)
+         )
+         (block $label$126.linked.22921
+         )
+        )
+        (block $label$127.linked.22922
+         (local.set $48
+          (local.get $8)
+         )
+         (block $label$128.linked.22923
+         )
+        )
+        (block $label$129.linked.22924
+         (local.set $49
+          (i32.add
+           (local.get $47)
+           (local.get $48)
+          )
+         )
+         (block $label$130.linked.22925
+         )
+        )
+        (block $label$131.linked.22926 (result i32)
+         (local.set $7
+          (local.get $49)
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$17.linked.22836)
+     )
+    )
+   )
+   (block $label$132.linked.22927
+   )
+  )
+  (block (result i32)
+   (local.set $56
+    (local.get $9)
+   )
+   (drop
+    (block $label$133.linked.22928 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $56)
+  )
+ )
+ (func $trimStart_1912.linked.18574 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i64)
+  (local $21 f32)
+  (local $22 f64)
+  (local $23 i32)
+  (block $label$1.linked.22929
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.22930
+   )
+  )
+  (block $label$3.linked.22931
+   (local.set $6
+    (local.get $5)
+   )
+   (block $label$4.linked.22932
+   )
+  )
+  (block $label$5.linked.22933
+   (local.set $7
+    (local.get $6)
+   )
+   (block $label$6.linked.22934
+   )
+  )
+  (block $label$7.linked.22935
+   (local.set $8
+    (i32.load offset=4
+     (local.get $7)
+    )
+   )
+   (block $label$8.linked.22936
+   )
+  )
+  (block $label$9.linked.22937
+   (local.set $9
+    (local.get $6)
+   )
+   (block $label$10.linked.22938
+   )
+  )
+  (block $label$11.linked.22939
+   (local.set $10
+    (i32.add
+     (local.get $9)
+     (i32.const 8)
+    )
+   )
+   (block $label$12.linked.22940
+   )
+  )
+  (block $label$13.linked.22941
+   (local.set $11
+    (block $label$14.linked.22942 (result i32)
+     (local.set $6
+      (local.get $10)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$15.linked.22943
+   )
+  )
+  (block $label$16.linked.22944
+   (local.set $12
+    (local.get $6)
+   )
+   (block $label$17.linked.22945
+   )
+  )
+  (block $label$18.linked.22946
+   (local.set $13
+    (call $trimString_1904.linked.18573
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $trimString_1904.linked.18531)
+     )
+     (local.get $12)
+     (local.get $8)
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$19.linked.22947
+   )
+  )
+  (block $label$20.linked.22948
+   (local.set $14
+    (i32.sub
+     (local.get $8)
+     (local.get $13)
+    )
+   )
+   (block $label$21.linked.22949
+   )
+  )
+  (block $label$22.linked.22950
+   (local.set $15
+    (block $label$23.linked.22951 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $14)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $14)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$24.linked.22952
+   )
+  )
+  (block $label$25.linked.22953
+   (local.set $16
+    (i32.add
+     (local.get $15)
+     (i32.const 8)
+    )
+   )
+   (block $label$26.linked.22954
+   )
+  )
+  (block $label$27.linked.22955
+   (local.set $17
+    (local.get $6)
+   )
+   (block $label$28.linked.22956
+   )
+  )
+  (block $label$29.linked.22957
+   (local.set $18
+    (i32.add
+     (local.get $17)
+     (local.get $13)
+    )
+   )
+   (block $label$30.linked.22958
+   )
+  )
+  (block $label$31.linked.22959
+   (local.set $19
+    (i32.sub
+     (local.get $8)
+     (local.get $13)
+    )
+   )
+   (block $label$32.linked.22960
+   )
+  )
+  (drop
+   (block $label$33.linked.22961 (result i32)
+    (memory.copy
+     (local.get $16)
+     (local.get $18)
+     (local.get $19)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block (result i32)
+   (local.set $23
+    (local.get $15)
+   )
+   (drop
+    (block $label$34.linked.22962 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $23)
+  )
+ )
+ (func $trimEnd_1918.linked.18575 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i64)
+  (local $20 f32)
+  (local $21 f64)
+  (local $22 i32)
+  (block $label$1.linked.22963
+   (local.set $5
+    (local.get $1)
+   )
+   (block $label$2.linked.22964
+   )
+  )
+  (block $label$3.linked.22965
+   (local.set $6
+    (local.get $5)
+   )
+   (block $label$4.linked.22966
+   )
+  )
+  (block $label$5.linked.22967
+   (local.set $7
+    (local.get $6)
+   )
+   (block $label$6.linked.22968
+   )
+  )
+  (block $label$7.linked.22969
+   (local.set $8
+    (i32.load offset=4
+     (local.get $7)
+    )
+   )
+   (block $label$8.linked.22970
+   )
+  )
+  (block $label$9.linked.22971
+   (local.set $9
+    (local.get $6)
+   )
+   (block $label$10.linked.22972
+   )
+  )
+  (block $label$11.linked.22973
+   (local.set $10
+    (i32.add
+     (local.get $9)
+     (i32.const 8)
+    )
+   )
+   (block $label$12.linked.22974
+   )
+  )
+  (block $label$13.linked.22975
+   (local.set $11
+    (block $label$14.linked.22976 (result i32)
+     (local.set $6
+      (local.get $10)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$15.linked.22977
+   )
+  )
+  (block $label$16.linked.22978
+   (local.set $12
+    (local.get $6)
+   )
+   (block $label$17.linked.22979
+   )
+  )
+  (block $label$18.linked.22980
+   (local.set $13
+    (call $trimString_1904.linked.18573
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $trimString_1904.linked.18531)
+     )
+     (local.get $12)
+     (local.get $8)
+     (i32.const -2)
+    )
+   )
+   (block $label$19.linked.22981
+   )
+  )
+  (block $label$20.linked.22982
+   (local.set $14
+    (i32.sub
+     (local.get $8)
+     (local.get $13)
+    )
+   )
+   (block $label$21.linked.22983
+   )
+  )
+  (block $label$22.linked.22984
+   (local.set $15
+    (block $label$23.linked.22985 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $14)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $14)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$24.linked.22986
+   )
+  )
+  (block $label$25.linked.22987
+   (local.set $16
+    (i32.add
+     (local.get $15)
+     (i32.const 8)
+    )
+   )
+   (block $label$26.linked.22988
+   )
+  )
+  (block $label$27.linked.22989
+   (local.set $17
+    (local.get $6)
+   )
+   (block $label$28.linked.22990
+   )
+  )
+  (block $label$29.linked.22991
+   (local.set $18
+    (i32.sub
+     (local.get $8)
+     (local.get $13)
+    )
+   )
+   (block $label$30.linked.22992
+   )
+  )
+  (drop
+   (block $label$31.linked.22993 (result i32)
+    (memory.copy
+     (local.get $16)
+     (local.get $17)
+     (local.get $18)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block (result i32)
+   (local.set $22
+    (local.get $15)
+   )
+   (drop
+    (block $label$32.linked.22994 (result i32)
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $0)
+      )
+     )
+     (drop
+      (call $decRef_1332.linked.1445
+       (global.get $decRef_1332.linked.1425)
+       (local.get $1)
+      )
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (local.get $22)
+  )
+ )
+ (func $trim_1924.linked.18576 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i32)
+  (local $17 i32)
+  (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (local $22 i32)
+  (local $23 i32)
+  (local $24 i32)
+  (local $25 i32)
+  (local $26 i32)
+  (local $27 i64)
+  (local $28 f32)
+  (local $29 f64)
+  (block $label$1.linked.22995
+   (local.set $7
+    (local.get $1)
+   )
+   (block $label$2.linked.22996
+   )
+  )
+  (block $label$3.linked.22997
+   (local.set $8
+    (local.get $7)
+   )
+   (block $label$4.linked.22998
+   )
+  )
+  (block $label$5.linked.22999
+   (local.set $9
+    (local.get $8)
+   )
+   (block $label$6.linked.23000
+   )
+  )
+  (block $label$7.linked.23001
+   (local.set $10
+    (i32.load offset=4
+     (local.get $9)
+    )
+   )
+   (block $label$8.linked.23002
+   )
+  )
+  (block $label$9.linked.23003
+   (local.set $11
+    (local.get $8)
+   )
+   (block $label$10.linked.23004
+   )
+  )
+  (block $label$11.linked.23005
+   (local.set $12
+    (i32.add
+     (local.get $11)
+     (i32.const 8)
+    )
+   )
+   (block $label$12.linked.23006
+   )
+  )
+  (block $label$13.linked.23007
+   (local.set $13
+    (block $label$14.linked.23008 (result i32)
+     (local.set $8
+      (local.get $12)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (block $label$15.linked.23009
+   )
+  )
+  (block $label$16.linked.23010
+   (local.set $14
+    (local.get $8)
+   )
+   (block $label$17.linked.23011
+   )
+  )
+  (block $label$18.linked.23012
+   (local.set $15
+    (call $trimString_1904.linked.18573
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $trimString_1904.linked.18531)
+     )
+     (local.get $14)
+     (local.get $10)
+     (i32.const 2147483646)
+    )
+   )
+   (block $label$19.linked.23013
+   )
+  )
+  (block $label$20.linked.23014
+   (local.set $16
+    (select
+     (i32.const -2)
+     (i32.const 2147483646)
+     (i32.eq
+      (local.get $15)
+      (local.get $10)
+     )
+    )
+   )
+   (block $label$21.linked.23015
+   )
+  )
+  (drop
+   (if (result i32)
+    (i32.shr_u
+     (local.get $16)
+     (i32.const 31)
+    )
+    (block (result i32)
+     (block $label$23.linked.23016
+      (local.set $6
+       (block $label$24.linked.23017 (result i32)
+        (i32.store
+         (local.tee $2
+          (call $malloc_1264.linked.1440
+           (global.get $malloc_1264.linked.1430)
+           (i32.const 8)
+          )
+         )
+         (i32.const 1)
+        )
+        (i32.store offset=4
+         (local.get $2)
+         (i32.const 0)
+        )
+        (local.get $2)
+       )
+      )
+      (block $label$25.linked.23018
+      )
+     )
+     (block $label$26.linked.23019
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+     )
+     (return
+      (local.get $6)
+     )
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$28.linked.23020
+   (local.set $17
+    (local.get $8)
+   )
+   (block $label$29.linked.23021
+   )
+  )
+  (block $label$30.linked.23022
+   (local.set $18
+    (call $trimString_1904.linked.18573
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $trimString_1904.linked.18531)
+     )
+     (local.get $17)
+     (local.get $10)
+     (i32.const -2)
+    )
+   )
+   (block $label$31.linked.23023
+   )
+  )
+  (block $label$32.linked.23024
+   (local.set $19
+    (i32.sub
+     (local.get $10)
+     (local.get $15)
+    )
+   )
+   (block $label$33.linked.23025
+   )
+  )
+  (block $label$34.linked.23026
+   (local.set $20
+    (i32.sub
+     (local.get $19)
+     (local.get $18)
+    )
+   )
+   (block $label$35.linked.23027
+   )
+  )
+  (block $label$36.linked.23028
+   (local.set $21
+    (block $label$37.linked.23029 (result i32)
+     (i32.store
+      (local.tee $2
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.add
+         (local.get $20)
+         (i32.const 8)
+        )
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $2)
+      (local.get $20)
+     )
+     (local.get $2)
+    )
+   )
+   (block $label$38.linked.23030
+   )
+  )
+  (block $label$39.linked.23031
+   (local.set $22
+    (i32.add
+     (local.get $21)
+     (i32.const 8)
+    )
+   )
+   (block $label$40.linked.23032
+   )
+  )
+  (block $label$41.linked.23033
+   (local.set $23
+    (local.get $8)
+   )
+   (block $label$42.linked.23034
+   )
+  )
+  (block $label$43.linked.23035
+   (local.set $24
+    (i32.add
+     (local.get $23)
+     (local.get $15)
+    )
+   )
+   (block $label$44.linked.23036
+   )
+  )
+  (block $label$45.linked.23037
+   (local.set $25
+    (i32.sub
+     (local.get $10)
+     (local.get $15)
+    )
+   )
+   (block $label$46.linked.23038
+   )
+  )
+  (block $label$47.linked.23039
+   (local.set $26
+    (i32.sub
+     (local.get $25)
+     (local.get $18)
+    )
+   )
+   (block $label$48.linked.23040
+   )
+  )
+  (drop
+   (block $label$49.linked.23041 (result i32)
+    (memory.copy
+     (local.get $22)
+     (local.get $24)
+     (local.get $26)
+    )
+    (i32.const 1879048190)
+   )
+  )
+  (block $label$50.linked.23042
+   (local.set $5
+    (local.get $21)
+   )
+   (block $label$51.linked.23043
+   )
+  )
+  (block $label$52.linked.23044
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $1)
+    )
+   )
+  )
+  (return
+   (local.get $5)
+  )
+ )
+ (func $toAsciiLowercase_1931.linked.18577 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i64)
+  (local $17 f32)
+  (local $18 f64)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (block $label$1.linked.23045
+   (local.set $5
+    (call $explode_1549.linked.18546
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $explode_1549.linked.18509)
+     )
+     (local.get $1)
+    )
+   )
+   (block $label$2.linked.23046
+   )
+  )
+  (block $label$3.linked.23047
+   (local.set $6
+    (i32.or
+     (i32.shl
+      (i32.load offset=4
+       (local.get $5)
+      )
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$4.linked.23048
+   )
+  )
+  (block $label$5.linked.23049
+   (local.set $7
+    (i32.const 1)
+   )
+   (block $label$6.linked.23050
+   )
+  )
+  (block $label$7.linked.23051
+   (local.set $13
+    (block $label$8.linked.23052 (result i32)
+     (loop $label$9.linked.23053
+      (drop
+       (br_if $label$8.linked.23052
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$10.linked.23054 (result i32)
+           (block $label$11.linked.23055
+            (local.set $12
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (local.get $7)
+             )
+            )
+            (block $label$12.linked.23056
+            )
+           )
+           (call $<_3322.linked.9831
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $<_3322.linked.9650)
+            )
+            (local.get $12)
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $6)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$13.linked.23057
+       (drop
+        (block $label$14.linked.23058 (result i32)
+         (block $label$15.linked.23059
+          (local.set $8
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $7)
+           )
+          )
+          (block $label$16.linked.23060
+          )
+         )
+         (block $label$17.linked.23061
+          (local.set $9
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $7)
+           )
+          )
+          (block $label$18.linked.23062
+          )
+         )
+         (block $label$19.linked.23063
+          (local.set $14
+           (block $label$20.linked.23064 (result i32)
+            (local.set $3
+             (local.get $9)
+            )
+            (local.set $4
+             (local.get $5)
+            )
+            (block $label$21.linked.23065
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$24.linked.23066 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$26.linked.23067 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$29.linked.23068 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$30.linked.23069
+          )
+         )
+         (block $label$31.linked.23070
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $9)
+           )
+          )
+         )
+         (block $label$32.linked.23071
+          (local.set $15
+           (call $toAsciiLowercase_1405.linked.18124
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $toAsciiLowercase_1405.linked.18109)
+            )
+            (local.get $14)
+           )
+          )
+          (block $label$33.linked.23072
+          )
+         )
+         (block (result i32)
+          (local.set $20
+           (block $label$34.linked.23073 (result i32)
+            (local.set $3
+             (local.get $8)
+            )
+            (local.set $4
+             (local.get $5)
+            )
+            (block $label$35.linked.23074
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$38.linked.23075 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$40.linked.23076 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$43.linked.23077 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (local.set $4
+             (i32.add
+              (i32.shl
+               (local.get $3)
+               (i32.const 2)
+              )
+              (local.get $4)
+             )
+            )
+            (i32.store offset=8
+             (local.get $4)
+             (block (result i32)
+              (local.set $19
+               (local.get $15)
+              )
+              (drop
+               (call $decRef_1332.linked.1445
+                (global.get $decRef_1332.linked.1425)
+                (i32.load offset=8
+                 (local.get $4)
+                )
+               )
+              )
+              (local.get $19)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (drop
+           (block $label$44.linked.23078 (result i32)
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $8)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (local.get $20)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$45.linked.23079 (result i32)
+        (block $label$46.linked.23080
+         (local.set $10
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (local.get $7)
+          )
+         )
+         (block $label$47.linked.23081
+         )
+        )
+        (block $label$48.linked.23082
+         (local.set $11
+          (call $+_3507.linked.9869
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (global.get $+_3507.linked.9651)
+           )
+           (local.get $10)
+           (i32.const 3)
+          )
+         )
+         (block $label$49.linked.23083
+         )
+        )
+        (block $label$50.linked.23084 (result i32)
+         (local.set $7
+          (block (result i32)
+           (local.set $21
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $11)
+            )
+           )
+           (drop
+            (call $decRef_1332.linked.1445
+             (global.get $decRef_1332.linked.1425)
+             (local.get $7)
+            )
+           )
+           (local.get $21)
+          )
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$9.linked.23053)
+     )
+    )
+   )
+   (block $label$51.linked.23085
+   )
+  )
+  (block $label$52.linked.23086
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $6)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (block $label$53.linked.23087
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $implode_1551.linked.18547
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $implode_1551.linked.18515)
+    )
+    (local.get $5)
+   )
+  )
+ )
+ (func $toAsciiUppercase_1952.linked.18578 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (local $15 i32)
+  (local $16 i64)
+  (local $17 f32)
+  (local $18 f64)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
+  (block $label$1.linked.23088
+   (local.set $5
+    (call $explode_1549.linked.18546
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $explode_1549.linked.18509)
+     )
+     (local.get $1)
+    )
+   )
+   (block $label$2.linked.23089
+   )
+  )
+  (block $label$3.linked.23090
+   (local.set $6
+    (i32.or
+     (i32.shl
+      (i32.load offset=4
+       (local.get $5)
+      )
+      (i32.const 1)
+     )
+     (i32.const 1)
+    )
+   )
+   (block $label$4.linked.23091
+   )
+  )
+  (block $label$5.linked.23092
+   (local.set $7
+    (i32.const 1)
+   )
+   (block $label$6.linked.23093
+   )
+  )
+  (block $label$7.linked.23094
+   (local.set $13
+    (block $label$8.linked.23095 (result i32)
+     (loop $label$9.linked.23096
+      (drop
+       (br_if $label$8.linked.23095
+        (i32.const 1879048190)
+        (i32.eqz
+         (i32.shr_u
+          (block $label$10.linked.23097 (result i32)
+           (block $label$11.linked.23098
+            (local.set $12
+             (call $incRef_1273.linked.1442
+              (global.get $incRef_1273.linked.1429)
+              (local.get $7)
+             )
+            )
+            (block $label$12.linked.23099
+            )
+           )
+           (call $<_3322.linked.9831
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $<_3322.linked.9650)
+            )
+            (local.get $12)
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $6)
+            )
+           )
+          )
+          (i32.const 31)
+         )
+        )
+       )
+      )
+      (block $label$13.linked.23100
+       (drop
+        (block $label$14.linked.23101 (result i32)
+         (block $label$15.linked.23102
+          (local.set $8
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $7)
+           )
+          )
+          (block $label$16.linked.23103
+          )
+         )
+         (block $label$17.linked.23104
+          (local.set $9
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (local.get $7)
+           )
+          )
+          (block $label$18.linked.23105
+          )
+         )
+         (block $label$19.linked.23106
+          (local.set $14
+           (block $label$20.linked.23107 (result i32)
+            (local.set $3
+             (local.get $9)
+            )
+            (local.set $4
+             (local.get $5)
+            )
+            (block $label$21.linked.23108
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$24.linked.23109 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$26.linked.23110 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$29.linked.23111 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (i32.load offset=8
+              (i32.add
+               (i32.shl
+                (local.get $3)
+                (i32.const 2)
+               )
+               (local.get $4)
+              )
+             )
+            )
+           )
+          )
+          (block $label$30.linked.23112
+          )
+         )
+         (block $label$31.linked.23113
+          (drop
+           (call $decRef_1332.linked.1445
+            (global.get $decRef_1332.linked.1425)
+            (local.get $9)
+           )
+          )
+         )
+         (block $label$32.linked.23114
+          (local.set $15
+           (call $toAsciiUppercase_1407.linked.18125
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (global.get $toAsciiUppercase_1407.linked.18107)
+            )
+            (local.get $14)
+           )
+          )
+          (block $label$33.linked.23115
+          )
+         )
+         (block (result i32)
+          (local.set $20
+           (block $label$34.linked.23116 (result i32)
+            (local.set $3
+             (local.get $8)
+            )
+            (local.set $4
+             (local.get $5)
+            )
+            (block $label$35.linked.23117
+             (if
+              (i32.eqz
+               (i32.and
+                (local.get $3)
+                (i32.const 1)
+               )
+              )
+              (block
+               (local.set $3
+                (i32.load offset=4
+                 (local.get $3)
+                )
+               )
+               (drop
+                (if (result i32)
+                 (i32.or
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 2)
+                  )
+                  (i32.eq
+                   (local.get $3)
+                   (i32.const 4)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$38.linked.23118 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 67)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                 (call $panicWithException_1168.linked.654
+                  (global.get $panicWithException_1168.linked.644)
+                  (block $label$40.linked.23119 (result i32)
+                   (i32.store
+                    (local.tee $2
+                     (call $malloc_1264.linked.1440
+                      (global.get $malloc_1264.linked.1430)
+                      (i32.const 20)
+                     )
+                    )
+                    (i32.const 2)
+                   )
+                   (i32.store offset=4
+                    (local.get $2)
+                    (i32.const 1)
+                   )
+                   (i32.store offset=8
+                    (local.get $2)
+                    (i32.const 5)
+                   )
+                   (i32.store offset=12
+                    (local.get $2)
+                    (i32.const 69)
+                   )
+                   (i32.store offset=16
+                    (local.get $2)
+                    (i32.const 0)
+                   )
+                   (local.get $2)
+                  )
+                 )
+                )
+               )
+              )
+             )
+             (local.set $3
+              (i32.shr_s
+               (local.get $3)
+               (i32.const 1)
+              )
+             )
+             (if
+              (i32.lt_s
+               (local.get $3)
+               (i32.const 0)
+              )
+              (local.set $3
+               (i32.add
+                (local.get $3)
+                (i32.load offset=4
+                 (local.get $4)
+                )
+               )
+              )
+             )
+             (if
+              (i32.le_u
+               (i32.load offset=4
+                (local.get $4)
+               )
+               (local.get $3)
+              )
+              (drop
+               (call $panicWithException_1168.linked.654
+                (global.get $panicWithException_1168.linked.644)
+                (block $label$43.linked.23120 (result i32)
+                 (i32.store
+                  (local.tee $2
+                   (call $malloc_1264.linked.1440
+                    (global.get $malloc_1264.linked.1430)
+                    (i32.const 20)
+                   )
+                  )
+                  (i32.const 2)
+                 )
+                 (i32.store offset=4
+                  (local.get $2)
+                  (i32.const 1)
+                 )
+                 (i32.store offset=8
+                  (local.get $2)
+                  (i32.const 5)
+                 )
+                 (i32.store offset=12
+                  (local.get $2)
+                  (i32.const 67)
+                 )
+                 (i32.store offset=16
+                  (local.get $2)
+                  (i32.const 0)
+                 )
+                 (local.get $2)
+                )
+               )
+              )
+             )
+            )
+            (local.set $4
+             (i32.add
+              (i32.shl
+               (local.get $3)
+               (i32.const 2)
+              )
+              (local.get $4)
+             )
+            )
+            (i32.store offset=8
+             (local.get $4)
+             (block (result i32)
+              (local.set $19
+               (local.get $15)
+              )
+              (drop
+               (call $decRef_1332.linked.1445
+                (global.get $decRef_1332.linked.1425)
+                (i32.load offset=8
+                 (local.get $4)
+                )
+               )
+              )
+              (local.get $19)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (drop
+           (block $label$44.linked.23121 (result i32)
+            (drop
+             (call $decRef_1332.linked.1445
+              (global.get $decRef_1332.linked.1425)
+              (local.get $8)
+             )
+            )
+            (i32.const 1879048190)
+           )
+          )
+          (local.get $20)
+         )
+        )
+       )
+      )
+      (drop
+       (block $label$45.linked.23122 (result i32)
+        (block $label$46.linked.23123
+         (local.set $10
+          (call $incRef_1273.linked.1442
+           (global.get $incRef_1273.linked.1429)
+           (local.get $7)
+          )
+         )
+         (block $label$47.linked.23124
+         )
+        )
+        (block $label$48.linked.23125
+         (local.set $11
+          (call $+_3507.linked.9869
+           (call $incRef_1273.linked.1442
+            (global.get $incRef_1273.linked.1429)
+            (global.get $+_3507.linked.9651)
+           )
+           (local.get $10)
+           (i32.const 3)
+          )
+         )
+         (block $label$49.linked.23126
+         )
+        )
+        (block $label$50.linked.23127 (result i32)
+         (local.set $7
+          (block (result i32)
+           (local.set $21
+            (call $incRef_1273.linked.1442
+             (global.get $incRef_1273.linked.1429)
+             (local.get $11)
+            )
+           )
+           (drop
+            (call $decRef_1332.linked.1445
+             (global.get $decRef_1332.linked.1425)
+             (local.get $7)
+            )
+           )
+           (local.get $21)
+          )
+         )
+         (i32.const 1879048190)
+        )
+       )
+      )
+      (br $label$9.linked.23096)
+     )
+    )
+   )
+   (block $label$51.linked.23128
+   )
+  )
+  (block $label$52.linked.23129
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $6)
+    )
+   )
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $7)
+    )
+   )
+  )
+  (block $label$53.linked.23130
+   (drop
+    (call $decRef_1332.linked.1445
+     (global.get $decRef_1332.linked.1425)
+     (local.get $0)
+    )
+   )
+  )
+  (return
+   (call $implode_1551.linked.18547
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $implode_1551.linked.18515)
+    )
+    (local.get $5)
+   )
+  )
+ )
+ (func $_gmain.linked.18579 (result i32)
+  (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i64)
+  (local $7 f32)
+  (local $8 f64)
+  (block $label$1.linked.23131
+   (global.set $concat_4017.linked.15753
+    (block $label$2.linked.23132 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 6)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 3)
+     )
+     (i32.store offset=8
+      (local.get $0)
+      (i32.add
+       (global.get $gimport$0.linked.18484)
+       (i32.const 0)
+      )
+     )
+     (i32.store offset=12
+      (local.get $0)
+      (i32.const 0)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$3.linked.23133
+    (local.set $0
+     (global.get $concat_4017.linked.15753)
+    )
+   )
+  )
+  (block $label$4.linked.23134
+   (global.set $concat_1402.linked.18512
+    (call $incRef_1273.linked.1442
+     (global.get $incRef_1273.linked.1429)
+     (global.get $concat_4017.linked.15753)
+    )
+   )
+   (block $label$5.linked.23135
+   )
+  )
+  (block $label$6.linked.23136
+   (global.set $length_1403.linked.18522
+    (i32.const 0)
+   )
+   (block $label$7.linked.23137
+   )
+  )
+  (block $label$8.linked.23138
+   (global.set $byteLength_1471.linked.18495
+    (i32.const 0)
+   )
+   (block $label$9.linked.23139
+   )
+  )
+  (block $label$10.linked.23140
+   (global.set $isEmpty_1474.linked.18517
+    (i32.const 0)
+   )
+   (block $label$11.linked.23141
+   )
+  )
+  (block $label$12.linked.23142
+   (global.set $indexOf_1477.linked.18514
+    (i32.const 0)
+   )
+   (block $label$13.linked.23143
+   )
+  )
+  (block $label$14.linked.23144
+   (global.set $lastIndexOf_1496.linked.18516
+    (i32.const 0)
+   )
+   (block $label$15.linked.23145
+   )
+  )
+  (block $label$16.linked.23146
+   (global.set $getCodePoint_1509.linked.18534
+    (i32.const 0)
+   )
+   (block $label$17.linked.23147
+   )
+  )
+  (block $label$18.linked.23148
+   (global.set $charAtHelp_1518.linked.18494
+    (i32.const 0)
+   )
+   (block $label$19.linked.23149
+   )
+  )
+  (block $label$20.linked.23150
+   (global.set $charCodeAt_1529.linked.18493
+    (i32.const 0)
+   )
+   (block $label$21.linked.23151
+   )
+  )
+  (block $label$22.linked.23152
+   (global.set $charAt_1532.linked.18492
+    (i32.const 0)
+   )
+   (block $label$23.linked.23153
+   )
+  )
+  (block $label$24.linked.23154
+   (global.set $explodeHelp_1535.linked.18506
+    (i32.const 0)
+   )
+   (block $label$25.linked.23155
+   )
+  )
+  (block $label$26.linked.23156
+   (global.set $explode_1549.linked.18509
+    (i32.const 0)
+   )
+   (block $label$27.linked.23157
+   )
+  )
+  (block $label$28.linked.23158
+   (global.set $implode_1551.linked.18515
+    (i32.const 0)
+   )
+   (block $label$29.linked.23159
+   )
+  )
+  (block $label$30.linked.23160
+   (global.set $reverse_1567.linked.18520
+    (i32.const 0)
+   )
+   (block $label$31.linked.23161
+   )
+  )
+  (block $label$32.linked.23162
+   (global.set $split_1576.linked.18523
+    (i32.const 0)
+   )
+   (block $label$33.linked.23163
+   )
+  )
+  (block $label$34.linked.23164
+   (global.set $slice_1596.linked.18533
+    (i32.const 0)
+   )
+   (block $label$35.linked.23165
+   )
+  )
+  (block $label$36.linked.23166
+   (global.set $contains_1615.linked.18496
+    (i32.const 0)
+   )
+   (block $label$37.linked.23167
+   )
+  )
+  (block $label$38.linked.23168
+   (global.set $startsWith_1628.linked.18526
+    (i32.const 0)
+   )
+   (block $label$39.linked.23169
+   )
+  )
+  (block $label$40.linked.23170
+   (global.set $endsWith_1637.linked.18505
+    (i32.const 0)
+   )
+   (block $label$41.linked.23171
+   )
+  )
+  (block $label$42.linked.23172
+   (global.set $replaceFirst_1646.linked.18519
+    (i32.const 0)
+   )
+   (block $label$43.linked.23173
+   )
+  )
+  (block $label$44.linked.23174
+   (global.set $replaceLast_1661.linked.18521
+    (i32.const 0)
+   )
+   (block $label$45.linked.23175
+   )
+  )
+  (block $label$46.linked.23176
+   (global.set $replaceAll_1677.linked.18518
+    (i32.const 0)
+   )
+   (block $label$47.linked.23177
+   )
+  )
+  (block $label$48.linked.23178
+   (local.set $3
+    (block $label$49.linked.23179 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 5)
+     )
+     (i64.store offset=8
+      (local.get $0)
+      (i64.const 500135195763)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$50.linked.23180
+   )
+  )
+  (block $label$51.linked.23181
+   (local.set $4
+    (block $label$52.linked.23182 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 4)
+     )
+     (i64.store offset=8
+      (local.get $0)
+      (i64.const 1702521203)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$53.linked.23183
+   )
+  )
+  (block $label$54.linked.23184
+   (local.set $5
+    (block $label$55.linked.23185 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 16)
+       )
+      )
+      (i32.const 1)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 6)
+     )
+     (i64.store offset=8
+      (local.get $0)
+      (i64.const 127979076609647)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$56.linked.23186
+   )
+  )
+  (block $label$57.linked.23187
+   (global.set $grainToWasmNumber_1702.linked.18513
+    (i32.const 0)
+   )
+   (block $label$58.linked.23188
+   )
+  )
+  (block $label$59.linked.23189
+   (global.set $utf16Length_1714.linked.18530
+    (i32.const 0)
+   )
+   (block $label$60.linked.23190
+   )
+  )
+  (block $label$61.linked.23191
+   (global.set $encodedLength_1724.linked.18510
+    (i32.const 0)
+   )
+   (block $label$62.linked.23192
+   )
+  )
+  (block $label$63.linked.23193
+   (global.set $_BYTES_SIZE_OFFSET_1727.linked.18490
+    (i32.const 4)
+   )
+   (block $label$64.linked.23194
+   )
+  )
+  (block $label$65.linked.23195
+   (global.set $_BYTES_OFFSET_1728.linked.18489
+    (i32.const 8)
+   )
+   (block $label$66.linked.23196
+   )
+  )
+  (block $label$67.linked.23197
+   (global.set $encodeAtHelp_1729.linked.18504
+    (block $label$68.linked.23198 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 20)
+       )
+      )
+      (i32.const 6)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 6)
+     )
+     (i32.store offset=8
+      (local.get $0)
+      (i32.const -1)
+     )
+     (i32.store offset=12
+      (local.get $0)
+      (i32.const 1)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$69.linked.23199
+    (local.set $0
+     (global.get $encodeAtHelp_1729.linked.18504)
+    )
+    (i32.store offset=16
+     (local.get $0)
+     (local.get $5)
+    )
+   )
+  )
+  (block $label$70.linked.23200
+   (global.set $encodeAt_1755.linked.18511
+    (i32.const 0)
+   )
+   (block $label$71.linked.23201
+   )
+  )
+  (block $label$72.linked.23202
+   (global.set $encodeHelp_1763.linked.18503
+    (i32.const 0)
+   )
+   (block $label$73.linked.23203
+   )
+  )
+  (block $label$74.linked.23204
+   (global.set $encode_1769.linked.18500
+    (i32.const 0)
+   )
+   (block $label$75.linked.23205
+   )
+  )
+  (block $label$76.linked.23206
+   (global.set $writeUtf8CodePoint_1775.linked.18529
+    (i32.const 0)
+   )
+   (block $label$77.linked.23207
+   )
+  )
+  (block $label$78.linked.23208
+   (global.set $bytesHaveBom_1787.linked.18491
+    (i32.const 0)
+   )
+   (block $label$79.linked.23209
+   )
+  )
+  (block $label$80.linked.23210
+   (global.set $decodedLength_1794.linked.18501
+    (i32.const 0)
+   )
+   (block $label$81.linked.23211
+   )
+  )
+  (block $label$82.linked.23212
+   (global.set $decodeRangeHelp_1829.linked.18499
+    (block $label$83.linked.23213 (result i32)
+     (i32.store
+      (local.tee $0
+       (call $malloc_1264.linked.1440
+        (global.get $malloc_1264.linked.1430)
+        (i32.const 24)
+       )
+      )
+      (i32.const 6)
+     )
+     (i32.store offset=4
+      (local.get $0)
+      (i32.const 6)
+     )
+     (i32.store offset=8
+      (local.get $0)
+      (i32.const -1)
+     )
+     (i32.store offset=12
+      (local.get $0)
+      (i32.const 2)
+     )
+     (local.get $0)
+    )
+   )
+   (block $label$84.linked.23214
+    (local.set $0
+     (global.get $decodeRangeHelp_1829.linked.18499)
+    )
+    (i32.store offset=16
+     (local.get $0)
+     (local.get $3)
+    )
+    (i32.store offset=20
+     (local.get $0)
+     (local.get $4)
+    )
+   )
+  )
+  (block $label$85.linked.23215
+   (global.set $decodeRange_1862.linked.18502
+    (i32.const 0)
+   )
+   (block $label$86.linked.23216
+   )
+  )
+  (block $label$87.linked.23217
+   (global.set $decodeHelp_1870.linked.18497
+    (i32.const 0)
+   )
+   (block $label$88.linked.23218
+   )
+  )
+  (block $label$89.linked.23219
+   (global.set $decode_1876.linked.18498
+    (i32.const 0)
+   )
+   (block $label$90.linked.23220
+   )
+  )
+  (block $label$91.linked.23221
+   (global.set $forEachCodePoint_1882.linked.18508
+    (i32.const 0)
+   )
+   (block $label$92.linked.23222
+   )
+  )
+  (block $label$93.linked.23223
+   (global.set $forEachCodePointi_1893.linked.18507
+    (i32.const 0)
+   )
+   (block $label$94.linked.23224
+   )
+  )
+  (block $label$95.linked.23225
+   (global.set $trimString_1904.linked.18531
+    (i32.const 0)
+   )
+   (block $label$96.linked.23226
+   )
+  )
+  (block $label$97.linked.23227
+   (global.set $trimStart_1912.linked.18527
+    (i32.const 0)
+   )
+   (block $label$98.linked.23228
+   )
+  )
+  (block $label$99.linked.23229
+   (global.set $trimEnd_1918.linked.18528
+    (i32.const 0)
+   )
+   (block $label$100.linked.23230
+   )
+  )
+  (block $label$101.linked.23231
+   (global.set $trim_1924.linked.18532
+    (i32.const 0)
+   )
+   (block $label$102.linked.23232
+   )
+  )
+  (block $label$103.linked.23233
+   (global.set $toAsciiLowercase_1931.linked.18525
+    (i32.const 0)
+   )
+   (block $label$104.linked.23234
+   )
+  )
+  (block $label$105.linked.23235
+   (global.set $toAsciiUppercase_1952.linked.18524
+    (i32.const 0)
+   )
+   (block $label$106.linked.23236
+   )
+  )
+  (i32.const 1879048190)
+ )
+ (func $_start.linked.18580
+  (drop
+   (call $_gmain.linked.18579)
+  )
+ )
+ (func $log_1500.linked.23249 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i64)
+  (local $8 f32)
+  (local $9 f64)
+  (block $closure_elements.3.linked.23255 (result i32)
+   (block $compile_block.2.linked.23256 (result i32)
+    (call $wimport_http_handler_log_1568.linked.23248
      (local.get $1)
      (local.get $2)
      (local.get $3)
@@ -123061,29 +158164,254 @@
    )
   )
  )
- (func $handle_request_1393.linked.18101 (param $0 i32) (result i64)
+ (func $makeWatString_1501.linked.23250 (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i64)
+  (local $6 f32)
+  (local $7 f64)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (block $compile_block.16.linked.23257 (result i32)
+   (block $compile_store.5.linked.23258
+    (local.set $8
+     (call $byteLength_1471.linked.18537
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $byteLength_1471.linked.18495)
+      )
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (local.get $1)
+      )
+     )
+    )
+    (block $do_backpatches.4.linked.23259
+    )
+   )
+   (block $compile_store.7.linked.23260
+    (local.set $9
+     (local.get $1)
+    )
+    (block $do_backpatches.6.linked.23261
+    )
+   )
+   (block $compile_store.9.linked.23262
+    (local.set $10
+     (i32.add
+      (local.get $9)
+      (i32.const 8)
+     )
+    )
+    (block $do_backpatches.8.linked.23263
+    )
+   )
+   (block $compile_store.11.linked.23264
+    (local.set $11
+     (local.get $8)
+    )
+    (block $do_backpatches.10.linked.23265
+    )
+   )
+   (block $compile_store.13.linked.23266
+    (local.set $12
+     (i32.add
+      (local.get $11)
+      (i32.const 8)
+     )
+    )
+    (block $do_backpatches.12.linked.23267
+    )
+   )
+   (tuple.extract 0
+    (tuple.make
+     (block $allocate_tuple.15.linked.23268 (result i32)
+      (i32.store
+       (local.tee $2
+        (call $malloc_1264.linked.1440
+         (global.get $malloc_1264.linked.1430)
+         (i32.const 16)
+        )
+       )
+       (i32.const 7)
+      )
+      (i32.store offset=4
+       (local.get $2)
+       (i32.const 2)
+      )
+      (i32.store offset=8
+       (local.get $2)
+       (local.get $10)
+      )
+      (i32.store offset=12
+       (local.get $2)
+       (local.get $12)
+      )
+      (local.get $2)
+     )
+     (block $cleanup.14.linked.23269 (result i32)
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $0)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $1)
+       )
+      )
+      (drop
+       (call $decRef_1332.linked.1445
+        (global.get $decRef_1332.linked.1425)
+        (local.get $8)
+       )
+      )
+      (i32.const 1879048190)
+     )
+    )
+   )
+  )
+ )
+ (func $handle_request_1534.linked.23251 (param $0 i32) (result i64)
   (local $1 i32)
   (local $2 i32)
   (local $3 i32)
   (local $4 i64)
   (local $5 f32)
   (local $6 f64)
-  (block $compile_block.5.linked.18107 (result i64)
-   (drop
-    (call $log_1392.linked.18100
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (block $compile_block.34.linked.23270 (result i64)
+   (block $compile_store.19.linked.23271
+    (local.set $7
+     (block $allocate_string.17.linked.23272 (result i32)
+      (i32.store
+       (local.tee $1
+        (call $malloc_1264.linked.1440
+         (global.get $malloc_1264.linked.1430)
+         (i32.const 24)
+        )
+       )
+       (i32.const 1)
+      )
+      (i32.store offset=4
+       (local.get $1)
+       (i32.const 11)
+      )
+      (i64.store offset=8
+       (local.get $1)
+       (i64.const 8031924123371070824)
+      )
+      (i64.store offset=16
+       (local.get $1)
+       (i64.const 6581362)
+      )
+      (local.get $1)
+     )
+    )
+    (block $do_backpatches.18.linked.23273
+    )
+   )
+   (block $compile_store.21.linked.23274
+    (local.set $8
+     (call $makeWatString_1501.linked.23250
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $makeWatString_1501.linked.23240)
+      )
+      (local.get $7)
+     )
+    )
+    (block $do_backpatches.20.linked.23275
+    )
+   )
+   (block $compile_store.23.linked.23276
+    (local.set $11
+     (i32.const 0)
+    )
+    (block $do_backpatches.22.linked.23277
+    )
+   )
+   (block $compile_store.25.linked.23278
+    (local.set $12
+     (i32.const 0)
+    )
+    (block $do_backpatches.24.linked.23279
+    )
+   )
+   (block $compile_store.27.linked.23280
+    (local.set $9
      (call $incRef_1273.linked.1442
       (global.get $incRef_1273.linked.1429)
-      (global.get $log_1392.linked.18091)
+      (i32.load offset=8
+       (local.get $8)
+      )
+     )
+    )
+    (block $do_backpatches.26.linked.23281
+    )
+   )
+   (block $compile_store.29.linked.23282
+    (local.set $10
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (i32.load offset=12
+       (local.get $8)
+      )
+     )
+    )
+    (block $do_backpatches.28.linked.23283
+    )
+   )
+   (block $cleanup.30.linked.23284
+    (drop
+     (call $decRef_1332.linked.1445
+      (global.get $decRef_1332.linked.1425)
+      (local.get $8)
+     )
+    )
+   )
+   (drop
+    (block $compile_set.31.linked.23285 (result i32)
+     (local.set $12
+      (local.get $10)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (drop
+    (block $compile_set.32.linked.23286 (result i32)
+     (local.set $11
+      (local.get $9)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (drop
+    (call $log_1500.linked.23249
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $log_1500.linked.23241)
      )
      (i32.const 0)
-     (i32.const 0)
-     (i32.const 0)
+     (local.get $11)
+     (local.get $12)
     )
    )
    (tuple.extract 0
     (tuple.make
      (i64.const 1)
-     (block $cleanup.4.linked.18108 (result i32)
+     (block $cleanup.33.linked.23287 (result i32)
       (drop
        (call $decRef_1332.linked.1445
         (global.get $decRef_1332.linked.1425)
@@ -123096,26 +158424,137 @@
    )
   )
  )
- (func $handle_response_1395.linked.18102 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+ (func $handle_response_1537.linked.23252 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
   (local $3 i32)
   (local $4 i32)
   (local $5 i32)
   (local $6 i64)
   (local $7 f32)
   (local $8 f64)
-  (block $compile_block.7.linked.18109
-   (drop
-    (call $log_1392.linked.18100
-     (call $incRef_1273.linked.1442
-      (global.get $incRef_1273.linked.1429)
-      (global.get $log_1392.linked.18091)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 i32)
+  (local $12 i32)
+  (local $13 i32)
+  (local $14 i32)
+  (block $compile_block.52.linked.23288
+   (block $compile_store.37.linked.23289
+    (local.set $9
+     (block $allocate_string.35.linked.23290 (result i32)
+      (i32.store
+       (local.tee $3
+        (call $malloc_1264.linked.1440
+         (global.get $malloc_1264.linked.1430)
+         (i32.const 24)
+        )
+       )
+       (i32.const 1)
+      )
+      (i32.store offset=4
+       (local.get $3)
+       (i32.const 13)
+      )
+      (i64.store offset=8
+       (local.get $3)
+       (i64.const 7021991902587220583)
+      )
+      (i64.store offset=16
+       (local.get $3)
+       (i64.const 452718523257)
+      )
+      (local.get $3)
      )
-     (i32.const 1)
-     (i32.const 0)
-     (i32.const 0)
+    )
+    (block $do_backpatches.36.linked.23291
     )
    )
-   (block $cleanup.6.linked.18110
+   (block $compile_store.39.linked.23292
+    (local.set $10
+     (call $makeWatString_1501.linked.23250
+      (call $incRef_1273.linked.1442
+       (global.get $incRef_1273.linked.1429)
+       (global.get $makeWatString_1501.linked.23240)
+      )
+      (local.get $9)
+     )
+    )
+    (block $do_backpatches.38.linked.23293
+    )
+   )
+   (block $compile_store.41.linked.23294
+    (local.set $13
+     (i32.const 0)
+    )
+    (block $do_backpatches.40.linked.23295
+    )
+   )
+   (block $compile_store.43.linked.23296
+    (local.set $14
+     (i32.const 0)
+    )
+    (block $do_backpatches.42.linked.23297
+    )
+   )
+   (block $compile_store.45.linked.23298
+    (local.set $11
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (i32.load offset=8
+       (local.get $10)
+      )
+     )
+    )
+    (block $do_backpatches.44.linked.23299
+    )
+   )
+   (block $compile_store.47.linked.23300
+    (local.set $12
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (i32.load offset=12
+       (local.get $10)
+      )
+     )
+    )
+    (block $do_backpatches.46.linked.23301
+    )
+   )
+   (block $cleanup.48.linked.23302
+    (drop
+     (call $decRef_1332.linked.1445
+      (global.get $decRef_1332.linked.1425)
+      (local.get $10)
+     )
+    )
+   )
+   (drop
+    (block $compile_set.49.linked.23303 (result i32)
+     (local.set $14
+      (local.get $12)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (drop
+    (block $compile_set.50.linked.23304 (result i32)
+     (local.set $13
+      (local.get $11)
+     )
+     (i32.const 1879048190)
+    )
+   )
+   (drop
+    (call $log_1500.linked.23249
+     (call $incRef_1273.linked.1442
+      (global.get $incRef_1273.linked.1429)
+      (global.get $log_1500.linked.23241)
+     )
+     (i32.const 1)
+     (local.get $13)
+     (local.get $14)
+    )
+   )
+   (block $cleanup.51.linked.23305
     (drop
      (call $decRef_1332.linked.1445
       (global.get $decRef_1332.linked.1425)
@@ -123128,17 +158567,17 @@
    )
   )
  )
- (func $_gmain.linked.18103 (result i32)
+ (func $_gmain.linked.23253 (result i32)
   (local $0 i32)
   (local $1 i32)
   (local $2 i32)
   (local $3 i64)
   (local $4 f32)
   (local $5 f64)
-  (block $compile_block.15.linked.18111 (result i32)
-   (block $compile_store.10.linked.18112
-    (global.set $log_1392.linked.18091
-     (block $allocate_closure.8.linked.18113 (result i32)
+  (block $compile_block.62.linked.23306 (result i32)
+   (block $compile_store.55.linked.23307
+    (global.set $log_1500.linked.23241
+     (block $allocate_closure.53.linked.23308 (result i32)
       (i32.store
        (local.tee $0
         (call $malloc_1264.linked.1440
@@ -123163,50 +158602,57 @@
       (local.get $0)
      )
     )
-    (block $do_backpatches.9.linked.18114
+    (block $do_backpatches.54.linked.23309
      (local.set $0
-      (global.get $log_1392.linked.18091)
+      (global.get $log_1500.linked.23241)
      )
     )
    )
-   (block $compile_store.12.linked.18115
-    (global.set $handle_request_1393.linked.18090
+   (block $compile_store.57.linked.23310
+    (global.set $makeWatString_1501.linked.23240
      (i32.const 0)
     )
-    (block $do_backpatches.11.linked.18116
+    (block $do_backpatches.56.linked.23311
     )
    )
-   (block $compile_store.14.linked.18117
-    (global.set $handle_response_1395.linked.18092
+   (block $compile_store.59.linked.23312
+    (global.set $handle_request_1534.linked.23239
      (i32.const 0)
     )
-    (block $do_backpatches.13.linked.18118
+    (block $do_backpatches.58.linked.23313
+    )
+   )
+   (block $compile_store.61.linked.23314
+    (global.set $handle_response_1537.linked.23238
+     (i32.const 0)
+    )
+    (block $do_backpatches.60.linked.23315
     )
    )
    (i32.const 1879048190)
   )
  )
- (func $_start.linked.18104
+ (func $_start.linked.23254
   (drop
-   (call $_gmain.linked.18103)
+   (call $_gmain.linked.23253)
   )
  )
  (func $log (param $0 i32) (param $1 i32) (param $2 i32)
   (block $closure_incref
    (if
     (i32.ne
-     (global.get $log_1392.linked.18091)
+     (global.get $log_1500.linked.23241)
      (i32.const 0)
     )
     (i32.store
      (i32.sub
-      (global.get $log_1392.linked.18091)
+      (global.get $log_1500.linked.23241)
       (i32.const 8)
      )
      (i32.add
       (i32.load
        (i32.sub
-        (global.get $log_1392.linked.18091)
+        (global.get $log_1500.linked.23241)
         (i32.const 8)
        )
       )
@@ -123215,8 +158661,8 @@
     )
    )
    (drop
-    (call $log_1392.linked.18100
-     (global.get $log_1392.linked.18091)
+    (call $log_1500.linked.23249
+     (global.get $log_1500.linked.23241)
      (local.get $0)
      (local.get $1)
      (local.get $2)
@@ -123228,18 +158674,18 @@
   (block $closure_incref (result i64)
    (if
     (i32.ne
-     (global.get $handle_request_1393.linked.18090)
+     (global.get $handle_request_1534.linked.23239)
      (i32.const 0)
     )
     (i32.store
      (i32.sub
-      (global.get $handle_request_1393.linked.18090)
+      (global.get $handle_request_1534.linked.23239)
       (i32.const 8)
      )
      (i32.add
       (i32.load
        (i32.sub
-        (global.get $handle_request_1393.linked.18090)
+        (global.get $handle_request_1534.linked.23239)
         (i32.const 8)
        )
       )
@@ -123247,8 +158693,8 @@
      )
     )
    )
-   (call $handle_request_1393.linked.18101
-    (global.get $handle_request_1393.linked.18090)
+   (call $handle_request_1534.linked.23251
+    (global.get $handle_request_1534.linked.23239)
    )
   )
  )
@@ -123256,18 +158702,18 @@
   (block $closure_incref
    (if
     (i32.ne
-     (global.get $handle_response_1395.linked.18092)
+     (global.get $handle_response_1537.linked.23238)
      (i32.const 0)
     )
     (i32.store
      (i32.sub
-      (global.get $handle_response_1395.linked.18092)
+      (global.get $handle_response_1537.linked.23238)
       (i32.const 8)
      )
      (i32.add
       (i32.load
        (i32.sub
-        (global.get $handle_response_1395.linked.18092)
+        (global.get $handle_response_1537.linked.23238)
         (i32.const 8)
        )
       )
@@ -123276,16 +158722,19 @@
     )
    )
    (drop
-    (call $handle_response_1395.linked.18102
-     (global.get $handle_response_1395.linked.18092)
+    (call $handle_response_1537.linked.23252
+     (global.get $handle_response_1537.linked.23238)
      (local.get $0)
      (local.get $1)
     )
    )
   )
  )
- (func $_start.linked.18120
-  (block $start.linked.18121
+ (func $_start.linked.23317
+  (block $start.linked.23318
+   (drop
+    (call $_gmain.linked.31)
+   )
    (drop
     (call $_gmain.linked.120)
    )
@@ -123299,7 +158748,43 @@
     (call $_gmain.linked.1446)
    )
    (drop
-    (call $_gmain.linked.18103)
+    (call $_gmain.linked.1900)
+   )
+   (drop
+    (call $_gmain.linked.2323)
+   )
+   (drop
+    (call $_gmain.linked.6154)
+   )
+   (drop
+    (call $_gmain.linked.6417)
+   )
+   (drop
+    (call $_gmain.linked.9881)
+   )
+   (drop
+    (call $_gmain.linked.14917)
+   )
+   (drop
+    (call $_gmain.linked.15347)
+   )
+   (drop
+    (call $_gmain.linked.15820)
+   )
+   (drop
+    (call $_gmain.linked.17974)
+   )
+   (drop
+    (call $_gmain.linked.18126)
+   )
+   (drop
+    (call $_gmain.linked.18394)
+   )
+   (drop
+    (call $_gmain.linked.18579)
+   )
+   (drop
+    (call $_gmain.linked.23253)
    )
   )
  )

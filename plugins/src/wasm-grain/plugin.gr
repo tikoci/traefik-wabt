@@ -4,6 +4,8 @@ from "runtime/unsafe/wasmi32" include WasmI32
 from "runtime/unsafe/wasmi64" include WasmI64
 from "runtime/unsafe/memory" include Memory
 from "runtime/dataStructures" include DataStructures as DS
+from "string" include String
+use WasmI32.{ (+) }
 
 @unsafe
 let log_level_debug = -1n 
@@ -21,15 +23,24 @@ provide foreign wasm log: (
   WasmI32, WasmI32
 ) -> Void from "http_handler" 
 
+
+@unsafe
+let makeWatString = (str: String) => {
+   let len = String.byteLength(str)
+   (WasmI32.fromGrain(str)+8n, WasmI32.fromGrain(len)+8n) 
+}
+
 @unsafe
 let handle_request = () => {
-   log(log_level_info, 0n, 0n)
+   let (msg, len) = makeWatString("hello world")
+   log(log_level_info, msg, len)
    1N
 }
 
 @unsafe
 let handle_response = (high: WasmI32, low: WasmI32) => {
-   log(log_level_warn, 0n, 0n)
+   let (msg, len) = makeWatString("grain says hi")
+   log(log_level_warn, msg, len)
    return 
 }
 
