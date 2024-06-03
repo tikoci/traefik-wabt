@@ -1,0 +1,26 @@
+
+
+ifneq (,$(wildcard ./.env))
+    include .env
+    export
+endif
+
+ROS_SSH ?= admin@192.168.88.1
+ROS_PATH ?= raid1-part1/dev-traefik-wasm
+ROS_IMAGE_PATH ?= images
+ROS_PLUGIN_PATH ?= wasmtest
+
+scp-tars:
+	scp *.tar $(ROS_SSH):/$(ROS_PATH)-$(ROS_IMAGE_PATH)
+
+scp-wasm:
+	scp -r plugins/src/* $(ROS_SSH):/$(ROS_PATH)-$(ROS_PLUGIN_PATH)/
+
+proxy-restart:
+	ssh $(ROS_SSH) '$proxyrestart'
+
+proxy-tail:
+	ssh $(ROS_SSH) '$proxytail'
+
+proxy-sh:
+	ssh $(ROS_SSH) '$proxysh'
