@@ -54,8 +54,8 @@ jobs:
     #   with:
     #     username: ${{ secrets.DOCKERHUB_USERNAME }}
     #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-    #     repository: ammo74/netinstall
-    #     short-description: "RouterOS /container for running netinstall to flash Mikrotik devices on ARM/ARM64/X86"
+    #     repository: ammo74/traefik-wabt
+    #     short-description: "RouterOS /container for running traefik-wabt to flash Mikrotik devices on ARM/ARM64/X86"
     - 
       name: Build image and push image to ghcr.io
       uses: docker/build-push-action@v5
@@ -67,7 +67,7 @@ jobs:
         platforms: ${{ env.PLATFORMS }}
         tags: |
           ghcr.io/${{ github.repository }}:latest
-          ammo74/netinstall:latest
+        # ammo74/traefik-wabt:latest
         build-args: |
           GHCR_REPO=${{ github.repository }}
           GHCR_TAG=${{ steps.meta.outputs.tags }}
