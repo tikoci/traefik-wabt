@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $1 in
+    config | c | conf) /etc/traefik ;;
+    wat | w | wasm-wat ) cd /plugins-local/src/wasm-wat ;;
+    go | g | wasm-wat) cd /plugins-local/src/wasm-go ;;
+    src | s | plugins) cd /plugins-local/src ;;
+    *) echo "  Usage: config <config|wat|go|src>" ;;
+esac

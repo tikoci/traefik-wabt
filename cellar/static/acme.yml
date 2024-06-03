@@ -1,0 +1,27 @@
+
+log:
+  level: debug
+providers:
+  file:
+    directory: /etc/traefik
+    watch: true
+api:
+  insecure: true
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+        to: websecure
+  websecure:
+    address: ":443"
+certificatesResolvers:
+  lets-encrypt:
+    acme:
+      email: me@example.com 
+      storage: acme.json
+      #caServer: "https://acme-staging-v02.api.letsencrypt.org/directory"
+      httpChallenge:
+        entryPoint: web
+serversTransport:
+  insecureSkipVerify: true

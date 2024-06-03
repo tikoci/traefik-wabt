@@ -1,0 +1,10 @@
+#!/bin/sh
+
+EDITOR=${EDITOR:="vi"}
+
+case $1 in
+    static | s | traefik) $EDITOR /etc/traefik/traefik.yml ;;
+    wat | w | plugin.wat) $EDITOR /plugins-local/src/wasm-wat/plugin.wat ;;
+    dynamic | d | runtime) $EDITOR /etc/traefik/dynamic.yml ;;
+    *) echo "  Usage: config <static|dynamic|wat>" ;;
+esac
