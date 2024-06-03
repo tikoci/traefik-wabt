@@ -42,7 +42,7 @@ jobs:
     -
       name: Install TinyGo
       run: |
-        wget https://github.com/tinygo-org/tinygo/releases/download/v0.31.2/tinygo_0.31.2_amd64.deb
+        wget --progress=dot:mega https://github.com/tinygo-org/tinygo/releases/download/v0.31.2/tinygo_0.31.2_amd64.deb
         sudo dpkg -i tinygo_0.31.2_amd64.deb
     -
       name: Install Grain
@@ -101,6 +101,8 @@ jobs:
       run: |
         git status
         git pull
+        find ./plugins -name '*.wasm' | xargs git add
+        find ./plugins -name '*.wat' | xargs git add
         git commit -m "Update WASM from build [${{ github.workflow }}]"
         git push origin main
     - name: Save Build Artifacts
