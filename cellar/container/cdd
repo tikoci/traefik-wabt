@@ -7,3 +7,6 @@ case $1 in
     src | s | plugins) cd /plugins-local/src ;;
     *) echo "  Usage: config <config|wat|go|src>" ;;
 esac
+
+# HACK: it's not bash, so just subshell after cd
+/bin/sh

@@ -1,0 +1,9 @@
+
+.traefik.yml:
+	@echo "displayName: TODO" > $@  
+	@echo "type: middleware" >> $@
+	@echo "runtime: wasm" >> $@
+	@echo "summary: TODO" >> $@
+	@echo "testData:" >> $@
+	@echo "  Headers:" >> $@
+	@echo "    Foo: Bar" >> $@

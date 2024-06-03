@@ -1,4 +1,3 @@
-
 log:
   level: debug
 providers:
@@ -17,16 +16,15 @@ entryPoints:
           scheme: https
   websecure:
     address: ":443"
-certificatesResolvers:
-  lets-encrypt:
-    acme:
-      email: me@example.com 
-      storage: acme.json
-      #caServer: "https://acme-staging-v02.api.letsencrypt.org/directory"
-      httpChallenge:
-        entryPoint: web
 serversTransport:
   insecureSkipVerify: true
+middlewares:
+  log-wasm-wat:
+    middlewares:
+      - wasm-wat@file
+  log-wasm-go:
+    middlewares:
+      - wasm-go@file
 experimental:
   localPlugins:
     wasm-go:

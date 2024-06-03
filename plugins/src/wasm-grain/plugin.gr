@@ -1,0 +1,32 @@
+module Traefik
+
+from "result" include Result
+from "uint32" include Uint32
+from "uint64" include Uint64
+from "runtime/unsafe/wasmi32" include WasmI32
+from "runtime/unsafe/wasmi64" include WasmI64
+from "runtime/unsafe/memory" include Memory
+from "runtime/dataStructures" include DataStructures as DS
+
+// (import "http_handler" "log" (func $log
+//    (param $level i32)
+//    (param $buf i32) (param $buf_limit i32)))
+
+provide foreign wasm log: (
+  WasmI32,
+  WasmI32,
+) -> Void from "http_handler" 
+
+@unsafe
+let handle_request = (next: WasmI64) => {
+   log(0n, 0n)
+   1N
+}
+
+//... in traefik, "wasm: error compiling guest: invalid function[4]: invalid instruction 0x12"
+
+// let handle_response = (reqCtx: Int32, is_error: Int32) => {
+//   (1N, 1)
+// } 
+
+provide { handle_request }

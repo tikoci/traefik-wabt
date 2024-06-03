@@ -1,6 +1,9 @@
 FROM traefik
 
-ARG STATIC_FILE=acme.yml
+ARG STATIC_FILE=selfsigned.yml
+# ARG STATIC_FILE=acme.yml
+
+
 ARG DYNAMIC_FILE=routeros.yml
 
 ENV EDITOR=vi

@@ -33,6 +33,11 @@ jobs:
       with:
         platforms: ${{ env.PLATFORMS }}
     -
+      name: Install Grain
+      run: |
+        sudo curl -L --output /usr/local/bin/grain https://github.com/grain-lang/grain/releases/download/grain-v0.6.3/grain-linux-x64
+        sudo chmod +x /usr/local/bin/grain
+    -
       name: Build WASM files
       run: make
     -

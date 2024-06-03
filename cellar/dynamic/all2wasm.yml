@@ -1,0 +1,13 @@
+http:
+  routers:
+    all:
+      rule: "PathPrefix(`/`))"
+      service: to-google
+      middlewares:
+        - wasm-wat
+  services:
+    to-google:
+      loadBalancer:
+        passHostHeader: true
+        servers:
+          - url: "https://google.com/"
