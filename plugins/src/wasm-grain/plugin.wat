@@ -32,7 +32,7 @@
  (type $i32_f32_=>_i64 (func (param i32 f32) (result i64)))
  (type $i32_i32_f64_=>_i32 (func (param i32 i32 f64) (result i32)))
  (type $i32_i64_i32_i32_=>_i32 (func (param i32 i64 i32 i32) (result i32)))
- (type $i32_i32_=>_none (func (param i32 i32)))
+ (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
  (type $i32_i32_i32_=>_f32 (func (param i32 i32 i32) (result f32)))
  (type $i32_i32_f32_i32_=>_i32 (func (param i32 i32 f32 i32) (result i32)))
  (type $i32_f64_=>_f32 (func (param i32 f64) (result f32)))
@@ -54,7 +54,7 @@
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_1437.linked.1410 (param i32 i32 i32 i32) (result i32)))
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_1242.linked.6051 (param i32 i32 i32 i32) (result i32)))
  (import "wasi_snapshot_preview1" "fd_write" (func $wimport_wasi_snapshot_preview1_fd_write_5173.linked.15177 (param i32 i32 i32 i32) (result i32)))
- (import "http_handler" "log" (func $wimport_http_handler_log_1540.linked.18566 (param i32 i32)))
+ (import "http_handler" "log" (func $wimport_http_handler_log_1540.linked.18566 (param i32 i32 i32)))
  (global $GRAIN$RUNTIME_HEAP_NEXT_PTR (mut i32) (i32.const 1480))
  (global $gimport$0.linked.1 i32 (i32.const 0))
  (global $gimport$1.linked.2 i32 (i32.const 3))
@@ -114400,18 +114400,19 @@
    (call $_gmain.linked.18219)
   )
  )
- (func $log_1531.linked.18567 (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
-  (local $3 i32)
+ (func $log_1531.linked.18567 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
   (local $4 i32)
   (local $5 i32)
-  (local $6 i64)
-  (local $7 f32)
-  (local $8 f64)
+  (local $6 i32)
+  (local $7 i64)
+  (local $8 f32)
+  (local $9 f64)
   (block $closure_elements.3.linked.18571 (result i32)
    (block $compile_block.2.linked.18572 (result i32)
     (call $wimport_http_handler_log_1540.linked.18566
      (local.get $1)
      (local.get $2)
+     (local.get $3)
     )
     (i32.const 1879048190)
    )
@@ -114428,6 +114429,7 @@
    (drop
     (call $log_1531.linked.18567
      (global.get $log_1531.linked.18559)
+     (i32.const 0)
      (i32.const 0)
      (i32.const 0)
     )
@@ -114457,7 +114459,7 @@
       )
       (i32.store offset=4
        (local.get $0)
-       (i32.const 3)
+       (i32.const 4)
       )
       (i32.store offset=8
        (local.get $0)
@@ -114491,7 +114493,7 @@
    (call $_gmain.linked.18569)
   )
  )
- (func $log (param $0 i32) (param $1 i32)
+ (func $log (param $0 i32) (param $1 i32) (param $2 i32)
   (block $closure_incref
    (if
     (i32.ne
@@ -114519,6 +114521,7 @@
      (global.get $log_1531.linked.18559)
      (local.get $0)
      (local.get $1)
+     (local.get $2)
     )
    )
   )
