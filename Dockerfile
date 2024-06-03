@@ -14,8 +14,8 @@ RUN apk add wabt --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/ed
 
 COPY plugins/ /plugins-local
 COPY cellar/ cellar/
-COPY cellar/static/traefik/${STATIC_FILE} /etc/traefik/traefik.yml
-COPY cellar/dynamic/traefik/${DYNAMIC_FILE} /etc/traefik/dynamic.yml
+COPY cellar/traefik/static/${STATIC_FILE} /etc/traefik/traefik.yml
+COPY cellar/traefik/dynamic/${DYNAMIC_FILE} /etc/traefik/dynamic.yml
 COPY cellar/container-bin/ /usr/local/bin
 
 RUN chmod a+x /usr/local/bin/* && \
