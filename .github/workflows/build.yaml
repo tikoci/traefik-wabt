@@ -101,11 +101,14 @@ jobs:
       run: |
         git status
         git pull
-        git diff --quiet && git diff --staged --quiet || \
-          find ./plugins -name '*.wasm' | xargs git add && \
-          find ./plugins -name '*.wat' | xargs git add && \
-          git commit -m "Update WASM from build [${{ github.workflow }}]" && \
-          git push origin main
+        git config advice.addIgnoredFile false
+        echo "git add finds..."
+        find ./plugins -name '*.wasm' | xargs git add
+        find ./plugins -name '*.wat' | xargs git add
+        echo "maybe git commit"
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update WASM from build [${{ github.workflow }}]"
+        echo "git push..."
+        git push origin main
     - name: Save Build Artifacts
       uses: actions/upload-artifact@v4
       with:
