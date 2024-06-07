@@ -7,3 +7,6 @@
 	@echo "testData:" >> $@
 	@echo "  Headers:" >> $@
 	@echo "    Foo: Bar" >> $@
+
+icon.png:
+	cp ../icon.png $@
