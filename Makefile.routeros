@@ -19,7 +19,8 @@ scp-wasm:
 	scp -r plugins/* $(ROS_SSH):/$(ROS_PATH)-$(ROS_PLUGIN_PATH) 
 
 wasm-grain: 
-	scp plugins/src/wasm-grain/plugin.wasm $(ROS_SSH):/$(ROS_PATH)-$(ROS_PLUGIN_PATH)/src/wasmtest/plugin.wasm
+	scp plugins/src/wasm-grain/*.wasm $(ROS_SSH):/$(ROS_PATH)-$(ROS_PLUGIN_PATH)/src/wasmtest
+	scp plugins/src/wasm-grain/.*.yml $(ROS_SSH):/$(ROS_PATH)-$(ROS_PLUGIN_PATH)/src/wasmtest
 
 rosssh:
 	ssh $(ROS_SSH)
@@ -27,8 +28,11 @@ rosssh:
 proxyrestart:
 	ssh $(ROS_SSH) '$$proxyrestart'
 
+proxytest:
+	curl -k https://`echo $(ROS_SSH) | awk '{FS="@"; print $2}'`/$(URIPATH)
+
 proxytail:
-	ssh -t $(ROS_SSH) '$$proxytail; /quit'
+	ssh -t $(ROS_SSH) ':do { $$proxytail; } on-error={/quit}; :delay 5s; /quit'
 
 proxysh:
 	ssh -t $(ROS_SSH) '$$proxysh; /quit'

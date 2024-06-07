@@ -1,7 +1,7 @@
-displayName: TODO
+displayName: traefik-wasm-grain
 type: middleware
 runtime: wasm
-summary: TODO
+summary: EXPIRMENTAL plugin using WASM with grain-lang.org
 testData:
   Headers:
     Foo: Bar

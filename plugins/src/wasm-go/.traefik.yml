@@ -1,7 +1,7 @@
-displayName: TODO
+displayName: Sample Go Plugin 
 type: middleware
 runtime: wasm
-summary: TODO
+summary: For Development Use
 testData:
   Headers:
     Foo: Bar
