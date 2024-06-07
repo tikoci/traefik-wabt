@@ -1,7 +1,10 @@
 module TraefikGrainPlugin
 
+// http-wasm grain-lang implementation
 from "./http-wasm.gr" include HttpWasm
+
 use HttpWasm.*
+// required: low-level handler must be "provide" from main WASM module to be found
 provide { handle_request, handle_response }
 
 from "list" include List
@@ -9,7 +12,7 @@ from "map" include Map
 from "string" include String
 from "json" include Json
 
-
+// sample "request handler" in grain
 registerRequestHandler((req: Request) => {
   // this use Grain's pattern match to "do stuff" with a HTTP request
   match (req) {
@@ -31,12 +34,12 @@ registerRequestHandler((req: Request) => {
     _ => log(Info, "you're no match"),
   
   }  
-  // all request handlers must return true to continue processing pipeline
+  // ALL request handlers must return true to continue processing pipeline
   true // false mean stop processing the ENTIRE request, not just this plugin
 })
 
 
-// response can be trapped as well
+// response can be trapped, less usefule and more rules apply on what's allowed
 registerResponseHandler((resp: Response) => {
   log(Info, "grain says goodbye")
   void
